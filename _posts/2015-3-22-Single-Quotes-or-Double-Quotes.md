@@ -7,7 +7,7 @@ modified: 2015-03-22
 comments: true
 image:
   feature: banner.png
-  thumb: /2015-03-22/Duty.png
+  thumb: /2015-03-22/DutyCalls.png
 ---
 {% include _toc.html %}
 
@@ -18,7 +18,7 @@ A few weeks back, Adam Bertram posted a blasphemous, code formatting declaration
 
 ### Duty calls
 
-[![Duty Calls](http://imgs.xkcd.com/comics/duty_calls.png)](http://xkcd.com/386/)
+[![Duty Calls](/images/2015-03-22/DutyCalls.png)](http://xkcd.com/386/)
 
 I had previously tried the otherwise excellent [ISESteroids](http://www.powertheshell.com/isesteroids/) and was a bit perturbed when I was told my tendency to use double quotes for everything failed best practices!
 
