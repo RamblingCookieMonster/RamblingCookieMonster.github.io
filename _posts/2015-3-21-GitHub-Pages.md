@@ -19,7 +19,7 @@ I wanted something even simpler; [GitHub pages](https://pages.github.com/) seeme
 
 <figure>
     <img src="/images/2015-03-21/octojekyll-opt.jpg">
-    <figcaption>Jekyll’s Octocat mascot. (Image credit: [GitHub](http://jekyllrb.com/), [Barry Clark](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/))</figcaption>
+    <figcaption>Jekyll’s Octocat mascot. (Image credit: <a href="http://jekyllrb.com/">GitHub</a>, <a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/">Barry Clark</a>)</figcaption>
 </figure>
 
 I played around with this, Julian Thilo's [Run Jekyll on Windows Guide](http://jekyll-windows.juthilo.com/), stumbled around for a bit, and landed on Michael Rose' [Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/theme-setup/).
