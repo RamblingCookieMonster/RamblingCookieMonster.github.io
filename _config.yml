@@ -31,6 +31,8 @@ owner:
   email: 
   disqus-shortname: ramblingcookiemonster
   twitter: pscookiemonster
+  google:
+    analytics: UA-61008962-1
   bing-verify: 
   github: ramblingcookiemonster
   stackoverflow: http://stackoverflow.com/users/3067642/cookie-monster
@@ -48,7 +50,7 @@ owner:
           "PSDiskPart",
           "SecretServer"]
 
-
+#UA-61008962-1
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
