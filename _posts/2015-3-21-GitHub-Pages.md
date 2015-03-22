@@ -20,11 +20,12 @@ I wanted something even simpler; [GitHub pages](https://pages.github.com/) seeme
 
 *Jekyll’s Octocat mascot. (Image credit: [GitHub](http://jekyllrb.com/), [Barry Clark](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/)*
 
-I played around with this, Julian Thilo's [Run Jekyll on Windows Guide](http://jekyll-windows.juthilo.com/), stumbled around for a bit, and landed on Michael Rose' [Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/theme-setup/).
+I played around with [Jekyll-Now](https://github.com/barryclark/jekyll-now), Julian Thilo's [Run Jekyll on Windows Guide](http://jekyll-windows.juthilo.com/), stumbled around for a bit, and landed on Michael Rose' [Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/theme-setup/).
 
 
 
 There was a bit of a learning curve, and I still don't know what I'm doing, but this will simplify posting going forward. It will also let me use existing tools like GitHub and $TextEditorOfTheDay.
+
 
 Cheers!
 
@@ -55,4 +56,4 @@ What will an animated gif look like?
 
 [![What will an animated gif look like?]({{ site.baseurl }}/images/2015-03-21/appveyordsc1.gif)](https://ramblingcookiemonster.wordpress.com/2015/03/01/testing-dsc-configurations-with-pester-and-appveyor/)
 
-EDIT:  I like it, apart from the fact that my excessive post-publication nitpicking and tweaking will be caught in commits!
+One caveat...  my excessive post-publication nitpicking and tweaking will be caught in commits!

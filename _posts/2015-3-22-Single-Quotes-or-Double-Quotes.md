@@ -9,6 +9,8 @@ image:
   feature: banner.png
   thumb: /2015-03-22/InciteorInsight.png
 ---
+{% include _toc.html %}
+
 
 A few weeks back, Adam Bertram posted a blasphemous, code formatting declaration of war, along with a tip to use single quotes over double quotes if expansion is not needed.  We'll ignore the blasphemy here.
 
@@ -78,7 +80,9 @@ Is using single quotes when no expansion is needed truly a best practice?
 
 I do see the other view points, both were certainly valid.  I'm not sure if they warrant awarding a 'best practice' though. I'm a bit stubborn, so I will likely continue to use double quotes, to the chagrin of my Sublime-Text-using-peers.
 
-Also, if ISE squiggles out double quotes without expansion, Tobias should consider squiggling out the wretched code formatting practices like this:
+### Aside
+
+If ISE squiggles out double quotes without expansion, Tobias should consider squiggling out the wretched code formatting practices like this:
 
 {% highlight powershell %}
 
