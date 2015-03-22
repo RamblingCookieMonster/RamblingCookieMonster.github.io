@@ -1,0 +1,43 @@
+# Site wide configuration
+
+title:            Rambling Cookie Monster
+locale:           en_US
+url:              http://ramblingcookiemonster.github.io
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+# Site owner
+owner:
+  name: Warren F
+  avatar: bio.png
+  bio: "Systems Engineer with a penchant for PowerShell, science, cooking, information security, family, cookies, and the Oxford comma."
+  email: 
+  disqus-shortname: ramblingcookiemonster
+  twitter: pscookiemonster
+  bing-verify: 
+  github: ramblingcookiemonster
+  stackoverflow: http://stackoverflow.com/users/3067642/cookie-monster
+  linkedin: wframe
+  technet: https://social.technet.microsoft.com/profile/cookie.monster
+  wordpress: https://ramblingcookiemonster.wordpress.com
+  rss: feed.xml
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
