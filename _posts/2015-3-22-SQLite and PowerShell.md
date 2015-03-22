@@ -37,13 +37,13 @@ Download and unblock [Invoke-SQLiteQuery](https://github.com/RamblingCookieMonst
 
 {% gist bc4f2e1bcf1c4a44b03e %}
 
-![Init](/images/2015-03-22-2/init.png)
+![Create a table](/images/2015-03-22-2/init.png)
 
 That was pretty easy! We used a [SQLite PRAGMA statement](http://www.sqlite.org/pragma.html) to see basic details on the table I created. Now let's insert some data and pull it back out:
 
 {% gist 4b86f958c41b50f74e66 %}
 
-![InsertSelect](/images/2015-03-22-2/insertselect.png)
+![Insert and Select](/images/2015-03-22-2/insertselect.png)
 
 In this example we parameterized the query - notice that @full and @BD were replaced with the full and BD values from SQLParameters, respectively.
 
@@ -53,13 +53,13 @@ Let's take a quick look at using SQLite in memory
 
 {% gist bba2ed9a7f542378d19a %}
 
-![memory](/images/2015-03-22-2/Memory.png)
+![Memory](/images/2015-03-22-2/memory.png)
 
 Typically, we might use Datarow output from MSSQL and SQLite queries. As you can see above, using Datarow output leads to unexpected filtering behavior - if I filter on Where {$_.Fullname}, I don't expect any results to come back with no fullname. Thankfully, we have [code from Dave Wyatt](http://powershell.org/wp/forums/topic/dealing-with-dbnull/) that can quickly and efficiently convert output to PSObjects that behave as expected in PowerShell.
 
 We did the querying above in memory. Let's run PRAGMA STATS to see details on the in-memory data source. If we close the connection and run this again, we see the data is gone:
 
-![memorygone](/images/2015-03-22-2/MemoryGone.png)
+![Memory Gone](/images/2015-03-22-2/memorygone.png)
 
 #### Bulk inserts
 
