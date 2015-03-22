@@ -8,6 +8,7 @@ image:
   feature: banner.png
 ---
 {% include _toc.html %}
+
 ### What is this blog about?
 
  I plan to ramble on about things I find interesting.  PowerShell, technology, and food will be the most common, perhaps in that order.  Many posts will simply be reminders for future reference or my draft notes from work.
