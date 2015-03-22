@@ -48,7 +48,7 @@
         {% if post.link %}
           <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
         {% elsif post.image.thumb %}
-          <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><img class="image-pull-right" src="{{ site.url }}/images{{ post.image.thumb }}" height = "200" >
+          <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><img class=".image-pull-right-thumb" src="{{ site.url }}/images{{ post.image.thumb }}">
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% else %}
           <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
