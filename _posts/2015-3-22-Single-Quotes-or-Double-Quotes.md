@@ -22,7 +22,7 @@ A few weeks back, Adam Bertram posted a blasphemous, code formatting declaration
 
 I had previously tried the otherwise excellent [ISESteroids](http://www.powertheshell.com/isesteroids/) and was a bit perturbed when I was told my tendency to use double quotes for everything failed best practices!
 
-I dutifully posted a friendly reply to Adam, ignoring the blasphemous formatting comment
+I dutifully posted a friendly reply to Adam, ignoring the blasphemous formatting comment.
 
 ![Duty](/images/2015-03-22/Duty.png)
 
@@ -42,15 +42,15 @@ Kirk Munro brought up the importance of readability.
 
 There are too many scenarios to cover, but let's look at a few:
 
-Using the ISE
+Using the PowerShell ISE:
 
 ![ISE Readability](/images/2015-03-22/ReadableTestISE.png)
 
-Using Sublime Text 3
+Using Sublime Text 3 with [PowerShell syntax highlighting](https://github.com/SublimeText/PowerShell):
 
 ![ST3 Readability](/images/2015-03-22/ReadableTestST3.png)
 
-Okay! I use the ISE, and have no trouble whatsoever differentiating strings that have something in them from strings that do not. That being said, not every uses the ISE. Even solid alternatives like Sublime Text leave a bit to be desired here (perhaps it's just my setup?). Point for Kirk.
+Okay! I use the ISE, and have no trouble whatsoever differentiating strings that have something in them from strings that do not. That being said, not everyone uses the ISE. Even solid alternatives like Sublime Text leave a bit to be desired here (perhaps it's just my setup?). Point for Kirk.
 
 Also, while most regular PowerShell users have a firm grasp on the difference between single and double quotes, beginners may not. No points for this. If you take visual cues, and I'll assume everyone writing PowerShell meets this criteria, you clearly see the $$ is a different color. We'll leave this in the 'Readability' column.
 
