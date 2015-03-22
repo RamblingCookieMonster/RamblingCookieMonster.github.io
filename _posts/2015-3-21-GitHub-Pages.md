@@ -18,7 +18,7 @@ I wanted something even simpler; [GitHub pages](https://pages.github.com/) seeme
 
 
 <figure>
-    <img src="/images/2015-03-21/octojekyll-opt.jpg">
+    <img src="/images/2015-03-21/octojekyll-opt.jpg" style="width:200;">
     <figcaption>Jekyll’s Octocat mascot. (Image credit: <a href="http://jekyllrb.com/">GitHub</a>, <a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/">Barry Clark</a>)</figcaption>
 </figure>
 
