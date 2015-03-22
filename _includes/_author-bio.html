@@ -12,7 +12,8 @@
 
   <h3 itemprop="name">{{ author.name }}</h3>
   <p>{{ author.bio }}</p>
-  {% if author.email %}<a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>{% endif %}
+  <br />
+  <h3 itemprop="connect">Connect</h3>
   {% if author.twitter %}<a href="http://twitter.com/{{ author.twitter }}" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> @pscookiemonster</a>{% endif %}
   {% if author.linkedin %}<a href="http://linkedin.com/in/{{ author.linkedin }}" class="author-social" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a>{% endif %}
   {% if author.github %}<a href="http://github.com/{{ author.github }}" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>{% endif %}
@@ -20,17 +21,9 @@
   {% if author.technet %}<a href="{{ author.technet }}" class="author-social" target="_blank"><i class="fa fa-fw fa-windows"></i> TechNet</a>{% endif %}
   {% if author.rss %}<a href="{{ site.url }}/{{ author.rss }}" class="author-social" target="_blank"><i class="fa fa-fw fa-rss"></i>RSS Feed</a>{% endif %}
   {% if author.wordpress %}<a href="{{ author.wordpress }}" class="author-social" target="_blank"><i class="fa fa-fw fa-wordpress"></i>My old blog</a>{% endif %}
-  </br>
+  <br />
   <h3 itemprop="GitHub">My GitHub Repos</h3>
   {% for repo in author.githubrepos %}
     <a href="https://github.com/RamblingCookieMonster/{{ repo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i>{{ repo }}</a>
   {% endfor %}
-  </br>
-  </br>
-  </br>
-  <h3 itemprop="GitHubFavs">Excellent Repos</h3>
-    {% assign favs = author.githubfavorites | sort %}
-    {% for repo in favs %}
-      <a href="https://github.com/{{ repo }}" class="author-social" target="_blank"><i class="fa fa-star-o"></i>{{ repo }}</a>
-    {% endfor %}
 </div>
