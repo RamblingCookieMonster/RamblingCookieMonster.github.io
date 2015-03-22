@@ -4,13 +4,13 @@ title: Quick Hit&#58; Single or Double Quotes?
 excerpt: "Is differentiating these truly a best practice?"
 tags: [Quick hit, PowerShell, Best Practice]
 modified: 2015-03-22 10:00:00
+date: 2015-03-22 10:00:00
 comments: true
 image:
   feature: banner.png
   thumb: /2015-03-22/DutyCalls.png
 ---
 {% include _toc.html %}
-
 
 A few weeks back, Adam Bertram posted a blasphemous, code formatting declaration of war, along with a tip to use single quotes over double quotes if expansion is not needed.  We'll ignore the blasphemy here.
 
