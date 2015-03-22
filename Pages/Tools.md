@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tools of the Trade
-tags: [Tools]
+tags: [Tools, PowerShell, Microsoft]
 modified: 2015-03-21
 comments: true
 image:
