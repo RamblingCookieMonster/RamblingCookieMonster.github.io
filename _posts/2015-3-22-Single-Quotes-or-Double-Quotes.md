@@ -78,9 +78,9 @@ No points here, from my perspective, but definitely good to know for those corne
 
 Is using single quotes when no expansion is needed truly a best practice?
 
-I do see the other view points, both were certainly valid. I'm not sure if they warrant awarding a 'best practice' though. Certainly a good practice, code readability is very important, and may go overlooked by newcomers who may be lacking coding etiquette and experience.
+I do see the other view points, both were certainly valid. I'm not sure if they warrant awarding a 'best practice' though. I agree with Adam that this is a good tip. Maybe a 'good practice', as code readability is important.
 
-I'll try to move towards following this good practice, but it will take time. I will likely continue to use double quotes without expansion, to the chagrin of my Sublime-Text-using-peers.
+ I'll try to move towards following this good practice, but it will take time. I will likely continue to use double quotes without expansion, to the chagrin of my Sublime-Text-using-peers.
 
 ### Aside
 
