@@ -28,21 +28,26 @@
   </div><!-- /.image-wrap -->
 {% endif %}
 
-<div id="main" role="main"> 
+<div id="main" role="main">
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
   <div id="index">
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:10 %}    
-    <article>
-      {% if post.link %}
-        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-      {% else %}
-        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      {% endif %}
-    </article>
+    {% for post in site.posts limit:10 %}
+      <div class="article-index-margin">
+        <article>
+          {% if post.link %}
+            <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+          {% elsif post.image.thumb %}
+            <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} <img class="image-pull-right-thumb" src="{{ site.url }}/images{{ post.image.thumb }}"></a></h2>
+            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          {% else %}
+            <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          {% endif %}
+        </article>
+      </div><!-- /#articlediv -->
     {% endfor %}
   </div><!-- /#index -->
 </div><!-- /#main -->
@@ -54,6 +59,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>
