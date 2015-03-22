@@ -6,8 +6,11 @@
 - title: Posts
   url: /posts/
 
+- title: Tools
+  url: /Pages/Tools.html
+
 - title: PowerShell Resources
   url: /Pages/PowerShellResources.html
 
-- title: Wordpress Posts
-  url: https://ramblingcookiemonster.wordpress.com/
+- title: Legacy Posts
+  url: /Pages/LegacyWordpressPosts.html

@@ -7,7 +7,7 @@ comments: true
 image:
   feature: banner.png
 ---
-
+{% include _toc.html %}
 I’m keeping a list of PowerShell resources that I've found helpful.  I plan to keep this up to date and add resources on a regular basis, so you may want to check back occasionally.
 
 ### Cheat sheets and quick references

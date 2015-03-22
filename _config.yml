@@ -39,5 +39,16 @@ owner:
   wordpress: https://ramblingcookiemonster.wordpress.com
   rss: feed.xml
 
+#Github repos in sidebar - match them up to the repository name...
+github:
+  AppVReporting: 
+  Citrix.NetScaler: 
+  InfoBlox: 
+  Invoke-Parallel:
+  Invoke-SQLiteQuery:
+  PowerShell:
+  PSDiskPart:
+  SecretServer:
+
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
