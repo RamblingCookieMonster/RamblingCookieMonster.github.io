@@ -16,8 +16,11 @@ After using GitHub and a variety of other sites that use markdown, it became qui
 
 I wanted something even simpler; [GitHub pages](https://pages.github.com/) seemed to fit the bill! [This article](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) from Barry Clark offers a simple way to get started with GitHub Pages.
 
-![Jekyll’s Octocat mascot. (Image credit: GitHub, Barry Clark)]({{ site.url }}/images/2015-03-21/octojekyll-opt.jpg)
-*Jekyll’s Octocat mascot. (Image credit: [GitHub](http://jekyllrb.com/), [Barry Clark](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/))*
+
+<figure>
+    <img src="/images/2015-03-21/octojekyll-opt.jpg">
+    <figcaption>Jekyll’s Octocat mascot. (Image credit: [GitHub](http://jekyllrb.com/), [Barry Clark](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/))</figcaption>
+</figure>
 
 I played around with this, Julian Thilo's [Run Jekyll on Windows Guide](http://jekyll-windows.juthilo.com/), stumbled around for a bit, and landed on Michael Rose' [Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/theme-setup/).
 
