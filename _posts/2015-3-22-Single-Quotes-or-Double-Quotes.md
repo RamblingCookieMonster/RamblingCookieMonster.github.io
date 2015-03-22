@@ -7,7 +7,7 @@ modified: 2015-03-22
 comments: true
 image:
   feature: banner.png
-  thumb: /2015-03-22/InciteorInsight.png
+  thumb: /2015-03-22/Duty.png
 ---
 {% include _toc.html %}
 
