@@ -48,6 +48,8 @@
 
 /* margin bottom */
 .article-index-margin {
+    padding-bottom: .5em;
+    border-bottom: 1px solid lighten($black,70);
     margin-bottom: 10px;
     margin-top: 10px;
     clear: right;
