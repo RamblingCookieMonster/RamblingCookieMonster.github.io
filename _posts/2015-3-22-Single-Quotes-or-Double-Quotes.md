@@ -84,7 +84,7 @@ I do see the other view points, both were certainly valid. I'm not sure if they 
 
 ### Aside
 
-If ISE squiggles out double quotes without expansion, Tobias should consider squiggling out the wretched code formatting practices like this:
+If ISESteroids squiggles out double quotes without expansion, Tobias should consider squiggling out the wretched code formatting practices like this:
 
 {% highlight powershell %}
 
