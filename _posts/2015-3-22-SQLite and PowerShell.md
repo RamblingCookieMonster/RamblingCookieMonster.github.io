@@ -1,9 +1,9 @@
 ---
 layout: post
 title: SQLite and PowerShell
-excerpt: "Is differentiating these truly a best practice?"
+excerpt: "A simple module for SQLite queries via PowerShell"
 tags: [PowerShell, SQL, Module, Tool]
-modified: 2015-03-22
+modified: 2015-03-22 13:00:00
 comments: true
 image:
   feature: banner.png
@@ -53,13 +53,13 @@ Let's take a quick look at using SQLite in memory
 
 {% gist bba2ed9a7f542378d19a %}
 
-![Memory](/images/2015-03-22-2/Memory.png)
+![memory](/images/2015-03-22-2/Memory.png)
 
 Typically, we might use Datarow output from MSSQL and SQLite queries. As you can see above, using Datarow output leads to unexpected filtering behavior - if I filter on Where {$_.Fullname}, I don't expect any results to come back with no fullname. Thankfully, we have [code from Dave Wyatt](http://powershell.org/wp/forums/topic/dealing-with-dbnull/) that can quickly and efficiently convert output to PSObjects that behave as expected in PowerShell.
 
 We did the querying above in memory. Let's run PRAGMA STATS to see details on the in-memory data source. If we close the connection and run this again, we see the data is gone:
 
-![MemoryGone](/images/2015-03-22-2/MemoryGone.png)
+![memorygone](/images/2015-03-22-2/MemoryGone.png)
 
 #### Bulk inserts
 
@@ -83,4 +83,4 @@ That's about it! If you want simplified SQLite queries in PowerShell, check out 
 
 Now I just have to find more time to write...
 
-Disclaimer: This weekend was the first time I've used SQLite. If I'm missing any major functionality, or you see unexpected behavior, contributions or suggestions would be quite welcome!
+*Disclaimer*: The initial functions were written the first day I had worked with SQLite. If I'm missing any major functionality, or you see unexpected behavior, contributions or suggestions would be quite welcome!
