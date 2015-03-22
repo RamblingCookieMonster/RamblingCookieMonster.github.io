@@ -9,6 +9,7 @@ image:
   feature: banner.png
   thumb: /2015-03-21/octojekyll-opt.jpg
 ---
+{% include _toc.html %}
 
 When I first started blogging, WordPress.com seemed like the quickest and simplest option. Simple is good; the fewer barriers to writing, the more writing you can do!
 
