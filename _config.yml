@@ -35,13 +35,13 @@ owner:
     analytics: UA-61008962-1
   bing-verify: 
   github: ramblingcookiemonster
-  stackoverflow: http://stackoverflow.com/users/3067642/cookie-monster
+  stackoverflow: 3067642/cookie-monster
   linkedin: wframe
   technet: https://social.technet.microsoft.com/profile/cookie.monster
   wordpress: https://ramblingcookiemonster.wordpress.com
   rss: feed.xml
   #Github repos in sidebar - match them up to the repository name...
-  github: ["AppVReporting",
+  githubrepos: ["AppVReporting",
           "Citrix.NetScaler",
           "InfoBlox",
           "Invoke-Parallel",
