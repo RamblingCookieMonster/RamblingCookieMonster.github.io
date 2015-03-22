@@ -19,6 +19,7 @@ In many IT focused community websites, the topic of tools comes up quite often. 
 ### IT tools:
 
 * [PowerShell](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/) - Version 3.0 or later, using the ISE.  From my perspective, anyone working in IT supporting a Microsoft environment should already know or start learning PowerShell for their own and their employer's benefit.
+* [Pester](https://github.com/pester/Pester) - Testing framework for PowerShell. It’s quite comforting knowing that I have a set of tests and don’t need to worry about whether I remembered to test each scenario manually. It also enables [fun with GitHub and AppVeyor](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/).
 * [SysInternals](http://technet.microsoft.com/en-us/sysinternals) – Be sure to check out the entire SysInternals suite, and consider keeping it up to date with a quick script pulling from [here](http://live.sysinternals.com/).  [Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx) (procmon) and [Process Explorer](http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx) (procexp) get the most use, followed by [PsExec](http://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) and [AutoRuns](http://technet.microsoft.com/en-us/sysinternals/bb963902.aspx).
 * [WMI Explorer](https://wmie.codeplex.com/) - Simplified discovery and exploration of WMI
 * [Terminals](http://terminals.codeplex.com/) – A great open source RDP (and other) manager.  There are other options, none have persuaded me to leave Terminals.
@@ -37,8 +38,8 @@ In many IT focused community websites, the topic of tools comes up quite often. 
 * [Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=40308) - Similar to WireShark, geared to the Microsoft world.  Handy for analyzing captures from the built in [netsh](http://blogs.msdn.com/b/canberrapfe/archive/2012/03/31/capture-a-network-trace-without-installing-anything-works-for-shutdown-and-restart-too.aspx) tool
 * [Fiddler](http://www.telerik.com/fiddler) - Peak into your HTTP and HTTPS traffic.  Is the header for your REST API call correct?
 * [Chart Controls](http://archive.msdn.microsoft.com/mschart) – Build charts with .NET.  You can [integrate](http://bytecookie.wordpress.com/2012/04/13/tutorial-powershell-and-microsoft-chart-controls-or-how-to-spice-up-your-reports/) this with your PowerShell functions or scripts.  If you are a non-profit or could justify the cost, [Highcharts](http://www.highcharts.com/demo/) are a little prettier and more interactive, but slightly less PowerShell friendly.
-* [Notepad2](http://www.flos-freeware.ch/notepad2.html) – I’ve completely replaced notepad with this.  All text files are associated with it, and the alias ‘n’ opens it from PowerShell.  Scott’s blog has some other options, this was a good balance between functionality and light weight.  Some co-workers swear by [Notepad++](http://notepad-plus-plus.org/)
-* [The Practice of System and Network Administration](http://www.amazon.com/Practice-System-Network-Administration-Second/dp/0321492668) – If there were one book everyone working in or with IT should read, this would be it.  It’s ancient in this line of work (2007), but still holds true.  As of 2012 the third edition was unannounced and in the ‘planning stages’
+* [Notepad2](http://www.flos-freeware.ch/notepad2.html) – I’ve completely replaced notepad with this.  All text files are associated with it, and the alias ‘n’ opens it from PowerShell.  Scott’s blog has some other options, this was a good balance between functionality and light weight.  Some co-workers swear by [Notepad++](http://notepad-plus-plus.org/).  I now use [Sublime Text](http://www.sublimetext.com/) 3 when a quick and dirty notepad2 session is not enough.
+* [The Practice of System and Network Administration](http://www.amazon.com/Practice-System-Network-Administration-Second/dp/0321492668) – If there were one book everyone working in or with IT should read, this would be it.  It’s ancient in this line of work (2007), but still holds true.  [A follow-up](http://the-cloud-book.com/book.html) is now available.
 
 ### General tools
 
@@ -48,7 +49,7 @@ In many IT focused community websites, the topic of tools comes up quite often. 
 * [SkyDrive](https://skydrive.live.com/) – There are many cloud storage options, find one that works for you.
 * [SSD](http://arstechnica.com/civis/viewtopic.php?f=11&t=39354) – not a tool per se, but opens up many options.  Lighter, less power use, no issues being bumped, fast seek time (no heads to move across a spindle), more IOPS than most RAID setups.  If you plan on running a hypervisor, this is essential.  All of my work and home computers have an SSD.  Well worth cost.
 * [GifCam](http://blog.bahraniapps.com/gifcam/) - Portable, flexible, easy to use gif recorder.
-* [GitHub](https://github.com/) - Version control is invaluable even outside of IT.  I like [Mercurial](http://hginit.com/) and Git.  [BitBucket](https://bitbucket.org/) is another solid host.
+* [GitHub](https://github.com/) - Version control is invaluable even outside of IT.  I prefer [Mercurial](http://hginit.com/) and Git.  [BitBucket](https://bitbucket.org/) is another solid host.
 
 ### Other helpful lists
 
