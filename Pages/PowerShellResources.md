@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PowerShell Resources
-tags: [PowerShell, Desired State Configuration, Learning]
+tags: [PowerShell, Desired State Configuration, Learning, Cheat Sheet, Tools]
 modified: 2015-03-21
 comments: true
 image:
@@ -12,7 +12,8 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 
 ### Cheat sheets and quick references
 
-* [PowerShell Cheat Sheet](https://ramblingcookiemonster.wordpress.com/powershell-cheat-sheets/)
+* [PowerShell Basic Cheat Sheet](/images/Cheat-Sheets/powershell-basic-cheat-sheet2.pdf)
+* [PowerShell Cheat Sheet](/images/Cheat-Sheets/powershell-cheat-sheet.pdf)
 * [Windows PowerShell 4.0 and Other Quick Reference Guides](http://www.microsoft.com/en-us/download/details.aspx?id=42554) - PowerShell Magazine
 * [Windows PowerShell 3.0 Quick Reference Guides](http://www.microsoft.com/en-us/download/details.aspx?id=30002) - PowerShell Magazine
 * [Exchange 2010](http://blogs.technet.com/b/matabra/archive/2011/10/21/powershell-for-exchange-2010-cheat-sheet.aspx) - Matthew Abraham
@@ -114,6 +115,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 
 * [PowerShell 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) - Includes [Desired State Configuration](http://technet.microsoft.com/en-us/library/dn249912.aspx)
 * [PowerShell 3.0](https://ramblingcookiemonster.wordpress.com/2012/09/05/powershell-3-0/) - Many updates, including an ISE helpful for learning and general use
+* [ISESteroids](http://www.powertheshell.com/isesteroids/) - A great add-on from Tobias Weltner to improve your experience in the PowerShell ISE
 * [The Windows PowerShell Toolbox](http://technet.microsoft.com/en-us/scriptcenter/ee861518.aspx) - Includes links to popular tools like PowerShell Plus (now free!) and Sapien's offerings
 * [Microsoft Wiki for Popular PowerShell Modules](http://social.technet.microsoft.com/wiki/contents/articles/4308.popular-powershell-modules-en-us.aspx?Sort=MostRecent&PageIndex=1) - A list of PowerShell modules and snapins
 * [Microsoft Wiki for PowerShell-Enabled Technologies](http://social.technet.microsoft.com/wiki/contents/articles/4309.powershell-enabled-technologies-en-us.aspx)
