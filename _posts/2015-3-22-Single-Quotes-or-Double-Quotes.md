@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Single or Double Quotes?
+title: Quick Hit&#58; Single or Double Quotes?
 excerpt: "Is differentiating these truly a best practice?"
 tags: [Quick hit, PowerShell, Best Practice]
 modified: 2015-03-22
