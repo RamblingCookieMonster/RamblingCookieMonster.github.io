@@ -41,7 +41,8 @@ owner:
   wordpress: https://ramblingcookiemonster.wordpress.com
   rss: feed.xml
   #Github repos in sidebar - match them up to the repository name...
-  githubrepos: ["AppVReporting",
+  githubrepos: [
+          "AppVReporting",
           "Citrix.NetScaler",
           "InfoBlox",
           "Invoke-Parallel",
@@ -49,6 +50,22 @@ owner:
           "PowerShell",
           "PSDiskPart",
           "SecretServer"]
+  githubfavorites: [
+          "Invoke-IR/PowerForensics",
+          "LeeHolmes/PowerShellCookbook",
+          "proxb/PoshRSJob",
+          "inchara/ShowDscResource",
+          "oising/poke",
+          "pester/Pester",
+          "mattifestation/PowerShellArsenal",
+          "vmware/webcommander",
+          "PoshSec/PoshSec",
+          "Veil-Framework/PowerTools",
+          "mattifestation/PowerSploit",
+          "PowerShellOrg/DSC",
+          "adamdriscoll/poshtools",
+          "darkoperator/Posh-SSH",
+          "lzybkr/PSReadLine"]
 
 #UA-61008962-1
 
