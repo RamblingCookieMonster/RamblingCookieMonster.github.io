@@ -2,7 +2,7 @@
 layout: post
 title: SQLite and PowerShell
 excerpt: "A simple module for SQLite queries via PowerShell"
-tags: [PowerShell, SQL, Module, Tool]
+tags: [PowerShell, SQL, Module, Tools]
 modified: 2015-03-22 13:00:00
 date: 2015-03-22 13:00:00
 comments: true
