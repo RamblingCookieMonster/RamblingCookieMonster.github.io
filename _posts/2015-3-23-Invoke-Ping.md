@@ -16,7 +16,7 @@ I grew up playing with legos. They were fun, and they spurn the imagination. You
 
 I use the lego anecdote when talking about PowerShell with newcomers. You might start with single cmdlets and premade functions. You can pipe them together, follow some examples and blog posts, and eventually get the hang of building [advanced functions](https://ramblingcookiemonster.wordpress.com/2013/12/08/building-powershell-functions-best-practices/) and modules to meet your needs and imagination.
 
-Modular code is one of the many [benefits to scripting](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/) and programming in general. Let's take a look at a practical example with a function that can speed up testing connectivity to systems.
+Modular code is one of the many [benefits to scripting](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/) and programming in general. Let's take a look at a practical example, with a function that can speed up testing connectivity to systems.
 
 ### Test-Connection
 
@@ -24,11 +24,11 @@ One of the first commands you learn in PowerShell is [Test-Connection](https://t
 
 ![Test Connection Is Slow](/images/invoke-ping/QuietLong.png)
 
-Thirty minutes tests my patience.
+Thirty minutes tests my patience, and wouldn't it be nice to have a single command rather than writing logic for looping and output?
 
 ### Faster!
 
-A few years back, Boe Prox wrote [a great article](http://learn-powershell.net/2012/05/10/speedy-network-information-query-using-powershell/) on using runspaces to speed up network information queries. I mashed together some of Boe's code with some crude duct tape, and rolled out the first iteration of [Invoke-Parallel](https://github.com/RamblingCookieMonster/Invoke-Parallel). Sergei Vorobev contributed a number of helpful ideas, including adding Pester tests and [automated testing through AppVeyor](https://github.com/RamblingCookieMonster/Invoke-Parallel).
+A few years back, Boe Prox wrote [a great article](http://learn-powershell.net/2012/05/10/speedy-network-information-query-using-powershell/) on using runspaces to speed up network information queries. I mashed together some of Boe's code with some crude duct tape, and rolled out the first iteration of [Invoke-Parallel](https://github.com/RamblingCookieMonster/Invoke-Parallel). Sergei Vorobev contributed a number of helpful ideas, including adding Pester tests and [automated testing through AppVeyor](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/).
 
 ![Invoke-Parallel](/images/invoke-ping/InvokeParallel.png)
 
@@ -46,7 +46,20 @@ A few tweaks to Test-Server, and we have the ingredients for a convenient and fa
 
 ### Invoke-Ping
 
-All we need to do now is bundle these ingredients into a simple to use package, [Invoke-Ping](https://gallery.technet.microsoft.com/scriptcenter/Invoke-Ping-Test-in-b553242a). There are a few ways to run it:
+All we need to do now is bundle these ingredients into a simple to use package, [Invoke-Ping](https://gallery.technet.microsoft.com/scriptcenter/Invoke-Ping-Test-in-b553242a). Hit the link, download and unblock the .ps1, and load it up!
+
+{% highlight powershell %}
+# dot source the function  
+    . "\\Path\To\Invoke-Ping.ps1"  
+  
+# Get help for Invoke-Ping 
+    Get-Help Invoke-Ping -Full 
+     
+# Check for WSMan, Remote Registry, Remote RPC, RDP, and SMB (via C$) connectivity against 3 machines 
+    Invoke-Ping Server1, Server2, Server3 -Detail * 
+{% endhighlight %}
+
+There are a few ways to run it:
 
 #### Standard
 
@@ -56,13 +69,13 @@ This simply runs Test-Connection and returns a selection of properties.
 
 #### Quiet
 
-![Quiet](/images/invoke-ping/QuiteOne.png)
+![Quiet](/images/invoke-ping/QuietOne.png)
 
 This executes the same code as the plain example, but we only return responding computer names.
 
 This is a great way to filter out systems that don't respond to ping. Remember our original thirty minute query? We can get it down to less than 45 seconds:
 
-![Quiet Filter](/images/invoke-ping/Quite.png)
+![Quiet Filter](/images/invoke-ping/Quiet.png)
 
 #### Detail
 
