@@ -27,7 +27,7 @@ I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy
 
 ### SQL and PowerShell
 
-* [SQLite and PowerShell](/SQLite%20and%20PowerShell)
+* [SQLite and PowerShell](/SQLite-and-PowerShell)
 * [SQL For PowerShell, For SQL Newbies](https://ramblingcookiemonster.wordpress.com/2014/03/12/sql-for-powershell-for-sql-newbies/)
 
 ### REST APIs, Infoblox, and Ranting
