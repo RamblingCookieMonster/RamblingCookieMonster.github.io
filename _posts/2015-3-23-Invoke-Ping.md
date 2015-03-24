@@ -30,6 +30,8 @@ Thirty minutes tests my patience, and wouldn't it be nice to have a single comma
 
 A few years back, Boe Prox wrote [a great article](http://learn-powershell.net/2012/05/10/speedy-network-information-query-using-powershell/) on using runspaces to speed up network information queries. I mashed together some of Boe's code with some crude duct tape, and rolled out the first iteration of [Invoke-Parallel](https://github.com/RamblingCookieMonster/Invoke-Parallel). Sergei Vorobev contributed a number of helpful ideas, including adding Pester tests and [automated testing through AppVeyor](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/).
 
+Invoke-Parallel is like a mashup of Foreach-Object and Invoke-Command. You can use it to run a script block against a collection of objects (like foreach), and it does it incredibly quickly, but you need to be wary that runspaces are fairly independent. You need to consciously pass in variables and load modules as needed (like Invoke-Command).
+
 ![Invoke-Parallel](/images/invoke-ping/InvokeParallel.png)
 
 Pretty good! I can live with 45 seconds, but it's pretty bare bones, and it's not abstract enough. What if I want to test remote registry, remote RPC, SMB, or other connectivity?
