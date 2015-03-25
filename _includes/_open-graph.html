@@ -5,7 +5,7 @@
 {% if author.twitter %}<meta name="twitter:creator" content="@{{ author.twitter }}">{% endif %}
 {% if page.image.thumb %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.thumb }}">
+<meta name="twitter:image" content="{{ site.url }}/images{{ page.image.thumb }}">
 {% elsif page.image.feature %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
