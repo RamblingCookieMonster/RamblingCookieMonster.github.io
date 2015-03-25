@@ -8,7 +8,7 @@ date: 2015-02-25
 comments: true
 image:
   feature: banner.png
-  thumb: /images/appveyor-3/picard-riker.png
+  thumb: /appveyor-3/picard-riker.png
 ---
 {% include _toc.html %}
 
@@ -20,7 +20,7 @@ Last night I realized it might offer a simple means to test the outcome of your 
 * Create a short script to apply that configuration
 * Create some Pester tests to verify the desired state of your system, post configuration
 * Create the AppVeyor yaml to control this process
-* Add this to an appropriate AppVeyor source ([Example covering GitHub](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/))
+* Add this to an appropriate AppVeyor source ([Example covering GitHub](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/))
 * Test away! Make a change to the DSC code, commit, and AppVeyor spins up a VM, applies the DSC configuration, and your Pester tests verify the outcome
 
 This certainly isn't a perfect method, but it would be a simple way for anyone to get up and running writing and testing DSC configurations and resources.
@@ -91,7 +91,7 @@ What does this do?
 
 ### Tie it all together
 
-We’re good to go! We create a GitHub repository, add this to our AppVeyor projects, and make a commit ([covered here](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/)). Browse around [the project](https://ci.appveyor.com/project/RamblingCookieMonster/appveyor-dsc-test) on AppVeyor to see the results:
+We’re good to go! We create a GitHub repository, add this to our AppVeyor projects, and make a commit ([covered here](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/)). Browse around [the project](https://ci.appveyor.com/project/RamblingCookieMonster/appveyor-dsc-test) on AppVeyor to see the results:
 
 [![Select repository](/images/appveyor-3/appveyordsc_thumb.gif)](/images/appveyor-3/appveyordsc.gif)
 

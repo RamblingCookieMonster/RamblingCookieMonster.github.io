@@ -8,7 +8,7 @@ date: 2015-02-25
 comments: true
 image:
   feature: banner.png
-  thumb: /images/appveyor-1/build-passing-large.png
+  thumb: /appveyor-1/build-passing-large.png
 ---
 {% include _toc.html %}
 
