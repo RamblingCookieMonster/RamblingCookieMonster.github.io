@@ -2,7 +2,7 @@
 layout: post
 title: Troubleshooting PowerShell Based Scheduled Tasks
 excerpt: "The operation completed successfully"
-tags: [PowerShell]
+tags: [PowerShell, Troubleshooting]
 modified: 2015-03-23 22:00:00
 date: 2015-03-23 22:00:00
 comments: true

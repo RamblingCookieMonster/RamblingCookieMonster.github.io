@@ -2,7 +2,7 @@
 layout: post
 title: Moving to GitHub Pages!
 excerpt: "Nothing to see here. What will happen if the excerpt is pretty lengthy? Will it wrap around nicely, or do something evil? Let's find out."
-tags: [rambling]
+tags: [Rambling]
 modified: 2015-03-21
 comments: true
 image:
