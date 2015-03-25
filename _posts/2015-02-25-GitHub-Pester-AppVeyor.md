@@ -66,7 +66,7 @@ Behind the scenes, gears are turning at AppVeyor. After a short wait in the queu
 
 [![Pester Wait-Path](/images/appveyor-1/pester-wait-path_thumb.png)](/images/appveyor-1/pester-wait-path.png)
 
-![Build Passing](/images/appveyor-1/build-passing.png
+![Build Passing](/images/appveyor-1/build-passing.png)
 
 [Build Passing!](https://ci.appveyor.com/project/RamblingCookieMonster/wait-path)
 
