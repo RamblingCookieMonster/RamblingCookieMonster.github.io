@@ -31,7 +31,13 @@ We'll stick to configurations that cause the most headaches, found in the genera
 When simulating a scheduled task, you should mimic these settings. For example:
 
 * If UAC is enabled and 'Run with highest privileges' is specified, ensure you are running with administrative privileges. Don't leave this to chance; if you are troubleshooting, log the output of something like [Test-ForAdmin](https://gallery.technet.microsoft.com/scriptcenter/Test-ForAdmin-Verify-75d84aba), and verify that you truly are running with the administrator access token.
-* Ensure that you are running as the user configured in the scheduled task. This should be straightforward, but if in doubt, log it. If you need to run as SYSTEM, [psexec](https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) comes in handy: {% highlight bat %} psexec -i -s Powershell.exe {% endhighlight %}
+* Ensure that you are running as the user configured in the scheduled task. This should be straightforward, but if in doubt, log it.
+
+Tip: If you want to run as SYSTEM, [psexec](https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) comes in handy.
+
+{% highlight bat %}
+psexec -i -s Powershell.exe
+{% endhighlight %}
 
 #### Actions
 
@@ -45,7 +51,7 @@ When simulating a scheduled task, you should mimic these settings. For example:
 * Don't bother typing inside the 'Add arguments' text box. Use your favorite text editor and paste it in. Verify that you don't have any odd trailing spaces or other remnants from pasting.
 * Did you forget -NoProfile? Always, specify -NoProfile. If you need to load code in your script, do it in your script. Allowing profiles adds complexity and opens you up to malicious code injection, and unintentional mistakes. What if a profile drops you in an unintended PSDrive that your script doesn't account for? What if a profile sets variables that you naively assumed (never assume!) would be null? I can't emphasize this enough, -NoProfile is required.
 * Is your execution policy configured correctly? Sign your scripts, or add -ExecutionPolicy Bypass in the arguments to avoid this altogether.
-* If you're specifying -File, anything that comes after the file is seen as a parameter or parameter value for that script. Add your PowerShell.exe switches before -File. Run {% highlight bat %}powershell.exe -?{% endhighlight %} for more information.
+* If you're specifying -File, anything that comes after the file is seen as a parameter or parameter value for that script. Add your PowerShell.exe switches before -File. Run powershell.exe -? for more information.
 * If you're specifying -File, does the account running the task have access to that path?
 * Are you making the assumption that you can use PowerShell syntax in the Add Arguments text box? That's not the case, you need to provide syntax that cmd.exe can handle.
 
@@ -58,7 +64,7 @@ This is simple to mimic:
 c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Executionpolicy bypass -file "\\path\to\Generate-SQLDatabaseGrowth.ps1" -Parameter 'Value'
 {% endhighlight %}
 
-#### Other considerations
+#### Other Considerations
 
 There are other considerations that may come into play in. For example, some [code may require an interactive login](https://social.technet.microsoft.com/Forums/windowsserver/en-US/aede572b-4c1f-4729-bc9d-899fed5fad02/run-powershell-script-as-scheduled-task-that-uses-excel-com-object?forum=winserverpowershell).
 
@@ -77,7 +83,7 @@ What should you log? There's a lot to consider:
 * Does your logic depend on the current environment? The output of Get-Variable is quite juicy, you may spot an unexpected value or notice that the variable you were depending on doesn't exist. If you rely on a module or function, verify that they exist (Get-Module and Get-Command can help you here).
 * Are you making changes in the script, and depending on them later on? Add logic to verify the changes as you make them, and gracefully fail out with appropriate logging when they don't happen.
 
-### Troubleshooting examples
+### Troubleshooting Example
 
 Let's run through an example. Here's a quick script illustrating a few ideas you could add if you start running into trouble with a scheduled task.
 
