@@ -4,7 +4,6 @@ title:            Rambling Cookie Monster
 locale:           en_US
 url:              http://ramblingcookiemonster.github.io
 
-
 # Jekyll configuration
 
 permalink:   /:categories/:title/

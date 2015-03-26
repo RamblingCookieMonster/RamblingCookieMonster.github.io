@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Why PowerShell?
-excerpt: ""
+excerpt: "Test"
 tags: [PowerShell, Learning]
 modified: 2015-03-25
-date: 2013-12-07
 comments: true
 image:
   feature: banner.png
-  thumb: /appveyor-1/build-passing-large.png
+  thumb: /why-powershell/logo.png
 ---
 {% include _toc.html %}
 
@@ -61,7 +60,7 @@ Microsoft describes PowerShell as “a task-based command-line shell and scripti
 
 #### Consolidate and multiply your learning
 
-* Your reward for learning PowerShell is the impoved ability to control and automate the myriad technologies integrates with. I can use the same set of commands to filter, export, redirect, modify, extend, and perform actions against output for all of these technologies. I can pick up my PowerShell skills and take them in any direction I need - Hyper-V, vCenter, SQL, AD, XenApp, and more.
+* Your reward for learning PowerShell is the impoved ability to control and automate the many technologies it integrates with. I can use the same set of commands to filter, export, redirect, modify, extend, and perform actions against output for all of these technologies. I can pick up my PowerShell skills and take them in any direction I need - Hyper-V, vCenter, SQL, AD, XenApp, and more.
 * Your reward for learning specific tools or executables such as net.exe or schtasks.exe, is the ability to work with those specific tools.
 * I'm not knocking these, and they are incredibly helpful to know, but coming from the Unix/Linux side of the house, you would need to know a shell language (bash), various tools (awk, sed, grep) a general purpose language (Perl, Python), and perhaps a language like Ruby for configuration management. In the Microsoft world? You can go quite far with PowerShell.
 
