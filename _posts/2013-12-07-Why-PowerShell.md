@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why PowerShell?
-excerpt: ""
+excerpt: "Because"
 tags: [PowerShell, Learning]
 modified: 2015-03-25
 comments: true

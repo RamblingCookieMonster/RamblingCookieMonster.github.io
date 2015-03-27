@@ -38,7 +38,7 @@ I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy
 ### Tips, Tricks, Suggestions, and Best Practices
 
 * [Why PowerShell?](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/)
-* [Building PowerShell Functions – Best Practices](https://ramblingcookiemonster.wordpress.com/2013/12/08/building-powershell-functions-best-practices/)
+* [Building PowerShell Functions – Best Practices](http://ramblingcookiemonster.github.io/Building-PowerShell-Functions-Best-Practices/)
 * [PowerShell Splatting – build parameters dynamically](https://ramblingcookiemonster.wordpress.com/2014/12/01/powershell-splatting-build-parameters-dynamically/)
 * [Quick hit: Dynamic Where-Object calls](https://ramblingcookiemonster.wordpress.com/2014/11/30/quick-hit-dynamic-where-object-calls/)
 * [Credentials and Dynamic Parameters](https://ramblingcookiemonster.wordpress.com/2014/11/27/quick-hits-credentials-and-dynamic-parameters/)
