@@ -18,7 +18,7 @@ In many IT focused community websites, the topic of tools comes up quite often. 
 
 ### IT tools:
 
-* [PowerShell](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/) - Version 3.0 or later, using the ISE.  From my perspective, anyone working in IT supporting a Microsoft environment should already know or start learning PowerShell for their own and their employer's benefit.
+* [PowerShell](http://ramblingcookiemonster.github.io/Why-PowerShell/) - Version 3.0 or later, using the ISE.  From my perspective, anyone working in IT supporting a Microsoft environment should already know or start learning PowerShell for their own and their employer's benefit.
 * [Pester](https://github.com/pester/Pester) - Testing framework for PowerShell. It’s quite comforting knowing that I have a set of tests and don’t need to worry about whether I remembered to test each scenario manually. It also enables [fun with GitHub and AppVeyor](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/).
 * [SysInternals](http://technet.microsoft.com/en-us/sysinternals) – Be sure to check out the entire SysInternals suite, and consider keeping it up to date with a quick script pulling from [here](http://live.sysinternals.com/).  [Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx) (procmon) and [Process Explorer](http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx) (procexp) get the most use, followed by [PsExec](http://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) and [AutoRuns](http://technet.microsoft.com/en-us/sysinternals/bb963902.aspx).
 * [WMI Explorer](https://wmie.codeplex.com/) - Simplified discovery and exploration of WMI
