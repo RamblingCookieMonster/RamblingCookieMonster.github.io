@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Building PowerShell Functions
-excerpt: "Best Practices"
+title: Building PowerShell Functions &#58; Best Practices
+excerpt: "That we sometimes break"
 tags: [PowerShell, Best Practices, Tools]
 modified: 2015-03-25
 date: 2013-12-08
@@ -183,7 +183,7 @@ The following resources will provide further help and suggestions for best pract
 * [My 12 PowerShell Best Practices](http://windowsitpro.com/blog/my-12-powershell-best-practices) – Don Jones
 * [PowerShell Script Module Best Practices](http://www.digitaltapestry.net/blog/powershell-script-module-best-practices) - William Kempf
 * My 10 best practices leading to the Scripting Games 2012 – [Part 1](http://www.powershellmagazine.com/2012/03/20/my-10-best-practices-leading-to-the-scripting-games-2012-%E2%80%93-part-i/), [Part 2](http://www.powershellmagazine.com/2012/03/22/my-10-best-practices-leading-to-the-scripting-games-2012-%E2%80%93-part-ii/) – Ifiok Moses
-* [The Community Book of PowerShell Practices](https://github.com/PowerShellOrg/ebooks/tree/master/Practices) (updated regularly, link is to parent directory) - Don Jones, Matt Penny, Community
+* [The Community Book of PowerShell Practices](https://www.penflip.com/powershellorg/the-community-book-of-powershell-practices) (updated regularly, link is to parent directory) - Don Jones, Matt Penny, Community
 * [Other PowerShell resources I’ve found helpful](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html) – Cheat sheets, books, blogs, videos, etc.
 
 Good luck!  If you do end up writing advanced functions, please consider posting them to websites like PoshCode, TechNet Script Gallery, CodePlex, or GitHub!
