@@ -89,7 +89,10 @@ I spend a good deal of time wrapping common tasks into PowerShell functions. Her
 
 * Test, Test, Test!  Test any reasonable scenario your function might run under.
   * Test with and without a profile.  Test with 64 and 32 bit PowerShell hosts.  Test with the ISE and Console Host.  Test with a single-threaded apartment and multi-threaded apartment.  Test with and without the administrative token, with and without actual administrative authority.
-* **If your function provides output, use objects**.
+
+#### If your function provides output, use objects
+
+* If your function provides output, use objects.
   * Do not output strings.  Do not use Write-Host.  Do not format the results.  You and your users will get the most out of PowerShell when you provide output in objects, that can be passed down the pipeline to other commands.
   * [Creating Custom Objects](http://social.technet.microsoft.com/wiki/contents/articles/7804.powershell-creating-custom-objects.aspx)
 
@@ -186,4 +189,4 @@ The following resources will provide further help and suggestions for best pract
 * [The Community Book of PowerShell Practices](https://www.penflip.com/powershellorg/the-community-book-of-powershell-practices) (updated regularly, link is to parent directory) - Don Jones, Matt Penny, Community
 * [Other PowerShell resources I’ve found helpful](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html) – Cheat sheets, books, blogs, videos, etc.
 
-Good luck!  If you do end up writing advanced functions, please consider posting them to websites like PoshCode, TechNet Script Gallery, CodePlex, or GitHub!
+Good luck!  If you do end up writing advanced functions, please consider posting them to websites like [PoshCode](http://poshcode.org/), [TechNet Script Gallery](http://gallery.technet.microsoft.com/scriptcenter/), or [GitHub](https://github.com/search?q=powershell&ref=cmdform)!
