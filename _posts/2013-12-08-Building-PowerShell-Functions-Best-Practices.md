@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Building PowerShell Functions &#58; Best Practices
 excerpt: "That we sometimes break"
 tags: [PowerShell, Best Practices, Tools]
