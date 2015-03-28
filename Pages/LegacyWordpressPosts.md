@@ -12,9 +12,9 @@ I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy
 
 ### GitHub, Pester, and AppVeyor
 
-* [Testing DSC Configurations with Pester and AppVeyor](https://ramblingcookiemonster.wordpress.com/2015/03/01/testing-dsc-configurations-with-pester-and-appveyor/)
+* [Testing DSC Configurations with Pester and AppVeyor](/Testing-DSC-with-Pester-and-AppVeyor/)
 * [GitHub, Pester, and AppVeyor: Part 2](https://ramblingcookiemonster.wordpress.com/2015/02/28/github-pester-and-appveyor-part-2/)
-* [Fun with GitHub, Pester, and AppVeyor](https://ramblingcookiemonster.wordpress.com/2015/02/25/fun-with-github-pester-and-appveyor/)
+* [Fun with GitHub, Pester, and AppVeyor](/GitHub-Pester-AppVeyor/)
 
 ### Learning and Exploring PowerShell
 
@@ -37,13 +37,13 @@ I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy
 
 ### Tips, Tricks, Suggestions, and Best Practices
 
-* [Why PowerShell?](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/)
-* [Building PowerShell Functions – Best Practices](http://ramblingcookiemonster.github.io/Building-PowerShell-Functions-Best-Practices/)
+* [Why PowerShell?](/Why-PowerShell/)
+* [Building PowerShell Functions – Best Practices](/Building-PowerShell-Functions-Best-Practices/)
 * [PowerShell Splatting – build parameters dynamically](https://ramblingcookiemonster.wordpress.com/2014/12/01/powershell-splatting-build-parameters-dynamically/)
 * [Quick hit: Dynamic Where-Object calls](https://ramblingcookiemonster.wordpress.com/2014/11/30/quick-hit-dynamic-where-object-calls/)
 * [Credentials and Dynamic Parameters](https://ramblingcookiemonster.wordpress.com/2014/11/27/quick-hits-credentials-and-dynamic-parameters/)
-* [PowerShell Resources](https://ramblingcookiemonster.wordpress.com/2012/11/17/powershell-resources/)
-* [PowerShell Cheat Sheet](https://ramblingcookiemonster.wordpress.com/2012/09/07/powershell-cheat-sheet/)
+* [PowerShell Resources](/Pages/PowerShellResources.html)
+* [PowerShell Cheat Sheet](/Pages/PowerShellResources.html)
 
 ### Practical Modules and Functions
 
