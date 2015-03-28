@@ -5,7 +5,7 @@ tags: [about, rambling]
 modified: 2015-03-21
 comments: false
 image:
-  feature: banner.png
+  feature: banner.jpg
 ---
 {% include _toc.html %}
 

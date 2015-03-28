@@ -5,7 +5,7 @@ tags: [Tools, PowerShell, Microsoft]
 modified: 2015-03-21
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
 ---
 {% include _toc.html %}
 In many IT focused community websites, the topic of tools comes up quite often.  Rather than replying with a new or modified list each time, I’m keeping an updated list here.

@@ -7,7 +7,7 @@ modified: 2015-03-25
 date: 2013-12-08
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
   thumb: /building-functions-best-practices/check.png
 ---
 {% include _toc.html %}

@@ -7,7 +7,7 @@ modified: 2015-03-22 10:00:00
 date: 2015-03-22 10:00:00
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
   thumb: /2015-03-22/DutyCalls.png
 ---
 {% include _toc.html %}

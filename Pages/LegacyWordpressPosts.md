@@ -5,7 +5,7 @@ tags: [PowerShell, AppVeyor, DSC, Desired State Configuration, SQL]
 modified: 2015-03-20
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
 ---
 {% include _toc.html %}
 I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy, rather than importing it, here are the old posts roughly grouped by topic.

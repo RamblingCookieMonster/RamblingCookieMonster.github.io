@@ -6,7 +6,7 @@ tags: [PowerShell, Learning]
 modified: 2015-03-25
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
   thumb: /why-powershell/logo.png
 ---
 {% include _toc.html %}

@@ -7,7 +7,7 @@ modified: 2015-03-23 22:00:00
 date: 2015-03-23 22:00:00
 comments: true
 image:
- feature: banner.png
+ feature: banner.jpg
  thumb: /scheduled-tasks/TaskScheduler.png
 ---
 {% include _toc.html %}

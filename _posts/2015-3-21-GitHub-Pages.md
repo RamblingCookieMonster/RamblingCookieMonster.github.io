@@ -6,7 +6,7 @@ tags: [Rambling]
 modified: 2015-03-21
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
   thumb: /2015-03-21/octojekyll-opt.jpg
 ---
 {% include _toc.html %}

@@ -7,7 +7,7 @@ modified: 2015-03-25
 date: 2015-02-25
 comments: true
 image:
-  feature: banner.png
+  feature: banner.jpg
   thumb: /appveyor-3/picard-riker.png
 ---
 {% include _toc.html %}
