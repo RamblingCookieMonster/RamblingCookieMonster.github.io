@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PSExcel&#58; Automate Excel Without Excel
+title: PSExcel&#58; Excel automation without Excel
 excerpt: "Who wants Excel on a server?"
 tags: [PowerShell, Module, Tools, Excel]
 modified: 2015-03-29 22:00:00
@@ -30,7 +30,7 @@ I looked around, saw a few snippets, and one big, [comprehensive module](https:/
 
 Chances are you have worked with Excel through COM. Why wouldn't we just write a module using this?
 
-Ignoring the dependency on an installed copy of Microsoft Excel, it turns out, this isn't supported if you want to use it in an automated solution. You might even run into situations where it won't run, even with a variety of tweaks.
+Ignoring the dependency on an installed copy of Microsoft Excel, it turns out this isn't supported if you want to use it in an automated solution. You might even run into situations where it won't run, even with a variety of tweaks.
 
 [Straight from Microsoft](https://support.microsoft.com/en-us/kb/257757):
 
@@ -71,6 +71,8 @@ Now, let's export it!
 $DemoData | Export-XLSX -Path C:\temp\Demo.xlsx
 {% endhighlight %}
 
+Let's verify in Excel:
+
 ![Dummy data](/images/psexcel-intro/export.png)
 
 #### Import data from Excel
@@ -84,6 +86,7 @@ $Imported = Import-XLSX -Path C:\Temp\Demo.xlsx -Header samaccountname, EID, Dat
 ![Dummy data](/images/psexcel-intro/imported.png)
 
 It worked! But two things to keep in mind:
+
 * Excel might not store your data as expected. Why are those dates funny looking?
 * The header order might not meet your expectations. I'll work on fixing this.
 
@@ -158,9 +161,9 @@ Here's the full demo code we just walked through:
 
 In case it isn't evident, I haven't succumbed to test driven development, as beneficial as it sounds. I did add a few Pester tests to PSExcel, and have enabled continuous integration for this project through AppVeyor, so you'll know whether the build is passing, and [you can view the pester tests](https://ci.appveyor.com/project/RamblingCookieMonster/psexcel) to see what specifically broke the build.
 
-![Build passing](/images/psexcel-intro/buildpassing.png)
+![Build passing](/images/appveyor-1/build-passing-large.png)
 
-If you want a simple way to enable version control, testing, and continuous integration for your projects, I'd highly recommend you check this out!
+If you want a simple way to enable version control, testing, and continuous integration for your projects, definitely check this out!
 
 * [Fun with Github, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/)
 * [Github, Pester, and AppVeyor: Part Two](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/)
@@ -173,3 +176,7 @@ I plan to continue with a few more tweaks to meet my specific needs, but probabl
 That's it! This should get you up and running with an Excel-free solution for creating and reading Excel files. Feel free to poke around, let me know if you run into any issues, have any suggestions, or would like to contribute!
 
 [PSExcel project on Github](https://github.com/RamblingCookieMonster/PSExcel)
+
+Time to update some servers:
+
+![Frozen pane](/images/psexcel-intro/updates.png)
