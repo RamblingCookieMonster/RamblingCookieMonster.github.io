@@ -48,6 +48,7 @@ owner:
           "Invoke-SQLiteQuery",
           "PowerShell",
           "PSDiskPart",
+          "PSExcel",
           "SecretServer"]
   githubfavorites: [
           "Invoke-IR/PowerForensics",
