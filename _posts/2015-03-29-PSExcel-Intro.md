@@ -85,12 +85,7 @@ $Imported = Import-XLSX -Path C:\Temp\Demo.xlsx -Header samaccountname, EID, Dat
 
 ![Dummy data](/images/psexcel-intro/imported.png)
 
-It worked! But two things to keep in mind:
-
-* Excel might not store your data as expected. Why are those dates funny looking?
-* The header order might not meet your expectations. I'll work on fixing this.
-
-Tip: Use DateTime's FromOADate method to convert dates: ```[datetime]::FromOADate(41383.5475808333)```
+It worked! Keep in mind that Excel might not store your data as expected. If you run into any odd cases, be sure to let me know, there might be a quick fix.
 
 #### Generate an Excel object to work with
 
