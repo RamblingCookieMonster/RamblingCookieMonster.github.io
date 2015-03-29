@@ -16,7 +16,7 @@ image:
 
 When I first started using PowerShell, I preferred sending data to Excel, where I could comfortably filter, sort, and work with data. One of my first functions was a modification of Export-XLSX found on the Internet. That same code sits in a few places in production today; looking at old code is scary.
 
-Nowadays, I prefer working with objects in PowerShell itself, and learning to do this has been [incredibly valuable](http://ramblingcookiemonster.github.io/Why-PowerShell/). If I need to export data, chances are I will use MSSQL through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1) or [Invoke-SQLBulkCopy](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-SQLBulkCopy.ps1), or perhaps [SQLite](http://ramblingcookiemonster.github.io/SQLite-and-PowerShell).
+Nowadays, I prefer working with objects in PowerShell itself, and learning to do this has been [incredibly valuable](http://ramblingcookiemonster.github.io/Why-PowerShell/). If I need to export data, chances are I will use MSSQL through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1) and [Invoke-SQLBulkCopy](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-SQLBulkCopy.ps1), or perhaps [SQLite](http://ramblingcookiemonster.github.io/SQLite-and-PowerShell).
 
 On Friday, Doug Finke tweeted about an Excel module:
 
@@ -95,11 +95,11 @@ You might want to open an existing xlsx file to work with:
 $Excel = New-Excel -Path C:\temp\Demo.xlsx
 {% endhighlight %}
 
-This is a very basic function, it just creates a OfficeOpenXml.ExcelPackage object. I like abstraction though; I don't want to remember that I have to call ```New-Object OfficeOpenXml.ExcelPackage $Path```, I just want to say ```New-Excel```
+This is a very basic function, it just creates a OfficeOpenXml.ExcelPackage object. I like abstraction though; I don't want to remember that I have to call ```New-Object OfficeOpenXml.ExcelPackage $Path```, I just want to say ```New-Excel```.
 
 #### Get a workbook
 
-We already have an ExcelPackage to work with, we can get the workbook from this. More abstraction, this case it's literally just calling the Workbook property.
+We have an ExcelPackage to work with, now we can get the workbook from this. More abstraction; this case it's literally just calling the Workbook property.
 
 {% highlight powershell %}
 $Workbook = $Excel | Get-Workbook
@@ -130,7 +130,7 @@ $WorkSheet | Set-FreezePane -Row 2
 
 The row and column parameters might seem confusing - they indicate the first cell that should *not* be frozen. So freezing the top row would be row 2, column 1. Freezing the top row and first two columns would be row 2, column 3.
 
-We'll have to save before we can verify this!
+We'll have to save before we can verify this.
 
 #### Save and close
 
@@ -154,7 +154,7 @@ Here's the full demo code we just walked through:
 
 ### Fun with GitHub, Pester, and Appveyor
 
-In case it isn't evident, I haven't succumbed to test driven development, as beneficial as it sounds. I did add a few Pester tests to PSExcel, and have enabled continuous integration for this project through AppVeyor, so you'll know whether the build is passing, and [you can view the pester tests](https://ci.appveyor.com/project/RamblingCookieMonster/psexcel) to see what specifically broke the build.
+In case it isn't evident, I haven't succumbed to test-driven development, as beneficial as it seems. I did add a few Pester tests to PSExcel, and have enabled continuous integration for this project through AppVeyor, so you'll know whether the build is passing, and [you can view the pester tests](https://ci.appveyor.com/project/RamblingCookieMonster/psexcel) to see what specifically broke the build.
 
 ![Build passing](/images/appveyor-1/build-passing-large.png)
 
