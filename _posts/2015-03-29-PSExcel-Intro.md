@@ -14,7 +14,7 @@ image:
 
 #### Rambling
 
-When I first started using PowerShell, I preferred sending data to Excel, where I could comfortably filter, sort, and work with data. One of my first functions was a modification of a Export-XLSX found out on the Internet. That same code sits in a few places in production today; looking at old code is scary.
+When I first started using PowerShell, I preferred sending data to Excel, where I could comfortably filter, sort, and work with data. One of my first functions was a modification of Export-XLSX found on the Internet. That same code sits in a few places in production today; looking at old code is scary.
 
 Nowadays, I prefer working with objects in PowerShell itself, and learning to do this has been [incredibly valuable](http://ramblingcookiemonster.github.io/Why-PowerShell/). If I need to export data, chances are I will use MSSQL through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1) or [Invoke-SQLBulkCopy](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-SQLBulkCopy.ps1), or perhaps [SQLite](http://ramblingcookiemonster.github.io/SQLite-and-PowerShell).
 
