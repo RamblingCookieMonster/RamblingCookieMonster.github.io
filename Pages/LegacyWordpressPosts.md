@@ -13,7 +13,7 @@ I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy
 ### GitHub, Pester, and AppVeyor
 
 * [Testing DSC Configurations with Pester and AppVeyor](/Testing-DSC-with-Pester-and-AppVeyor/)
-* [GitHub, Pester, and AppVeyor: Part 2](https://ramblingcookiemonster.wordpress.com/2015/02/28/github-pester-and-appveyor-part-2/)
+* [GitHub, Pester, and AppVeyor: Part 2](/Github-Pester-AppVeyor-Part-2/)
 * [Fun with GitHub, Pester, and AppVeyor](/GitHub-Pester-AppVeyor/)
 
 ### Learning and Exploring PowerShell
