@@ -146,6 +146,54 @@ Let's take a look at our spreadsheet, did it freeze the top row?
 
 The row is frozen as expected!
 
+#### Format cells
+
+Management likes pretty colors and formatting. Let's add some emphasis on the header:
+
+{% highlight powershell %}
+# Re-open the file
+    $Excel = New-Excel -Path C:\temp\Demo.xlsx
+
+# Add bold, size 15 formatting to the header
+    $Excel |
+        Get-WorkSheet |
+        Format-Cell -Header -Bold $True -Size 14
+
+# Save and re-open the saved changes
+    $Excel = $Excel | Save-Excel -Passthru
+{% endhighlight %}
+
+![Header change](/images/psexcel-intro/header.png)
+
+They're nitpicky. That header is way too big! And the first column should be dark red, and autofit with a maximum width of 7:
+
+{% highlight powershell %}
+#  Text was too large!  Set it to 11
+    $Excel |
+        Get-WorkSheet |
+        Format-Cell -Header -Size 11
+
+    $Excel |
+        Get-WorkSheet |
+        Format-Cell -StartColumn 1 -EndColumn 1 -Autofit -AutofitMinWidth -AutofitMaxWidth 7 -Color DarkRed
+
+# Save and close
+    $Excel | Save-Excel -Close
+{% endhighlight %}
+
+![Format change](/images/psexcel-intro/format2.png)
+
+#### Search cells
+
+{% highlight powershell %}
+# Search a spreadsheet
+    Search-CellValue -Path C:\test\Demo.xlsx { $_ -like 'jsmith10' -or $_ -eq 280 }
+{% endhighlight %}
+
+![Search](/images/psexcel-intro/search.png)
+
+This can return the location (default), the raw value, or an ExcelRange that you can manipulate with more flexibility than Format-Cell provides.
+
 ### Demo Gist
 
 Here's the full demo code we just walked through:
