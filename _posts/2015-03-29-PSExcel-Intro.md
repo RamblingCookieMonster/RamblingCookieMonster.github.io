@@ -175,7 +175,7 @@ They're nitpicky. That header is way too big! And the first column should be dar
 
     $Excel |
         Get-WorkSheet |
-        Format-Cell -StartColumn 1 -EndColumn 1 -Autofit -AutofitMinWidth -AutofitMaxWidth 7 -Color DarkRed
+        Format-Cell -StartColumn 1 -EndColumn 1 -Autofit -AutofitMaxWidth 7 -Color DarkRed
 
 # Save and close
     $Excel | Save-Excel -Close
