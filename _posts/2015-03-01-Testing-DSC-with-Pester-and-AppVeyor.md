@@ -4,7 +4,7 @@ title: Testing DSC Configurations with Pester and AppVeyor
 excerpt: "You get a VM! You get a VM! Everyone gets a VM!"
 tags: [PowerShell, GitHub, Pester, AppVeyor, Tools, DSC, Desired State Configuration]
 modified: 2015-03-25
-date: 2015-02-25
+date: 2015-03-01
 comments: true
 image:
   feature: banner.jpg

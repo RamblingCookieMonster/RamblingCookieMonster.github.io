@@ -4,7 +4,7 @@ title: Github, Pester, and AppVeyor&#58; Part Two
 excerpt: "Optimize the yaml"
 tags: [PowerShell, GitHub, Pester, AppVeyor, Tools, Rambling]
 modified: 2015-03-25
-date: 2015-03-01
+date: 2015-02-28
 comments: true
 image:
   feature: banner.jpg
