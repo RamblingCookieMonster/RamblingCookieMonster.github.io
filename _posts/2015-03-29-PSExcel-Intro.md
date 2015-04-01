@@ -204,7 +204,7 @@ This is straight from Doug Finke's fantastic [ImportExcel module](https://github
         Export-XLSX -Path C:\Temp\Files.xlsx -PivotRows Extension -PivotValues Length -ChartType Pie
 {% endhighlight %}
 
-![![Pivot](/images/psexcel-intro/pivot.png)](/images/psexcel-intro/pivot.png)
+[![Pivot](/images/psexcel-intro/pivot.png)](/images/psexcel-intro/pivot.png)
 
 ### Demo Gist
 
