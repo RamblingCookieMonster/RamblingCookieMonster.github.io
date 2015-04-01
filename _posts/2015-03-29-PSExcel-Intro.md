@@ -194,6 +194,18 @@ They're nitpicky. That header is way too big! And the first column should be dar
 
 This can return the location (default), the raw value, or an ExcelRange that you can manipulate with more flexibility than Format-Cell provides.
 
+#### Create pivot tables and charts
+
+This is straight from Doug Finke's fantastic [ImportExcel module](https://github.com/dfinke/ImportExcel).
+
+{% highlight powershell %}
+# Fun with pivot tables and charts! Props to Doug Finke
+    Get-ChildItem $env:USERPROFILE -Recurse -File |
+        Export-XLSX -Path C:\Temp\Files.xlsx -PivotRows Extension -PivotValues Length -ChartType Pie
+{% endhighlight %}
+
+![![Pivot](/images/psexcel-intro/pivot.png)](/images/psexcel-intro/pivot.png)
+
 ### Demo Gist
 
 Here's the full demo code we just walked through:
