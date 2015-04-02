@@ -63,7 +63,7 @@ Looking at the values behind an enum is fairly straightforward, we can use the G
 [enum]::GetValues( 'System.DayOfWeek' )
 {% endhighlight %}
 
-![Enum GetValues](/images/types-enums/isenumeppluschart.png)
+![Enum GetValues](/images/types-enums/getvalues.png)
 
 .NET is quite powerful and a fantastic tool to have in your toolbelt. Unfortunately, I'm forgetful at times, and prefer the friendly verb-noun names of PowerShell functions, along with the abstraction they give us. Here's a quick function to pull out those enum values, without all the .NET syntax, and which can take pipeline input:
 
