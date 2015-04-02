@@ -2,7 +2,7 @@
 layout: post
 title: PSExcel&#58; Excel automation without Excel
 excerpt: "Who wants Excel on a server?"
-tags: [PowerShell, Module, Tools, Excel]
+tags: [PowerShell, Module, Tools, Excel, EPPlus]
 modified: 2015-03-29 22:00:00
 date: 2015-03-29 22:00:00
 comments: true
