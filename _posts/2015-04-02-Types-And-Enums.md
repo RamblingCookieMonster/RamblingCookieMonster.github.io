@@ -14,7 +14,7 @@ image:
 
 There's a PSBlogWeek going on, with some great posts and fun topics to get your thoughts churning! Adam Bertram wrote [a nice article]((http://www.adamtheautomator.com/psbloggingweek-dynamic-parameters-and-parameter-validation/)) on dynamic parameters - these [are certainly fun](http://stackoverflow.com/a/23001637/3067642), but I've run into issues with dynamic parameters in the past, and generally try to avoid them unless absolutely necessary.
 
-This morning, PowerShell.com posted a great tip: [Clever Parameter Validation](http://powershell.com/cs/blogs/tips/archive/2015/04/02/clever-parameter-validation.aspx). Long story short, you can use ValidateSet or Enums to improve the user experience. But how do you find enums? And how do you know what they enumerate?
+This morning, PowerShell.com posted a great tip: [Clever Parameter Validation](http://powershell.com/cs/blogs/tips/archive/2015/04/02/clever-parameter-validation.aspx). Long story short, you can use ValidateSet or Enums to improve user experience. But how do you find enums? And how do you know what they enumerate?
 
 ### Finding Enums
 
@@ -45,7 +45,7 @@ Get-Type -IsEnum -Module EPPlus.dll
 
 ![IsEnum module output](/images/types-enums/isenumepplus.png)
 
-Very cool! I get a list of all enums in the EPPlus library. Maybe I want to offer a parameter that lists chart types, without manually speciying a validate set that may need changing down the line:
+Very cool! I get a list of all enums in the EPPlus library. Maybe I want to offer a parameter that lists chart types, without manually speciying a ValidateSet that may need changing down the line:
 
 {% highlight powershell %}
 Get-Type -IsEnum -Module EPPlus.dll -FullName *chart*
@@ -53,9 +53,9 @@ Get-Type -IsEnum -Module EPPlus.dll -FullName *chart*
 
 ![IsEnum fullname output](/images/types-enums/isenumeppluschart.png)
 
-Now... How do I know if this eChartType is what I want? What options will it give me?
+eChartType sounds interesting, but how do I know if this is what I want? What options will it give me?
 
-### Looking at Enums
+### Exploring Enums
 
 Looking at the values behind an enum is fairly straightforward, we can use the GetValues method of System.Enum. Let's look at the enum values for DayOfWeek:
 
@@ -65,11 +65,11 @@ Looking at the values behind an enum is fairly straightforward, we can use the G
 
 ![Enum GetValues](/images/types-enums/isenumeppluschart.png)
 
-.NET is quite powerful and a fantastic tool to have in your toolbelt.  Unfortunately, I'm forgetful at times, and prefer the friendly verb-noun names of PowerShell functions, along with the abstraction they give us. Here's a quick function to pull out those enum values, without all the .NET syntax, and which can take pipeline input:
+.NET is quite powerful and a fantastic tool to have in your toolbelt. Unfortunately, I'm forgetful at times, and prefer the friendly verb-noun names of PowerShell functions, along with the abstraction they give us. Here's a quick function to pull out those enum values, without all the .NET syntax, and which can take pipeline input:
 
 {% gist 3e01f840e4160136523d %}
 
-Dot source this, and let's see if we can pull out some enum values for chart types:
+Dot source or paste this function into your session, and let's see if we can pull out some enum values for chart types:
 
 {% highlight powershell %}
 Get-Type -IsEnum -Module EPPlus.dll -FullName *eChartType | Get-EnumValues
@@ -77,7 +77,7 @@ Get-Type -IsEnum -Module EPPlus.dll -FullName *eChartType | Get-EnumValues
 
 ![eChartType values](/images/types-enums/echarttype.png)
 
-Awesome! So now I can use this as a parameter in [PSExcel's Add-PivotTable and Export-XLSX](http://ramblingcookiemonster.github.io/PSExcel-Intro/#create-pivot-tables-and-charts), thanks to the [idea and code from Doug Finke](https://github.com/dfinke/ImportExcel).
+Awesome! I can use this as a parameter in [PSExcel's Add-PivotTable and Export-XLSX](http://ramblingcookiemonster.github.io/PSExcel-Intro/#create-pivot-tables-and-charts), thanks to the [idea and code from Doug Finke](https://github.com/dfinke/ImportExcel).
 
 ![Add-PivotTable -ChartType](/images/types-enums/charttype.gif)
 
