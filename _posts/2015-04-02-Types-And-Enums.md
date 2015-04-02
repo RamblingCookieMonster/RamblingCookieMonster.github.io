@@ -75,7 +75,7 @@ Dot source or paste this function into your session, and let's see if we can pul
 Get-Type -IsEnum -Module EPPlus.dll -FullName *eChartType | Get-EnumValues
 {% endhighlight %}
 
-![eChartType values](/images/types-enums/echarttype.png)
+![eChartType values](/images/types-enums/excharttype.png)
 
 Awesome! I can use this as a parameter in [PSExcel's Add-PivotTable and Export-XLSX](http://ramblingcookiemonster.github.io/PSExcel-Intro/#create-pivot-tables-and-charts), thanks to the [idea and code from Doug Finke](https://github.com/dfinke/ImportExcel).
 
