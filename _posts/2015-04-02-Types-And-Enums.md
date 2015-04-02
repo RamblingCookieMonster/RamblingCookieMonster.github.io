@@ -12,7 +12,7 @@ image:
 ---
 {% include _toc.html %}
 
-There's a PSBlogWeek going on, with some great posts and fun topics to get your thoughts churning! Adam Bertram wrote [a nice article]((http://www.adamtheautomator.com/psbloggingweek-dynamic-parameters-and-parameter-validation/)) on dynamic parameters - these [are certainly fun](http://stackoverflow.com/a/23001637/3067642), but I've run into issues with dynamic parameters in the past, and generally try to avoid them unless absolutely necessary.
+There's a PSBlogWeek going on, with some great posts and fun topics to get your thoughts churning! Adam Bertram wrote [a nice article](http://www.adamtheautomator.com/psbloggingweek-dynamic-parameters-and-parameter-validation/) on dynamic parameters - these [are certainly fun](http://stackoverflow.com/a/23001637/3067642), but I've run into issues with dynamic parameters in the past, and generally try to avoid them unless absolutely necessary.
 
 This morning, PowerShell.com posted a great tip: [Clever Parameter Validation](http://powershell.com/cs/blogs/tips/archive/2015/04/02/clever-parameter-validation.aspx). Long story short, you can use ValidateSet or Enums to improve user experience. But how do you find enums? And how do you know what they enumerate?
 
