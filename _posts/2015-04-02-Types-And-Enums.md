@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Find and explore &#46;NET Framework types and enums in PowerShell
+title: Find and Explore &#46;NET Types and Enums in PowerShell
 excerpt: "Without the fun [] :: () syntax."
 tags: [PowerShell, Tools, DotNet, Quick hit]
 modified: 2015-03-29 22:00:00
