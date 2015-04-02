@@ -89,4 +89,6 @@ This was just one example, there are plenty of enums out there that you can take
 
 That's about it, this should give you enough tools to go out and explore the types and enums you have available to you! You might even consider [creating your own](http://www.powershellmagazine.com/2012/10/01/pstip-creating-flagged-enumerations-in-powershell/) - this will [get easier in PowerShell 5](http://www.sapien.com/blog/2015/01/05/enumerators-in-windows-powershell-5-0/), but I prefer down-level compatibility.
 
+I walked through a few helpful toys. If you want to get into some power tools, and .NET doesn't scare you, check out tools like [ILSpy](http://ilspy.net/) and Oisin Grehan's [Poke](https://github.com/oising/poke). If you aren't working with .NET through PowerShell yet, don't let these scare you off; most of us (inculding myself) don't need to dive into the weeds as deeply as these allow.
+
 As scary as .NET is, at some point you will likely run into something you simply can't do without it. Thankfully, the Internet is riddled with examples and helpful tidbits on how to do this - good luck!
