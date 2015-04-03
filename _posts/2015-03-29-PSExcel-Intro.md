@@ -194,6 +194,17 @@ They're nitpicky. That header is way too big! And the first column should be dar
 
 This can return the location (default), the raw value, or an ExcelRange that you can manipulate with more flexibility than Format-Cell provides.
 
+#### Create tables
+
+Thanks to AWiddersheim for adding table support!
+
+{% highlight powershell %}
+# Add a table, autofit the data. We use force to overwrite our previous demo.
+    $DemoData | Export-XLSX -Path C:\Temp\Demo.xlsx -Table -Autofit -Force
+{% endhighlight %}
+
+[![Pivot](/images/psexcel-intro/table.png)](/images/psexcel-intro/table.png)
+
 #### Create pivot tables and charts
 
 This is straight from Doug Finke's fantastic [ImportExcel module](https://github.com/dfinke/ImportExcel).
