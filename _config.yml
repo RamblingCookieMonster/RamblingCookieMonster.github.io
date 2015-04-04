@@ -45,10 +45,10 @@ owner:
           "Citrix.NetScaler",
           "InfoBlox",
           "Invoke-Parallel",
-          "Invoke-SQLiteQuery",
           "PowerShell",
           "PSDiskPart",
           "PSExcel",
+          "PSSQLite",
           "SecretServer"]
   githubfavorites: [
           "Invoke-IR/PowerForensics",
