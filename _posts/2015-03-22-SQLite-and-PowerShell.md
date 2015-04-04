@@ -2,8 +2,8 @@
 layout: post
 title: SQLite and PowerShell
 excerpt: "A simple module for SQLite queries via PowerShell"
-tags: [PowerShell, SQL, Module, Tools]
-modified: 2015-03-22 13:00:00
+tags: [PowerShell, SQL, Module, Tools, SQLite]
+modified: 2015-04-04 13:00:00
 date: 2015-03-22 13:00:00
 comments: true
 image:
@@ -28,13 +28,13 @@ I generally prefer standalone functions and cmdlets over providers. I’m also a
 
 I was looking for something similar to [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1), which abstracts out the underlying .NET logic to provide simplified SQL queries, the ability to handle SQL parameters, [PowerShell-esque behavior for DBNull](https://connect.microsoft.com/PowerShell/feedback/details/830412/provide-expected-comparison-handling-for-dbnull), and other conveniences.
 
-### Invoke-SQLiteQuery
+### PSSQLite
 
 I spent a few minutes with the SQLite binaries and examples from Jim and Chrissy, and simply duct-taped SQLite functionality onto Invoke-Sqlcmd2. Let’s take a look at what we can do
 
 #### Getting Started
 
-Download and unblock [Invoke-SQLiteQuery](https://github.com/RamblingCookieMonster/Invoke-SQLiteQuery), and you'll be up and running, ready to work with SQLite. Let's create a data source and a table:
+Download and unblock [PSSQLite](https://github.com/RamblingCookieMonster/PSSQLite), and you'll be up and running, ready to work with SQLite. Let's create a data source and a table:
 
 {% gist bc4f2e1bcf1c4a44b03e %}
 
@@ -70,7 +70,7 @@ How can we speed up inserts? Searching around, all signs point to transactions. 
 
 There are [C#](http://procbits.com/2009/09/08/sqlite-bulk-insert) [examples](http://www.jokecamp.com/blog/make-your-sqlite-bulk-inserts-very-fast-in-c/) [abound](http://www.schiffhauer.com/bulk-operations-in-sqlite-and-c-with-transaction/), so we need to translate these to PowerShell.
 
-The result is [Invoke-SQLiteBulkCopy](https://github.com/RamblingCookieMonster/Invoke-SQLiteQuery/blob/master/Invoke-SQLiteQuery/Invoke-SqliteBulkCopy.ps1), a misnomer perhaps, but it does the trick and improves performance:
+The result is [Invoke-SQLiteBulkCopy](https://github.com/RamblingCookieMonster/PSSQLite/blob/master/PSSQLite/Invoke-SqliteBulkCopy.ps1), a misnomer perhaps, but it does the trick and improves performance:
 
 {% gist 708928ba9a4b3bae41ea %}
 
@@ -80,7 +80,7 @@ Not terrible; with 10,000 items to insert, we see a ten fold performance improve
 
 ### Next steps
 
-That's about it! If you want simplified SQLite queries in PowerShell, check out [Invoke-SQLiteQuery](https://github.com/RamblingCookieMonster/Invoke-SQLiteQuery). If you delve into the MSSQL side of the house, check out [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1) from Chad Miller et al. It was used as the basis for Invoke-SQLiteQuery and behaves very similarly.
+That's about it! If you want simplified SQLite queries in PowerShell, check out [PSSQLite](https://github.com/RamblingCookieMonster/PSSQLite). If you delve into the MSSQL side of the house, check out [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1) from Chad Miller et al. It was used as the basis for PSSQLite and behaves very similarly.
 
 Now I just have to find more time to write...
 
