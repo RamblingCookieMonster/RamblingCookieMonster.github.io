@@ -35,6 +35,8 @@ This is almost as easy as signing up.
 * Open the client for the first time, authenticate, and configure the user name and e-mail for your commits.
 * You can [keep your e-mail private](https://help.github.com/articles/keeping-your-email-address-private/) using *username*@users.noreply.github.com.
 
+[![Configure Github client](/images/github-intro/configure_thumb.gif)](/images/github-intro/configure.gif)
+
 That's it, we have GitHub installed, now it's time to start using it!
 
 GitHub took care of a few things behind the scenes, including setting up an SSH key and adding it to your account. You can see these on your [account settings page](/images/github-intro/ssh.png).
