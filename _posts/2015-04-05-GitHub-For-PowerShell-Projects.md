@@ -181,4 +181,4 @@ There are pages upon pages of references on Git, GitHub, and version control, no
 * [GitHub For Beginners: Don't Get Scared, Get Started](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1)
 * [How To Win Friends And Make Pull Requests On GitHub](http://readwrite.com/2014/07/02/github-pull-request-etiquette)
 * [Bitbucket](https://bitbucket.org/) - Bitbucket is a fantastic alternative to GitHub that plays well with both Git and Mercurial.
-* [Hg Init: A Mercurial tutorial](http://hginit.com/) - Git isn't the only DVCS out there, Mercurial is a great quick and dirty solution, and IMHO is a bit easier to use in Windows.
+* [Hg Init: A Mercurial tutorial](http://hginit.com/) - Git isn't the only DVCS out there, Mercurial is a solid alternative, and IMHO is a bit easier to use in Windows.
