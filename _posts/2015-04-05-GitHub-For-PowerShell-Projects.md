@@ -93,11 +93,11 @@ You don't need to code to get involved! Did you find a bug in a project on GitHu
 
 [Open an issue](https://guides.github.com/features/issues/) for the project. Browsing around GitHub, you might notice that all projects have an issues page!
 
-#### Work on a project
+### Work on a project
 
 Start small. Consider minor bug fixes, documentation, and other minor changes to start; you want to build a relationship and trust with whomever maintains a project. Jumping in with a complete overhaul might not be the most tactful way to do this.
 
-#### Fork the project
+### Fork the project
 
 Forking a project basically makes a copy that you can work on, separate from the project you fork.
 
@@ -109,13 +109,13 @@ Once I fork the project, I can follow the previous notes on cloning, committing,
 
 Now it's time to give back!
 
-#### Submit pull requests
+### Submit pull requests
 
 I've made some changes to Wait-Path, committed them, and pushed the changes to GitHub. If I want to contribute to the original Wait-Path project, I can submit a Pull Request, asking to merge my changes into the original Wait-Path project.
 
 [![Pull request](/images/github-intro/pullrequest_thumb.gif)](/images/github-intro/pullrequest.gif)
 
-#### Work with pull requests
+### Work with pull requests
 
 Maybe someone has contributed to your project! On my ramblingcookiemonster account, I see that I have unread notifications, and can see the Wait-Path pull request from pscookiemonster:
 
@@ -125,7 +125,7 @@ Those changes look good to me, so let's merge in the code:
 
 [![Merge](/images/github-intro/merge_thumb.gif)](/images/github-intro/merge.gif)
 
-#### Continuous integration?
+### Continuous integration?
 
 When I opened the pull request, did you notice it turn orange and let me know it was waiting for the AppVeyor build to complete?
 
@@ -145,7 +145,7 @@ Definitely check this out, it's quite handy having AppVeyor automatically run my
 * [Github, Pester, and AppVeyor: Part Two](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/)
 * [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/)
 
-#### Etiquette
+### Etiquette
 
 For all of these, follow [the golden rule](http://en.wikipedia.org/wiki/Golden_Rule).
 
@@ -153,7 +153,7 @@ Would you want to receive an issue mentioning a bug, without details on how to r
 
 Would you want to receive a pull request that changed hundreds of lines of code without explanation?
 
-#### Staying up to date
+### Staying up to date
 
 If you want to take a peak at what others are doing, consider following them, or their projects. This will pull interesting information into your front page feed on GitHub:
 
@@ -161,7 +161,7 @@ If you want to take a peak at what others are doing, consider following them, or
 
 Interesting... What's that?  [ScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer)?  Looks like Microsoft open sourced their Script Analyzer tool for PowerShell!
 
-### Next steps
+## Next steps
 
 We're seeing more and more PowerShell projects on GitHub, and with slick toolsets like GitHub, Pester, and AppVeyor, this is a great place to keep your code and collaborate with others. Who knows, [CoreCLR](https://github.com/dotnet/coreclr) is on GitHub, at some point, you might see [PowerShell itself](https://twitter.com/nicemarmot/status/461642016548347904) on GitHub.
 
@@ -172,7 +172,7 @@ That's about it; don't be afraid to explore and try things out!
 
 *Disclaimer*: Note the January 2014 date mentioned in the intro. That was the first time I had worked with Git. I am certainly not the most qualified person to be discussing this, just wanted to share my experience!
 
-#### References
+### References
 
 There are pages upon pages of references on Git, GitHub, and version control, not to mention [books](https://progit.org/).  Here are a few references:
 
