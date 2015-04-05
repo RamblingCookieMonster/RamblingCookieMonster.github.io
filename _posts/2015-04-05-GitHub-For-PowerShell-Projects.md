@@ -59,13 +59,13 @@ We chose the MIT license. I base my licensing decisions on the fact that I grew 
 
 That's it! Now we can do stuff.
 
-### Clone the repository
+### Clone the Repository
 
 Let's clone the PowerShell repository we created and edit it on our desktop:
 
 [![Clone](/images/github-intro/clone_thumb.gif)](/images/github-intro/clone.gif)
 
-### Commit and push
+### Commit and Push
 
 Make some changes. Add a file, change a file, remove a file, do whatever comes to mind. At some point, you want to commit your changes, and basically tell Git "hey, take a quick snapshot of this project."
 
@@ -87,17 +87,17 @@ That's it for the basics! I can now continue making changes, commit, push, repea
 
 GitHub is all about collaboration. How can you get involved?
 
-### Open an issue
+### Open an Issue
 
 You don't need to code to get involved! Did you find a bug in a project on GitHub? Do you have a feature suggestion? A question?
 
 [Open an issue](https://guides.github.com/features/issues/) for the project. Browsing around GitHub, you might notice that all projects have an issues page!
 
-### Work on a project
+### Work on a Project
 
 Start small. Consider minor bug fixes, documentation, and other minor changes to start; you want to build a relationship and trust with whomever maintains a project. Jumping in with a complete overhaul might not be the most tactful way to do this.
 
-### Fork the project
+### Fork a Project
 
 Forking a project basically makes a copy that you can work on, separate from the project you fork.
 
@@ -109,13 +109,13 @@ Once I fork the project, I can follow the previous notes on cloning, committing,
 
 Now it's time to give back!
 
-### Submit pull requests
+### Submit Pull Requests
 
 I've made some changes to Wait-Path, committed them, and pushed the changes to GitHub. If I want to contribute to the original Wait-Path project, I can submit a Pull Request, asking to merge my changes into the original Wait-Path project.
 
 [![Pull request](/images/github-intro/pullrequest_thumb.gif)](/images/github-intro/pullrequest.gif)
 
-### Work with pull requests
+### Merge Pull Requests
 
 Maybe someone has contributed to your project! On my ramblingcookiemonster account, I see that I have unread notifications, and can see the Wait-Path pull request from pscookiemonster:
 
@@ -125,7 +125,7 @@ Those changes look good to me, so let's merge in the code:
 
 [![Merge](/images/github-intro/merge_thumb.gif)](/images/github-intro/merge.gif)
 
-### Continuous integration?
+### Continuous Integration
 
 When I opened the pull request, did you notice it turn orange and let me know it was waiting for the AppVeyor build to complete?
 
@@ -153,7 +153,7 @@ Would you want to receive an issue mentioning a bug, without details on how to r
 
 Would you want to receive a pull request that changed hundreds of lines of code without explanation?
 
-### Staying up to date
+### Staying up to Date
 
 If you want to take a peak at what others are doing, consider following them, or their projects. This will pull interesting information into your front page feed on GitHub:
 
@@ -161,7 +161,7 @@ If you want to take a peak at what others are doing, consider following them, or
 
 Interesting... What's that?  [ScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer)?  Looks like Microsoft open sourced their Script Analyzer tool for PowerShell!
 
-## Next steps
+## Next Steps
 
 We're seeing more and more PowerShell projects on GitHub, and with slick toolsets like GitHub, Pester, and AppVeyor, this is a great place to keep your code and collaborate with others. Who knows, [CoreCLR](https://github.com/dotnet/coreclr) is on GitHub, at some point, you might see [PowerShell itself](https://twitter.com/nicemarmot/status/461642016548347904) on GitHub.
 
