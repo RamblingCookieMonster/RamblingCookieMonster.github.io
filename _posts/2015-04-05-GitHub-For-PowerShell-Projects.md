@@ -47,7 +47,7 @@ Let's create a repository. We'll call it PowerShell.
 
 There's no hard and fast rule on what goes in here. You might have a repository with a smorgasbord of [your favorite functions](https://github.com/RamblingCookieMonster/PowerShell), another for [one specific function](https://github.com/RamblingCookieMonster/invoke-parallel), and one for [a module](https://github.com/RamblingCookieMonster/PSExcel). When you get more involved and collaborate with others, sticking to more targeted repositories will simplify things.
 
-You don't need to create a readme.md, but these are a handy way to build a 'front page' for your repository. These [use markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), which sacrifices flexibility for a simple to use syntax. You're actually reading a website generated with markdown right now.
+You don't need to create a readme.md, but these are a handy way to build a 'front page' for your repository. These [use markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), which sacrifices flexibility for a simple to use syntax. You're actually reading a website generated [from markdown](https://raw.githubusercontent.com/RamblingCookieMonster/RamblingCookieMonster.github.io/master/_posts/2015-04-05-GitHub-For-PowerShell-Projects.md) right now.
 
 We chose the MIT license. I base my licensing decisions on the fact that I grew up near Boston. Really though, don't ignore this. GitHub makes [choosing a license](http://choosealicense.com/) incredibly straightforward. Microsoft employees might not contribute to a GPL project. Some folks might not be able to use your code if you have no license:
 
