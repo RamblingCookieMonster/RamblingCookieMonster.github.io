@@ -73,9 +73,13 @@ Make some changes. Add a file, change a file, remove a file, do whatever comes t
 
 The GitHub client sees that I have changes to my files; I describe what I changed in the commit message, and hit commit. I can browse through the specific files, and the GitHub client will highlight new lines in green, removed lines in red.
 
-When we make a commit to a cloned repository, it doesn't change the actual repository on GitHub. We need to push our changes to GitHub. Notice that we have 'Unsynced Changes', and the Sync button has a badge to tell us we have on commit to push?
+When we make a commit to a cloned repository, it doesn't change the actual repository on GitHub. We need to push our changes up to GitHub. Notice that we have 'Unsynced Changes', and the Sync button has a badge to tell us we have one commit to push?
 
 [![Push](/images/github-intro/push_thumb.gif)](/images/github-intro/push.gif)
+
+If I made changes on another computer or on GitHub.com directly, that Sync button would have a badge telling me there are changes I don't have, that I might want to pull down.
+
+![Pull](/images/github-intro/syncdown.png)
 
 That's it for the basics! I can now continue making changes, commit, push, repeat. If this is all you're after, you can stop here, but there's much more we can do!
 
