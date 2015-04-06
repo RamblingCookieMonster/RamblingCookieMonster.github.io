@@ -91,7 +91,7 @@ GitHub is all about collaboration. How can you get involved?
 
 You don't need to code to get involved! Did you find a bug in a project on GitHub? Do you have a feature suggestion? A question?
 
-[Open an issue](https://guides.github.com/features/issues/) for the project. Browsing around GitHub, you might notice that all projects have an issues page!
+[Open an issue](https://guides.github.com/features/issues/) for the project. Browsing around GitHub, you might notice that most projects have an issues page!
 
 ### Work on a Project
 
