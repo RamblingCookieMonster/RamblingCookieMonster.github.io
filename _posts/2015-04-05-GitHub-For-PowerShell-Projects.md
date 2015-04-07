@@ -3,8 +3,8 @@ layout: post
 title: GitHub for PowerShell Projects
 excerpt: "Yet Another GitHub Walkthrough"
 tags: [PowerShell, Tools, GitHub, AppVeyor, Pester, Open Source]
-modified: 2015-04-04 22:00:00
-date: 2015-04-04 22:00:00
+modified: 2015-04-05 22:00:00
+date: 2015-04-05 22:00:00
 comments: true
 image:
  feature: banner.jpg

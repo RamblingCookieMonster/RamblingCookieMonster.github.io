@@ -3,8 +3,8 @@ layout: post
 title: Find and Explore &#46;NET Types and Enums in PowerShell
 excerpt: "Without the fun [] :: () syntax."
 tags: [PowerShell, Tools, DotNet, Quick hit]
-modified: 2015-03-29 22:00:00
-date: 2015-03-29 22:00:00
+modified: 2015-04-02 22:00:00
+date: 2015-04-02 22:00:00
 comments: true
 image:
  feature: banner.jpg
