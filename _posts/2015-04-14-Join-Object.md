@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merging data in PowerShell
-excerpt: "How many Join-Object's do we need?"
+excerpt: "How many Join-Objects do we need?"
 tags: [PowerShell, Tools, Practical, Function, Quick Hit]
 modified: 2015-04-17 22:00:00
 date: 2015-04-17 22:00:00
