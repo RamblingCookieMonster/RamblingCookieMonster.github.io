@@ -26,7 +26,7 @@ Let's look at a silly concocted example. I have a spreadsheet of managers, and a
 
 ![Departments](/images/join-object/departments.png)
 
-If you've spent any time with T-SQL, you've probably seen the [handy venn diagrams](http://www.codeproject.com/KB/database/Visual_SQL_Joins/Visual_SQL_JOINS_orig.jpg) ([source](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)) out there, and the [discussions](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) on why venn diagrams don't match join statements alone.
+If you've spent any time with T-SQL, you've probably seen the [handy Venn diagrams](http://www.codeproject.com/KB/database/Visual_SQL_Joins/Visual_SQL_JOINS_orig.jpg) ([source](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)) out there, and the [discussions](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) on why Venn diagrams don't match join statements alone.
 
 Let's take a look at how we might join the manager and department data.
 
