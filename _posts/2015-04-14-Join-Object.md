@@ -145,43 +145,27 @@ Rather than a generic prefix or suffix, we can use calculated properties to rena
 
 ![Full Join, calculated property](/images/join-object/fullcalcprop.png)
 
-#### Join-Worksheet
+Let's take a peak at performance!
+
+### Performance
+
+Lucio's script offers some pretty cool flexibility, allowing you to specify a custom 'Where' scriptblock rather than assuming we want data where one value is equal to another. Unfortunately, [Add-Member](http://learn-powershell.net/2014/01/11/custom-powershell-objects-and-performance-revisited/) and invoking those scriptblocks takes a bit more time.
+
+{% gist 2950c10063348cee402a %}
+
+As you can see, this flexibility comes at a pretty steep cost, even when comparing two relatively small data sets:
+
+| Version  | Seconds |
+|:---------|:-------:|
+| Lucio's  |  145.0  |
+| Dave's   |   ~1.0  |
+| Warren's |   ~1.2  |
+
+### Join-Worksheet
 
 It's a bit simpler to just use Join-Object, but you can find a crude Join-Worksheet function in PSExcel:
 
-{% highlight powershell %}
-#Define some input data.
-    $l = 1..5 | Foreach-Object {
-        [pscustomobject]@{
-            Name = "jsmith$_"
-            Birthday = (Get-Date).adddays(-1)
-        }
-    }
-
-    $r = 4..7 | Foreach-Object{
-        [pscustomobject]@{
-            Department = "Department $_"
-            Name = "Department $_"
-            Manager = "jsmith$_"
-        }
-    }
-
-#Export it to a spreadsheet with specific worksheet names
-    $l | export-xlsx -Path C:\temp\Join.xlsx -WorksheetName Left
-    $r | export-xlsx -Path C:\temp\Join.xlsx -WorksheetName Right
-
-#Get the worksheets:
-    $Excel = New-Excel -Path C:\temp\Join.xlsx
-    $LeftWorksheet = Get-Worksheet -Excel $Excel -Name 'Left'
-    $RightWorksheet = Get-WorkSheet -Excel $Excel -Name 'Right'
-
-#We have the data - join it where Left.Name = Right.Manager
-    Join-Worksheet -Path C:\temp\Merged.xlsx -LeftWorksheet $LeftWorksheet -RightWorksheet $RightWorksheet -LeftJoinColumn Name -RightJoinColumn Manager
-    $Excel | Close-Excel
-
-#Verify the output:
-    Import-XLSX -Path C:\temp\Merged.xlsx
-{% endhighlight %}
+{% gist 2e7fefb816e9ec9fe04f %}
 
 ![Join-Worksheet](/images/join-object/xlsxmerged.png)
 
