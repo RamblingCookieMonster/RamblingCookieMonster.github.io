@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Merging data in PowerShell
 excerpt: "How many Join-Object's do we need?"
 tags: [PowerShell, Tools, Practical, Function, Quick Hit]
@@ -26,7 +26,9 @@ Let's look at a silly concocted example. I have a spreadsheet of managers, and a
 
 ![Departments](/images/join-object/departments.png)
 
-If you've spent any time with T-SQL, you've probably seen the [handy venn diagrams](http://www.codeproject.com/KB/database/Visual_SQL_Joins/Visual_SQL_JOINS_orig.jpg) out there, and the [discussions](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) on why venn diagrams don't match join statements alone.
+If you've spent any time with T-SQL, you've probably seen the [handy venn diagrams](http://www.codeproject.com/KB/database/Visual_SQL_Joins/Visual_SQL_JOINS_orig.jpg) ([source](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)) out there, and the [discussions](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) on why venn diagrams don't match join statements alone.
+
+Let's take a look at how we might join the manager and department data.
 
 #### Left joins
 
@@ -71,25 +73,27 @@ That was painful! Let's look at this in practice, where it's a bit easier to see
 
 I'll use [PSExcel](http://ramblingcookiemonster.github.io/PSExcel-Intro/) to pull in data from a spreadsheet. Keep in mind there are other options, like the fantastic [ImportExcel](https://github.com/dfinke/ImportExcel) module from Doug Finke, which PSExcel borrowed from.
 
-```powershell
+{% highlight powershell %}
 $L = Import-XLSX -Path C:\temp\JoinTest.xlsx -Sheet 1
-```
+{% endhighlight %}
 
 ![Managers in PS](/images/join-object/managersps.png)
 
-```powershell
+{% highlight powershell %}
 $R = Import-XLSX -Path C:\temp\JoinTest.xlsx -Sheet 2
-```
+{% endhighlight %}
 
 ![Departments in PS](/images/join-object/departmentsps.png)
 
+We have the data, how do we join it together?
+
 #### Inner join
 
-```powershell
+{% highlight powershell %}
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type OnlyIfInBoth -RightProperties Department
-```
+{% endhighlight %}
 
-We tell Join-Object that we only want rows where $L.Name is equal to $R.Manager (inner join), and to only return the Department property from the $R collection
+We can tell Join-Object that we only want rows where $L.Name is equal to $R.Manager (inner join), and to only return the Department property from the $R collection
 
 ![Inner Join](/images/join-object/innerps.png)
 
@@ -101,11 +105,13 @@ Here's where things get more interesting. Let's run Lucio's code first:
 
 What happened!  We only got back a name and birthday, where is the department that I wanted?
 
-It turns out that PowerShell will see the first object in the pipeline, which only has a name and birthday property, and display output with only those two properties.  We can manually select Name, Birthday, and Department, or use Format-List to see the other properties, or we can build it into the Join-Object function!
+It turns out that PowerShell will see the first object in the pipeline, which only has a name and birthday property, and display output with only those two properties.
 
-```powershell
+We could manually select Name, Birthday, and Department, or use Format-List to see the other properties, but I like abstraction, so in the extended Join-Object, we select the full set of properties for output.
+
+{% highlight powershell %}
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type AllInLeft -RightProperties Department
-```
+{% endhighlight %}
 
 This time, we get the expected output, without worrying about missing columns:
 
@@ -115,25 +121,25 @@ This time, we get the expected output, without worrying about missing columns:
 
 There's another issue you can run into. What if you have two properties with the same name, with differing values and meaning? In our example, we have a set of managers, where name refers to the manager's name. We also have a name property on the department set, that refers to the department name.
 
-Let's look at the practical implication:
+Let's look at the practical implication if we don't account for this:
 
 ![Full Join, Overwrite](/images/join-object/fulloverwrite.png)
 
 Interesting, the left values for name were overwritten by the right values. How can we fix this? The simplest solution is to add a prefix or suffix to all properties from the right collection:
 
-```powershell
+{% highlight powershell %}
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type AllInBoth -Prefix r_
-```
+{% endhighlight %}
 
 Now we get all the properties, and nothing is overwritten:
 
 ![Full Join, prefix](/images/join-object/fullprefixps.png)
 
-Maybe you are more familiar with calculated properties. The RightProperties parameter can take individual properties, calculated properties, or a mix:
+Maybe you are more familiar with [calculated properties](http://stackoverflow.com/a/22726528/3067642). The RightProperties parameter can take individual properties, calculated properties, or a mix:
 
-```powershell
+{% highlight powershell %}
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type AllInBoth -RightProperties @{ N = "DeptName"; expression = {$_.Name} }
-```
+{% endhighlight %}
 
 Rather than a generic prefix or suffix, we can use calculated properties to rename these conflicts, or manipulate their values:
 
@@ -141,9 +147,9 @@ Rather than a generic prefix or suffix, we can use calculated properties to rena
 
 #### Join-Worksheet
 
-It's a bit simpler to just use Join-Object, but added a Join-Worksheet function to PSExcel just for fun:
+It's a bit simpler to just use Join-Object, but you can find a crude Join-Worksheet function in PSExcel:
 
-```powershell
+{% highlight powershell %}
 #Define some input data.
     $l = 1..5 | Foreach-Object {
         [pscustomobject]@{
@@ -175,12 +181,14 @@ It's a bit simpler to just use Join-Object, but added a Join-Worksheet function 
 
 #Verify the output:
     Import-XLSX -Path C:\temp\Merged.xlsx
-```
+{% endhighlight %}
 
 ![Join-Worksheet](/images/join-object/xlsxmerged.png)
 
 ### Closing
 
-That's about it! If you have any suggestions or run into any issues, a pull request would be welcome : )
+That's about it! If you like this sort of thing and haven't worked with SQL yet, read up on T-SQL. You can use simple PowerShell functions like [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1) or the [PSSQLite module](http://ramblingcookiemonster.github.io/SQLite-and-PowerShell/) to work with MSSQL and SQLite, respectively, or use the many other tools out there.
+
+If you have any suggestions or run into any issues, a pull request would be welcome : )
 
 *Disclaimer*: [title image source](http://en.wikipedia.org/wiki/Venn_diagram#/media/File:Symmetrical_5-set_Venn_diagram.svg)
