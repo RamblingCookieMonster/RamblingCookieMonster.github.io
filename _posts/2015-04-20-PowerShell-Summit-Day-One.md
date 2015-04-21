@@ -27,7 +27,7 @@ Oh. There's also [a good deal of content](https://www.youtube.com/playlist?list=
 Hands down, the announcement that Pester will be in Windows was the most exciting unveiling today.  What does this mean?
 
 * Folks like [Dave Wyatt](https://twitter.com/MSH_Dave), [Jakub Jareš](https://twitter.com/nohwnd), and [Scott Muc](https://twitter.com/ScottMuc) (among [the many other contributors](https://github.com/pester/Pester/graphs/contributors)) will have contributed to Microsoft Windows.
-* Precedent. As far as I understand, and I could be wrong, this is the first open source piece of software they will be pulling into Windows. Wither way, this is exciting, and I expect to see more on this front: integration of open source components, or open sourcing existing components.
+* Precedent. As far as I understand, and I could be wrong, this is the first open source piece of software they will be pulling into Windows. Either way, this is exciting, and I expect to see more on this front: integration of open source components, or open sourcing existing components.
 
 All the talks I went to were valuable, no duds yet:
 
