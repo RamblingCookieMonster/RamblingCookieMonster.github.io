@@ -168,7 +168,7 @@ We're seeing more and more PowerShell projects on GitHub, and with slick toolset
 **Edits**:
 
 * Microsoft released the [DSC Resources on GitHub](https://github.com/PowerShell/DscResources).  This means you can contribute, and receive the benefit from community contributions to DSC. They included [a handy guide](https://github.com/PowerShell/DscResources/blob/master/CONTRIBUTING.md) to contributing.
-* At the 2015 PowerShell Summit, they announced that Pester will be included with Windows. This means folks like [Dave Wyatt](https://twitter.com/MSH_Dave), [Jakub Jareš](https://twitter.com/nohwnd), and [Scott Muc](https://twitter.com/ScottMuc) will have contributed to Windows... Pretty cool!
+* At the [2015 PowerShell Summit](http://ramblingcookiemonster.github.io/PowerShell-Summit-Day-One/), they announced that Pester will be included with Windows. This means folks like [Dave Wyatt](https://twitter.com/MSH_Dave), [Jakub Jareš](https://twitter.com/nohwnd), and [Scott Muc](https://twitter.com/ScottMuc) will have contributed to Windows... Pretty cool!
 
 Keep an eye out for myriad tools that can integrate with GitHub. Even something as simple as a [Chrome plugin](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?hl=en-US) can help your workflow.
 
