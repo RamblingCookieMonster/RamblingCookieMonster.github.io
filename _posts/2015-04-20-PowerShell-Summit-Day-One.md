@@ -16,7 +16,7 @@ This is a quick hit on my thoughts after the first day (and pre-event fun) of th
 
 ### Why you should go
 
-I'm not particularly social. I have a tough time starting conversations, or joining a group discussion. That being said, over the course of a pre-event-pub-gathering and the first day, I've had the opportunity to talk to someone who (will have) [contributed code to Windows](https://twitter.com/RJasonMorgan/status/590246665820311553), PowerShell MVPs galore, a number of talented folks who use PowerShell on a daily basis, and ended up sitting with a few PowerShell PMs for a 'hackathon' (more food and drinking than coding, thankfully for me).
+I'm not particularly social. I have a tough time starting conversations, or joining a group discussion. That being said, over the course of a pre-event-pub-gathering and the first day, I've had the opportunity to talk to someone who (will have) [contributed code to Windows](https://twitter.com/RJasonMorgan/status/590246665820311553), PowerShell MVPs galore, a number of talented folks who use PowerShell on a daily basis, and ended up sitting with a few PowerShell PMs for a 'hackathon' - more food and drinking than coding, thankfully for me.
 
 I have a laundry list of ideas and technologies to check out when I get home, and this was the first day.
 
