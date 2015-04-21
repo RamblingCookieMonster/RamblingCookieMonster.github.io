@@ -20,7 +20,7 @@ We’ll make the assumption that if you’re using PowerShell and Pester, you’
 
 ### GitHub
 
-I’m not going to ramble on about Git or GitHub. There are heavy duty books, hundreds of blog posts, and various youtube examples to get you up and running. Sign up. Download the Windows client. Read one of the thousands of articles on using GitHub ([Example](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1), others may be better).
+I’m not going to ramble on about Git or GitHub [edit: [Just kidding!](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/). There are heavy duty books, hundreds of blog posts, and various youtube examples to get you up and running. Sign up. Download the Windows client. Read one of the thousands of articles on using GitHub ([Example](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1), others may be better).
 
 You’re signed up. Let’s create a repository and upload our code.  Here’s yet another quick-start, using the website and Windows client, documented with [GifCam](http://blog.bahraniapps.com/gifcam/), a handy tool I found through [Doug Finke](http://www.dougfinke.com/blog/).
 
