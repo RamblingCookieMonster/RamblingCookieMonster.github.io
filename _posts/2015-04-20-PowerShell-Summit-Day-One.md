@@ -41,9 +41,9 @@ Also, cookies.  Thanks to Chris G., there will be no cookie withdrawal this week
 
 ### Shameless Plug
 
-Many of you have been using GitHub, Pester, and CI/CD tools like AppVeyor for some time. They are new and exciting to me, so I wrote a few quick posts on them. Basic stuff, but I had always been a bit intimidated by these.
+Many of you have been using GitHub, Pester, and CI/CD tools like AppVeyor for some time. They are new and exciting to me, so I wrote a few quick posts on them. Basic stuff for some, but I had always been a bit intimidated by these.  Unit testing and continuous integration? Those are dev processes!
 
-Unit testing and continuous integration? Those are dev processes! I work in Window Server, AD, vCenter, Citrix, System Center, MDT, and a hodge podge of other IT specific technologies every day, but adding GitHub, Pester, and AppVeyor to my toolbelt has been incredibly valuable thus far.  Give it a shot!  Who knows, your code might end up in Windows.
+I work in Window Server, AD, vCenter, Citrix, System Center, MDT, and a hodge podge of other IT specific technologies every day, but adding GitHub, Pester, and AppVeyor to my toolbelt has been incredibly valuable thus far.  Give it a shot!  Who knows, your code might end up in Windows.
 
 * [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) - Yet another 'getting started with GitHub' post, focusing on PowerShell projects.
 * [Fun with GitHub, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) - My first post on this toolset, giving an overview of each tool.
