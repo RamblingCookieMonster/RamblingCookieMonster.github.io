@@ -12,7 +12,7 @@ image:
 ---
 {% include _toc.html %}
 
-This is a quick hit on my thoughts after the first day (and pre-event fun) of the PowerShell summit.
+This is a quick hit on my thoughts after the first day (and [pre-event fun](https://onedrive.live.com/?cid=d4b8e51b855f08af&id=D4B8E51B855F08AF%21137929&sff=1&authkey=%21AKc-yMjpq6tAcTM&v=3) - thanks to Will Anderson for the pics) of the PowerShell summit.
 
 ### Why you should go
 
