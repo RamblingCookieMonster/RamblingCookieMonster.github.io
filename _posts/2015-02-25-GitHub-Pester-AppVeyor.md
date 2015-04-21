@@ -82,3 +82,10 @@ Take a peak at the [appveyor.yml](https://github.com/RamblingCookieMonster/Wait-
 Version control, unit testing, and continuous integration, and the products we looked at for each of these are fantastic in their own right. If you experiment and try these out together, I think you will find they are even better together. And this particular combination of GitHub + Pester + AppVeyor (for PowerShell) is particularly smooth.
 
 In fact, writing this post, listening to the tail end of the DSC MVA, enjoying some pasta and wine, and recording the various gifs took all of about two hours. Don’t be intimidated, just dive in!
+
+**Edit**:  A few related posts:
+
+* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) - The basics
+* [Fun with GitHub, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) - You are here
+* [Github, Pester, and AppVeyor: Part 2](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/) - Mostly rambling
+* [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/) - Quick integration testing for DSC resources and configurations

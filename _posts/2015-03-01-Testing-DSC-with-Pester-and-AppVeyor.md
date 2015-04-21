@@ -97,4 +97,11 @@ We’re good to go! We create a GitHub repository, add this to our AppVeyor proj
 
 That’s it – we now have a simple framework for automated DSC resource and configuration testing. There’s a lot more you might want to do, but the simple POC material is in the [AppVeyor-DSC-Test](https://github.com/RamblingCookieMonster/AppVeyor-DSC-Test) repository on GitHub.
 
+**Edit**:  A few related follow-up posts:
+
+* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) - The basics
+* [Fun with GitHub, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) - You are here
+* [Github, Pester, and AppVeyor: Part 2](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/) - Mostly rambling
+* [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/) - Quick integration testing for DSC resources and configurations
+
 Cheers!

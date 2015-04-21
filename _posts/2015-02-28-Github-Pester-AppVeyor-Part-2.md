@@ -125,3 +125,10 @@ If you’re using GitHub for your PowerShell projects and haven’t checked them
 On that note, consider [test-driven development](http://en.wikipedia.org/wiki/Test-driven_development). Adding a comprehensive set of tests to a single function after it has been written is difficult. Covering an entire module would be painful. If you follow TDD and write your tests before you write the functionality that they test, you will be ahead of the game. As you can tell by my contributions, I am certainly not there yet, but I like the idea.
 
 There’s a lot more to explore in AppVeyor. As far as I can tell, it looks like it can be used to help enable both [continuous integration](http://www.appveyor.com/docs/build-configuration) and [continuous delivery](http://www.appveyor.com/docs/deployment). Poke around, experiment, and if you find anything helpful, share it with the community!
+
+**Edit**:  A few related posts:
+
+* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) - The basics
+* [Fun with GitHub, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) - You are here
+* [Github, Pester, and AppVeyor: Part 2](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/) - Mostly rambling
+* [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/) - Quick integration testing for DSC resources and configurations
