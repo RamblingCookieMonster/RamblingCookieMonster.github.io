@@ -33,7 +33,7 @@ All the talks I went to were valuable, no duds yet:
 
 * Dave Wyatt gave [a great talk on Pester testing](https://www.youtube.com/watch?v=SftZCXG0KPA).  Rumor has it he was nervous; it certainly didn't show!
 * Jason Morgan gave a helpful session on large scale monitoring. If you came expecting a demonstration using notepad (yes, we might have seen one last year...) with specific examples you could pull from Google, you might have been disappointed. As someone who has to deal with monitoring at (slightly lower) scale, I already have a few ideas to implement from this talk.
-* Microsoft is contributing to [poshtools](https://github.com/adamdriscoll/poshtools). This looks fantastic, and I love Visual Studio for C# and other projects where I can use in Visual Studio Express, but... Until I can use this in Visual Studio Express, this is a no go for me, and many other IT professionals. Licensing prevents me from using Community edition, and dissuades me from using workarounds.
+* Microsoft is contributing to [poshtools](https://github.com/adamdriscoll/poshtools). This looks fantastic, and I love Visual Studio for C# and other projects where I can use the Express edition, but... Until I can use this in Visual Studio Express, this is a no go for me, and many other IT professionals. Licensing prevents me from using Community edition, and dissuades me from using workarounds.
 
 Also, cookies.  Thanks to Chris G., there will be no cookie withdrawal this weekend.
 
