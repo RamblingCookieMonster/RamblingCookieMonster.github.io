@@ -24,6 +24,8 @@ Oh. There's also [a good deal of content](https://www.youtube.com/playlist?list=
 
 ### Fun Bits
 
+![Jeffrey's Tweet](/images/pshsummit/pester.png)
+
 Hands down, the announcement that Pester will be in Windows was the most exciting unveiling today.  What does this mean?
 
 * Folks like [Dave Wyatt](https://twitter.com/MSH_Dave), [Jakub Jareš](https://twitter.com/nohwnd), and [Scott Muc](https://twitter.com/ScottMuc) (among [the many other contributors](https://github.com/pester/Pester/graphs/contributors)) will have contributed to Microsoft Windows.
