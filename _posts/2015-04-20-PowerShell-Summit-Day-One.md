@@ -43,7 +43,7 @@ Many of you have been using GitHub, Pester, and CI/CD tools like AppVeyor for so
 
 Unit testing and continuous integration? Those are dev processes! I work in Window Server, AD, vCenter, Citrix, System Center, MDT, and a hodge podge of other IT specific technologies every day, but adding GitHub, Pester, and AppVeyor to my toolbelt has been incredibly valuable thus far.  Give it a shot!  Who knows, your code might end up in Windows.
 
-* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) - Yet another getting started with GitHub post, focusing on PowerShell projects.
+* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) - Yet another 'getting started with GitHub' post, focusing on PowerShell projects.
 * [Fun with GitHub, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) - My first post on this toolset, giving an overview of each tool.
 * [Github, Pester, and AppVeyor: Part 2](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/) - Mostly rambling.
 * [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/) - Quick integration testing for DSC resources and configurations.
