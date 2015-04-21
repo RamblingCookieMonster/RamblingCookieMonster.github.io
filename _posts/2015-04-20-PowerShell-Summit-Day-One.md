@@ -3,7 +3,7 @@ layout: post
 title: PowerShell Summit NA 2015&#58; Day One
 excerpt: "Overload"
 tags: [PowerShell, Rambling, Quick Hit]
-modified: 2015-04-20 22:00:00
+modified: 2015-04-21 22:00:00
 date: 2015-04-20 22:00:00
 comments: true
 image:
