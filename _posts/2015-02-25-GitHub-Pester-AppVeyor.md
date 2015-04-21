@@ -36,11 +36,11 @@ There’s way more to see and do, so do spend a little time experimenting and re
 
 ### Pester
 
-Pester is a unit testing framework for PowerShell. Companies like Microsoft and VMware are starting to use it, you should probably check it out:
+Pester is a unit testing framework for PowerShell. Companies like Microsoft and VMware are starting to use it, you should probably check it out (**edit**: Pester will be included with Windows...):
 
 ![Pester tweet](/images/appveyor-1/pester-twitter.png)
 
-Jakub Jareš has a great set of articles on [PowerShellMagazine.com](http://www.powershellmagazine.com/) ([One](http://www.powershellmagazine.com/2014/03/12/get-started-with-pester-powershell-unit-testing-framework/), [Two](http://www.powershellmagazine.com/2014/03/27/testing-your-powershell-scripts-with-pester-assertions-and-more/), [Three](http://www.powershellmagazine.com/2014/09/30/pester-mock-and-testdrive/)), and you should find plenty of other examples out there.
+Jakub Jareš has a great set of articles on [PowerShellMagazine.com](http://www.powershellmagazine.com/) ([One](http://www.powershellmagazine.com/2014/03/12/get-started-with-pester-powershell-unit-testing-framework/), [Two](http://www.powershellmagazine.com/2014/03/27/testing-your-powershell-scripts-with-pester-assertions-and-more/), [Three](http://www.powershellmagazine.com/2014/09/30/pester-mock-and-testdrive/)), and you should find plenty of other examples out there.  Dave Wyatt gave [a great talk on Pester](https://www.youtube.com/watch?v=SftZCXG0KPA) at the PowerShell 2015 NA Summit.
 
 I took an existing Invoke-Parallel test file, used the relative path to Wait-Path.ps1, and [added a few tests](https://github.com/RamblingCookieMonster/Wait-Path/blob/master/Tests/Wait-Path.Tests.ps1). Follow Jakub’s first article or two and you will realize how simple this is. Start using it, and you will realize how valuable it is.
 

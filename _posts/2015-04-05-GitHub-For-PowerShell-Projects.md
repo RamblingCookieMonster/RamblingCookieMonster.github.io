@@ -166,6 +166,7 @@ Interesting... What's that?  [ScriptAnalyzer](https://github.com/PowerShell/PSSc
 We're seeing more and more PowerShell projects on GitHub, and with slick toolsets like GitHub, Pester, and AppVeyor, this is a great place to keep your code and collaborate with others. Who knows, [CoreCLR](https://github.com/dotnet/coreclr) is on GitHub, at some point, you might see [PowerShell itself](https://twitter.com/nicemarmot/status/461642016548347904) on GitHub.
 
 **Edits**:
+
 * Microsoft released the [DSC Resources on GitHub](https://github.com/PowerShell/DscResources).  This means you can contribute, and receive the benefit from community contributions to DSC. They included [a handy guide](https://github.com/PowerShell/DscResources/blob/master/CONTRIBUTING.md) to contributing.
 * At the 2015 PowerShell Summit, they announced that Pester will be included with Windows. This means folks like [Dave Wyatt](https://twitter.com/MSH_Dave), [Jakub Jareš](https://twitter.com/nohwnd), and [Scott Muc](https://twitter.com/ScottMuc) will have contributed to Windows... Pretty cool!
 
