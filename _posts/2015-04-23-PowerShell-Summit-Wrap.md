@@ -38,7 +38,7 @@ I'll skip the first day and stick to the takeaways I'm leaving with. Hit [the fi
 
 My reaction upon a number of announcements and discussions:
 
-[![Happy](/images/pshsummit/reaction.gif)](http://andthencamethen.tumblr.com/post/3789117959)
+[![Happy](/images/pshsummit/reaction.gif)](http://www.reactiongifs.com/cookies/)
 
 Check out various other streams for specific details:
 
