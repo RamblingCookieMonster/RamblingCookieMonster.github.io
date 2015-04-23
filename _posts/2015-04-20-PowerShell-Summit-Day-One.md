@@ -53,5 +53,6 @@ I work in Window Server, AD, vCenter, Citrix, System Center, MDT, and a hodge po
 * [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/) - Quick integration testing for DSC resources and configurations.
 * [Sergei Vorobev from the MSFT Windows PowerShell team will discuss GitHub, Pester and AppVeyor](https://www.crowdcast.io/e/vipug-2015-05) - Will be recorded, but stop by for the live show May 7th.
 * [Contributing guidelines for the DSC Resources GitHub repository](https://github.com/PowerShell/DscResources/blob/master/CONTRIBUTING.md) - More helpful tips on using GitHub, and details on how to contribute to MSFT's DSC Resources.
+* [Edit: Final session of the summit](https://www.youtube.com/watch?v=2QuoneqfJJM).
 
 Come say hi if you're at the summit - I'm not social enough to start up too many conversations, but I do love talking shop!
