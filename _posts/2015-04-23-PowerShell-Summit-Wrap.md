@@ -22,7 +22,7 @@ I'll skip the first day and stick to the takeaways I'm leaving with. Hit [the fi
 
 ### The PowerShell community is fantastic
 
-* Roughly half the *"oh, that idea/tool could solve a problem I have!"* discoveries were from side discussions and chatting over food. The rest were in the submissions you can [find on YouTube](https://www.youtube.com/playlist?list=PLfeA8kIs7CochwcgX9zOWxh4IL3GoG05P) (mostly).
+* Roughly half the *"oh, that idea/tool could solve a problem I have!"* discoveries were from side discussions and chatting over food. The rest were in the sessions you can [find on YouTube](https://www.youtube.com/playlist?list=PLfeA8kIs7CochwcgX9zOWxh4IL3GoG05P) (mostly).
 * Met a lot of extremely talented and friendly folks. If you aren't already, get involved with the community on Twitter and other mediums!
   * It helps you discover and learn new ideas and tools you can use in your solutions.
   * It makes it a bit easier to strike up a conversation with fellow PowerShellers at events like this.
