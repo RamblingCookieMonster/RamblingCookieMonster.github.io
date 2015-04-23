@@ -31,7 +31,7 @@ I'll skip the first day and stick to the takeaways I'm leaving with. Hit [the fi
 ### Microsoft is heading in the right direction
 
 * Expanding their embrace of open source will benefit both Microsoft and their customers. Pester, an open source solution, will be included in Windows. DSC Resources are on GitHub, where the community can help contribute to improve the solution. We all win.
-* Nano will bring some exciting changes, and help enable a number of concepts Jeffrey has been trying to sell (e.g. servers as cattle, servers are not clients)
+* Nano will bring some exciting changes, and help enable a number of concepts Jeffrey has been trying to sell (e.g. servers as cattle, servers are not clients).
 * The future is bright. We already know Jeffrey predicted an open source PowerShell; we're seeing steps in that direction, Jeffrey re-affirmed that prediction, and all signs point to a more agile and open Microsoft under Satya.
 
 ### Rambling
