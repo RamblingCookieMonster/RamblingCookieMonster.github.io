@@ -47,4 +47,4 @@ Check out various other streams for specific details:
 * [PowerShell.org PowerShell Summit category](http://powershell.org/wp/category/announcements/powershell-summit/)
 * [PowerShell.org PowerShell Summit NA 2015 Recordings](https://www.youtube.com/playlist?list=PLfeA8kIs7CochwcgX9zOWxh4IL3GoG05P)
 
-It was great fun meeting and chatting with everyone; hope to see you around the community and at the next summit!
+A big thanks to the organizers, speakers, Microsoft folks, and attendees; you all made this a fantastic event. It was great fun meeting and chatting with everyone; hope to see you around the community and at the next summit!
