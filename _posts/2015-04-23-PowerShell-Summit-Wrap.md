@@ -18,7 +18,7 @@ This is a quick hit on my thoughts of the PowerShell summit.
 
 It's an exciting time to be automating and designing solutions on the Microsoft side of the house.
 
-I'll skip the first day and stick to the takeaways I'm leaving with. Hit [the first day's post](http://ramblingcookiemonster.github.io/PowerShell-Summit-Day-One/) for a few notes on using GitHub, Pester, and AppVeyor.
+I'll skip the first day and stick to the takeaways I'm leaving with. Hit [the first day's post](http://ramblingcookiemonster.github.io/PowerShell-Summit-Day-One/) for a few notes on using GitHub, Pester, and AppVeyor, and other excitement.
 
 ### The PowerShell community is fantastic
 
