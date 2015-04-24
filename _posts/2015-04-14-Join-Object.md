@@ -161,6 +161,29 @@ As you can see, this flexibility comes at a pretty steep cost, even when compari
 | Dave's   |   ~1.0  |
 | Warren's |   ~1.2  |
 
+### Practical example: Active Directory Input
+
+The request:
+
+"Hey Warren, we need to match up SSNs to Active Directory users, and check if they are enabled or not.  I'll e-mail you an unencrypted CSV with all the SSNs from gmail, what could go wrong?"
+
+The code:
+
+{% highlight powershell %}
+# Import some SSNs. 
+$SSNs = Import-CSV -Path D:\SSNs.csv
+
+#Get AD users, and match up by a common value, samaccountname in this case:
+Get-ADUser -Filter "samaccountname -like 'wframe*'" |
+    Join-Object -LeftJoinProperty samaccountname -Right $SSNs `
+                -RightJoinProperty samaccountname -RightProperties ssn `
+                -LeftProperties samaccountname, enabled, objectclass
+{% endhighlight %}
+
+The result:
+
+![Join-Worksheet](/images/join-object/userssn.png)
+
 ### Join-Worksheet
 
 It's a bit simpler to just use Join-Object, but you can find a crude Join-Worksheet function in PSExcel:
