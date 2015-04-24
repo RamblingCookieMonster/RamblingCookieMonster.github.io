@@ -182,7 +182,7 @@ Get-ADUser -Filter "samaccountname -like 'wframe*'" |
 
 **The result**:
 
-![Join-Worksheet](/images/join-object/userssn.png)
+[![Join-Worksheet](/images/join-object/userssn.png)](/images/join-object/userssn.png)
 
 ### Join-Worksheet
 
