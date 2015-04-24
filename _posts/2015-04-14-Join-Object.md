@@ -163,11 +163,11 @@ As you can see, this flexibility comes at a pretty steep cost, even when compari
 
 ### Practical example: Active Directory Input
 
-The request:
+**The request**:
 
 "Hey Warren, we need to match up SSNs to Active Directory users, and check if they are enabled or not.  I'll e-mail you an unencrypted CSV with all the SSNs from gmail, what could go wrong?"
 
-The code:
+**The code**:
 
 {% highlight powershell %}
 # Import some SSNs. 
@@ -180,7 +180,7 @@ Get-ADUser -Filter "samaccountname -like 'wframe*'" |
                 -LeftProperties samaccountname, enabled, objectclass
 {% endhighlight %}
 
-The result:
+**The result**:
 
 ![Join-Worksheet](/images/join-object/userssn.png)
 
