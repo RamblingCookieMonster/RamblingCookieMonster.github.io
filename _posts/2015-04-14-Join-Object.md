@@ -18,6 +18,8 @@ We occasionally get requests we can't refuse. Do I have any interest in working 
 
 I also don't want to get stuck being the spreadsheet guy. So I wrote a quick PowerShell function that merges two sets of data, found a more flexible but slow [alternative from Lucio Silveira](http://blogs.msdn.com/b/powershell/archive/2012/07/13/join-object.aspx), and settled on extending [a nice modification from Dave Wyatt](http://powershell.org/wp/forums/topic/merging-very-large-collections/).
 
+The result is yet another [Join-Object](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Join-Object.ps1).
+
 ### Overview
 
 Let's look at a silly concocted example. I have a spreadsheet of managers, and a spreadsheet of departments. For some inexplicable reason, I need to match up departments to their manager's birthday.
