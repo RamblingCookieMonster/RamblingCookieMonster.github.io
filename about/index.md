@@ -19,14 +19,17 @@ I live in Rochester, New York and spend my days designing and building solutions
 
 ### Where did you get the rambling cookie monster handle?
 
-I have a voracious appetite for cookies and other sweets.  A co-worker noticed this and gave me the cookie.monster@ e-mail address.  Another co-worker added the handle to our office name plate.  On a side note, being known as the cookie monster does not help when you want to cut back on cookies.
+I have a voracious appetite for cookies and other sweets.  A co-worker noticed this and gave me the cookie.monster@*fqdn* e-mail address.  Another co-worker added the handle to our office name plate.
+
+On a side note, being known as the cookie monster does not help when you want to cut back on cookies.
 
 ![Nameplate]({{ site.baseurl }}/images/about/nameplate.png)
 
 ### Get in touch
 
-* [GitHub](https://github.com/RamblingCookieMonster)
-* [LinkedIn](https://www.linkedin.com/in/wframe)
-* [Technet Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=Cookie.Monster)
+* E-mail: first name dot f r a m e @ gmail.com
 * [Twitter](https://twitter.com/psCookieMonster)
+* [LinkedIn](https://www.linkedin.com/in/wframe)
+* [GitHub](https://github.com/RamblingCookieMonster)
+* [Technet Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=Cookie.Monster)
 * [About.Me](https://about.me/ramblingcookiemonster)
