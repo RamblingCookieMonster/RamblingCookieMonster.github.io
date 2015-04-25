@@ -56,7 +56,7 @@ Let's use PowerShell to join this data up!
 
 [Join-Object](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Join-Object.ps1) can be found in my hodge podge repository of PowerShell functions. Here's a quick rundown on the parameters:
 
-* *Left* - a collection of objects for the left side
+* *Left* - a collection of objects for the left side - you can pipe in data for this
 * *Right* - a collection of objects for the right side
 * *LeftJoinProperty* - The property on the Left collection whose value must match RightJoinProperty in the Right collection
 * *RightJoinProperty* - The property on the Right collection whose value must match LeftJoinProperty in the Left collection
