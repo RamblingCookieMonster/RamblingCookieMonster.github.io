@@ -43,7 +43,7 @@ Microsoft describes PowerShell as “a task-based command-line shell and scripti
 
 #### PowerShell can interact with a dizzying number of technologies.
 
-* .NET Framework, the Registry, COM, WMI, ADSI.  Exchange, Sharepoint, Systems Center, Hyper-V, SQL.  [VMware vCenter](http://www.vmware.com/support/developer/PowerCLI/), Cisco UCS, Citrix XenApp and XenDesktop.  REST APIs, XML, CSV, JSON, websites, Excel and other Office applications.  [C# and other languages](http://www.dougfinke.com/blog/index.php/2010/08/29/how-to-load-net-assemblies-in-a-powershell-session/), DLLs and other binaries, including *nix tools.  A language that can work with and integrate these various technologies can be incredibly valuable.
+* .NET Framework, the Registry, COM, WMI, ADSI.  Exchange, Sharepoint, Systems Center, Hyper-V, SQL.  [VMware vCenter](http://www.vmware.com/support/developer/PowerCLI/), Cisco UCS, Citrix XenApp and XenDesktop.  REST APIs, XML, CSV, JSON, websites, [Excel](http://ramblingcookiemonster.github.io/PSExcel-Intro/) and other Office applications.  [C# and other languages](http://www.dougfinke.com/blog/index.php/2010/08/29/how-to-load-net-assemblies-in-a-powershell-session/), DLLs and other binaries, including *nix tools.  A language that can work with and integrate these various technologies can be incredibly valuable.
 * Windows is not text based.  Sooner or later you will need to do something that you can’t do with *nix tools and other text based languages.  Many of the technologies that PowerShell can interact with simply do not have text based interfaces, and may not even be directly accessible from more formal languages like Perl or Python.
 
 #### PowerShell is object-based.
