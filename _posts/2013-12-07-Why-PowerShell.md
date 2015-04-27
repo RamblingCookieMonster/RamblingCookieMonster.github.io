@@ -11,7 +11,7 @@ image:
 ---
 {% include _toc.html %}
 
-I often find myself explaining why someone with responsibilities on the Windows side of the fence should learn PowerShell.  I decided to write this as a reference going forward.
+I often find myself explaining why someone with responsibilities on the Microsoft side of the fence should learn PowerShell.  I decided to write this as a reference going forward.
 
 I won’t be arguing for PowerShell over other Microsoft languages such as VBScript or batch, or general purpose languages such as Python or Perl.  There is a place for all of these languages, but if you work with the Microsoft and surrounding ecosystems, PowerShell is an important language to learn.
 
@@ -69,7 +69,7 @@ Microsoft describes PowerShell as “a task-based command-line shell and scripti
 * PowerShell is not just for systems administrators.
 * Douglas Finke wrote [a great, quick read](http://shop.oreilly.com/product/0636920024491.do) on what developers and others can get out of PowerShell.  His blog [Development in a Blink](http://dougfinke.com/blog/), and Joel Bennett’s Huddled Masses provide helpful development-oriented PowerShell articles.  Given the object-based nature of PowerShell and tight integration with .NET and other technologies, this shouldn’t be surprising.
 * The Desktop side isn’t excluded.  Windows 7 and later include PowerShell.  Audit local administrators and other details across your domain.  Support end users without interruption.  Tie together various desktop tools that have a command line interface.  Build [a GUI interface for your Support staff](http://gallery.technet.microsoft.com/Arposh-Windows-System-a1beb102) that can easily be modified by non-developers.
-* DBAs on the Windows side of the house benefit from PowerShell as well.  Gather an [inventory of your SQL instances](http://learn-powershell.net/2013/09/15/find-all-sql-instances-using-powershell-plus-a-little-more/).  Monitor SQL performance.  Write tools that fit your exact needs rather than spending money on proprietary, not-tailored-to-you solutions.  Chad Miller of the now defunct [Sev17](http://sev17.com/) has written many posts on [PowerShell for SQL](http://cmille19.wordpress.com/2009/04/19/the-value-proposition-of-powershell-to-dbas/).
+* DBAs on the Microsoft side of the house benefit from PowerShell as well.  Gather an [inventory of your SQL instances](http://learn-powershell.net/2013/09/15/find-all-sql-instances-using-powershell-plus-a-little-more/).  Monitor SQL performance.  Write tools that fit your exact needs rather than spending money on proprietary, not-tailored-to-you solutions.  Chad Miller of the now defunct [Sev17](http://sev17.com/) has written many posts on [PowerShell for SQL](http://cmille19.wordpress.com/2009/04/19/the-value-proposition-of-powershell-to-dbas/).
 
 ### Where can I learn more?
 
