@@ -15,7 +15,7 @@ image:
 
 ### Who are you?
 
-I live in Rochester, New York and spend my days designing and building solutions as a Systems Engineer in a regional health system.  My various pursuits include science, information security, technology, cooking, tennis, and spending time with my wife and family.
+I live in Rochester, New York and spend my days designing and building solutions as a Senior Systems Engineer in a regional health system.  My various pursuits include science, information security, technology, cooking, tennis, and spending time with my wife and family.
 
 ### Where did you get the rambling cookie monster handle?
 
