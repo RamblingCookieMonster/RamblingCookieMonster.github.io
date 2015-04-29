@@ -11,6 +11,8 @@ image:
 ---
 {% include _toc.html %}
 
+*Edit*: This material has been adapted and augmented by Don Jones into the [Why PowerShell?](https://www.penflip.com/powershellorg/why-powershell) eBook.
+
 I often find myself explaining why someone with responsibilities on the Microsoft side of the fence should learn PowerShell.  I decided to write this as a reference going forward.
 
 I won’t be arguing for PowerShell over other Microsoft languages such as VBScript or batch, or general purpose languages such as Python or Perl.  There is a place for all of these languages, but if you work with the Microsoft and surrounding ecosystems, PowerShell is an important language to learn.
