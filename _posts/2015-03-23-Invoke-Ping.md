@@ -16,7 +16,7 @@ I grew up playing with legos. They were fun, and they spurn the imagination. You
 
 I use the lego anecdote when talking about PowerShell with newcomers. You might start with single cmdlets and premade functions. You can pipe them together, follow some examples and blog posts, and eventually get the hang of building [advanced functions](https://ramblingcookiemonster.wordpress.com/2013/12/08/building-powershell-functions-best-practices/) and modules to meet your needs and imagination.
 
-Modular code is one of the many [benefits to scripting](https://ramblingcookiemonster.wordpress.com/2013/12/07/why-powershell/) and programming in general. Let's take a look at a practical example, with a function that can speed up testing connectivity to systems.
+Modular code is one of the many [benefits to scripting](http://ramblingcookiemonster.github.io/Why-PowerShell/) and programming in general. Let's take a look at a practical example, with a function that can speed up testing connectivity to systems.
 
 ### Test-Connection
 
