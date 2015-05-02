@@ -132,7 +132,7 @@ Lastly, a reasonable gamification system might encourage using the repository.
 
 #### Process
 
-* Would need to ensure the community could contribute, while allowing control for the authors and organizations behind a tool.
+* Would need to balance the need for community contribution with the ability for authors and organizations behind a tool to control details about it.
 * Would need advanced search capabilities (e.g. by specific badges, combination of badges, regular expressions, etc.).
 * Would need strong moderation to avoid spam, duplicate submissions, inaccurate submissions, and other problematic input.
 
