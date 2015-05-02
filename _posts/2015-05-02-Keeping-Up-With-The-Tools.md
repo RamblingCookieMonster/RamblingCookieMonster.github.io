@@ -34,7 +34,7 @@ SSH from PowerShell you say?
 
 [No more relying on COM](http://ramblingcookiemonster.github.io/PSExcel-Intro/) to manipulate Excel files!
 
-![OctoTree](/images/tools/octotree.png)
+![Octotree](/images/tools/octotree.png)
 
 Octotree is handy, but certainly not a life changer. It got me thinking - how on earth would I have found this if I didn't catch Matt's tweet?
 
@@ -129,6 +129,14 @@ Some sort of system for simple comments for a particular tool might be helpful, 
 Similarly, a voting mechanism could help identify popular tools.
 
 Lastly, a reasonable gamification system might encourage using the repository.
+
+#### Process
+
+* Would need to ensure the community could contribute, while allowing control for the authors and organizations behind a tool.
+* Would need advanced search capabilities (e.g. by specific badges, combination of badges, regular expressions, etc.).
+* Would need strong moderation to avoid spam, duplicate submissions, inaccurate submissions, and other problematic input.
+
+There's a lot more that would need to be considered, but from my perspective, it would be well worth it and would benefit the entire IT / Dev community.
 
 ### Wishful thinking
 
