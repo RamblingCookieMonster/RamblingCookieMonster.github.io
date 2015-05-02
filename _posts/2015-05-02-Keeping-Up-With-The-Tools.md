@@ -98,7 +98,7 @@ Many to many relationship, covering related external links:
 * Official download site
 * Repository, if open source
 * License
-* Wiki's, guides, etc.
+* Wikis, guides, etc.
 
 #### Tags, not buckets
 
