@@ -133,7 +133,7 @@ Lastly, a reasonable gamification system might encourage using the repository.
 #### Process
 
 * Would need to balance the need for community contribution with the ability for authors and organizations behind a tool to control details about it.
-* Would need advanced search capabilities (e.g. by specific badges, combination of badges, regular expressions, etc.).
+* Would need advanced search capabilities (e.g. by specific badges, combination of badges, update date, regular expressions, etc.).
 * Would need strong moderation to avoid spam, duplicate submissions, inaccurate submissions, and other problematic input.
 
 There's a lot more that would need to be considered, but from my perspective, it would be well worth it and would benefit the entire IT / Dev community.
