@@ -124,9 +124,9 @@ It would thus turn up if I searched for the GitHub tag, or a combination of Wind
 
 #### Community engagement
 
-Some sort of system for simple comments for a particular tool might be helpful, with a moderation system in place to avoid going the youtube direction.
+Some sort of system for simple comments for a particular tool might be helpful, with a moderation system in place to avoid going the youtube direction. How does the tool solve a particular problem? What systems does integrate with? Are there major shortcomings when using it in a particular scenario?
 
-Similarly, a voting mechanism could help identify popular tools.
+A voting mechanism could help identify popular tools. Might need consideration for how certain competitors might abuse the system (maybe vote up only, similar to hacker news).
 
 Lastly, a reasonable gamification system might encourage using the repository.
 
