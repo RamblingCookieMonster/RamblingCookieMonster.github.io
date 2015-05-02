@@ -18,7 +18,7 @@ How do we keep up with these?
 
 ### A Full Time Job
 
-For all their benefits, your best bet for keeping up to date will involve combing blogs and social media like Twitter, checking for the occasional updates to canonical references like [Scott Hanselman's list](http://hanselman.com/tools), and exploring links and notes in your favorite projects.
+For all their benefits, your best bet for keeping up to date on these tools will involve combing blogs and social media like Twitter, checking for the occasional updates to canonical references like [Scott Hanselman's list](http://hanselman.com/tools), and exploring links and notes in your favorite projects.
 
 #### Blogs and Social Media
 
