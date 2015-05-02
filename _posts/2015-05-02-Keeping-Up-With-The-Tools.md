@@ -36,7 +36,7 @@ SSH from PowerShell you say?
 
 ![OctoTree](/images/tools/octotree.png)
 
-OctoTree is handy, but certainly not a life changer. It got me thinking - how on earth would I have found this if I didn't catch Matt's tweet?
+Octotree is handy, but certainly not a life changer. It got me thinking - how on earth would I have found this if I didn't catch Matt's tweet?
 
 Websites and Twitter are inefficient. You might miss a tool or idea, and how do you search for these after the fact if you don't know they exist?
 
