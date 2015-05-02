@@ -16,9 +16,9 @@ Tools are a common topic in many IT communities. They can simplify and improve o
 
 How do we keep up with these?
 
-### A Full Time Job
+### Today
 
-For all their benefits, your best bet for keeping up to date on these tools will involve combing blogs and social media like Twitter, checking for the occasional updates to canonical references like [Scott Hanselman's list](http://hanselman.com/tools), and exploring links and notes in your favorite projects.
+For all their benefits, your best bet for keeping up to date on these tools today involves combing blogs and social media like Twitter, checking for the occasional updates to canonical references like [Scott Hanselman's list](http://hanselman.com/tools), and exploring links and notes in your favorite projects.
 
 #### Blogs and Social Media
 
@@ -72,9 +72,11 @@ You could also search through various systems for something you are interested i
 
 Stumbling across new tools and services happens, but it requires a bit of effort, and a little luck. Searching requires that you know what you are looking for, which might be tough if you didn't realize a tool or service existed.
 
-#### Today
+#### The problem
 
 These methods aren't very efficient with our time, and can leave us in the dark if we overlook a particularly handy tool or service. Keeping up with everything could be enough to fill a full time job.
+
+This can be particularly fun if you enjoy learning. I would rather spend time learning the core ideas behind databases, web servers, DVCSs, CI/CD, unit testing, and other areas, rather than trying to sift through the toolsets to work with these.
 
 ### Tomorrow
 
@@ -103,7 +105,7 @@ Many to many relationship, covering related external links:
 
 Buckets frustrate me. Unless you have mutually exclusive categories, you need tags, not buckets.
 
-You might want tags related to the functionality, the operating environment, related services, competing services, etc.
+You might want tags related to functionality, operating environment, related services, competing services, etc.
 
 For example, I might tag AppVeyor as follows:
 
