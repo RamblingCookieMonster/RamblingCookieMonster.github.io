@@ -65,7 +65,7 @@ Clicking through, I noticed a badge I hadn't seen before:
 
 ![Ready badge](/images/tools/readybadge.png)
 
-That badge [took me to a cool service](https://waffle.io/powershell/dscresources) which helps you manage GitHub issues. Sergei mentioned this and a few other GitHub related tools on Twitter - I asked how he discovered these handy services, and it turns out he had been exploring as well.
+That badge [took me to a cool service](https://waffle.io/powershell/dscresources) which helps you manage GitHub issues. Sergei mentioned this and a few other GitHub related tools on Twitter - I asked how he discovered these handy services, and it turns out he had been exploring as well:
 
 ![GitHub services](/images/tools/vors.png)
 
