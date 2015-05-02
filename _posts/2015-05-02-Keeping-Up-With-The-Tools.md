@@ -47,7 +47,6 @@ There are tool lists galore out there.
 * [Scott Hanselman's Ultimate Developer and Power Users Tool List for Windows](http://www.hanselman.com/tools)
 * [SecTools.org Top 125 Network Security Tools](http://sectools.org/)
 * [Shameless Plug - my favorite tools](http://ramblingcookiemonster.github.io/Pages/Tools.html)
-* [A curated list of open source sysadmin resources](https://github.com/n1trux/awesome-sysadmin)
 
 On top of these, you will find a variety of community [posts](http://www.reddit.com/r/sysadmin/comments/1yxouf/whats_your_omgthankyou_freeware_list/) asking about favorite tools and tips, [perhaps](https://news.ycombinator.com/item?id=6946354) even oriented around the tool lists themselves.
 
