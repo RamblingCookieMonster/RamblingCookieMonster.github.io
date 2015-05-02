@@ -24,7 +24,7 @@ For all their benefits, your best bet for keeping up to date on these tools will
 
 I use the term blog loosely, perhaps covering everything with an RSS feed. These can introduce you to some fantastic tools, and give you practical examples of how to use them. [Posh-SSH](http://www.powershellmagazine.com/2014/07/03/posh-ssh-open-source-ssh-powershell-module/) popped up on the PowerShell Magazine feed a while back. [Mouse Without Borders](http://www.microsoft.com/en-us/download/details.aspx?id=35460) turned up at one point, which I now rely on to seamlessly control a few computers at my desk, and an HTPC from my couch.
 
-Social media like Twitter can be insightful as well. Nowadays, I pretty much rely on this to discover new tools and ideas. It would be impractical to read through every tweet, but retweets, favorites, and following the right folks can help you pick out particularly handy ideas and tools:
+Social media like Twitter can be insightful as well. Nowadays, I pretty much rely on this to discover new tools and services. It would be impractical to read through every tweet, but retweets, favorites, and following the right folks can help you pick out particularly handy tools:
 
 ![Posh-SSH](/images/tools/poshssh.png)
 
@@ -70,11 +70,11 @@ That badge [took me to a cool service](https://waffle.io/powershell/dscresources
 
 You could also search through various systems for something you are interested in. For example, you might [search GitHub](https://github.com/search?l=powershell&q=stars%3A%3E1&s=stars&type=Repositories) for the most starred PowerShell repositories.
 
-Stumbling across new tools and ideas happens, but it requires a bit of effort, and a little luck. Searching requires that you know what you are looking for, which might be tough if you didn't realize a tool or idea existed.
+Stumbling across new tools and services happens, but it requires a bit of effort, and a little luck. Searching requires that you know what you are looking for, which might be tough if you didn't realize a tool or service existed.
 
 #### Today
 
-These methods aren't very efficient with our time, and can leave us in the dark if we overlook a particularly handy tool or idea. Keeping up with everything could be enough to fill a full time job.
+These methods aren't very efficient with our time, and can leave us in the dark if we overlook a particularly handy tool or service. Keeping up with everything could be enough to fill a full time job.
 
 ### Tomorrow
 
@@ -132,8 +132,8 @@ Lastly, a reasonable gamification system might encourage using the repository.
 
 Could someone please build this for me? : )
 
-Until we see a more centralized solution, be sure to keep an eye out on websites and social media, check out the variety of tool lists and their discussions, and explore around to find new tools and ideas.
+Until we see a more centralized solution, be sure to keep an eye out on websites and social media, check out the variety of tool lists and their discussions, and explore around to find new tools, services, and ideas.
 
-Even if you think a tool or idea is well established or obvious, it doesn't hurt to share it. We have new folks in the field every day, and even a veteran will miss the occasional invaluable tool.
+Even if you think a tool is well established or obvious, it doesn't hurt to share it. We have new folks in the field every day, and even a veteran will miss the occasional invaluable tool.
 
 Cheers!
