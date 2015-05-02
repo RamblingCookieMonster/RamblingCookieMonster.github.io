@@ -79,7 +79,7 @@ These methods aren't very efficient with our time, and can leave us in the dark 
 
 ### Tomorrow
 
-I'm hoping we see a solution to this at some point. Why is there not a repository of tools, similar to the StackExchange's [repository of questions](http://stackoverflow.com/) and answers that we all rely upon?
+I'm hoping we see a solution to this at some point. Why is there not a repository of IT / Dev tools, similar to the StackExchange's [repository of questions](http://stackoverflow.com/) and answers that we all rely upon?
 
 You can stop reading here, might get a bit boring, but here's an outline of a solution I would find helpful:
 
