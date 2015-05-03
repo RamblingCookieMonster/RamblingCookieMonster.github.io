@@ -65,7 +65,7 @@ How can you help convince management? A few ideas, and would love to hear more i
 * **Band together**. Even if your automation and scripting cohorts are on different teams, discuss this challenge with them and make sure you are working towards a common goal.
 * **Pretty charts and statistics**. Seriously. Management eats this stuff up. I do to - who doesn't like a pretty chart? Show them that the number of servers / clients / printers / users / services / whatever-you-manage is growing. Highlight the [benefits of scripting](https://www.penflip.com/powershellorg/why-powershell/blob/master/chapter2.txt). Point out recent situations where the benefits at that link were particularly helpful. Highlight situations where a scripted solution was not used, and point out the room for improvement. Try to use real numbers. Don't bore them to death or put them on the defensive.
 
-There are likely more and better ways to convince management of the need to hire and keep problem solvers who can automate and design consistent, scalable solutions, rather than click-next laggards, but this should get you started.
+There are likely more ways to convince management, and different methods might be needed depending on the manager in question, but this should get you started.
 
 #### Adjusting hiring processes
 
