@@ -22,7 +22,7 @@ With these changes, we're seeing a wealth sentiment in line with this quip from 
 
 I fully support this message, but I suspect Jeffrey is preaching to the choir: if you're reading tweets about PowerShell from Jeffrey Snover, chances are you aren't trying to hold this vision back. Here are a few among many posts on the topic:
 
-* [You'll Pry The GUI From My Cold Dead Hands](http://stevenmurawski.com/powershell/2015/4/youll-pry-the-gui-from-my-cold-dead-hands-1)
+* [You'll Pry the GUI From My Cold Dead Hands](http://stevenmurawski.com/powershell/2015/4/youll-pry-the-gui-from-my-cold-dead-hands-1)
 * [I'M Over You](http://stevenmurawski.com/powershell/2015/5/im-over-you)
 * [Don’t like PowerShell? Get Over It And Get On With It](https://www.petri.com/dont-like-powershell-get-over-it-and-get-on-with-it)
 * [Sysadmins that can't script have a choice](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html)
