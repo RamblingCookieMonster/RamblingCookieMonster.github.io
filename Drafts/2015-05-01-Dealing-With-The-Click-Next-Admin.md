@@ -14,7 +14,7 @@ image:
 
 ### Rambling
 
-These are exciting times in the Microsoft world. Various components of the Microsoft ecosystem are going open source, PowerShell v5 is nearing release, and a server without local logon capability is coming. Microsoft seems more energized and agile with Satya at the helm.
+These are exciting times in the Microsoft world. Various components of the Microsoft ecosystem are going open source, PowerShell v5 is nearing release, and [a server](http://channel9.msdn.com/events/build/2015/2-755) without local logon capability is coming. Microsoft seems more energized and agile with Satya at the helm.
 
 With these changes, we're seeing a wealth sentiment in line with this quip from Jeffrey:
 
@@ -75,7 +75,7 @@ This one will be tough, and depends on the position you have open. I don't have 
 
 * Try to balance the desire to have someone hit the ground running, with the reality that you might miss the perfect candidate who happens to be motivated, curious, willing and able to learn your stack, but who might have a different background. If you say "I need X years of experience with PowerShell" you might miss out on a guy who has years of experience with Perl, bash, SQL, and other comparable skills, who would be a perfect fit. You might miss out on someone like Dave Wyatt, because you focused on a specific requirement like SQL Server experience.
 * Have an interview process that can weed out impostors. I've heard some of the worst laggards claim that they could script. I've seen folks who get confused by the verb-noun convention claim that they are proficient with PowerShell.
-* Be careful not to weed out folks who have trouble with interviews. Don't ask specific, trivial questions that might freeze them up. Ask open-ended questions that will tell you enough about their skillset and thought processes. Some example questions I might ask on PowerShell [here](https://www.linkedin.com/grp/post/140856-5854635872405712900?goback=%2Egna_140856) (ctrl+f Warren).
+* Be careful not to weed out folks who have trouble with interviews. Don't ask specific, trivial questions that might freeze them up. Ask open-ended questions that will tell you enough about their skillset and thought processes. Some example questions I might ask on PowerShell [here](https://www.linkedin.com/grp/post/140856-5854635872405712900?goback=%2Egna_140856) (ctrl+f Warren), keeping in mind I would lean towards even more general concepts if there wasn't a specific requirement to have someone with existing proficiency in PowerShell.
 * Beware the ambush. Click-next-admins, and management that has not been convinced of the need to avoid hiring them, might push for more click-next-admins. Try to avoid letting these laggard-enablers participate in the interview process. For example. I've seen a case where someone who seemed like a great fit, who was curious, had spent time with automation, and seemed to do well, be written off as "not technical enough," by a click-next-admin.
 
 I'll stop there. You can likely find better references on interviewing capable IT professionals who aren't click-next-admins.
@@ -101,13 +101,13 @@ Here's an excerpt from Tom Limoncelli's [masterpiece](http://www.amazon.com/dp/0
 
 > Some personality types lend themselves to doing repetitive tasks. These people should be valued because they solve immediate problems. This book can’t stress enough the importance of automation, but some tasks can’t be automated, such as physically delivering new machines, or are not repeated enough to make it cost-effective to be automated. This role is an important one for the team. This person can take on the load of repetitive tasks from higher-skilled people. These smaller tasks are often excellent training for higher-level tasks.
 
-#### Avoiding the challenges
+### Avoiding the Challenges
 
 It goes without saying that you might consider substituting these challenges with the challenge of finding an employer who has already dealt with them. This is a common refrain in the IT community: "just find a better job!"
 
 Unfortunately, not everyone has this flexibility; some of us may really enjoy our current positions, we might want to help transform our current organizations, or we might have external pressures that would make this quite difficult.
 
-### Further discussion
+### Further Discussion
 
 I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. I'm just making this post up as I go, because I would much rather write than reseed my yard.
 
