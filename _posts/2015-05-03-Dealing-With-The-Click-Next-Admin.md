@@ -90,10 +90,10 @@ From my perspective, this is the most challenging problem. Sure, they are ineffi
 
 You want them out of the way of any team that could benefit from scripting and automation, but you might be averse to purging them all. What can you do?
 
-* If they can be motivated, and are capable of learning, try to motivate them and encourage them to join the movement. Not everyone is made for scripting and automation, this will likely be a rare option.
-* Would they be a better fit for a team that would not benefit from automation? IMHO there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road). We still need folks to physically deliver and hook up equipment, this might be a better fit for you if [you aren't comfortable with learning how to script](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html).
-* Is it worth the trouble? If they have significant value and institutional knowledge, and are nearing retirement, things might play out on their own.
-* Do they provide minimal value, have they resisted encouragement and motivation, and are they a constant road block? You might need to make some tough decisions and open the door for someone who is curious and motivated, open to learning, and that can provide more value. I wouldn't want to make this call, but it needs to be made.
+* **Convince them to join the dark side**. If they can be motivated, and are capable of learning, try to motivate them and encourage them to join the movement. Not everyone is made for scripting and automation, this will likely be a rare option.
+* **Find a better fit for them**. Would they be a better fit for a team that would not benefit from automation? IMHO there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road). We still need folks to physically deliver and hook up equipment, this might be a better fit for you if [you aren't comfortable with learning how to script](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html).
+* **Let them leave**. Is it worth the trouble? If they have significant value and institutional knowledge, and are nearing retirement, things might play out on their own.
+* **Throw out bad apples**. Do they resist encouragement and motivation, provide little value to the organization, and constantly build road blocks? You might need to make some tough decisions and open the door for someone who is curious and motivated, open to learning, and that can provide more value. I wouldn't want to make this call, but it needs to be made.
 
 Here's an excerpt from Tom Limoncelli's [masterpiece](http://www.amazon.com/dp/0321492668/tomontime-20) that might help:
 
