@@ -71,7 +71,7 @@ There are likely more ways to convince management, and different methods might b
 
 This is intertwined with convincing management. If management doesn't buy in to the idea that they need to avoid hiring click-next admins, they might hire more. Even if you do convince them, how will you adjust the hiring process to execute on this?
 
-This one will be tough, and depends on the position you have open. I don't have many answers, but here are a few considerations:
+This one will be tough, and depends on the position you have open. I don't any answers, but here are a few considerations:
 
 * Try to balance the desire to have someone hit the ground running, with the reality that you might miss the perfect candidate who happens to be motivated, curious, willing and able to learn your stack, but who might have a different background. If you say "I need X years of experience with PowerShell" you might miss out on a guy who has years of experience with Perl, bash, SQL, and other comparable skills, who would be a perfect fit. You might miss out on someone like Dave Wyatt, because you focused on a specific requirement like SQL Server experience.
 * Have an interview process that can weed out impostors. I've heard some of the worst laggards claim that they could script. I've seen folks who get confused by the verb-noun convention claim that they are proficient with PowerShell.
