@@ -64,7 +64,7 @@ How can you help convince management? A few ideas, and would love to hear more i
   * Illustrate and highlight the consistency and scalability of a scripted or fully automated solution.
 * **Lend a hand**
   * Don't do their work for them, but partner with their teams to build a solution that will illustrate how beneficial scripting and automation can be.
-  * See Dealing with existing laggards section.
+  * See Dealing with existing laggards section, convince them bullet.
 * **Let them fail**
   * Sometimes they won't accept a helping hand.
   * Don't gloat when they fail, or when they deliver results behind schedule; lend a hand again.
