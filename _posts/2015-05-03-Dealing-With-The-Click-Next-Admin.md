@@ -111,7 +111,7 @@ Unfortunately, not everyone has this flexibility; some of us may really enjoy ou
 
 ### Further Discussion
 
-I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. If any industry experts or other folks with experience or ideas around this have any feedback or suggestions, please sound off in the comments!
+I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. If you have any experience or ideas around this, please sound off in the comments!
 
 If you have any fun, short anecdotes illustrating the challenges we face from click-next-admins, consider tweeting them with the #ClickNextAdmin tag.
 
