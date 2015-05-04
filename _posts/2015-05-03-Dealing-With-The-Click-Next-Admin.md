@@ -115,4 +115,6 @@ I would love to hear other ideas on how to get to a place where we don't have cl
 
 If you have any fun, short anecdotes illustrating the challenges we face from click-next-admins, consider tweeting them with the #ClickNextAdmin tag.
 
+![Too Busy](/images/click-next/toobusy.png)
+
 Cheers!
