@@ -122,7 +122,7 @@ You want them out of the way of any team that could benefit from scripting and a
   * Can you lend a hand? Lead them through the pseudocode and thought process that goes on as you design a solution. Slowly put together that solution while trying to impart some knowledge around the language and technologies you are working with. Encourage them to do this on their own.
   * Keep in mind that not everyone is made for scripting and automation.
 * **Find a better fit for them**
-  * Would they be a better fit for a team that would not benefit from scripting or automation? From my perspective, there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road).
+  * Would they be a better fit for a team or role that would not benefit from scripting or automation? From my perspective, there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road).
   * We still need folks to physically deliver and hook up equipment, this might be a better fit for you if [you aren't comfortable with learning how to script](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html).
 * **Let them leave**
   * Is it worth the trouble? If they have significant value and institutional knowledge, and are nearing retirement, things might play out on their own.
