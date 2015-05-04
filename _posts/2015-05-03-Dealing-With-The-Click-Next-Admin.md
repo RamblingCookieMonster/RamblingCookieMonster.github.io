@@ -14,7 +14,7 @@ image:
 
 ### Rambling
 
-I have a good deal of yard work to do; this means it's time to write. ***Disclaimer**: I'm an industry and life novice, and may be completely off base. I would love to heard your thoughts on this topic.*
+I have a good deal of yard work to do; this means it's time to write. ***Disclaimer**: I'm an industry and life novice, and may be completely off base. I would love to hear your thoughts on this topic in the comments!*
 
 These are exciting times in the Microsoft world. [More](http://blogs.msdn.com/b/dotnet/archive/2015/02/03/coreclr-is-now-open-source.aspx) and [more](http://blogs.msdn.com/b/powershell/archive/2015/04/27/dsc-resource-kit-moved-to-github.aspx) components of the Microsoft ecosystem are going open source, PowerShell v5 is nearing release, and [a server](http://channel9.msdn.com/events/build/2015/2-755) without local logon capability is coming. Microsoft seems more energized and agile with Satya at the helm.
 
