@@ -29,7 +29,7 @@ I fully support this message, but I suspect Jeffrey is preaching to the choir: i
 * [Don’t like PowerShell? Get Over It And Get On With It](https://www.petri.com/dont-like-powershell-get-over-it-and-get-on-with-it)
 * [Sysadmins that can't script have a choice](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html)
 
-This isn't a new idea; the need for scripting, and the consistent, scalable solutions it can enable was established long ago, before I even joined this field.
+This isn't a new idea; the need for scripting, and the consistent, scalable solutions it can enable was established long ago, well before I joined the field.
 
 Jeffrey started a nice discussion with his [TechDays Online](https://channel9.msdn.com/Events/Future-Decoded-Tech-Day-2014/TechDays-Online-2015/Microsoft-Corporate-Keynote-and-Interview-Jeffrey-Snover) session, but this was more about rewarding the right people than dealing with the click-next-admins:
 
