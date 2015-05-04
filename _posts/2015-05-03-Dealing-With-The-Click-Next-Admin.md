@@ -14,7 +14,7 @@ image:
 
 ### Rambling
 
-I have a good deal of yard work to do; this means it's time to write. ***Disclaimer**: I'm an industry and life novice, and may be completely off base. I would love to hear your thoughts on this topic in the comments!*
+I have a good deal of yard work to do; this means it's time to write. ***Disclaimer**: I'm an industry and life novice, and may be completely off base. I would love to hear your thoughts on this topic [in the comments](http://powershell.org/wp/2015/05/04/dealing-with-the-click-next-admin/)!*
 
 These are exciting times in the Microsoft world. [More](http://blogs.msdn.com/b/dotnet/archive/2015/02/03/coreclr-is-now-open-source.aspx) and [more](http://blogs.msdn.com/b/powershell/archive/2015/04/27/dsc-resource-kit-moved-to-github.aspx) components of the Microsoft ecosystem are going open source, PowerShell v5 is nearing release, and [a server](http://channel9.msdn.com/events/build/2015/2-755) without local logon capability is coming. Microsoft seems more energized and agile with Satya at the helm.
 
@@ -58,7 +58,7 @@ I've seen some of this first hand.
 * *They aren't developers*
 * *We have strict manual processes defined in these fancy word documents! I don't trust a script.* - Yes. Trust in manual processes over a script.
 
-How can you help convince management? A few ideas, and would love to hear more in the comments:
+How can you help convince management? A few ideas, and would love to hear more [in the comments](http://powershell.org/wp/2015/05/04/dealing-with-the-click-next-admin/):
 
 * **Lead by example**
   * Illustrate and highlight the consistency and scalability of a scripted or fully automated solution.
@@ -144,7 +144,7 @@ Unfortunately, not everyone has this flexibility; some of us may really enjoy ou
 
 ### Further Discussion
 
-I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. If you have any experience or ideas around this, please sound off in the comments!
+I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. If you have any experience or ideas around this, please sound off in the [PowerShell.org comments](http://powershell.org/wp/2015/05/04/dealing-with-the-click-next-admin/)!
 
 If you have any fun, short anecdotes illustrating the challenges we face from click-next-admins, consider tweeting them with the #ClickNextAdmin tag.
 
