@@ -14,6 +14,8 @@ image:
 
 ### Rambling
 
+I have a good deal of yard work to do; this means it's time to write. ***Disclaimer**: I'm an industry and life novice, and may be completely off base. I would love to heard your thoughts on this topic.*
+
 These are exciting times in the Microsoft world. [More](http://blogs.msdn.com/b/dotnet/archive/2015/02/03/coreclr-is-now-open-source.aspx) and [more](http://blogs.msdn.com/b/powershell/archive/2015/04/27/dsc-resource-kit-moved-to-github.aspx) components of the Microsoft ecosystem are going open source, PowerShell v5 is nearing release, and [a server](http://channel9.msdn.com/events/build/2015/2-755) without local logon capability is coming. Microsoft seems more energized and agile with Satya at the helm.
 
 With these changes, we're seeing a wealth sentiment in line with this quip from Jeffrey:
@@ -109,6 +111,8 @@ Unfortunately, not everyone has this flexibility; some of us may really enjoy ou
 
 ### Further Discussion
 
-I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. I'm just making this post up as I go, because I would much rather write than reseed my yard.
+I would love to hear other ideas on how to get to a place where we don't have click-next-admins getting in the way of delivering scalable, consistent services. If any industry experts or other folks with experience or ideas around this have any feedback or suggestions, please sound off in the comments!
 
-If any industry experts or other folks with experience or ideas around this have any feedback or suggestions, please sound off in the comments!
+If you have any fun, short anecdotes illustrating the challenges we face from click-next-admins, consider tweeting them with the #ClickNextAdmins tag.
+
+Cheers!
