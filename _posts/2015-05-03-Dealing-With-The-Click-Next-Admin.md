@@ -64,8 +64,7 @@ How can you help convince management? A few ideas, and would love to hear more i
   * Illustrate and highlight the consistency and scalability of a scripted or fully automated solution.
 * **Lend a hand**
   * Don't do their work for them, but partner with their teams to build a solution that will illustrate how beneficial scripting and automation can be.
-  * Lead them through the pseudocode and thought process that goes on as you design a solution. Slowly put together that solution while trying to impart some knowledge around the language and technologies you are working with.
-  * Encourage them and try motivating them to continue using scripting for other solutions.
+  * See Dealing with existing laggards section.
 * **Let them fail**
   * Sometimes they won't accept a helping hand.
   * Don't gloat when they fail, or when they deliver results behind schedule; lend a hand again.
@@ -120,6 +119,7 @@ You want them out of the way of any team that could benefit from scripting and a
 
 * **Convince them to join the dark side**
   * If they can be motivated, and are capable of learning, try to motivate them and encourage them to join the movement.
+  * Can you lend a hand? Lead them through the pseudocode and thought process that goes on as you design a solution. Slowly put together that solution while trying to impart some knowledge around the language and technologies you are working with. Encourage them to do this on their own.
   * Keep in mind that not everyone is made for scripting and automation.
 * **Find a better fit for them**
   * Would they be a better fit for a team that would not benefit from scripting or automation? From my perspective, there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road).
