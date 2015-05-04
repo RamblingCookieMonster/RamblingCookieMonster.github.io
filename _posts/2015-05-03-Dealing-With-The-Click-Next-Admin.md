@@ -87,7 +87,7 @@ There are likely more ways to convince management, and different methods might b
 
 This is intertwined with convincing management. If management doesn't buy in to the idea that they need to avoid hiring click-next admins, they might hire more. Even if you do convince them, how will you adjust the hiring process to execute on this?
 
-This one will be tough, and depends on the position you have open. I don't any answers, but here are a few considerations:
+This one will be tough, and depends on the position you have open. I don't have any answers, but here are a few considerations:
 
 * **Beware of precise requirements**.
   * Try to balance the desire to have someone hit the ground running, with the reality that you might miss the perfect candidate who happens to be motivated, curious, willing and able to learn your stack, but who might have a different background.
