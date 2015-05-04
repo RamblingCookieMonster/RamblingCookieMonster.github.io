@@ -74,7 +74,7 @@ How can you help convince management? A few ideas, and would love to hear more i
   * There are many situations where you literally have no choice but to script something out. These are growing more common where I work, and I suspect I'm not alone.
 * **Band together**.
   * Even if your automation and scripting cohorts are in different teams or departments, discuss this challenge with them and make sure you are working towards a common goal.
-* **Pretty charts and statistics**.
+* **Use pretty charts and statistics**.
   * Seriously. Management eats this stuff up. I do to - who doesn't like a pretty chart?
   * Show them that the number of servers / clients / printers / users / services / whatever-you-manage is growing.
   * Highlight the [benefits of scripting](https://www.penflip.com/powershellorg/why-powershell/blob/master/chapter2.txt). Point out recent situations where the benefits at that link were particularly helpful.
