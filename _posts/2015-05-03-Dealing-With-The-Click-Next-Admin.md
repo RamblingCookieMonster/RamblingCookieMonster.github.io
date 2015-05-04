@@ -120,7 +120,7 @@ You want them out of the way of any team that could benefit from scripting and a
 
 * **Convince them to join the dark side**.
   * If they can be motivated, and are capable of learning, try to motivate them and encourage them to join the movement.
-  * Not everyone is made for scripting and automation, this will likely be a rare option.
+  * Keep in mind that not everyone is made for scripting and automation.
 * **Find a better fit for them**.
   * Would they be a better fit for a team that would not benefit from scripting or automation? From my perspective, there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road).
   * We still need folks to physically deliver and hook up equipment, this might be a better fit for you if [you aren't comfortable with learning how to script](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html).
