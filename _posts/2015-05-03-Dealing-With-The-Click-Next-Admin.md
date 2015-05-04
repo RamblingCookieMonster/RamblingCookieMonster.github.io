@@ -114,7 +114,7 @@ There's a good chance you still have a major problem: What will you do with the 
 
 ### Dealing with existing laggards
 
-From my perspective, this is the most challenging problem. Sure, they are inefficient curmudgeons that are a detriment to the business on a whole, but they are often your friends. Maybe you've shared a beer or met their families.
+From my perspective, this is the most challenging problem. Sure, they are inefficient curmudgeons that are a detriment to the business on a whole, but they are often your friends. Maybe you've shared beers or met their families.
 
 You want them out of the way of any team that could benefit from scripting and automation, but you might be averse to purging them all. What can you do?
 
