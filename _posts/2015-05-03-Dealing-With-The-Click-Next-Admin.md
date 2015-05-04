@@ -47,7 +47,7 @@ I see three major challenges:
 
 I may be missing other major challenges, but these stand out to me. They are somewhat intertwined, and will all likely involve working with and influencing management.
 
-#### Convincing management
+### Convincing management
 
 This won't be easy. You could have an oblivious pointy-haired boss, a former click-next-admin-turned-manager, a manager who doesn't want to face the other challenges we'll be covering shortly, or any number of other difficulties.
 
@@ -83,7 +83,7 @@ How can you help convince management? A few ideas, and would love to hear more i
 
 There are likely more ways to convince management, and different methods might be needed depending on the manager in question, but this should get you started.
 
-#### Adjusting hiring processes
+### Adjusting hiring processes
 
 This is intertwined with convincing management. If management doesn't buy in to the idea that they need to avoid hiring click-next admins, they might hire more. Even if you do convince them, how will you adjust the hiring process to execute on this?
 
@@ -112,7 +112,7 @@ So! Let's pretend you're successful thus far. You've convinced management that c
 
 There's a good chance you still have a major problem: What will you do with the existing click-next-admins?
 
-#### Dealing with existing laggards
+### Dealing with existing laggards
 
 From my perspective, this is the most challenging problem. Sure, they are inefficient curmudgeons that are a detriment to the business on a whole, but they are often your friends. Maybe you've shared a beer or met their families.
 
