@@ -60,21 +60,21 @@ I've seen some of this first hand.
 
 How can you help convince management? A few ideas, and would love to hear more in the comments:
 
-* **Lead by example**.
+* **Lead by example**
   * Illustrate and highlight the consistency and scalability of a scripted or fully automated solution.
-* **Lend a hand**.
+* **Lend a hand**
   * Don't do their work for them, but partner with their teams to build a solution that will illustrate how beneficial scripting and automation can be.
   * Lead them through the pseudocode and thought process that goes on as you design a solution. Slowly put together that solution while trying to impart some knowledge around the language and technologies you are working with.
   * Encourage them and try motivating them to continue using scripting for other solutions.
-* **Let them fail**.
+* **Let them fail**
   * Sometimes they won't accept a helping hand.
   * Don't gloat when they fail, or when they deliver results behind schedule; lend a hand again.
   * Oh, that carefully documented process wasn't followed to the T? I'm so surprised! Want to learn how we can audit the outcome to identify mistakes, and learn how we can automate or build tooling to avoid these mistakes going forward?
-* **Highlight situations where scalability and consistency are critical**.
+* **Highlight situations where scalability and consistency are critical**
   * There are many situations where you literally have no choice but to script something out. These are growing more common where I work, and I suspect I'm not alone.
-* **Band together**.
+* **Band together**
   * Even if your automation and scripting cohorts are in different teams or departments, discuss this challenge with them and make sure you are working towards a common goal.
-* **Use pretty charts and statistics**.
+* **Use pretty charts and statistics**
   * Seriously. Management eats this stuff up. I do to - who doesn't like a pretty chart?
   * Show them that the number of servers / clients / printers / users / services / whatever-you-manage is growing.
   * Highlight the [benefits of scripting](https://www.penflip.com/powershellorg/why-powershell/blob/master/chapter2.txt). Point out recent situations where the benefits at that link were particularly helpful.
@@ -89,19 +89,19 @@ This is intertwined with convincing management. If management doesn't buy in to 
 
 This one will be tough, and depends on the position you have open. I don't have any answers, but here are a few considerations:
 
-* **Beware of precise requirements**.
+* **Beware of precise requirements**
   * Try to balance the desire to have someone hit the ground running, with the reality that you might miss the perfect candidate who happens to be motivated, curious, willing and able to learn your stack, but who might have a different background.
   * If you say "I need X years of experience with PowerShell" you might miss out on a candidate who has years of experience with Perl, bash, SQL, and other comparable skills, who would be a perfect fit. You might miss out on someone like Dave Wyatt, because you focused on a specific requirement like SQL Server experience.
-* **Beware of impostors**.
+* **Beware of impostors**
   * Have an interview process that can weed out impostors.
   * I've heard some of the worst laggards claim that they could script.
   * I've seen folks who get confused by the verb-noun convention claim that they are proficient with PowerShell.
-* **Beware of gotchas**.
+* **Beware of gotchas**
   * Be careful not to weed out folks who have trouble with interviews.
   * Don't ask specific, trivial questions that might freeze them up.
   * Ask open-ended questions that will tell you enough about their skillset and thought processes.
   * Some example questions I might ask on PowerShell [here](https://www.linkedin.com/grp/post/140856-5854635872405712900) (ctrl+f Warren), keeping in mind I would lean towards even more general concepts if there wasn't a specific requirement to have someone with existing proficiency in PowerShell.
-* **Beware of ambush**.
+* **Beware of ambush**
   * Click-next-admins, and management that has not been convinced of the need to avoid hiring them, might push for more click-next-admins.
   * Try to avoid letting these laggard-enablers participate in the hiring process.
   * I've seen a case where someone who seemed like a great fit, who was curious, had spent time with automation, and seemed to do well, be written off as "not technical enough," by a click-next-admin.
@@ -118,15 +118,15 @@ From my perspective, this is the most challenging problem. Sure, they are ineffi
 
 You want them out of the way of any team that could benefit from scripting and automation, but you might be averse to purging them all. What can you do?
 
-* **Convince them to join the dark side**.
+* **Convince them to join the dark side**
   * If they can be motivated, and are capable of learning, try to motivate them and encourage them to join the movement.
   * Keep in mind that not everyone is made for scripting and automation.
-* **Find a better fit for them**.
+* **Find a better fit for them**
   * Would they be a better fit for a team that would not benefit from scripting or automation? From my perspective, there aren't many teams out there that meet this criteria, but it's worth considering (aside: I hope scripting and automation play a role in non-IT positions down the road).
   * We still need folks to physically deliver and hook up equipment, this might be a better fit for you if [you aren't comfortable with learning how to script](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html).
-* **Let them leave**.
+* **Let them leave**
   * Is it worth the trouble? If they have significant value and institutional knowledge, and are nearing retirement, things might play out on their own.
-* **Throw out bad apples**.
+* **Throw out bad apples**
   * Do they resist encouragement and motivation, provide little value to the organization, and constantly build road blocks? You might need to make some tough decisions and open the door for someone who is curious and motivated, open to learning, and that can provide more value.
   * I wouldn't want to make this call, but it needs to be made.
 
