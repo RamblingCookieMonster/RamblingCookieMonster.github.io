@@ -26,7 +26,7 @@ The code referenced in this post is now part of the [PSDiskPart](https://github.
 
 The [AppVeyor yaml file](https://github.com/RamblingCookieMonster/Wait-Path/blob/master/appveyor.yml) used in the Wait-Path repository is fairly straightforward. It installs pester and runs a few lines of PowerShell. The readability for those PowerShell lines was a bit painful - no syntax highlighting, some shortcuts to keep code on one line, etc. My first step was to abstract most of the PowerShell out to another script.
 
-The [PSDiskPart AppVeyor yaml file]https://github.com/RamblingCookieMonster/PSDiskPart/blob/master/appveyor.yml) is the result. It’s a little cleaner; the only test_script lines are calls to a single PowerShell script.
+The [PSDiskPart AppVeyor yaml file](https://github.com/RamblingCookieMonster/PSDiskPart/blob/master/appveyor.yml) is the result. It’s a little cleaner; the only test_script lines are calls to a single PowerShell script.
 
 Not everyone would prefer this method, as it adds a layer of complexity, but I like the abstraction, and it enables the second line of PowerShell, where we call PowerShell.exe -version 2. So what’s in the appveyor.pester.ps1 controller script?
 
