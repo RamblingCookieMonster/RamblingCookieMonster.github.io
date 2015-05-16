@@ -76,9 +76,30 @@ Environment by average experience
 SO! IT Pros, and Microsoft IT Pro's in particular need more experience, exposure, and encouragement!
 
 WHAT ELSE?
+Look at what VCS MS Ecosystem uses
+
+Look at what VCS is used where TEAMS are pushing back, or not using, or not consistent
+
+Most popular VCS or services; are any tied to positive outcomes with VCS, or is this a chicken and egg issue? Consistency
+
+If YOU are against VCS, what VCS is in use? Comments?
+
+SQLSAT: Database master key > Secret Server
+SQLSAT: EXECUTE AS
+
+
+How to improve:
+* Simplicity - tool needs to be simple enough to use, allow you to dive in to flexible CLI interface where needed.  GitHub GUI / Git CLI as an example.  How can we get this in a Microsoft ecosystem for a reasonable price? Considering the value proposition of VCS to the current IT pro, need to adjust expectations
+* Champions - need this on all levels. Vendors should be encouraging their customers, management should be encouraging their teams, individuals in the know should be encouraging their management and teams
 
 
 
+Look at why folks don't use VCS:
+    MS / Heterogeneous are the only envs with respondents against VCS
+    Team is consistently the biggest push back.  Click-next-admin tie in
+    Management is seen as a factor 1/3 of time in MS env
+
+    No one is championing it? Why! mgmt? MS? So many processes and technologies benefit or require a VCS, how is it so uncommon!
 
 
 General comments
