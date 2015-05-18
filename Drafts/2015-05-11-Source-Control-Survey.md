@@ -2,175 +2,160 @@
 layout: page
 title: Source Control Survey Results
 excerpt: "What's source control?"
-tags: [PowerShell, Rambling, Automation, Devops]
-modified: 2015-05-10 22:00:00
-date: 2015-05-10 22:00:00
+tags: [PowerShell, Rambling, Automation, Devops, GitHub, Source Control, Revision Control, Version Control]
+modified: 2015-05-17 22:00:00
+date: 2015-05-17 22:00:00
 comments: true
 image:
  feature: banner.jpg
- thumb: /rabbitmq/next.png
+ thumb: /source-control/ItsEasyJustFollowThisModel.png
 ---
 {% include _toc.html %}
 
 ### Rambling
 
-I've been spamming various mediums this past week, looking for victims to participate in an informal, poorly thought out survey on source control for the IT professional.
+Given all the recent excitement around tools like Desired State Configuration, Chef, Puppet, Pester, AppVeyor, and more, you might assume source control was well established in the IT community. After all, what good is your infrastructure-as-code if it's not in source control? How will you automatically kick off testing and deployment upon commit, without a version control system to commit to?
 
-Given all the recent excitement about tools like Desired State Configuration, Chef, Puppet, Pester, AppVeyor, and related tools, you might assume source control was well established in the IT Pro community. After all, what good is your infrastructure-as-code if it's not in source control? How would you automatically kick off testing and deployment upon commit, without a version control system to commit to?
+Don Jones recently asked a crowd whether they were using source control, during the [PowerShell Unplugged](http://channel9.msdn.com/Events/Ignite/2015/BRK4451) Ignite session with Jeffrey Snover. I followed up to ask how much of the audience had raised their hands; Don guessed about 10 percent.
 
-Folks with experience, or any visibility into IT will realize this is not the case. 
+That's interesting. Ignite is not cheap, and this was a PowerShell specific session. With all the hoopla around technologies and processes that benefit from or even require source control, you would think a significant proportion of the audience might have raised their hands.
 
-Long story short? You can find out **who** made a change, **when** they made it, **what** the change was, and generally, **why** it was made
+I created a poorly thought out, informal survey, and pestered folks to participate. Thanks to everyone who participated! My hope is that we might extract some insight, or at the very least, shine some light on and start a discussion around this important piece of the puzzle that many seem to be missing.
 
-The need for source control is not new. You can find a variety of resources on this:
+### Wait, Why Source Control?
 
-* [The Operations Report Card](http://www.opsreportcard.com/section/6)
-* [Why should I use version control?](http://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
+I'm not going to bore you with [yet another list of reasons to use source control](http://stackoverflow.com/questions/1408450/why-should-i-use-version-control). Long story short, you should be using source control whether you work alone or with a team, whether you are a developer or an IT professional, and whether you work in a Microsoft environment or any other.
+
+Source control is an integral part of IT. Tom Limoncelli and Peter Grace list source control as one of 32 fundamental 'best practices' for high performance sysadmin teams in [the Operations Report Card](http://www.opsreportcard.com/section/6).
+
+If you still aren't convinced that source control is important, here are a few more references that might give you a reason:
+
 * [A Visual Guide to Version Control](http://betterexplained.com/articles/a-visual-guide-to-version-control/)
-### Synopsis
 * [Mercurial: The Definitive Guide](http://hgbook.red-bean.com/read/how-did-we-get-here.html)
 * [Why Use a Version Control System?](http://www.git-tower.com/learn/git/ebook/mac/basics/why-use-version-control)
 
+### The Survey
 
-### Methods
+I had a hard time coming up with meaningful questions, choices, and phrasing. There's a lot more to ask, but I wanted to keep it simple enough that most folks would take the time to finish the survey.
 
-Tweets, PowerShell.org, Reddit.com/r/sysadmin, an ArsTechnica thread.
+You're more than welcome to peruse or even take [the survey](http://bit.ly/VCSForIT), but here's a quick rundown on the questions we asked:
 
-### Data
+* Job function
+* Work environment (e.g. *nix, Microsoft)
+* Experience with VCS
+* Home use of VCS
+* Work use of VCS
+* Team use of VCS
+* Consistency of VCS at work
+* VCS at work (e.g. Git, Mercurian, SVN)
+* VCS solution at work (e.g. GitHub, TFS, BitBucket)
+* VCS solution at home
+* Survey / topical comments
 
-Raw data
+The results are not representative, so take everything here with a grain of salt; that being said, if you've been around IT, you might not find these surprising.
 
-Stats
+#### Raw Data
 
-Title
-Environment
-Experience
-Home Use
-Work Use
-Team Use
+The raw data is available [here](/images/source-control/VCSSurveyRaw.xlsx). For a basic report, check out the [TypeForm results](https://pscookiemonster.typeform.com/report/RRc2Oj/XrQF). These are a bit boring though, let's dig in a bit!
 
-Source Control Use by Job Title
-    Developers are clearly ahead. IT Professionals are using source control more than their teams.
+#### Source Control Use by Job Function
 
-    Takeaway? Leadership and individuals using source control should push harder for source control. Find tools to simplify using VCS, and consider sensible policies.  Everything into the VCS is not a sensible policy, if you aren't coming from strong existing use of a VCS...
+First, a quick glimpse at source control usage broken down by job function. We excluded job functions with less than 5 respondents.
 
-Environment By Use
-    Let's strip out the software and developer titles and focus on IT professionals. With this data, 100 % of the *nix ecosystem respondents use version control at work, with just under 90 % of their teams using it.
+![UseByJobFunction](/images/source-control/UseByJobFunction.png)
 
-    The Microsoft ecosystem, which had far more repondents, was in a sorry state.  Just over 30 % of respondents say their team uses version control. 60 % say they use it at work.
+Let's loosely group the job functions into developer and IT professional buckets - we'll keep Software and Developer functions in the developer group, and drop everything else in the IT professional group:
 
-    Between IT professionals in *nix, Microsoft, and heterogeneous ecosystems, those in the Microsoft ecosystem used source control less at home, work, and amongst their teams.
+![UseByDevVsITPro](/images/source-control/UseByDevVsITPro.png)
 
-    Takeaway? Should Microsoft do more to encourage source control use? What can they do? We need simple, easy to use tools that interface and bridge existing technologies. They should be priced in accordance with the current (low) value that Microsoft places on source control, but might serve as a gateway to further MS Dev products.
+This survey was oriented towards IT professionals; beyond here, we'll generally focus on the IT professional responses.
 
-Environment by average experience
-    This is a bit of a chicken and egg scenario - Microsoft administrators have the lowest experience on average; could their inexperience be putting them off using version control? Is version control a common competency in the *nix ecosystem?
+My takeaway? We have work to do. Less than 50 percent of responding IT professionals work on teams that use source control.
 
-    Environment seems to be a key indicator - the *nix environment is oriented around documents, which are a perfect fit for source control. Some of the more popular source control solutions are geared towards this environment; for example, an IT professional in a *nix environment will likely be quite familiar with the SSH keys used in git.
+### Source Control Use by Environment
 
-    Environment BY Average Experience:
-    *nix = 3 - A good deal
-    Hetero = 2.39 - Moderate to a good deal
-    MS = 1.99 - Just under moderate
+Let's focus on the IT professionals, and look at whether working in a Microsoft, *nix, or heterogeneous environment might impact source control use.
 
-SO! IT Pros, and Microsoft IT Pro's in particular need more experience, exposure, and encouragement!
+![UseByEnvironment](/images/source-control/UseByEnvironment.png)
 
-WHAT ELSE?
-Look at what VCS MS Ecosystem uses
+Things get ugly for the Microsoft ecosystem here.
 
-Look at what VCS is used where TEAMS are pushing back, or not using, or not consistent
+* 100 percent of *nix ecosystem respondents use version control at work.
+* 60 percent of Microsoft ecosystem respondents use version control at work, and one third work on teams that use source control.
 
-Most popular VCS or services; are any tied to positive outcomes with VCS, or is this a chicken and egg issue? Consistency
+The 60 percent number seems high. I suspect this includes folks who do not use source control consistently (I'm in this boat). Breaking the survey's consistency question down based on my perception of whether the wording indicated strong, loose, or no consistency of source control use, Microsoft environments were more likely to have loose or no consistency, while *nix environments were more likely to have strong consistency.
 
-If YOU are against VCS, what VCS is in use? Comments?
+My takeaway? Microsoft should take action to improve source control use among IT professionals. Perhaps with simple, easy to use tools that interface with existing technologies, priced in accordance with the value placed on source control by IT professionals in Microsoft environments.
 
-SQLSAT: Database master key > Secret Server
-SQLSAT: EXECUTE AS
+### Perceived Road Blocks to Using Source Control
 
+What might be holding up the use of source control? The choices I provided here could use some work, but there are a few clear culprits:
 
-How to improve:
-* Simplicity - tool needs to be simple enough to use, allow you to dive in to flexible CLI interface where needed.  GitHub GUI / Git CLI as an example.  How can we get this in a Microsoft ecosystem for a reasonable price? Considering the value proposition of VCS to the current IT pro, need to adjust expectations
-* Champions - need this on all levels. Vendors should be encouraging their customers, management should be encouraging their teams, individuals in the know should be encouraging their management and teams
+![PerceivedRoadBlocks](/images/source-control/PerceivedRoadBlocks.png)
 
+If teams aren't buying in, and no one is championing source control, how can we expect it to flourish?
 
+My takeaway? We need more champions from all sides; IT professionals, management, and vendors. I know we have other priorities, like [dealing with click-next-admins](http://ramblingcookiemonster.github.io/Dealing-With-The-Click-Next-Admin/), but using source control is a base capability. How many well performing IT departments don't have a ticketing or monitoring system?
 
-Look at why folks don't use VCS:
-    MS / Heterogeneous are the only envs with respondents against VCS
-    Team is consistently the biggest push back.  Click-next-admin tie in
-    Management is seen as a factor 1/3 of time in MS env
+### What Keeps the Road Blocks Up?
 
-    No one is championing it? Why! mgmt? MS? So many processes and technologies benefit or require a VCS, how is it so uncommon!
+Here, we stray further into conjecture.
 
+#### Experience
 
-General comments
-It's for your own benefit as much or more than it is for others!    @rnelson0, http://rnelson0.com
+How many of you like to use technology you aren't experienced with? This is a bit of a chicken-and-egg scenario, but Microsoft respondents were the least experienced with source control, by their own accord:
 
-Can't understand why infrastructure is so far behind development 
-IT pros dont see it as an issue. They dont come from a dev background
-I love the idea of source control, but find it difficult to get buy in from the rest of my team.
-At first mercurial seemed like a hindrance, but after using it for a couple months I dont know how this company survived so long?
-Most IT pros outside of dev heavy teams seem to only write basic scripts (if at all), so have no need for source control.
+![ExperienceByEvironment](/images/source-control/ExperienceByEvironment.png)
 
-Most of the time, it just adds complexity to the process.There should be an automated system that automatically does source control with out user intervention.  
+Services like GitHub, with its straightforward Windows client, are starting to get IT professionals like myself into the mix. This won't be enough. Not everyone takes their curiosity and explores at home, we need something as simple to use at work.
 
-Suggestions on what to put into source control (without saying "everything").
+#### Tooling
 
-This definitely needs more adoption. We just need a uniform way to sell it. For myself, I've literally had to point to a download link only on a private repo and let them know to create a user. >>>Still doesn't help with participation. I could probably sell it better if I knew it better but lack of adoption means it is used less overall.
- >>>I think it is a foreign concept, especially for non-Linux guys. Sysadmins feel they have enough to keep up with and can't add version control to the list, especially if they feel the old way is "good enough". @Codetocope
+Let's look at the source control solutions used by IT professionals in Microsoft environments where teams were using source control:
 
- Ensure it's easier to use source control than not or people won't use it.
+![VCSForMSTeams](/images/source-control/VCSForMSTeams.png)
 
-Outreach is very important; having a demo, best practice documents and virtual appliances would go a long way toward getting buy in for this.  
+* Team Foundation Server at the top? This seems like a red flag. How many organizations shell out for TFS for their IT professionals? TFS is overkill for many IT professional teams who aren't using source control yet.
+* GitHub came next. This is a solid source control solution, but some respondents listed GitHub because they keep PowerShell tools in it, not necessarily configuration files or internal scripts.
 
-Think it should be marketed better, The community as a whole may talk about it, but I don't feel it in practice @schlauge
+Let's pretend you're planning to implement a DVCS solution for an IT team. What do you go with? [I asked this](http://arstechnica.com/civis/viewtopic.php?f=20&t=1229433) a while back, and I still don't know what the best solution would be.
 
-If you do use SC, whats making it difficult. Our primary blocker is the knowledge it takes to make sure you dont screw things up 
-it needs to be easier @jrich523
+* Do you pay for an on premise solution like [Stash](https://www.atlassian.com/software/stash/) or [GitHub Enterprise](https://enterprise.github.com/features)? I've heard good things, but costs start to add up if you have a decent sized team, and you might need more management buy-in and priority, which can be tough when there aren't many on your team pushing for this.
+* Do you let GitHub, BitBucket, or another service host your repositories off premise? I would be perfectly comfortable with this, but this might be a tough sell for some. Costs also start to add up if you don't want to pile a bunch of unrelated projects and files into one repository, or have a decent sized time.
+* Do you roll your own? Roll your own on top of a service like [GitLab Community Edition](https://about.gitlab.com/features/)? There are a number of solutions out there, but the potential need to support these, the perceived lack of a de facto best choice, and the fact that many of these run over *nix systems might preclude some from going this route.
 
-As a syseng,  a lot of the code we've got is all over the place.  as such It takes effort to use Source control.  It's worth it, though... It's difficult to convince my colleagues of that though. they think that Altiris is good enough for versioning.  Lots of push back to using HG or Git
+### Next Steps
 
-INANE!  Source control is for americans. 
+There is a huge market of Microsoft oriented IT teams across the world. With a host of solutions and services that rely on or benefit from source control, you would think someone would step in and produce a solution, even if their motivation were market share and revenue, rather than improving the state of IT across organizations of all types.
 
-DON'T FEAR IT, HONEST!
+Thoughts on improving the situation:
 
-it's possible that the low take-up is just due to lack of knowledge of a solution! @girlgerms
+* **IT Professionals**
+  * Learn to use source control.
+  * Encourage your teams to use it.
+  * If it's appropriate, show them [how simple tools like GitHub are](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) for public facing repositories.
+  * Show them some of the benefits that could be had with continuous integration and deployment. Wouldn't it be nice to modify a configuration file, have a set of tests run, and automatically have it deployed to right spot?
+  * Sell your management on the important technologies that require source control, where appropriate. It's much easier to encourage your team to use source control when you have a solution in place and ready to use.
+  * Be realistic. You might be a wizard. Your co-workers (and I) are not. They will need a simple to use tool that doesn't throw up barriers greater than the perceived value. Giving them a git CLI option and telling them to follow some [git flow model](http://nvie.com/posts/a-successful-git-branching-model/) will scare some folks away.
+* **Management**
+  * This isn't a nice to have. This is [a key capability](http://www.opsreportcard.com/section/6) for high performance sysadmin teams. Without this, you'll miss out on important ideas like infrastructure-as-code, continuous integration, and continuous deployment, not to mention source control itself.
+  * Encourage your teams to use it.
+  * Re-prioritize. Solutions like [Atlassian Stash](https://www.atlassian.com/software/stash) and [GitHub Enterprise](https://enterprise.github.com/features) are reasonably priced for the value they provide. If you have a talented team, build your own system over something like [GitLab CE](https://about.gitlab.com/features/) or [Bonobo Git Server](https://bonobogitserver.com/). If you prefer hosted services, go with [GitHub](https://github.com/pricing) or [BitBucket](https://bitbucket.org/plans).
+  * Once you have a solution in place, strive for consistency. If half your critical projects and configurations aren't in source control, and two thirds of your team has no idea how to use source control, something went wrong.
+* **Vendors** - Microsoft in particular
+  * Provide simple to use VCS solutions targeting IT professionals, that work in a Microsoft or *nix environment.
+  * Re-consider your pricing. If IT professionals aren't placing much value in source control, you need to convince them otherwise, or adjust your prices.
+  * This is likely a sizable market. Do some research. If you can capture a good portion of source control for Microsoft environments, you might do well, and improve your customer's IT capabilities.
+  * Microsoft: You're including a testing framework (Pester) in Windows, pushing tools like Desired State Configuration and solutions like Chef, and you have a captive audience. Why not provide a simple version control solution oriented around IT professionals, on top of your full scale TFS solution?
 
-I need to find a method to get buy-in on version control. Tempted to remove some file shares at this point in time...
+There isn't a simple answer to this, and I would love to hear other ideas on how we can improve the consistency of source control use amongst IT professionals.
 
-We need it. Badly. @vhusker
+#### Rambling Addendum
 
-Would love to get to know how others implements VCS
+Wow! Forgot how terrible I am with Excel. It was much easier to group, filter, sort, and analyze the data in PowerShell, [sending the data out](http://ramblingcookiemonster.github.io/PSExcel-Intro/) at the end for silly charts.
 
-It is sad how few use it or realize how beneficial it can be. I often hear that there isn't time to implement or learn it. I feel there isn't enough time to ignore it. @brandonpadgett
+I also ran into a fun issue. I had a PowerShell script to analyze this data so I could incorporate new responses as they came in. Should have had it in source control; re-wrote one of the chart sections, saved, came back another day, realized I wanted the old code. Spent valuable time re-writing it. How fitting.
 
-we all agree we should, we should have a simple way of implementing
+Thank you to all the participants, and anyone still reading : )
 
-ON CONSISTENCY:
-I commit all my code that is steril from company information to private GitHub repositories; nothing is provided by the company. That has been the case for my previous job, as well. 
-
-If you want to deal with the pain of making changes that can't be reverted easily, you are free to hurt yourself. @cetanu
-
-Source control isn't used. At all. Ever. @girlgerms
-
-
-
-
-
-
-
-No hard numbers, but looking at the 'Consistency' phrasing, splitting answers into none, loose, mixed, or strong, Microsofties were more likely to have no or loose consistency, *nix were more likely to have mandated or strong consistency, heterogeneous fell in the middle.
-
-Consistency
-    Mandated
-    Strong
-    Mixed
-    Loose
-    None
-    No Answer
-    WTF?
-
-### Conclusion
-
-### Boring bits: Methodology
-
-PowerShell Unplugged http://channel9.msdn.com/Events/Ignite/2015/BRK4451
+Cheers!
