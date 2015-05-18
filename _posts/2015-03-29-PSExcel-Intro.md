@@ -22,7 +22,7 @@ On Friday, Doug Finke tweeted about an Excel module:
 
 ![Doug's tweet](/images/psexcel-intro/dfinketweet.png)
 
-Intriguing! I hadn't heard of [EPPlus](https://epplus.codeplex.com/). Turns out there's a .NET library for reading and writing Excel files, without Excel. I'm easily distracted, and Doug only gave us [a taste](https://github.com/dfinke/ImportExcel), so time to write a module!
+Intriguing! I hadn't heard of [EPPlus](https://epplus.codeplex.com/). Turns out there's a .NET library for reading and writing Excel files, without Excel. I'm easily distracted, and Doug only gave us [a taste](https://github.com/dfinke/ImportExcel), so time to write a module! [Edit: Doug has expanded [his solution](https://github.com/dfinke/ImportExcel) to a full module with a number of bells and whistles]
 
 I looked around, saw a few snippets, and one big, [comprehensive module](https://excelpslib.codeplex.com/) from Philip Thompson, but I was looking for something in between.
 
