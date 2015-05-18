@@ -105,7 +105,7 @@ Let's look at the source control solutions used by IT professionals in Microsoft
 Let's pretend you're planning to implement a DVCS solution for an IT team. What do you go with? [I asked this](http://arstechnica.com/civis/viewtopic.php?f=20&t=1229433) a while back, and I still don't know what the best solution would be.
 
 * Do you pay for an on premise solution like [Stash](https://www.atlassian.com/software/stash/) or [GitHub Enterprise](https://enterprise.github.com/features)? I've heard good things, but costs start to add up if you have a decent sized team, and you might need more management buy-in and priority, which can be tough when there aren't many on your team pushing for this.
-* Do you let GitHub, BitBucket, or another service host your repositories off premise? I would be perfectly comfortable with this, but this might be a tough sell for some. Costs start to add up if you don't want to pile a bunch of unrelated projects and files into one repository, or have a decent sized time.
+* Do you let GitHub, BitBucket, or another service host your repositories off premise? I would be perfectly comfortable with this, but this might be a tough sell for some. Costs start to add up if you don't want to pile a bunch of unrelated projects and files into one repository, or have a decent sized team.
 * Do you roll your own? Roll your own on top of a service like [GitLab Community Edition](https://about.gitlab.com/features/)? There are a number of solutions out there, but the potential need to support these, the perceived lack of a de facto best choice, and the fact that many of these run over *nix systems might preclude some from going this route.
 
 ### Next Steps
