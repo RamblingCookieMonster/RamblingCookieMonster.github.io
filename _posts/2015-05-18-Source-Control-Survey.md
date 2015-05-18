@@ -117,7 +117,7 @@ Thoughts on improving the situation:
 * **IT Professionals**
   * Learn to use source control.
   * Encourage your teams to use it.
-  * If it's appropriate, show them [how simple tools like GitHub are](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) for public facing repositories.
+  * If it's appropriate, show [that tools like GitHub are simple](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) for public facing repositories.
   * Show them some of the benefits that could be had with continuous integration and deployment. Wouldn't it be nice to modify a configuration file, have a set of tests run, and automatically have it deployed to right spot?
   * Sell your management on the important technologies that require source control, where appropriate. It's much easier to encourage your team to use source control when you have a solution in place and ready to use.
   * Be realistic. You might be a wizard. Your co-workers (and I) are not. They will need a simple to use tool that doesn't throw up barriers greater than the perceived value. Giving them a git CLI option and telling them to follow some [git flow model](http://nvie.com/posts/a-successful-git-branching-model/) will scare some folks away.
