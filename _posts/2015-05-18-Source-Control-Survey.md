@@ -20,7 +20,7 @@ Don Jones recently asked a crowd whether they were using source control, during 
 
 That's interesting. Ignite is not cheap, and this was a PowerShell specific session. With all the hoopla around technologies and processes that benefit from or even require source control, you would think a significant proportion of the audience might have raised their hands.
 
-I created a poorly thought out, informal survey, and pestered folks to participate. Thanks to everyone who participated! My hope is that we might extract some insight, or at the very least, shine some light on and start a discussion around this important piece of the puzzle that many seem to be missing.
+I created a poorly thought out, informal survey, and pestered folks to participate. Thanks to everyone who helped out! My hope is that we might extract some insight, or at the very least, shine some light on and start a discussion around this important piece of the puzzle that many seem to be missing.
 
 ### Wait, Why Source Control?
 
@@ -47,7 +47,7 @@ You're more than welcome to peruse or even take [the survey](http://bit.ly/VCSFo
 * Work use of VCS
 * Team use of VCS
 * Consistency of VCS at work
-* VCS at work (e.g. Git, Mercurian, SVN)
+* VCS at work (e.g. Git, Mercurial, SVN)
 * VCS solution at work (e.g. GitHub, TFS, BitBucket)
 * VCS solution at home
 * Survey / topical comments
@@ -56,9 +56,9 @@ The results are not representative, so take everything here with a grain of salt
 
 #### Raw Data
 
-The raw data is available [here](/images/source-control/VCSSurveyRaw.xlsx). For a basic report, check out the [TypeForm results](https://pscookiemonster.typeform.com/report/RRc2Oj/XrQF). These are a bit boring though, let's dig in a bit!
+The raw data is available [here](/images/source-control/VCSSurveyRaw.xlsx). For a basic report, check out the [TypeForm results](https://pscookiemonster.typeform.com/report/RRc2Oj/XrQF). These are a bit boring though, let's dig in!
 
-#### Source Control Use by Job Function
+### Source Control Use by Job Function
 
 First, a quick glimpse at source control usage broken down by job function. We excluded job functions with less than 5 respondents.
 
@@ -67,8 +67,6 @@ First, a quick glimpse at source control usage broken down by job function. We e
 Let's loosely group the job functions into developer and IT professional buckets - we'll keep Software and Developer functions in the developer group, and drop everything else in the IT professional group:
 
 ![UseByDevVsITPro](/images/source-control/UseByDevVsITPro.png)
-
-This survey was oriented towards IT professionals; beyond here, we'll generally focus on the IT professional responses.
 
 My takeaway? We have work to do. Less than 50 percent of responding IT professionals work on teams that use source control.
 
@@ -81,9 +79,9 @@ Let's focus on the IT professionals, and look at whether working in a Microsoft,
 Things get ugly for the Microsoft ecosystem here.
 
 * 100 percent of *nix ecosystem respondents use version control at work.
-* 60 percent of Microsoft ecosystem respondents use version control at work, and one third work on teams that use source control.
+* 60 percent of Microsoft ecosystem respondents use version control at work, and only one third work on teams that use source control.
 
-The 60 percent number seems high. I suspect this includes folks who do not use source control consistently (I'm in this boat). Breaking the survey's consistency question down based on my perception of whether the wording indicated strong, loose, or no consistency of source control use, Microsoft environments were more likely to have loose or no consistency, while *nix environments were more likely to have strong consistency.
+The 60 percent number seems high. I suspect this includes folks who do not use source control consistently (I'm in this boat). Breaking down the survey's consistency question, based on my perception of whether the wording indicated strong, loose, or no consistency of source control use, Microsoft environments were more likely to have loose or no consistency, while *nix environments were more likely to have strong consistency.
 
 My takeaway? Microsoft should take action to improve source control use among IT professionals. Perhaps with simple, easy to use tools that interface with existing technologies, priced in accordance with the value placed on source control by IT professionals in Microsoft environments.
 
