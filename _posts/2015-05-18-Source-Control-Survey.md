@@ -48,11 +48,11 @@ The raw data is available [here](/images/source-control/VCSSurveyRaw.xlsx). For 
 
 First, a quick glimpse at source control usage broken down by job function. We excluded job functions with less than 5 respondents.
 
-![UseByJobFunction](/images/source-control/UseByJobFunction.png)
+[![UseByJobFunction](/images/source-control/UseByJobFunction.png)](/images/source-control/UseByJobFunction.png)
 
 Let's loosely group the job functions into developer and IT professional buckets - we'll keep Software and Developer functions in the developer group, and drop everything else in the IT professional group:
 
-![UseByDevVsITPro](/images/source-control/UseByDevVsITPro.png)
+[![UseByDevVsITPro](/images/source-control/UseByDevVsITPro.png)](/images/source-control/UseByDevVsITPro.png)
 
 My takeaway? We have work to do. Less than 50 percent of responding IT professionals work on teams that use source control.
 
@@ -60,7 +60,7 @@ My takeaway? We have work to do. Less than 50 percent of responding IT professio
 
 Let's focus on the IT professionals, and look at whether working in a Microsoft, *nix, or heterogeneous environment might impact source control use.
 
-![UseByEnvironment](/images/source-control/UseByEnvironment.png)
+[![UseByEnvironment](/images/source-control/UseByEnvironment.png)](/images/source-control/UseByEnvironment.png)
 
 Things get ugly for the Microsoft ecosystem here.
 
@@ -75,7 +75,7 @@ My takeaway? Microsoft should take action to improve source control use among IT
 
 What might be holding up the use of source control? The choices I provided here could use some work, but there are a few clear culprits:
 
-![PerceivedRoadBlocks](/images/source-control/PerceivedRoadBlocks.png)
+[![PerceivedRoadBlocks](/images/source-control/PerceivedRoadBlocks.png)](/images/source-control/PerceivedRoadBlocks.png)
 
 If teams aren't buying in, and no one is championing source control, how can we expect it to flourish?
 
@@ -89,7 +89,7 @@ Here, we stray further into conjecture.
 
 How many of you like to use technology you aren't experienced with? This is a bit of a chicken-and-egg scenario, but Microsoft respondents were the least experienced with source control, by their own accord:
 
-![ExperienceByEvironment](/images/source-control/ExperienceByEvironment.png)
+[![ExperienceByEvironment](/images/source-control/ExperienceByEvironment.png)](/images/source-control/ExperienceByEvironment.png)
 
 Services like GitHub, with its straightforward Windows client, are starting to get IT professionals like myself into the mix. This won't be enough. Not everyone takes their curiosity and explores at home, we need something as simple to use at work.
 
@@ -97,7 +97,7 @@ Services like GitHub, with its straightforward Windows client, are starting to g
 
 Let's look at the source control solutions used by IT professionals in Microsoft environments where teams were using source control:
 
-![VCSForMSTeams](/images/source-control/VCSForMSTeams.png)
+[![VCSForMSTeams](/images/source-control/VCSForMSTeams.png)](/images/source-control/VCSForMSTeams.png)
 
 * Team Foundation Server at the top? This seems like a red flag. How many organizations shell out for TFS for their IT professionals? TFS is overkill for many IT professional teams who aren't using source control yet.
 * GitHub came next. This is a solid source control solution, but some respondents listed GitHub because they keep PowerShell tools in it, not necessarily configuration files or internal scripts.
