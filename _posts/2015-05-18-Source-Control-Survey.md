@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: Source Control Survey Results
 excerpt: "What's source control?"
 tags: [PowerShell, Rambling, Automation, Devops, GitHub, Source Control, Revision Control, Version Control]
-modified: 2015-05-17 22:00:00
-date: 2015-05-17 22:00:00
+modified: 2015-05-18 22:00:00
+date: 2015-05-18 22:00:00
 comments: true
 image:
  feature: banner.jpg
@@ -38,23 +38,9 @@ If you still aren't convinced that source control is important, here are a few m
 
 I had a hard time coming up with meaningful questions, choices, and phrasing. There's a lot more to ask, but I wanted to keep it simple enough that most folks would take the time to finish the survey.
 
-You're more than welcome to peruse or even take [the survey](http://bit.ly/VCSForIT), but here's a quick rundown on the questions we asked:
-
-* Job function
-* Work environment (e.g. *nix, Microsoft)
-* Experience with VCS
-* Home use of VCS
-* Work use of VCS
-* Team use of VCS
-* Consistency of VCS at work
-* VCS at work (e.g. Git, Mercurial, SVN)
-* VCS solution at work (e.g. GitHub, TFS, BitBucket)
-* VCS solution at home
-* Survey / topical comments
+You're more than welcome to check out the specific questions and phrasing by flipping through [the survey](http://bit.ly/VCSForIT).
 
 The results are not representative, so take everything here with a grain of salt; that being said, if you've been around IT, you might not find these surprising.
-
-#### Raw Data
 
 The raw data is available [here](/images/source-control/VCSSurveyRaw.xlsx). For a basic report, check out the [TypeForm results](https://pscookiemonster.typeform.com/report/RRc2Oj/XrQF). These are a bit boring though, let's dig in!
 
