@@ -42,8 +42,6 @@ You're more than welcome to check out the specific questions and phrasing by fli
 
 The results are not representative, so take everything here with a grain of salt; that being said, if you've been around IT, you might not find these surprising.
 
-#### Raw Data
-
 The raw data is available [here](/images/source-control/VCSSurveyRaw.xlsx). For a basic report, check out the [TypeForm results](https://pscookiemonster.typeform.com/report/RRc2Oj/XrQF). These are a bit boring though, let's dig in!
 
 ### Source Control Use by Job Function
