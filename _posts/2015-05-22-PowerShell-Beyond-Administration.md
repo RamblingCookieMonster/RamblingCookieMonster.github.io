@@ -54,7 +54,7 @@ Who knows. You might pique the attention of a more diverse audience and bring so
 
 I'm tapering out, it's almost dinner time. Also, I'm having trouble coming up with valid reasons to constrain PowerShell to IT or the dev world.
 
-Some might point to the myriad [click-next admins](http://ramblingcookiemonster.github.io/Dealing-With-The-Click-Next-Admin/) who weigh our IT departments down and can't be bothered to learn a language. I would argue that even if you had fewer knowledge workers outside of IT open to learning a language, a certain proportion would absolutely pick this up and prosper.
+Some might point to the myriad [click-next admins](http://ramblingcookiemonster.github.io/Dealing-With-The-Click-Next-Admin/) who weigh our IT departments down and can't be bothered to learn a language; if IT folks don't learn it, why would others? I would argue that even if you had fewer knowledge workers outside of IT open to learning a language, a certain proportion would absolutely pick this up and prosper.
 
 It's not cross platform. True. I'm hoping we see Jeffrey's prediction that PowerShell will go open source come true; paired with an already open source .NET Core, chances are we might see a cross platform PowerShell. Oh. Also, Windows and Office are still pretty prevalent in the enterprise, so I don't see cross platform being a necessity, yet.
 
