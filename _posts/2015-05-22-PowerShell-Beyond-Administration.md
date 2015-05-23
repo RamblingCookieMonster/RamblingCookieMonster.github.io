@@ -44,7 +44,7 @@ Saveen Reddy has done some [fantastic stuff with Visio](http://viziblr.com/news/
 
 Doug Finke wrote [ImportExcel](https://github.com/dfinke/ImportExcel), a sweet module for working with Excel, which [I hastily borrowed](http://ramblingcookiemonster.github.io/PSExcel-Intro/) and extended, before realizing Doug was planning to extend his project (sorry Doug!).
 
-As someone who has spent time outside the IT world, I would have been very happy to have had PowerShell to work with Excel, rather than learning some obtuse, delicate VBA that I would never use again. On occasion, when a mundane task comes up, I wonder how I would survive as a knowledge worker without PowerShell.
+As someone who has spent time outside the IT world, I would have been very happy to have had PowerShell to work with Excel, rather than learning some obtuse, delicate VBA that I would never use again. On occasion, when a mundane, non-IT task comes up, I can often save hours of time and ensure consistent results by using PowerShell. I wonder how I would survive as a knowledge worker without PowerShell.
 
 IT folks who lack certain software development backgrounds benefit from PowerShell's task based nature. Rather than figuring out how to define complex algorithms to sort, group, or filter, we can use built in commands for these, regardless of where the data is coming from or going to. It turns out this would be a huge benefit to folks outside of IT as well.
 
