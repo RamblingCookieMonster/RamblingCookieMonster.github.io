@@ -32,7 +32,7 @@ It's interesting to note that Jeffrey Snover's [manifesto](http://www.jsnover.co
 
 On the IT front, Windows PowerShell has come a long way. Microsoft includes it in their [CEC](http://www.microsoft.com/CEC/en/us/cec-overview.aspx), ensuring wide coverage *for their Server services and products*. Third parties like Citrix, VMware, and Cisco embrace it *for IT services and products*. It's [very important](https://www.penflip.com/powershellorg/why-powershell) for IT folks on the Microsoft side of the fence.
 
-But beyond administration? I've had non-Microsoft folks tell me "but PowerShell is for administration!" This seems odd. Why not target other audiences?
+But beyond administration? I've seen demand for it, often with the response "but PowerShell is for administration!" This seems odd. Why not target other audiences?
 
 ### Fun examples
 
