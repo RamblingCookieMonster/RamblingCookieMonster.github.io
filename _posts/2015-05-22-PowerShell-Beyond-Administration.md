@@ -46,7 +46,7 @@ Doug Finke wrote [ImportExcel](https://github.com/dfinke/ImportExcel), a sweet m
 
 As someone who has spent time outside the IT world, I would have been very happy to have had PowerShell to work with Excel, rather than learning some obtuse, delicate VBA language that I would never use again. On occasion, when a mundane, non-IT task comes up, I can often save hours of time and ensure consistent results by using PowerShell. I wonder how I would survive as a knowledge worker without PowerShell.
 
-IT folks who lack a development backgrounds benefit from PowerShell's task based nature. Rather than figuring out how to define complex algorithms to sort, group, or filter, we can use built in commands for these, regardless of where the data is coming from or going to. It turns out this would be a huge benefit to folks outside of IT as well.
+IT folks who lack a development backgrounds benefit from PowerShell's task based nature. Rather than figuring out how to define complex algorithms to sort, group, or filter, we can focus on the tasks at hand and use built in commands for these, regardless of where the data is coming from or going to. It turns out this would be a huge benefit to folks outside of IT as well.
 
 Who knows. You might pique the attention of a more diverse audience and bring some fresh ideas and insight into the world of IT and development.
 
