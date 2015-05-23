@@ -48,7 +48,7 @@ As someone who has spent time outside the IT world, I would have been very happy
 
 IT folks who lack certain software development backgrounds benefit from PowerShell's task based nature. Rather than figuring out how to define complex algorithms to sort, group, or filter, we can use built in commands for these, regardless of where the data is coming from or going to. It turns out this would be a huge benefit to folks outside of IT as well.
 
-Who knows. You might pique the attention of a more diverse audience and bring some fresh ideas and insight into the world of IT or development.
+Who knows. You might pique the attention of a more diverse audience and bring some fresh ideas and insight into the world of IT and development.
 
 ### Why not?
 
