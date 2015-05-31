@@ -79,7 +79,7 @@ No good! We have both strings and booleans now. Let's pretend there were actual 
 
 ![Offender](/images/Column-Types/Offender.png)
 
-That's it! You can use [Get-PropertyType] to quickly validate that all the objects in your collection have consistent or expected property types.
+That's it! You can use [Get-PropertyType](https://gallery.technet.microsoft.com/scriptcenter/Get-PropertyType-546b9eeb) to quickly validate that all the objects in your collection have consistent or expected property types.
 
 ### Behind the Scenes
 
