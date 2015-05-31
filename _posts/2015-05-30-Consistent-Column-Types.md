@@ -34,7 +34,6 @@ The most common way to explore an object is the Get-Member command. You can use 
 
 {% highlight powershell %}
 # Look at the methods and properties on a DateTime object from Get-Date:
-
 Get-Date | Get-Member
 {% endhighlight %}
 
