@@ -85,7 +85,7 @@ That's it! You can use [Get-PropertyType](https://gallery.technet.microsoft.com/
 
 What's going on behind the scenes? It's fairly straight forward. We get a list of property names, and we keep track of what types we see for each of these properties.
 
-If you haven't seen it, there's a nifty trick we use to get the properties. Every PowerShell object has a magical hidden *PSObject* property. Rather than parse output from Get-Member, we use this PSObject property.
+If you haven't seen it, there's a nifty trick we use to get the properties. Every PowerShell object has a magical hidden [*PSObject* property](http://blogs.msdn.com/b/besidethepoint/archive/2011/11/22/psobject-and-the-adapted-and-extended-type-systems-ats-and-ets.aspx). Rather than parse output from Get-Member, we use this PSObject property.
 
 For example, you could look at the properties of the $Date object we created earlier: ```$Date.PSObject.Properties```
 
