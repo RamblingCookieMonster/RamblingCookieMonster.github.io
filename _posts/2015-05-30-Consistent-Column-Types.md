@@ -95,7 +95,7 @@ If you poke around, you might find other helpful members of PSObject, like the P
 
 That's about it! If .NET Reflection and the strange PSObject property intrigue you, be sure to check out Bruce Payette's [PowerShell in Action](http://www.manning.com/payette2/). It targets PowerShell 2, but it contains a trove of information still applicable today. Thankfully, we might see a sequel!
 
-[![Action](/images/Column-Types/Action.png)]](https://twitter.com/brucepayette/status/476491667185213440)
+[![Action](/images/Column-Types/Action.png)](https://twitter.com/brucepayette/status/476491667185213440)
 
 
 
