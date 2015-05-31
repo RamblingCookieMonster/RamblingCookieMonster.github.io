@@ -20,7 +20,7 @@ PowerShell is easy going. It's dynamically typed - If you run ```$x = 5```, the 
 
 To make things even easier for you, PowerShell will try to finagle types into whatever it thinks they should be - it's type-promiscuous. If I run ```Get-Date -Date "1/1/2000"```, the parser sees that the Date parameter expects a DateTime, and even though we provided a string, it will attempt to convert "1/1/2000" to a fully fledged DateTime.
 
-Why am I rambling on about types? It turns out other languages and technologies might not be as forgiving as PowerShell. You might end up in a situtation where your data needs to be a specific type in PowerShell, before sending it off to another technology. SQL is a great example.
+Why am I rambling on about types? It turns out other languages and technologies might not be as forgiving as PowerShell. You might end up in a situtation where your data needs to be a specific type in PowerShell, before sending it off to another system. SQL is a great example.
 
 How can we verify what types we are working with?
 
