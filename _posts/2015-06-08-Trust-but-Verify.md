@@ -102,4 +102,4 @@ There are a number of ways to handle these out of bounds scenarios:
 
 One of the more terrifying lines I hear nowadays is the old "oh, that will just be a couple lines of code!"
 
-You might trust your code. You might trust your environment. Regardless, you should always ask yourself "what could go wrong," and verify your expectations. You might just save yourself, your employer, and your customers a major downtime, a massive data breach, or the many other potential outcomes that occur when we make assumptions.
+You might trust your code. You might trust your environment. Regardless, you should always ask yourself *what could go wrong?* and verify your expectations. You might just save yourself, your employer, and your customers a major downtime, a massive data breach, or the many other potential outcomes that occur when we make assumptions.
