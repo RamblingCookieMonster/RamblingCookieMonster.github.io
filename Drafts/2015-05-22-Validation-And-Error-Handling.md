@@ -16,7 +16,7 @@ image:
 
 A short while back, Adam Bertram was looking for suggestions on a theme for a PowerShell blog week. I suggested validation and error handling - these may seem dry, and are often overlooked, despite being absolutely critical for reliability and consistency. June corrected my phrasing:
 
-[Not dry](/images/error-handling/june.png)!
+![Not dry](/images/error-handling/june.png)
 
 June is right. The problem is, we often don't realize how important these tasks are. In real life, we tend to take these for granted as well. We look both ways before crossing the road. We check our wallet before heading to a cash-only spot. A chef taste-tests his craft. We don't stop looking at the traffic light because it was green 15 seconds ago. Many of these cases become second nature, and you may not realize you're doing it.
 
