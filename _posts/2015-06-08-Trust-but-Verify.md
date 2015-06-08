@@ -16,7 +16,7 @@ image:
 
 A short while back, Adam Bertram was looking for suggestions on a theme for a PowerShell blog week. I suggested validation and error handling - these may seem dry, and are often overlooked, despite being absolutely critical for reliability and consistency. June corrected my phrasing:
 
-[Not dry](/images/error-handling/june.png)!
+![Not dry](/images/error-handling/june.png)
 
 June is right. The problem is, we often don't realize how important these tasks are. In real life, we tend to take these for granted as well. We look both ways before crossing the road. We check our wallet before heading to a cash-only spot. A chef taste-tests his craft. We don't stop looking at the traffic light because it was green 15 seconds ago. Many of these cases become second nature, and you may not realize you're doing it.
 
@@ -54,7 +54,7 @@ Let's dive into some common scenarios. We won't be able to cover every imaginabl
 The idea with input validation is that you should control and limit the input that you take, to avoid surprising outcomes. There are a number of options:
 
 * Use built in PowerShell functionality for validation. Boe Prox wrote [a great post](http://learn-powershell.net/2014/02/04/using-powershell-parameter-validation-to-make-your-day-easier/) on this, and [about_Functions_Advanced_Parameters](https://technet.microsoft.com/en-us/library/hh847743.aspx) has a few tips as well.
-* [Use an Enum](http://ramblingcookiemonster.github.io/Types-And-Enums/) that restricts you to a few specific choices, or a strong type, such as [int] or [string[]] to indicate exactly what type of data to take in.
+* [Use an Enum](http://ramblingcookiemonster.github.io/Types-And-Enums/) that restricts you to a few specific choices, or a strong type, such as ```[int]``` or ```[string[]]``` to indicate exactly what type of data to take in.
 * Use other built in tools. If you are using this input in a SQL query down the line, use safeguards like [parameterized queries](http://blog.codinghorror.com/give-me-parameterized-sql-or-give-me-death/) perhaps through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1).
 * In some cases, you might need to allow arbitrary input, performing validation later in your code.
 
