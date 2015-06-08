@@ -18,7 +18,7 @@ A short while back, Adam Bertram was looking for suggestions on a theme for a Po
 
 ![Not dry](/images/error-handling/june.png)
 
-June is right. The problem is, we often don't realize how important these tasks are. In real life, we tend to take these for granted as well. We look both ways before crossing the road. We check our wallet before heading to a cash-only spot. A chef taste-tests his craft. We don't stop looking at the traffic light because it was green 15 seconds ago. Many of these cases become second nature, and you may not realize you're doing it.
+June is right. The problem is, we often don't realize how important these tasks are. In real life, we tend to take these for granted as well. We look both ways before crossing the road. We check our wallet before heading to a cash-only spot. A chef taste-tests his craft. We don't stop looking at the traffic light just because it was green 15 seconds ago. Many of these cases become second nature, and you may not realize you're doing it.
 
 Yet often enough, someone writing code might forget to double check they have the expected results before proceeding, might let their code run after an error occurs that could lead to disastrous results, or might take un-sanitized user input for a SQL query. All of these are solved problems, yet we might overlook them as 'boring' or 'dry'.
 
