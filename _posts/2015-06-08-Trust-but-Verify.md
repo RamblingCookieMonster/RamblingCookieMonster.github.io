@@ -47,7 +47,7 @@ A few examples:
 * You're removing data... you just deleted production data! Hopefully you have backups. Will you notice in time to restore without a significant impact?
 * You exposed your service to injection... you suffer unintentional or intentional injection. Could be SQL injection, code injection, you name it. Not good!
 
-Let's dive into some common scenarios. We won't be able to cover every imaginable scenario, so be sure to always ask 'What could go wrong?'
+Let's dive into some common scenarios. We won't be able to cover every imaginable scenario, so be sure to always ask *what could go wrong?*
 
 ### Bad Input
 
@@ -71,7 +71,7 @@ Validation can be used across wide swathes of your code. There are too many exam
 * You're supposed to get a string back. Or a date. Or some other specific type. Do you verify you're getting the right type before working with it?
 * You're making changes to a set of systems. Would it help to [check connectivity](http://ramblingcookiemonster.github.io/Invoke-Ping/) or make sure the right services are running before starting?
 
-This all depends on your task at hand. You're never going to find a list of everything to watch out for, but you can always ask yourself 'what could go wrong?' Occasionally we have to consider our own expectations of how our code will behave.
+This all depends on your task at hand. You're never going to find a list of everything to watch out for, but you can always ask yourself *what could go wrong?* Occasionally we have to ask this of our own expectations on how our code will behave.
 
 ### What Could Go Wrong With My Code?
 
