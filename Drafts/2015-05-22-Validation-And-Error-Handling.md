@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Trust&#44; but Verify
 excerpt: "What could go wrong?"
 tags: [PowerShell, Rambling, Automation, Best Practices]
