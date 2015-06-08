@@ -79,7 +79,8 @@ This is a tough one, and highlights the importance of testing your code. Here ar
 
 * You're writing a loop in code that will run in PowerShell 2, and you don't test the loop variable first. In PowerShell 2 and earlier, a loop will run one time, [even if you feed it $null](http://stackoverflow.com/questions/21755825/why-is-it-possible-to-loop-through-a-null-array).
 * You're working in a PowerShell 2 environment again. This time, you're taking action based on the count of items you get back. Hopefully you didn't depend on the count property; [in PowerShell 2](http://powershell.com/cs/blogs/tips/archive/2008/11/18/converting-results-into-arrays.aspx), if only a single object comes back, it very likely will not have a count property on it. This means if you get one item back, and your logic tests ```$item.count -eq 1```, or something along those lines, you are out of luck.
-* You're handling errors with Try/Catch - awesome! Unfortunately, you forgot to tell PowerShell to force a 'terminating' error by specifying ErrorAction Stop; this means you might never hit the catch block. Be sure to read up on error handling (references in the next section).
+* You're handling errors with Try/Catch - awesome! Unfortunately, you forgot to tell PowerShell to force a 'terminating' error by specifying ErrorAction Stop; this means you might never hit the catch block. Be sure to read up on [error handling](https://www.penflip.com/powershellorg/the-big-book-of-powershell-error-handling).
+* You're handling errors with Try/Catch, and you made it to the catch block! You reference ```$Error[0]```. Turns out by some fluke another error squeeked it's way in, pushing the error you care about to ```$Error[1]```. Always refer to the current error in the catch block as ```$_```. Do not rely on ```$Error```.
 
 There are a number of handy references on related topics:
 
