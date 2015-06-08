@@ -75,7 +75,7 @@ This all depends on your task at hand. You're never going to find a list of ever
 
 ### What Could Go Wrong With My Code?
 
-This is a tough one, and highlights the importance of testing your code. Here are a few mistakes I've seen. All of these boil down to your code not doing what you think it's doing
+This is a tough one, and highlights the importance of testing your code. Here are a few mistakes I've seen. All of these boil down to your code not doing what you think it's doing.
 
 * You're writing a loop in code that will run in PowerShell 2, and you don't test the loop variable first. In PowerShell 2 and earlier, a loop will run one time, [even if you feed it $null](http://stackoverflow.com/questions/21755825/why-is-it-possible-to-loop-through-a-null-array).
 * You're working in a PowerShell 2 environment again. This time, you're taking action based on the count of items you get back. Hopefully you didn't want 'one'; [in PowerShell 2](http://powershell.com/cs/blogs/tips/archive/2008/11/18/converting-results-into-arrays.aspx), if you get data and only a single object comes back, it very likely will not have a count property on it. This means if you get one item back, and your logic tests ```$item.count -eq 1```, or something along those lines, you are out of luck.
