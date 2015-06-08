@@ -14,11 +14,15 @@ image:
 
 ### Rambling
 
-A short while back, Adam Bertram was looking for suggestions on a theme for a PowerShell blog week. I suggested validation and error handling - these may seem dry, and are often ovelooked, despite being absolutely critical for reliability and consistency. June corrected my phrasing:
+A short while back, Adam Bertram was looking for suggestions on a theme for a PowerShell blog week. I suggested validation and error handling - these may seem dry, and are often overlooked, despite being absolutely critical for reliability and consistency. June corrected my phrasing:
 
 [Not dry](/images/error-handling/june.png)!
 
-Haven't seen anything on this, so here's a quick hit on validation, sanitization, error handling, and other important practices.
+June is right. The problem is, we often don't realize how important these tasks are. In real life, we tend to take these for granted as well. look both ways before crossing the road. We check our wallet before heading to a cash-only spot. A chef taste-tests his craft. A tennis player squeezes each ball to avoid any duds. An author verifies their sources. Many of these cases become second nature, and you may not realize you're doing it.
+
+Yet often enough, someone writing code might forget to double check they have the expected results before proceeding, might let their code run after an error that could lead to disastrous results, or might take un-sanitized user input for a SQL query. All of these are solved problems, yet we might overlook them as 'boring' or 'dry'.
+
+Let's take a look at validation, sanitization, error handling, and other important practices.
 
 ### What Could Go Wrong?
 
@@ -32,7 +36,7 @@ Some variations to consider:
 * What could go wrong... with the operating environment?
 * What could go wrong... with my code?
 
-When you first start considering these questions, you might wonder if they are really worth the extra time and thought. "What are the chances!" you might ask. If you find yourself taking shortcuts, be sure to consider the implications if something does indeed go wrong.
+When you first start considering these questions, you might wonder if they are really worth the extra time and thought. "What are the chances!" you might ask. If you find yourself taking shortcuts, be sure to consider the implications when something invariably goes wrong.
 
 So what could happen when something goes wrong? A few examples:
 
@@ -41,54 +45,52 @@ So what could happen when something goes wrong? A few examples:
 * You're removing data... you just deleted production data! Hopefully you have backups. Will you notice in time to restore without a significant impact?
 * You exposed your service to injection... you suffer unintentional or intentional injection. Could be SQL injection, code injection, you name it. Not good!
 
-Let's look at an example scenario, and walk through these questions along the way.
+I like to hang out in the [PowerShell Slack](http://slack.poshcode.org/) / IRC community; you can ask questions, help others, and pick up ideas to take to your environment. I have seen panicked questions that turned out to be resume-generating-events. Don't be afraid to make mistakes, it happens to everyone, and in a non-toxic environment these are often seen as learning opportunities, but be prudent. Consider the potential impact your code could have.
 
-### The Scenario
+Let's dive into some common scenarios. We won't be able to cover every imaginable scenario, so be sure to always ask 'What could go wrong?'
 
-You create secondary high privilege accounts every so often; for example, my standard cmonster account might get a cmonsterDA account for desktop administration, cmonsterSA for server administration, and so on.
-
-You have more interesting things to work on, so you decide to build tooling or automation for this ([Why else?](https://www.penflip.com/powershellorg/why-powershell/blob/master/chapter2.txt)). You want the following basic steps:
-
-* Create an account in Active Directory
-* Assign the account to a privileged Security Group, 'Server Admins'
-* Send a notification e-mail to the account's owner
-
-Phrasing:
-
-* Standard account: this would refer to the owner's account, for example, cmonster
-* Admin account: this would refer to the owner's new admin account, for example, cmonsterSA
-
-Let's create a simple example script, and walk through it:
-
-{% gist 132f13fb1d0e35ce9657 %}
-
-Let's dissect this line by line.  Note that in the real world, you might consider these questions as you write each line, rather than after the fact.
-
-### What Could Go Wrong?
-
-#### Line 2: Bad Input
-
-Input can be dangerous. .  In our example, we take in a SamAccountName.
+### Bad Input
 
 The idea with input validation is that you should control and limit the input that you take, to avoid surprising outcomes. There are a number of options:
 
 * Use built in PowerShell functionality for validation. Boe Prox wrote [a great post](http://learn-powershell.net/2014/02/04/using-powershell-parameter-validation-to-make-your-day-easier/) on this, and [about_Functions_Advanced_Parameters](https://technet.microsoft.com/en-us/library/hh847743.aspx) has a few tips as well.
 * [Use an Enum](http://ramblingcookiemonster.github.io/Types-And-Enums/) that restricts you to a few specific choices, or a strong type, such as [int] or [string[]] to indicate exactly what type of data to take in.
-* In some cases, you might want to allow arbitrary input, performing validation later in your code.
+* Use other built in tools. If you are using this input in a SQL query down the line, use safeguards like [parameterized queries](http://blog.codinghorror.com/give-me-parameterized-sql-or-give-me-death/) through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1).
+* In some cases, you might need to allow arbitrary input, performing validation later in your code.
 
-#### Scenario: Input Validation
+These revolved around input validation, let's dive into validation in general.
 
-In our scenario, the only input is the samaccountname for an existing standard account. Let's think of a few things we should validate:
+### Validation
 
-* The account should exist in active directory
-* The account should be a standard account with an e-mail address, to allow notification down the line
-* Can anyone request an administrative account? Would it be worth validating their authority to request this? Perhaps anyone in a 'System Admin Team' security group is allowed to request an admin account. Perhaps your ticketing system has a REST API or SQL data with authorization information for the request.
+Validation can be used across wide swathes of your code. There are too many examples to count, across every imaginable scenario. Let's list a few.
 
-In this case, I would likely validate the input inside the script or function itself, given that it might clutter up a [ValidateScript()] attribute.
+* Does the count of objects you get back meet your expectations? Did you get more than expected? Did nothing come back? Did you plan to feed one AD account in for some changes but accidentally get every single account back?
+* Your SQL server deployment system is ready to install SQL, is the SQL service account it created earlier ready to use and replicated across Active Directory?
+* Your vendor shipped shoddy code. You're [hunting for runaway processes](https://gallery.technet.microsoft.com/scriptcenter/Get-EvilProcess-Find-a8601566). Do you verify the executable name, session idle time, and other bits, or do you kill processes willy-nilly?
+* You're relying on a file to exist. Do you assume that it's there and that it's ready to use immediately, or do you test and [wait](https://gallery.technet.microsoft.com/scriptcenter/Wait-Path-Wait-for-a-path-1393ef86) for it to exist?
+* You're supposed to get a string back. Or a date. Or some other specific type. Do you verify you're getting the right type before working with it?
+* You're making changes to a set of systems. Would it help to [check connectivity](http://ramblingcookiemonster.github.io/Invoke-Ping/) or make sure the right services are running before starting?
 
-I might load up a [light-weight tool for ADSI queries](https://gallery.technet.microsoft.com/scriptcenter/Get-ADSIObject-Portable-ae7f9184), verify that the input account exists in AD, verify that it has a mail attribute, and validate that it [has group membership](https://gallery.technet.microsoft.com/scriptcenter/Get-ADGroupMembers-Get-AD-0ee3ae48) in 'System Admin Team'.
+This all depends on your task at hand. You're never going to find a list of everything to watch out for, but you can always ask yourself 'what could go wrong?' Occasionally we have to ask this of our own code.
 
-What could have gone wrong? What if the wrong account went through, and I automatically provisioned a high privilege account for someone not in the 'System Admin Team', sending out a nice e-mail to them letting them know how to log in to their new account? This is a relatively tame example.
+### What Could Go Wrong With My Code?
 
-### Sanitization, Expectation Management, and Bad Code
+This is a tough one, and highlights the importance of testing your code. Here are a few mistakes I've seen. All of these boil down to your code not doing what you think it's doing, and many are covered in Michael Sorens' [Plethora of PowerShell Pitfalls](https://www.simple-talk.com/sysadmin/powershell/a-plethora-of-powershell-pitfalls-part-2/) series.
+
+* You're writing a loop in an environment with PowerShell 2, and you don't test the loop variable first. In PowerShell 2 and earlier, a loop will run one time, [even if you fed it $null](http://stackoverflow.com/questions/21755825/why-is-it-possible-to-loop-through-a-null-array).
+* You're working in a PowerShell 2 environment again. This time, you're taking action based on the count of items you get back. Hopefully you didn't want 'one'; in PowerShell if you get data and only a single object comes back, it very likely will not have a count property on it. Meaning if you get one item back, and your logic tests ```$item.count -eq 1```, you are out of luck.
+* You're handling errors with Try/Catch - awesome! Unfortunately, you forgot to tell PowerShell to force a 'terminating' error; this means you might never hit the catch block. Be sure to read up on error handling (references in the next section).
+
+So what do you do when you successfully detect something wrong?
+
+### Something Went Wrong
+
+There are a number of ways to handle these out of bounds scenarios:
+
+* Error handling. [References](https://www.penflip.com/powershellorg/the-big-book-of-powershell-error-handling) [abound](http://learn-powershell.net/2015/04/04/a-look-at-trycatch-in-powershell/). Long story short, get very familiar with [Try/Catch and Try/Catch/Finally](https://technet.microsoft.com/en-us/library/hh847793.aspx). Consider whether you should stop the entire function/script, 'continue' to the next item in a loop, or simply log the error and keep on going.
+* Logging. There are [many](https://gallery.technet.microsoft.com/scriptcenter/PSLog-Send-messages-to-a-db389927) ways to [skin a cat](https://gallery.technet.microsoft.com/scriptcenter/Enhanced-Script-Logging-27615f85), including writing your own, but logging unexpected scenarios can come in quite handy when your code suddenly starts misbehaving and you need to find out what's going on.
+* Notification. If the process is important enough, or needs immediate attention, consider some sort of notification. I tend to send [HTML based e-mail](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-HTML-Notificatio-e1c5759d). You might have a monitoring system you could feed data into.
+* Testing. This is a good way to look for something going wrong with your code. Take a peak at [Pester](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/#pester), it is quite valuable.
+
+Sanitization, Expectation Management, and Bad Code
 

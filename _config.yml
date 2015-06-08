@@ -49,6 +49,7 @@ owner:
           "PSDiskPart",
           "PSExcel",
           "PSSQLite",
+          "PSStash",
           "SecretServer"]
   githubfavorites: [
           "Invoke-IR/PowerForensics",
