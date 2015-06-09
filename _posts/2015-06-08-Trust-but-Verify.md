@@ -91,7 +91,7 @@ So what do you do when you successfully detect something wrong?
 
 ### Something Went Wrong
 
-There are a number of ways to handle these out of bounds scenarios:
+There are a number of ways to handle these scenarios:
 
 * Error handling. [References](https://www.penflip.com/powershellorg/the-big-book-of-powershell-error-handling) [abound](http://learn-powershell.net/2015/04/04/a-look-at-trycatch-in-powershell/). Long story short, get very familiar with [Try/Catch and Try/Catch/Finally](https://technet.microsoft.com/en-us/library/hh847793.aspx). Consider whether you should stop the entire function/script, 'continue' to the next item in a loop, or simply log the error and keep on going.
 * Logging. There are [many](https://gallery.technet.microsoft.com/scriptcenter/PSLog-Send-messages-to-a-db389927) ways to [skin a cat](https://gallery.technet.microsoft.com/scriptcenter/Enhanced-Script-Logging-27615f85), including writing your own logging module. Logging unexpected scenarios and details on the operating environment when they occur can come in quite handy.
