@@ -67,7 +67,7 @@ Validation can be used across wide swathes of your code. There are too many exam
 * Does the count of objects you get back meet your expectations? Did you get more than expected? Did nothing come back? Did you plan to feed one Active Directory account in for some changes but accidentally get every single account in the domain back?
 * Your SQL server deployment system is ready to install SQL; is the SQL service account it created earlier ready to use and replicated across Active Directory?
 * Your vendor shipped shoddy code. You're [hunting for runaway processes](https://gallery.technet.microsoft.com/scriptcenter/Get-EvilProcess-Find-a8601566). Do you verify the executable name, session idle time, and other bits, or do you kill processes willy-nilly?
-* You're relying on a file to exist. Do you assume that it's there and that it's ready to use immediately, or do you test and [wait](https://gallery.technet.microsoft.com/scriptcenter/Wait-Path-Wait-for-a-path-1393ef86) for it to exist?
+* You're relying on a file being available. Do you assume that it's there and that it's ready to use immediately, or do you test and [wait](https://gallery.technet.microsoft.com/scriptcenter/Wait-Path-Wait-for-a-path-1393ef86) for it to exist?
 * You're supposed to get a string back. Or a date. Or some other specific type. Do you verify you're getting the right type before working with it?
 * You're making changes to a set of systems. Would it help to [check connectivity](http://ramblingcookiemonster.github.io/Invoke-Ping/) or make sure the right services are running before starting?
 
