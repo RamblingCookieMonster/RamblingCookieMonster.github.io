@@ -55,7 +55,7 @@ The idea with input validation is that you should control and limit the input th
 
 * Use built in PowerShell functionality for validation. Boe Prox wrote [a great post](http://learn-powershell.net/2014/02/04/using-powershell-parameter-validation-to-make-your-day-easier/) on this, and [about_Functions_Advanced_Parameters](https://technet.microsoft.com/en-us/library/hh847743.aspx) has a few tips as well.
 * [Use an Enum](http://ramblingcookiemonster.github.io/Types-And-Enums/) that restricts you to a few specific choices, or a strong type, such as ```[int]``` or ```[string[]]``` to indicate exactly what type of data to take in.
-* Use other built in tools. If you are using this input in a SQL query down the line, use safeguards like [parameterized queries](http://blog.codinghorror.com/give-me-parameterized-sql-or-give-me-death/) perhaps through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1).
+* Use other built in tools. If you are using this input in a SQL query down the line, use safeguards like [parameterized queries](http://blog.codinghorror.com/give-me-parameterized-sql-or-give-me-death/), perhaps through [Invoke-Sqlcmd2](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-Sqlcmd2.ps1).
 * In some cases, you might need to allow arbitrary input, performing validation later in your code.
 
 These revolved around input validation, let's dive into validation in general.
