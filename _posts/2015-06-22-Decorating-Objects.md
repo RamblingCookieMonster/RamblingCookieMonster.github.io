@@ -124,7 +124,7 @@ We can boil all the logic and .NET calls down to a single function: [Add-ObjectD
 
 We can add type names, set default properties, and add new properties. The last piece is more for convenience; rather than calling Add-ObjectDetail along with another function to add properties, we can do it all at once.
 
-That's about it! You can use this to make your tools easier to use for end users. The function could likely use some work; it was written for the POC Stash module, but it seems to do the trick.
+That's about it! You can use this to make your tools easier to use for end users and yourself. The function could likely use some work; it was written for the POC Stash module, but it seems to do the trick.
 
 Cheers!
 
