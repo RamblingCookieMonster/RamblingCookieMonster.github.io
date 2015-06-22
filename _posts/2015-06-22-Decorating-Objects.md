@@ -114,7 +114,7 @@ FormatsToProcess = @('PSStash.Format.ps1xml')
 
 ### Reusable Tools
 
-One of the great benefits to code in general is the ability to abstract out seemingly complex tasks into [reusable tools](http://ramblingcookiemonster.github.io/Invoke-Ping/). PowerShell was explicitly designed as a task-based language; for example, rather than needing to know the code behind how to sort objects, we have the task-based Sort-Object command in our toolbelt. The code to decorate objects above wasn't pretty, let's look at a simple to use tool that abstracts the boring bits.
+One of the great benefits to code in general is the ability to abstract out seemingly complex tasks into [reusable tools](http://ramblingcookiemonster.github.io/Invoke-Ping/). PowerShell was explicitly designed as a task-based language; for example, rather than needing to know the code behind how to sort objects, we have the task-based Sort-Object command in our toolbelt. The code to decorate objects above wasn't pretty, let's look at a simple to use tool that abstracts out the boring bits.
 
 #### Add-ObjectDetail
 
