@@ -101,7 +101,7 @@ We have a few options to get this format into our session. First, let's just add
 
 {% gist dc7732c3e958828097e7 %}
 
-[Nonsense Display](/images/decorating/NonsenseDisplay.png)
+![Nonsense Display](/images/decorating/NonsenseDisplay.png)
 
 It worked! We didn't need to mess around with DefaultDisplayPropertySet for every single object, all we did was add a TypeName, and PowerShell took care of the rest.
 
