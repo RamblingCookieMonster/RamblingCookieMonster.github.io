@@ -41,7 +41,7 @@ So, why would we want to add a custom type name to our objects? Jason Morgan poi
 * Custom Formating: You can write (or borrow) 'format' files to define the default display for your custom types.
 * Object filtering and pipeline support: If your objects have a specific type, you can filter them appropriately and better support pipeline input.
 
-The code isn't pretty, but inserting a type is quite simple. Here's a quick example:
+The code isn't pretty, but inserting a type name only takes a single line. Here's a quick example:
 
 {% gist f83268daca1ed373f35a %}
 
