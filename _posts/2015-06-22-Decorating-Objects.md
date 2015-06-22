@@ -8,7 +8,7 @@ date: 2015-06-22 18:00:00
 comments: true
 image:
  feature: banner.jpg
- thumb: /Decorating/CookieDecorations.png
+ thumb: /decorating/CookieDecorations.png
 ---
 {% include _toc.html %}
 
