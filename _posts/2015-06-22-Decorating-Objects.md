@@ -55,7 +55,7 @@ If you use PowerShell, you know that objects don't always show their hand. You m
 
 When we run Get-ChildItem against C:, we only see a few properties:
 
-![Nonsense type](DefaultGCIDisplay.png)
+![Nonsense type](/images/decorating/DefaultGCIDisplay.png)
 
 We know there are many more - How does PowerShell know how to format these? Jeffrey Snover wrote [a quick bit](http://blogs.msdn.com/b/powershell/archive/2010/02/18/psstandardmembers-the-stealth-property.aspx) on this a while back: PowerShell checks for format files, a DefaultDisplayPropertySet, and then falls back to all properties.
 
