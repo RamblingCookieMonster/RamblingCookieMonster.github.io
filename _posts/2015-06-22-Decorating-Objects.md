@@ -81,7 +81,7 @@ Time for some fun with XML! Run Get-Help [about_Format.ps1xml](https://technet.m
 
 Long story short, we can borrow a format.ps1xml file, modify it to meet our needs, and use it to define the default properties (and more) for any object of a certain type. This was a big reason behind why we wanted to add custom type names.
 
-You can dive into [MSDN](https://msdn.microsoft.com/en-us/library/gg580944.aspx), or you can get startted quickly by borrowing someone else's work. This snippet will open up the format ps1xml for events:
+You can dive into [MSDN](https://msdn.microsoft.com/en-us/library/gg580944.aspx), or you can get started quickly by borrowing someone else's work. This snippet will open up the format ps1xml for events:
 
 {% highlight powershell %}
 ise $PSHOME\Event.Format.ps1xml
