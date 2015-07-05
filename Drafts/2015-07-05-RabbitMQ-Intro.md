@@ -16,9 +16,9 @@ image:
 
 I'm finally catching up on some of the ideas and takeaways from the [PowerShell Summit](http://ramblingcookiemonster.github.io/PowerShell-Summit-Wrap/). One of the fun *oh, I have to try that!* ideas came up when [Chris Duck](https://twitter.com/gpduck) and [Jason Morgan](https://twitter.com/rjasonmorgan) started chatting about something called [RabbitMQ](https://www.rabbitmq.com/getstarted.html), a messaging solution.
 
-The timing worked out perfectly. I'm running into more and more processes where tooling or automation would require some form of orchestration. We'll likely go with an orchestration product at some point, but the idea of locking myself into a specific vendor's specific version of an orchestration product is not something I'm going to rush into.
+The timing worked out perfectly. I'm running into more and more processes where tooling or automation would require some form of orchestration. We'll likely go with a COTS product at some point, but the idea of locking myself into a specific vendor's specific version of an orchestration solution is not something I'm going to rush into.
 
-I'll cover a quick overview of RabbitMQ, some notes on a basic install, and walk through an example on how to manage and work with RabbitMQ through PowerShell.
+Let's run through a quick overview of RabbitMQ, some notes on a basic install, and some PowerShell tools you could use to help manage and use RabbitMQ in your own solutions.
 
 **Disclaimer**: *This was my first foray into the world of messaging, I am by no means an expert*
 
@@ -153,6 +153,8 @@ Thankfully, Jason Morgan might be working on a DSC resource for this!
 
 ![A DSC Resource for RabbitMQ?](/images/rabbitmq/dscresource.png)
 
+We have a RabbitMQ server is up and running! What can we do with it?
+
 ### Managing RabbitMQ with RabbitMQTools
 
 A while back, Mariusz Wojcik wrote a fairly complete module for managing RabbitMQ via the REST API: RabbitMQTools. This fit the bill, but I needed HTTPS support, and I prefer a Credential parameter to a plaintext password.
@@ -177,7 +179,7 @@ Download [PSRabbitMQ](https://github.com/RamblingCookieMonster/PSRabbitMQ), unbl
 
 ### Wrap
 
-This is a great tool to have in your belt, definitely check out RabbitMQ if it would benefit your PowerShell and other solutions. At the very least, if you're a grouchy old man grimacing and shaking his cane at the newfangled orchestration tools, this might keep those tools at bay for a bit longer : )
+Definitely check out RabbitMQ if a messaging tool would benefit your PowerShell and other solutions. At the very least, if you're trying to beat back orchestration pushers from VMware, Microsoft, BMC, Citrix, and the various other vendors, a little experience with RabbitMQ and [SQL server](https://ramblingcookiemonster.wordpress.com/2014/03/12/sql-for-powershell-for-sql-newbies/) should keep them at bay.
 
 That's about it! You can get pretty deep down the rabbit hole with messaging and RabbitMQ, the examples here just glanced the surface.
 
@@ -185,6 +187,6 @@ That's about it! You can get pretty deep down the rabbit hole with messaging and
 
 Congrats to June Blender et al for their recent MVP awards! June recently [posted a connect issue](https://connect.microsoft.com/PowerShell/feedbackdetail/view/1351032/add-powershell-tab-and-examples-to-net-reference-pages-in-msdn) to highlight the need for PowerShell examples in the MSDN .NET references, which would be absolutely fantastic.
 
-Would love to see a tool of sorts that could generate usable (even if not optimal) PowerShell code from C# snippets. With so many third party solutions illustrating their .NET usage through C#, wouldn't it be great to have a tool to convert the [RabbitMQ](http://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html) and myriad other .NET examples to PowerShell? Hopefully we see something interesting from [Adam Driscoll](https://github.com/adamdriscoll/PowerShellCodeDomProvider), Microsoft, or the wider community.
+On top of PowerShell examples in the .NET references, would love to see a tool that could generate usable (even if not optimal) PowerShell code from C# snippets. With so many third party solutions illustrating their .NET usage through C#, wouldn't it be great to have a tool to convert the [RabbitMQ](http://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html) and myriad other .NET examples to PowerShell? Hopefully we see something interesting from [Adam Driscoll](https://github.com/adamdriscoll/PowerShellCodeDomProvider), Microsoft, or the wider community.
 
 Cheers!
