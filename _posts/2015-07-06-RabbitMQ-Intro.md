@@ -124,7 +124,7 @@ cd $rabbitdir\ssl
 
 {% highlight powershell %}
 #Add users and passwords. This admin account has access to everything...
-& $Sbin\rabbitmqctl.bat add_user administrator SUPERSECUREPASSWORD!
+& $Sbin\rabbitmqctl.bat add_user administrator "SUPERSECUREPASSWORD!""
 & $Sbin\rabbitmqctl.bat set_permissions administrator ".*" ".*" ".*"
 & $Sbin\rabbitmqctl.bat set_user_tags administrator administrator
 
@@ -151,7 +151,7 @@ This might not work the first time.
 
 * You might need to start SSL in the Erlang environment. Open werl.exe, run *ssl:start().* That period is part of the syntax.
 * Your rabbitmq.config file might point to the wrong path for your certs, because you mistyped it like me : )
-* Assuming you set your base to C:\RabbitMQ, check C:\RabbitMQ\Log\rabbit@<your hostname here>.log, look up the errors you see
+* Assuming you set your base to C:\RabbitMQ, check C:\RabbitMQ\Log\rabbit@*your_hostname_here*.log, look up the errors you see
 * Google around for other common RabbitMQ or Erlang troubleshooting steps.
 
 Thankfully, Jason Morgan might be working on a DSC resource for this!
