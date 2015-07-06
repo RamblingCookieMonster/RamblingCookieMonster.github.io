@@ -191,7 +191,7 @@ That's about it! You can get pretty deep down the rabbit hole with messaging and
 
 #### Rambling aside
 
-Congrats to June Blender et al for their recent MVP awards! June recently [posted a connect issue](https://connect.microsoft.com/PowerShell/feedbackdetail/view/1351032/add-powershell-tab-and-examples-to-net-reference-pages-in-msdn) to highlight the need for PowerShell examples in the MSDN .NET references, which would be absolutely fantastic.
+Congrats to June Blender et al for their recent MVP awards! June [posted a connect issue](https://connect.microsoft.com/PowerShell/feedbackdetail/view/1351032/add-powershell-tab-and-examples-to-net-reference-pages-in-msdn) back in May to highlight the need for PowerShell examples in the MSDN .NET references, which would be absolutely fantastic.
 
 On top of PowerShell examples in the .NET references, would love to see a tool that could generate usable (even if not optimal) PowerShell code from C# snippets. With so many third party solutions illustrating their .NET usage through C#, wouldn't it be great to have a tool to convert the [RabbitMQ](http://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html) and myriad other .NET examples to PowerShell? Hopefully we see something interesting from [Adam Driscoll](https://github.com/adamdriscoll/PowerShellCodeDomProvider), Microsoft, or the wider community.
 
