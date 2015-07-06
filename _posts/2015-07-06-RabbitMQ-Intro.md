@@ -72,7 +72,7 @@ mkdir $rabbitdir\ssl
 * If you're planning to use SSL, grab the latest OpenSSL (variety of [sources](http://indy.fulgan.com/SSL/)), drop the files in C:\RabbitMQ\ssl
 * Enable the web interface and RESTful API
 
-```
+{% highlight powershell %}
 # Change this out depending on your RabbitMQ install location:
 $sbin = "C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.5.3\sbin"
 
@@ -83,7 +83,7 @@ $sbin = "C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.5.3\sbin"
 & $Sbin\rabbitmq-service.bat remove
 & $Sbin\rabbitmq-service.bat install
 & $Sbin\rabbitmq-service.bat start
-```
+{% endhighlight %}
 
 At this point, you should be able to browse to http://localhost:15672, but we aren't done yet!
 
@@ -111,17 +111,17 @@ cd $rabbitdir\ssl
 * Create a [rabbitmq.config](https://gist.github.com/RamblingCookieMonster/d0ca18ca59ee11082bb8) file in $env:RABBITMQ_BASE that we set earlier. Adjust SSL options as needed.
 * Re-install the service one more time...
 
-```
+{% highlight powershell %}
 #commit changes be re-installing service
 & $Sbin\rabbitmq-service.bat stop
 & $Sbin\rabbitmq-service.bat remove
 & $Sbin\rabbitmq-service.bat install
 & $Sbin\rabbitmq-service.bat start
-```
+{% endhighlight %}
 
 * Configure accounts. Be sure to remove the default guest account!
 
-```
+{% highlight powershell %}
 #Add users and passwords. This admin account has access to everything...
 & $Sbin\rabbitmqctl.bat add_user administrator SUPERSECUREPASSWORD!
 & $Sbin\rabbitmqctl.bat set_permissions administrator ".*" ".*" ".*"
@@ -138,7 +138,7 @@ cd $rabbitdir\ssl
 
 #Delete the guest account, it has full admin and is evil.
 & $Sbin\rabbitmqctl.bat delete_user guest
-```
+{% endhighlight %}
 
 Hopefully everything worked and you can now browse to https://servername.contoso.org:15671! If you skipped the SSL and rabbitmq.config, you should be able to hit http://localhost:15672.
 
@@ -148,7 +148,7 @@ NOTE: Consult someone who knows what they are doing if SSL is important to you. 
 
 This might not work the first time.
 
-* You might need to start SSL in the Erlang environment. Open werl.exe, run ```ssl:start().``` That period is part of the syntax.
+* You might need to start SSL in the Erlang environment. Open werl.exe, run *ssl:start().* That period is part of the syntax.
 * Your rabbitmq.config file might point to the wrong path for your certs, because you mistyped it like me : )
 * Assuming you set your base to C:\RabbitMQ, check C:\RabbitMQ\Log\rabbit@<your hostname here>.log, look up the errors you see
 * Google around for other common RabbitMQ or Erlang troubleshooting steps.
