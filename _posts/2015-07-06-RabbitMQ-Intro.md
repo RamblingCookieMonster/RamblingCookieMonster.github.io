@@ -40,6 +40,7 @@ References on messaging abound, from the [cheeky](https://www.youtube.com/watch?
 A common analogy on the basics, apologies if I butcher this:
 
 * Your various scripts (*publishers*) are sending mail (*messages*)
+* The mail might have an address (*routing key*) to help route it to the right recipient
 * The mail gets dropped in a USPS mailbox (an *exchange*)
 * The mail is routed (*binding*) to the appropriate recipient mailboxes (*queues*)
 * The recipients (*consumers*) might stop by a PO box to pick up their mail, or might have it delivered (*subscriptions*)
