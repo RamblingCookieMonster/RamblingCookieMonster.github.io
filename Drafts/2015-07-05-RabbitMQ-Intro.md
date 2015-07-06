@@ -46,6 +46,10 @@ A common analogy on the basics, apologies if I butcher this:
 
 [![Basic illustration](/images/rabbitmq/hello-world-example-routing.png)](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
 
+Finally, here's a simple example showing two independent sessions talk to each other through PSRabbitMQ:
+
+![Listener gif](/images/rabbitmq/Listener.gif)
+
 Let's look at setting up a single RabbitMQ server.
 
 ### Basic installation
