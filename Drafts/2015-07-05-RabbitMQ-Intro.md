@@ -179,6 +179,8 @@ Download [PSRabbitMQ](https://github.com/RamblingCookieMonster/PSRabbitMQ), unbl
 
 ### Wrap
 
+A big thanks to Mariusz and Chris for RabbitMQTools and the RabbitMQ module, respectively.
+
 Definitely check out RabbitMQ if a messaging tool would benefit your PowerShell and other solutions. At the very least, if you're trying to beat back orchestration pushers from VMware, Microsoft, BMC, Citrix, and the various other vendors, a little experience with RabbitMQ and [SQL server](https://ramblingcookiemonster.wordpress.com/2014/03/12/sql-for-powershell-for-sql-newbies/) should keep them at bay.
 
 That's about it! You can get pretty deep down the rabbit hole with messaging and RabbitMQ, the examples here just glanced the surface.
