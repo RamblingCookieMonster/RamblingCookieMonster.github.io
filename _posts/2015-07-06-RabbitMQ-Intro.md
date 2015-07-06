@@ -124,7 +124,7 @@ cd $rabbitdir\ssl
 
 {% highlight powershell %}
 #Add users and passwords. This admin account has access to everything...
-& $Sbin\rabbitmqctl.bat add_user administrator "SUPERSECUREPASSWORD!""
+& $Sbin\rabbitmqctl.bat add_user administrator "SUPERSECUREPASSWORD!"
 & $Sbin\rabbitmqctl.bat set_permissions administrator ".*" ".*" ".*"
 & $Sbin\rabbitmqctl.bat set_user_tags administrator administrator
 
