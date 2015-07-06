@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: RabbitMQ and PowerShell
 excerpt: "You've got mail"
 tags: [PowerShell, Automation, Devops, Tools, Module]
-modified: 2015-07-05 22:00:00
-date: 2015-07-05 22:00:00
+modified: 2015-07-06 22:00:00
+date: 2015-07-06 22:00:00
 comments: true
 image:
  feature: banner.jpg
