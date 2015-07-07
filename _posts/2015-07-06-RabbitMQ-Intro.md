@@ -158,7 +158,7 @@ Thankfully, Jason Morgan might be working on a DSC resource for this!
 
 ![A DSC Resource for RabbitMQ?](/images/rabbitmq/dscresource.png)
 
-We have a RabbitMQ server is up and running! What can we do with it?
+We have a RabbitMQ server up and running! What can we do with it?
 
 ### Managing RabbitMQ with RabbitMQTools
 
