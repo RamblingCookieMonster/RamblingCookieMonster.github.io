@@ -8,7 +8,7 @@ date: 2015-04-17 22:00:00
 comments: true
 image:
  feature: banner.jpg
- thumb: /join-object/venn.svg
+ thumb: /join-object/venn.png
 ---
 {% include _toc.html %}
 
