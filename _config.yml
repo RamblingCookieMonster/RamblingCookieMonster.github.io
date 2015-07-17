@@ -49,6 +49,7 @@ owner:
           "PowerShell",
           "PSDiskPart",
           "PSExcel",
+          "PSRabbitMQ",
           "PSSQLite",
           "PSStash",
           "SecretServer"]
