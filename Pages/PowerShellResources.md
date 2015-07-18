@@ -96,7 +96,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [A Layman's Guide to PowerShell Remoting](http://www.ravichaganti.com/blog/?p=1780) - Ravikanth Chaganti
 * [Various free PowerShell.org eBooks](https://www.penflip.com/powershellorg)
 * [Learn Windows PowerShell 3 in a Month of Lunches](http://www.amazon.com/Learn-Windows-PowerShell-Month-Lunches/dp/1617291080/) - Don Jones, Jeffrey Hicks - My go to recommendation for those starting out
-* [Windows PowerShell in Action](http://www.amazon.com/Windows-PowerShell-Cookbook-Scripting-Microsofts/dp/0596801505/) - Bruce Payette - My go to recommendation for those familiar with scripting or PowerShell.  This is 'the book'.
+* [Windows PowerShell in Action](http://www.manning.com/payette2/) - Bruce Payette - My go to recommendation for those familiar with scripting or PowerShell.  This is 'the book'.
 * [Windows PowerShell Cookbook](http://www.amazon.com/Windows-PowerShell-Cookbook-Scripting-Microsofts/dp/0596801505/) - Lee Holmes
 * [Windows PowerShell for Developers](http://www.amazon.com/Windows-PowerShell-Developers-Douglas-Finke/dp/1449322700/) - Douglas Finke
 * [PowerShell in Depth](http://www.manning.com/jones6/) - Don Jones and Jeffrey Hicks
