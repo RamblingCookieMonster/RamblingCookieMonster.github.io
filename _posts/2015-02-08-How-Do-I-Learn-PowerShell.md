@@ -21,11 +21,8 @@ There’s no single answer to the question; reflecting back on my path, the foll
 There are [books, videos, cheat sheets, and blog posts galore](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html). Before any of this, get a system up and running with PowerShell. I assume you can search for the details on how to do the following:
 
 * Download the latest Windows Management Framework and requisite .NET Framework – .NET 4.5 and WMF 4 at the moment. Even if you target a lower version PowerShell, the newer ISE will make learning and every day use more pleasant
-
 * Set your execution policy as appropriate, keeping in mind it’s just a seatbelt (I use Bypass on my computers). You do read code before you run it, right?
-
 * Update your help. If using PowerShell 3 or later, run PowerShell as an administrator and run Update-Help -Force
-
 * This is standard fare for any technology, but remind yourself of the importance of testing. Test against a test environment or target where possible. Consider all the corner cases and scenarios that your code should handle. Test one, few, many, in batches, and finally, all. Consider using read-only or verbose output before sending those results to commands that change things. Read up on –Whatif, –Confirm, and where these don’t work. Don’t be this guy:
 
 ![I don't always test my code...](/images/legacy/test.png)
@@ -38,7 +35,7 @@ Building a foundation for PowerShell knowledge is important. You should spend ti
 
 * **PowerShell is both a shell and a scripting language**; the shell isn’t a slightly different environment where you might run into odd quirks that don’t expose themselves in a script. The scripting side doesn’t have more powerful language than the shell. They are one and the same. This leads to interesting design decisions. Shell users know that ‘&#62;’ is a redirection operator. Developers and scripters know that ‘&#62;’ is a comparison operator. This is one of several conflicts between shell and scripting expectations that makes PowerShell a bit unique, and can inspire wharrgarbl even from talented developers.
 
-* **PowerShell targets IT professionals and power users**, rather than developers. A developer might expect an escape character to be a ‘\’. If Microsoft chose this, we would need to escape every single slash in a path: “C:\\This\\Is\\A\\Pain”. Few IT professionals in the Microsoft ecosystem would use a language like that. Several design decisions like this may confuse seasoned developers.
+* **PowerShell targets IT professionals and power users**, rather than developers. A developer might expect an escape character to be a ‘\’. If Microsoft chose this, we would need to escape every single slash in a path: “C:&#92;&#92;This&#92;&#92;Is&#92;&#92;A&#92;&#92;Pain”. Few IT professionals in the Microsoft ecosystem would use a language like that. Several design decisions like this may confuse seasoned developers.
 
 If you come in as an experienced scripter or developer, you might get serious heartburn if you make assumptions and don’t look at PowerShell for what it is. Even developers like Helge Klein (author of delprof2 and other tools) [make this mistake](https://helgeklein.com/blog/2014/11/hate-powershell). Several of my talented co-workers who are more familiar with C# and .NET, or Python/Perl and various shell languages have made this mistake as well. Like most languages, if you’re going to use it, you should spend some time with formal reading material, and should avoid assumptions.
 
@@ -49,21 +46,15 @@ Hopefully you’ve decided to look at some formal learning materials!  I keep a 
 Prefer books?
 
 * If you’re a beginner without much scripting / code experience, check out [Learn Windows PowerShell 3 in a Month of Lunches](http://www.manning.com/jones3/).
-
 * If you have experience with scripting and code, [Windows PowerShell in Action](http://www.manning.com/payette2/) is the way to go. This is as deep as it gets, short of in-depth, lengthy blog posts, and you get to read about the reasons behind the language design. Knowing the reason for ‘greater than’ being -gt rather than &#62; should quell your heartburn.
-
 * Strapped for cash? [Mastering PowerShell](http://powershell.com/cs/blogs/ebookv2/default.aspx) is a great free book
-
 * Want to know what started this all? Read Jeffrey Snover’s [Monad Manifesto](http://www.jsnover.com/Docs/MonadManifesto.pdf). This isn’t on PowerShell per se, but it gives insight into the vision behind the language.
 
 Prefer videos?
 
 * [Getting Started with PowerShell 3.0](http://channel9.msdn.com/Series/GetStartedPowerShell3)
-
 * [Advanced Tools and Scripting with PowerShell 3.0](http://channel9.msdn.com/series/advpowershell3)
-
 * Several CBT resources, including [PluralSight](http://www.pluralsight.com/search/?searchTerm=powershell), have great PowerShell material
-
 * Keep in mind a video will not cover nearly as much as a book can. Don't skip a book!
 
 Prefer training?
