@@ -27,7 +27,7 @@ On a side note, being known as the cookie monster does not help when you want to
 
 ### Get in touch
 
-* E-mail: first name dot f r a m e @ gmail.com
+* E-mail: first name dot last name @ gmail.com - my name is in the image above
 * [Twitter](https://twitter.com/psCookieMonster)
 * [LinkedIn](https://www.linkedin.com/in/wframe)
 * [GitHub](https://github.com/RamblingCookieMonster)
