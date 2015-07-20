@@ -12,6 +12,8 @@ image:
 ---
 {% include _toc.html %}
 
+*Edit: Wrote [a follow-up](http://ramblingcookiemonster.github.io/Querying-the-Infoblox-Web-API/) illustrating a few of these issues through a rudimentary Infoblox PowerShell module.*
+
 A short while back, someone asked if I would be up for writing about calling the Infoblox web API through PowerShell. I don’t have extensive experience with this topic, but this is a great opportunity to discuss REST APIs, and the interfaces vendors expose to their customers.
 
 There won’t be any Infoblox PowerShell in this post, that’s in the pipeline.
