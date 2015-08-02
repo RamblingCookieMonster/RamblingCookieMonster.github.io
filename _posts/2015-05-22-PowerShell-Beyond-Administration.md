@@ -46,7 +46,7 @@ Doug Finke wrote [ImportExcel](https://github.com/dfinke/ImportExcel), a sweet m
 
 As someone who has spent time outside the IT world, I would have been very happy to have had PowerShell to work with Excel, rather than learning some obtuse, delicate VBA language that I would never use again. On occasion, when a mundane, non-IT task comes up, I can often save hours of time and ensure consistent results by using PowerShell. I wonder how I would survive as a knowledge worker without PowerShell.
 
-IT folks who lack a development backgrounds benefit from PowerShell's task based nature. Rather than figuring out how to define complex algorithms to sort, group, or filter, we can focus on the tasks at hand and use built in commands for these, regardless of where the data is coming from or going to. It turns out this would be a huge benefit to folks outside of IT as well.
+IT folks who lack a development backgrounds benefit from PowerShell's task based nature. Rather than figuring out how to define complex algorithms to sort, group, or filter, we can focus on the tasks at hand and use built-in commands for these, regardless of where the data is coming from or going to. It turns out this would be a huge benefit to folks outside of IT as well.
 
 Who knows. You might pique the attention of a more diverse audience and bring some fresh ideas and insight into the world of IT and development.
 
@@ -58,6 +58,6 @@ Some might point to the myriad [click-next admins](http://ramblingcookiemonster.
 
 It's not cross platform. True. I'm hoping we see Jeffrey's prediction that PowerShell will go open source come true; paired with an already open source .NET Core, chances are we might see a cross platform PowerShell. Oh. Also, Windows and Office are still pretty prevalent in the enterprise, so I don't see cross platform being a necessity, yet.
 
-It's not a priority. I get this. Microsoft is already a beheamoth and is trying to improve their agility. If Minecraft and other ideas that get youth into code end up working out, wouldn't it be nice to have a platform that could be used to interact with your full range of products and services, rather than the small piece of the pie that is IT?
+It's not a priority. I get this. Microsoft is already a behemoth and is trying to improve their agility. If Minecraft and other ideas that get youth into code end up working out, wouldn't it be nice to have a platform that could be used to interact with your full range of products and services, rather than the small piece of the pie that is IT?
 
 Cheers!

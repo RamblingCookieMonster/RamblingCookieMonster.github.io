@@ -29,6 +29,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 
 ###Blogs and other resources
 
+* [PowerShell's Front Page](https://msdn.microsoft.com/en-us/powershell)
 * [Windows PowerShell Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/183.windows-powershell-survival-guide-en-us.aspx) - This is a massive list, be sure to check it out
 * [What's New in Windows PowerShell](http://technet.microsoft.com/en-us/hh857339.aspx) - Feature list and details on PowerShell 3 and 4
 * [PowerShell Magazine](http://powershellmagazine.com/)
