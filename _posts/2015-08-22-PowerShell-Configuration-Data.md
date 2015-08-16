@@ -240,7 +240,7 @@ There are a variety of other choices. Here are a few others you might consider:
 * **CSV** has plenty of built in Cmdlets, but is quite limited and might produce [unexpected results](http://learn-powershell.net/2014/01/24/avoiding-system-object-or-similar-output-when-using-export-csv/).
 * **Text** is an option, with a variety of tools including the new [ConvertFrom-String](http://www.powershellmagazine.com/2014/09/09/using-the-convertfrom-string-cmdlet-to-parse-structured-text/). Not sure why you would chose this over an existing data format.
 * **The registry**. I wouldn't pick it, but it's used by many applications and is familiar to most Windows administrators. Tools like [PSRemoteRegistry](https://psremoteregistry.codeplex.com/releases/view/65928) make this simple to work with remotely, unlike the registry PSProvider.
-* [Ini files](http://lipkau.github.io/PsIni/) are a bit dated, but are simple to read and use. Given their limitations and the wealth of other options, you should probably leave these in the attic.
+* **[Ini files](http://lipkau.github.io/PsIni/)** are a bit dated, but are simple to read and use. Given their limitations and the wealth of other options, you should probably leave these in the attic.
 * **Databases** are a great option for larger solutions, or where your data model requires a bit more sophistication. [SQLite](http://ramblingcookiemonster.github.io/SQLite-and-PowerShell/) is a handy, cross platform solution, if SQL Server or other database engines are too heavy-weight.
 
 ### What Should I Use?
