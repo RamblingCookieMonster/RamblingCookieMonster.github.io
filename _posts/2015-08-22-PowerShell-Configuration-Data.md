@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: PowerShell Configuration Data
 excerpt: "&#60;B N=&#34;Readable&#34;&#62;false&#60;&#47;B&#62;"
 tags: [PowerShell, Module, Script, Configuration, Data]
