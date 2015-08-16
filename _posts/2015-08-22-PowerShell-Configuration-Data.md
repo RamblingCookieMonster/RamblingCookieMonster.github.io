@@ -65,7 +65,7 @@ XML is a tried and true format, but is a bit inefficient and ugly.
 
 #### Example
 
-```
+{% highlight powershell %}
 # Serialize some data to disk
 Get-Item C:\Windows\explorer.exe |
     Export-Clixml -Depth 5 -Path C:\XML.xml
@@ -75,7 +75,7 @@ $File = Import-Clixml -Path C:\XML.xml
 
 # Drill down.
 $File.VersionInfo.ProductVersion
-```
+{% endhighlight %}
 
 #### Should I use XML?
 
@@ -114,7 +114,7 @@ JSON is a lightweight data format common in modern web APIs.
 
 #### Example
 
-```
+{% highlight powershell %}
 # Convert some data to Json
 $JSON = Get-Item C:\Windows\explorer.exe |
     ConvertTo-Json -Depth 2
@@ -124,7 +124,7 @@ $File = $JSON | ConvertFrom-Json
 
 # Drill down.
 $File.VersionInfo.ProductVersion
-```
+{% endhighlight %}
 
 #### Should I use JSON?
 
@@ -162,7 +162,7 @@ YAML is a human friendly data format.
 
 #### Example
 
-```
+{% highlight powershell %}
 # Define some Yaml
 $Yaml = @"
 Name: explorer.exe
@@ -177,7 +177,7 @@ $File = Get-Yaml -FromString $Yaml
 
 # Drill down.
 $File.VersionInfo.ProductVersion
-```
+{% endhighlight %}
 
 #### Should I use YAML?
 
@@ -207,7 +207,7 @@ PowerShell data files are used for PowerShell module manifests, but can be used 
 
 #### Example
 
-```
+{% highlight powershell %}
 # Create a PSD1 file
 @"
 @{
@@ -225,7 +225,7 @@ $File = Import-LocalizedData -BaseDirectory C:\ -FileName PSD1.psd1
 
 # Drill down.
 $File.VersionInfo.ProductVersion
-```
+{% endhighlight %}
 
 #### Should I use PSD1?
 
