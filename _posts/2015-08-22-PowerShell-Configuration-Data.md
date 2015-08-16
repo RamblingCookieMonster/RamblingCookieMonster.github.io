@@ -36,7 +36,7 @@ Let's list off a few common data formats we could use.
 
 Let's take a peak at these from a high level. Keep in mind these can vary wildly even within a single format. For example, you might have an ad hoc JSON file, or a formal schema describing your JSON.
 
-For each solution you design, consider your needs, priorities, and constraints, and pair them up with one of these formats. It's probably worth considering the lessons of the [configuration complexity clock](http://mikehadlow.blogspot.com/2012/05/configuration-complexity-clock.html) as well.
+For each solution you design, consider your needs, priorities, and constraints, and pair them up with one of these formats. Bear in mind the the lessons of the [configuration complexity clock](http://mikehadlow.blogspot.com/2012/05/configuration-complexity-clock.html).
 
 ### XML
 
