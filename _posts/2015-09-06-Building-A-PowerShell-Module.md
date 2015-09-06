@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: Building a PowerShell Module
 excerpt: "closed as off topic"
 tags: [PowerShell, Tools, SQL, SQLite, Practical]
-modified: 2015-04-04 22:00:00
-date: 2015-04-04 22:00:00
+modified: 2015-09-06 22:00:00
+date: 2015-09-06 22:00:00
 comments: true
 image:
  feature: banner.jpg
@@ -20,7 +20,7 @@ I recently discussed the [August Scripting Games puzzle](http://powershell.org/w
 
 We're going to make the assumption you know what a module is, and that you have some experience writing PowerShell functions. If not, be sure to spend some time [learning PowerShell](http://ramblingcookiemonster.github.io/How-Do-I-Learn-PowerShell/) before continuing here!
 
-This post will cover my typical formula for writing a module, using the Stack Exchange API as an example. Feel free to [browse the PSStackExchange code](https://github.com/RamblingCookieMonster/PSStackExchange) on your own!
+This post will cover my typical formula for writing a module, using the Stack Exchange API as an example. Feel free to [browse the PSStackExchange code](https://github.com/RamblingCookieMonster/PSStackExchange) on your own.
 
 ### Why Modules?
 
@@ -173,17 +173,18 @@ Here's some output from the examples:
 
 ### Wrapping Up
 
-That's about it! If you aren't writing modules already, you should definitely consider it. We'll close out with a few final references that might come in handy:
+That's about it! If you aren't writing modules already, you should definitely consider it. Looking for further reading? Here are a few references that might come in handy:
 
-* [Module Design Rules](https://www.dropbox.com/s/x3g4jes09e46n2k/PowerShellSummit2014_Speaker_Slides.zip) - This is bundled in the PowerShell Summit 2014 session material. Download it, browse to Kirk Freiheit\Freiheit-ModuleDesignRules.zip\ModuleDesignRules.
+* [Module Design Rules](https://github.com/RamblingCookieMonster/RamblingCookieMonster.github.io/blob/master/images/module/PSSummit2014-Freiheit-ModuleDesignRules.pptx?raw=true) - This is from the 2014 PowerShell Summit, thanks to Kirk Freiheit
 * [Further Down the Rabbit Hole: PowerShell Modules and Encapsulation](https://www.simple-talk.com/dotnet/.net-tools/further-down-the-rabbit-hole-powershell-modules-and-encapsulation/)
-* [MSDN: How to Write a Module Manifest](https://msdn.microsoft.com/en-us/library/dd878297)
-* [MSDN: Windows PowerShell Modules](https://msdn.microsoft.com/en-us/library/dd878324(v=vs.85).aspx)
+* [How to Write a Module Manifest](https://msdn.microsoft.com/en-us/library/dd878297)
+* [Windows PowerShell Modules](https://msdn.microsoft.com/en-us/library/dd878324(v=vs.85).aspx)
 * [about_Modules](https://technet.microsoft.com/en-us/library/hh847804.aspx)
 * [Building PowerShell Functions - Best Practices](https://ramblingcookiemonster.wordpress.com/2013/12/08/building-powershell-functions-best-practices/) - Shameless plug. Includes a number of references.
 * [Learn PowerShell Toolmaking in a Month of Lunches](https://www.manning.com/books/learn-powershell-toolmaking-in-a-month-of-lunches)
+* [Free eBook on PowerShell Advanced Functions](http://mikefrobbins.com/2015/04/17/free-ebook-on-powershell-advanced-functions/)
 * [The PowerShell Best Practices and Style Guide](https://github.com/PoshCode/PowerShellPracticeAndStyle)
-* [Monad Manifesto](http://www.jsnover.com/Docs/MonadManifesto.pdf) - This gives a nice overview of the goals set out for PowerShell. If you're writing modules for public consumption, consider reading this, to avoid publishing something as awful as Citrix' PVS "PowerShell" snapin.
+* [Monad Manifesto](http://www.jsnover.com/Docs/MonadManifesto.pdf) - This gives a nice overview of the vision and goals set out for PowerShell. If you're writing modules for public consumption, consider reading this, to avoid publishing something as awful as Citrix' PVS "PowerShell" snapin.
 
 #### Side Note for Vendors
 
