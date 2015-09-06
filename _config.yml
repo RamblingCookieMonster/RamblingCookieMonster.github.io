@@ -47,6 +47,7 @@ owner:
           "InfoBlox",
           "Invoke-Parallel",
           "PowerShell",
+          "PSDeploy",
           "PSDiskPart",
           "PSExcel",
           "PSRabbitMQ",
