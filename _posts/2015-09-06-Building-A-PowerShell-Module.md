@@ -91,11 +91,11 @@ Here's how I typically organize my modules. We'll use PSStackExchange as an exam
 * [PSStackExchange\\](https://github.com/RamblingCookieMonster/PSStackExchange/tree/master/PSStackExchange)
   * en-US\\ (or locales of choice)
     * about_PSStackExchange.help.txt
-  * Private\\
+  * Private\\ 
     * Join-Parts.ps1
     * Get-SEData.ps1
     * ...
-  * Public\\
+  * Public\\ 
     * Get-SEObject.ps1
     * Search-SEQuestion.ps1
     * ...
@@ -111,7 +111,7 @@ If we're going to be adding our project to GitHub or a similar code repository, 
 
 * [Repository Root](https://github.com/RamblingCookieMonster/PSStackExchange)
   * PSStackExchange\\ (Module folder described above)
-  * Tests\\
+  * Tests\\ 
       * PSStackExchange.Tests.ps1
       * Appveyor.Pester.ps1
   * README.md
