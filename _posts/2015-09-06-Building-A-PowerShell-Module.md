@@ -135,7 +135,7 @@ We're good to go! Let's look at how we can publish this module for others to use
 
 The content of our module is ready to publish. Before we publish this, we'll enable continuous integration with some handy automated testing through AppVeyor.
 
-First, we [set up our project in AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) by adding [appveyor.yml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/appveyor.yml) to the repository, and adding the GitHub project to our AppVeyor account. We abstract out the calls to Pester in [AppVeyor.Pester.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/Tests/AppVeyor.Pester.ps1), using some [ideas from here](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/).
+First, we [set up our project in AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) by adding [appveyor.yml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/appveyor.yml) to the repository, and adding the GitHub project to our AppVeyor account. We abstract out the calls to Pester in [AppVeyor.Pester.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/Tests/appveyor.pester.ps1), using some [ideas from here](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/).
 
 Next, we push the changes we've made on our computer up to GitHub. Our code is now published, and AppVeyor will start [running a build](https://ci.appveyor.com/project/RamblingCookieMonster/psstackexchange).
 
