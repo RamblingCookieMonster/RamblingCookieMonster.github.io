@@ -103,7 +103,7 @@ Here's how I typically organize my modules. We'll use PSStackExchange as an exam
     * Some.Library.dll
   * bin\\ (Not used in this module)
     * SomeDependency.exe
-  * PSStackExchange.ps1xml
+  * PSStackExchange.Format.ps1xml
   * PSStackExchange.psd1
   * PSStackExchange.psm1
 
