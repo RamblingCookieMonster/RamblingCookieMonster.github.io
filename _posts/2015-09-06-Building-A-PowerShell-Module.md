@@ -33,7 +33,7 @@ Advanced functions will take you far with PowerShell. If you aren't writing func
 * Improve discoverability: ```Get-Command -Module MyModule```
 * Simplify distribution: ```Install-Module MyModule```
 
-In our example, we will organize a set of Stack Exchange functions into one module. Let's start by looking at the ingredients:
+In our example, we will organize a set of Stack Exchange functions into one module.
 
 ### This Seems Complicated!
 
@@ -73,7 +73,7 @@ There's no real order to this; depending on what you do or don't incorporate, do
 
 This should be pretty straightforward. If you haven't used GitHub before, the following might help:
 
-* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/#continuous-integration)
+* [GitHub for PowerShell Projects](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects)
 * [PowerShell.org TechSession: A Crash Course in Version Control and Git](https://www.youtube.com/watch?v=wmPfDbsPeZY) and [presentation materials](https://github.com/RamblingCookieMonster/Git-Presentation)
 
 All we need to do is:
