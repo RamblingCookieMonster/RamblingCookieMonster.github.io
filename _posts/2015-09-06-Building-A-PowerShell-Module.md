@@ -29,7 +29,7 @@ Advanced functions will take you far with PowerShell. If you aren't writing func
 * Simplify code organization
 * Group related functions together
 * Share state between functions, but not with the user
-* Re-use "helper functions" that you don't want exposed the user
+* Re-use "helper functions" that you don't want exposed to the user
 * Improve discoverability: ```Get-Command -Module MyModule```
 * Simplify distribution: ```Install-Module MyModule```
 
