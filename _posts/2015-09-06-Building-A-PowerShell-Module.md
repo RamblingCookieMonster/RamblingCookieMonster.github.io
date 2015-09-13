@@ -30,7 +30,7 @@ Advanced functions will take you far with PowerShell. If you aren't writing func
 * Group related functions together
 * Share state between functions, but not with the user
 * Re-use "helper functions" that you don't want exposed to the user
-* Improve discoverability: ```Get-Command -Module MyModule``` or ```Find-Module MyModule```
+* Improve discoverability: ```Find-Module MyModule``` or ```Get-Command -Module MyModule```
 * Simplify distribution: ```Install-Module MyModule```
 
 In our example, we will organize a set of Stack Exchange functions into one module.
