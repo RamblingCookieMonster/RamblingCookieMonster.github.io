@@ -99,7 +99,7 @@ Now, what about next time?
 
 Want to forget about tools and toolboxes to an extent? [Desired State Configuration](https://channel9.msdn.com/Series/Getting-Started-with-PowerShell-Desired-State-Configuration-DSC) and configuration management solutions that layer on top might be up your alley. But I digress, and it's important to note that configuration management isn't a panacea; Do you plan to change your configurations for a class of system just to enable diagnostics on a handful of instances? Nope.
 
-I used a quick [recipe for building a PowerShell module](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/), published the module to GitHub and the PowerShell Gallery, and I'm ready for next time!
+I used a quick [recipe for building a PowerShell module](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/), published the obnoxiously-named [PSLDAPQueryLogging](https://github.com/RamblingCookieMonster/PSLDAPQueryLogging) module to GitHub and the PowerShell Gallery, and I'm ready for next time!
 
 Here's a quick snippet where I could enable logging on all domain controllers, pull back the logs, and disable logging:
 
