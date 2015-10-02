@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: Finding Evil LDAP Queries
 excerpt: "(|(uid=*)(sAMAccountName=*z))"
 tags: [PowerShell, Tools, SQL, SQLite, Practical]
-modified: 2015-09-22 22:00:00
-date: 2015-09-22 22:00:00
+modified: 2015-10-02 22:00:00
+date: 2015-10-02 22:00:00
 comments: true
 image:
  feature: banner.jpg
