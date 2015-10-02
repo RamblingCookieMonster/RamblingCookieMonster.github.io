@@ -46,7 +46,7 @@ Oh. There's a screen shot of the registry in the blog post. And a table with reg
 
 I'm all for quickly fighting fires with a GUI, but I realize I don't want to deal with enabling and disabling this manually on several machines. Writing a quick POC function will be far faster. Particularly given that this is a simple registry change, and that Shay Levy has written the fantastic [PSRemoteRegistry](https://psremoteregistry.codeplex.com/), which I no longer consider a dependency. Just say no to providers that don't let you hit remote systems.
 
-All we do here is enable a logging, and set a few parameters.
+All we do here is enable logging, and set a few parameters that Mark suggested.
 
 {% highlight powershell %}
 Set-RegDWord -ComputerName $Computer -Hive LocalMachine -Key 'System\CurrentControlSet\Services\NTDS\Diagnostics' -Value '15 Field Engineering' -data 5
