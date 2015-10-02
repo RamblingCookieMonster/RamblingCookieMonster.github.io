@@ -28,7 +28,7 @@ Wednesday morning, someone asks about some SCOM alerts for AD. We see these ever
 
 I don't like assumptions though. Interesting. All the domain controllers in one site are at 100% CPU, with crazy CPU queues. This wasn't a site getting disconnected, or a one-off evil LDAP query. Looks like we get to dive into Mark's post!
 
-# Finding expensive, inefficient, or long running LDAP queries
+# Finding Expensive, Inefficient, or Long Running LDAP Queries
 
 ## Prerequisites
 
