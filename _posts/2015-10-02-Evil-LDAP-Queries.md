@@ -101,7 +101,7 @@ Want to forget about tools and toolboxes to an extent? [Desired State Configurat
 
 I used a quick [recipe for building a PowerShell module](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/), published the obnoxiously-named [PSLDAPQueryLogging](https://github.com/RamblingCookieMonster/PSLDAPQueryLogging) module to GitHub and the PowerShell Gallery, and I'm ready for next time!
 
-Here's a quick snippet where I could enable logging on all domain controllers, pull back the logs, and disable logging:
+Here's a quick snippet where I enable logging on all domain controllers, pull back the logs, and disable logging:
 
 {% gist f4322853e049f2ec85c6 %}
 
