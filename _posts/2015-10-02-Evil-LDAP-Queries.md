@@ -107,6 +107,6 @@ Here's a quick snippet where I enable logging on all domain controllers, pull ba
 
 # Get On With It!
 
-Be sure to [share your modules](http://powershell.org/wp/2015/09/06/writing-and-publishing-powershell-modules/) on GitHub and the PowerShell Gallery. Languages like [Perl](https://www.perl.org/about/whitepapers/perl-cpan.html), [Python](https://pypi.python.org/pypi), and [Ruby](https://rubygems.org/) all have repositories like this, each with thousands and thousands of modules. We  have 321. Let's get to work!
+Be sure to [share your modules](http://powershell.org/wp/2015/09/06/writing-and-publishing-powershell-modules/) on GitHub and the [PowerShell Gallery](https://www.powershellgallery.com/pages/GettingStarted). Languages like [Perl](https://www.perl.org/about/whitepapers/perl-cpan.html), [Python](https://pypi.python.org/pypi), and [Ruby](https://rubygems.org/) all have repositories like this, each with thousands and thousands of modules. We  have 321. Let's get to work!
 
 Barring the occasional *I have to share it!* discoveries, this will likely be my last post for some time; life is about to get crazy at home. In a good way. Cheers!
