@@ -24,7 +24,7 @@ This week, Mark's article came in quite handy.
 
 # The Fun Begins
 
-Wednesday morning, someone asks about some SCOM alerts for AD. We see these every so often, and I start explaining that sites with one or two domain controllers lead to somewhat common and often innocuous AD Site Performance Health Degraded alerts.
+Wednesday morning, someone asked about some SCOM alerts for AD. We see these every so often, and I start explaining that sites with one or two domain controllers lead to somewhat common and often innocuous AD Site Performance Health Degraded alerts.
 
 I don't like assumptions though. Interesting. All the domain controllers in one site are at 100% CPU, with crazy CPU queues. This wasn't a site getting disconnected, or a one-off evil LDAP query. Looks like we get to dive into Mark's post!
 
