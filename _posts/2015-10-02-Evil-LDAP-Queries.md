@@ -36,7 +36,7 @@ Okay! I know I saw 'PowerShell' when skimming the article, this should be quick 
 
 The final stages of our 2012 R2 roll out are scheduled for next week, so we need to [install KB2800945](https://support.microsoft.com/en-us/kb/2800945/en-us) on any remaining 2008 R2 domain controllers, and reboot.
 
-AD is somewhat important, and a juicy target, so maybe consider opening a ticket with Microsoft and triggering your (security) incident response process here.
+AD is somewhat important, and a juicy target - if you have a tight ship and this is a rare scenario, consider opening a ticket with Microsoft and triggering your (security) incident response process here.
 
 ## The Registry
 
