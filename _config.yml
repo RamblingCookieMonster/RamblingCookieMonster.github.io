@@ -50,6 +50,7 @@ owner:
           "PSDeploy",
           "PSDiskPart",
           "PSExcel",
+          "PSLDAPQueryLogging",
           "PSRabbitMQ",
           "PSSQLite",
           "PSStash",
