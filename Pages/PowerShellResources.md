@@ -53,6 +53,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [FoxDeploy](http://foxdeploy.com/)
 * [LazyWinAdmin](http://www.lazywinadmin.com/)
 * [Happy SysAdm](http://www.happysysadm.com/)
+* [Mike F Robbins](http://mikefrobbins.com/)
 * [Trevor Sullivan's Tech Room](http://trevorsullivan.net/)
 * [Shell is Only the Beginning](http://www.darkoperator.com/)
 * [Svendsen Tech Wiki](http://www.powershelladmin.com/wiki/Main_Page)
