@@ -165,7 +165,7 @@ $button-size: 1.5rem;
 	}
 }
 // Style the toggle menu link and hide it
-.nav .navtoogle {	
+.nav .navtoggle {
 	@include font-rem(18);
 	font-weight: normal;
 	background-color: $black;
@@ -180,7 +180,7 @@ $button-size: 1.5rem;
 	border: none;
 	background: none;
 }
-.navtoogle i {
+.navtoggle i {
 	z-index:-1;
 }
 .icon-menu {
@@ -234,12 +234,15 @@ $button-size: 1.5rem;
 		@include suffix(12,1);
 		margin-bottom: 2em;
 		@media #{$small} {
-			@include grid(12,6);
+			@include grid(12,8);
 			@include prefix(12,0);
 			@include suffix(12,0);
 		}
+		@media #{$large} {
+		@include grid(12,6);
+		}
 		@media #{$x-large} {
-			@include grid(12,4.5);
+			@include grid(12,5);
 		}
 	}
 }
@@ -252,12 +255,15 @@ $button-size: 1.5rem;
 	@include suffix(12,1);
 	margin-bottom: 2em;
 	@media #{$small} {
-		@include grid(12,6);
+		@include grid(12,8);
 		@include prefix(12,0);
 		@include suffix(12,0);
 	}
+	@media #{$large} {
+		@include grid(12,6);
+	}
 	@media #{$x-large} {
-		@include grid(12,4.5);
+		@include grid(12,5);
 	}
 	h3 {
 		margin: 0;
@@ -443,6 +449,8 @@ $button-size: 1.5rem;
 .article-wrap {
 	// Dotted line underlines for links
 	p > a,
+	p > em > a,
+	p > strong > a,
 	li > a {
 		text-decoration: underline;
 	}
