@@ -18,7 +18,7 @@ There’s no single answer to the question; reflecting back on my path, the foll
 
 ## First Things First
 
-There are [books, videos, cheat sheets, and blog posts galore](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html). Before any of this, get a system up and running with PowerShell. I assume you can search for the details on how to do the following:
+There are [books, videos, cheat sheets, and blog posts galore](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html). Before any of this, get a system up and running with PowerShell. I assume you can search for the details on how to do the following:
 
 * Download the latest Windows Management Framework and requisite .NET Framework – .NET 4.5 and WMF 4 at the moment. Even if you target a lower version PowerShell, the newer ISE will make learning and every day use more pleasant
 * Set your execution policy as appropriate, keeping in mind it’s just a seatbelt (I use Bypass on my computers). You do read code before you run it, right?
@@ -41,7 +41,7 @@ If you come in as an experienced scripter or developer, you might get serious he
 
 ## Formal Resources
 
-Hopefully you’ve decided to look at some formal learning materials!  I keep a list of the resources I find helpful for [learning PowerShell here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html).
+Hopefully you’ve decided to look at some formal learning materials!  I keep a list of the resources I find helpful for [learning PowerShell here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html).
 
 Prefer books?
 
@@ -69,7 +69,7 @@ The community is a great place learn, and to get ideas for what you can do with 
 
 * Drop in and get to know the communities. Stop by #PowerShell on IRC ([Freenode](https://webchat.freenode.net/)). Check out [Twitter](http://www.reddit.com/r/sysadmin/comments/2nx8to/what_other_sites_have_similar_content_to_rsysadmin/cmi0cu9), if you don’t use it, you might be surprised at how valuable it can be. Join the [PowerShell.org](http://powershell.org/) community. Keep an eye out for other communities that might be more specific to your interests or needs.
 
-* Look for blogs – some might cover general PowerShell, other’s might cover your IT niche. I keep [a few here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html), but there are many others.
+* Look for blogs – some might cover general PowerShell, other’s might cover your IT niche. I keep [a few here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html), but there are many others.
 
 * Participate in a local PowerShell user group. There’s no single way to find these, look at [PowerShellGroup.org](http://powershellgroup.org/), [PowerShell.org](http://powershell.org/wp/user-groups/), and ask around.
 

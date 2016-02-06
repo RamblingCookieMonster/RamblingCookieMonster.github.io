@@ -75,7 +75,7 @@ Microsoft describes PowerShell as “a task-based command-line shell and scripti
 
 ### Where can I learn more?
 
-There is a wealth of information on PowerShell.  I keep a running list of resources I’ve found helpful in learning and using PowerShell [right here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources.html), covering cheat sheets, blogs, videos, books and more.
+There is a wealth of information on PowerShell.  I keep a running list of resources I’ve found helpful in learning and using PowerShell [right here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html), covering cheat sheets, blogs, videos, books and more.
 
 What resources you find the most helpful will depend on your experience, role, and preferences.
 

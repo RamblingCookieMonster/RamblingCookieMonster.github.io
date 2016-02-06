@@ -7,10 +7,10 @@
   url: /posts/
 
 - title: Tools
-  url: /Pages/Tools.html
+  url: /Pages/Tools/index.html
 
 - title: PowerShell Resources
-  url: /Pages/PowerShellResources.html
+  url: /Pages/PowerShellResources/index.html
 
 - title: Legacy Posts
-  url: /Pages/LegacyWordpressPosts.html
+  url: /Pages/LegacyWordpressPosts/index.html
