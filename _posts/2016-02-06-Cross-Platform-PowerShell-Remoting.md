@@ -18,7 +18,7 @@ Wow! Four months since my last post.  New home, new job, and new tiny human in l
 
 I lucked out on the job front.  Found a fun team full of talented folks using modern tools, with a role focusing on Microsoft and related tech, in a predominantly *nix / OSS oriented environment.  Plenty of room to learn and explore!
 
-Of course, with everyone being well-versed in languages like bash and Python, and with most infrastructure residing on *nix systems using tools like Puppet or Salt for configuration, learning PowerShell hasn't made it to their to-do list.  Yet.  Hopefully that changes - from my perspective, there's no competition for an approachable, task-oriented glue language - imagine if it were open sourced and ported to other systems?
+Of course, with everyone being well-versed in languages like bash and Python, and with most infrastructure residing on *nix systems using tools like Puppet for configuration, learning PowerShell hasn't made it to their to-do list.  Yet.  Hopefully that changes - from my perspective, there's no competition for an approachable, task-oriented glue language - imagine if it were open sourced and ported to other systems?
 
 Until then, rather than miss out on the goodness PowerShell enables, we need to figure out an approach to invoke PowerShell from cross platform systems!
 
