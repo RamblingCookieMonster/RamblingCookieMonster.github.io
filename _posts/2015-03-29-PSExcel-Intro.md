@@ -48,7 +48,7 @@ What can we do with this? Let's walk through a quick demo.
 
 We'll create some dummy data to use:
 
-{% highlight powershell %}
+```powershell
 #Create some demo data
     $DemoData = 1..10 | Foreach-Object{
 
@@ -61,15 +61,15 @@ We'll create some dummy data to use:
             Date = $Date
         } | Select Name, EmployeeID, Date
     }
-{% endhighlight %}
+```
 
 ![Dummy data](/images/psexcel-intro/dummydata.png)
 
 Now, let's export it!
 
-{% highlight powershell %}
+```powershell
 $DemoData | Export-XLSX -Path C:\temp\Demo.xlsx
-{% endhighlight %}
+```
 
 Let's verify in Excel:
 
@@ -79,9 +79,9 @@ Let's verify in Excel:
 
 Importing data is just as easy. In this example, let's switch out the headers:
 
-{% highlight powershell %}
+```powershell
 $Imported = Import-XLSX -Path C:\Temp\Demo.xlsx -Header samaccountname, EID, Date
-{% endhighlight %}
+```
 
 ![Dummy data](/images/psexcel-intro/imported.png)
 
@@ -91,9 +91,9 @@ It worked! Keep in mind that Excel might not store your data as expected. If you
 
 You might want to open an existing xlsx file to work with:
 
-{% highlight powershell %}
+```powershell
 $Excel = New-Excel -Path C:\temp\Demo.xlsx
-{% endhighlight %}
+```
 
 This is a very basic function, it just creates a OfficeOpenXml.ExcelPackage object. I like abstraction though; I don't want to remember that I have to call ```New-Object OfficeOpenXml.ExcelPackage $Path```, I just want to say ```New-Excel```.
 
@@ -101,18 +101,18 @@ This is a very basic function, it just creates a OfficeOpenXml.ExcelPackage obje
 
 We have an ExcelPackage to work with, now we can get the workbook from this. More abstraction; this case it's literally just calling the Workbook property.
 
-{% highlight powershell %}
+```powershell
 $Workbook = $Excel | Get-Workbook
-{% endhighlight %}
+```
 
 #### Get a worksheet
 
 We can pipe an ExcelPackage or a Workbook to ```Get-Worksheet```, and can optionally filter on name:
 
-{% highlight powershell %}
+```powershell
 $Worksheet = $Excel | Get-Worksheet
 $Worksheet = $Workbook | Get-Worksheet -Name Worksheet1
-{% endhighlight %}
+```
 
 Let's take a peak at a worksheet object:
 
@@ -124,9 +124,9 @@ We can see some details, including the dimension of this worksheet.
 
 Why bother getting an ExcelPackage, Workbook, or Worksheet? We can use these to manipulate the data and metadata behind the scenes. Maybe we want to freeze the first row:
 
-{% highlight powershell %}
+```powershell
 $WorkSheet | Set-FreezePane -Row 2
-{% endhighlight %}
+```
 
 The row and column parameters might seem confusing - they indicate the first cell that should *not* be frozen. So freezing the top row would be row 2, column 1. Freezing the top row and first two columns would be row 2, column 3.
 
@@ -136,9 +136,9 @@ We'll have to save before we can verify this.
 
 Saving and closing uses the ExcelPackage object we first created:
 
-{% highlight powershell %}
+```powershell
 $Excel | Close-Excel -Save
-{% endhighlight %}
+```
 
 Let's take a look at our spreadsheet, did it freeze the top row?
 
@@ -150,7 +150,7 @@ The row is frozen as expected!
 
 Management likes pretty colors and formatting. Let's add some emphasis on the header:
 
-{% highlight powershell %}
+```powershell
 # Re-open the file
     $Excel = New-Excel -Path C:\temp\Demo.xlsx
 
@@ -161,13 +161,13 @@ Management likes pretty colors and formatting. Let's add some emphasis on the he
 
 # Save and re-open the saved changes
     $Excel = $Excel | Save-Excel -Passthru
-{% endhighlight %}
+```
 
 ![Header change](/images/psexcel-intro/header.png)
 
 They're nitpicky. That header is way too big! And the first column should be dark red, and autofit with a maximum width of 7:
 
-{% highlight powershell %}
+```powershell
 #  Text was too large!  Set it to 11
     $Excel |
         Get-WorkSheet |
@@ -179,16 +179,16 @@ They're nitpicky. That header is way too big! And the first column should be dar
 
 # Save and close
     $Excel | Save-Excel -Close
-{% endhighlight %}
+```
 
 ![Format change](/images/psexcel-intro/format2.png)
 
 #### Search cells
 
-{% highlight powershell %}
+```powershell
 # Search a spreadsheet
     Search-CellValue -Path C:\test\Demo.xlsx { $_ -like 'jsmith10' -or $_ -eq 280 }
-{% endhighlight %}
+```
 
 ![Search](/images/psexcel-intro/search.png)
 
@@ -198,10 +198,10 @@ This can return the location (default), the raw value, or an ExcelRange that you
 
 Thanks to AWiddersheim for adding table support!
 
-{% highlight powershell %}
+```powershell
 # Add a table, autofit the data. We use force to overwrite our previous demo.
     $DemoData | Export-XLSX -Path C:\Temp\Demo.xlsx -Table -Autofit -Force
-{% endhighlight %}
+```
 
 [![Pivot](/images/psexcel-intro/table.png)](/images/psexcel-intro/table.png)
 
@@ -209,11 +209,11 @@ Thanks to AWiddersheim for adding table support!
 
 This is straight from Doug Finke's fantastic [ImportExcel module](https://github.com/dfinke/ImportExcel).
 
-{% highlight powershell %}
+```powershell
 # Fun with pivot tables and charts! Props to Doug Finke
     Get-ChildItem $env:USERPROFILE -Recurse -File |
         Export-XLSX -Path C:\Temp\Files.xlsx -PivotRows Extension -PivotValues Length -ChartType Pie
-{% endhighlight %}
+```
 
 [![Pivot](/images/psexcel-intro/pivot.png)](/images/psexcel-intro/pivot.png)
 

@@ -35,17 +35,20 @@ When simulating a scheduled task, you should mimic these settings. For example:
 
 Tip: If you want to run as SYSTEM, [psexec](https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx) comes in handy.
 
-{% highlight bat %}
+```bat
 psexec -i -s Powershell.exe
-{% endhighlight %}
+```
 
 #### Actions
 
 ![Actions tab](/images/scheduled-tasks/OverviewGeneral.png)
 
-{% highlight bat %} c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe {% endhighlight %}
-
-{% highlight bat %} -NoProfile -Executionpolicy bypass -file "\\path\to\Generate-SQLDatabaseGrowth.ps1" -Parameter 'Value' {% endhighlight %}
+```bat
+c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe
+```
+```bat
+-NoProfile -Executionpolicy bypass -file "\\path\to\Generate-SQLDatabaseGrowth.ps1" -Parameter 'Value'
+```
 
 * Verify that you are running PowerShell at the correct bitness - are you running PowerShell from syswow64 (32-bit) and trying to load a module under system32 (64-bit)? That won't work. Fully spell out the path to the right PowerShell.exe.
 * Don't bother typing inside the 'Add arguments' text box. Use your favorite text editor and paste it in. Verify that you don't have any odd trailing spaces or other remnants from pasting.
@@ -60,9 +63,9 @@ This is simple to mimic:
 * Open cmd.exe, taking into account our previous example (UAC, account principal).
 * Paste the action and the arguments. Voila! A fairly reasonable approximation of the scheduled task:
 
-{% highlight bat %}
+```bat
 c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Executionpolicy bypass -file "\\path\to\Generate-SQLDatabaseGrowth.ps1" -Parameter 'Value'
-{% endhighlight %}
+```
 
 #### Other Considerations
 

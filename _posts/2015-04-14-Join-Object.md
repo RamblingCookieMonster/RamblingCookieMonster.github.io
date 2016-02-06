@@ -75,15 +75,15 @@ That was painful! Let's look at this in practice, where it's a bit easier to see
 
 I'll use [PSExcel](http://ramblingcookiemonster.github.io/PSExcel-Intro/) to pull in data from a spreadsheet. Keep in mind there are other options, like the fantastic [ImportExcel](https://github.com/dfinke/ImportExcel) module from Doug Finke, which PSExcel borrowed from.
 
-{% highlight powershell %}
+```powershell
 $L = Import-XLSX -Path C:\temp\JoinTest.xlsx -Sheet 1
-{% endhighlight %}
+```
 
 ![Managers in PS](/images/join-object/managersps.png)
 
-{% highlight powershell %}
+```powershell
 $R = Import-XLSX -Path C:\temp\JoinTest.xlsx -Sheet 2
-{% endhighlight %}
+```
 
 ![Departments in PS](/images/join-object/departmentsps.png)
 
@@ -91,9 +91,9 @@ We have the data, how do we join it together?
 
 #### Inner join
 
-{% highlight powershell %}
+```powershell
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type OnlyIfInBoth -RightProperties Department
-{% endhighlight %}
+```
 
 We can tell Join-Object that we only want rows where $L.Name is equal to $R.Manager (inner join), and to only return the Department property from the $R collection
 
@@ -111,9 +111,9 @@ It turns out that PowerShell will see the first object in the pipeline, which on
 
 We could manually select Name, Birthday, and Department, or use Format-List to see the other properties, but I like abstraction, so in the extended Join-Object, we select the full set of properties for output.
 
-{% highlight powershell %}
+```powershell
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type AllInLeft -RightProperties Department
-{% endhighlight %}
+```
 
 This time, we get the expected output, without worrying about missing columns:
 
@@ -129,9 +129,9 @@ Let's look at the practical implication if we don't account for this:
 
 Interesting, the left values for name were overwritten by the right values. How can we fix this? The simplest solution is to add a prefix or suffix to all properties from the right collection:
 
-{% highlight powershell %}
+```powershell
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type AllInBoth -Prefix r_
-{% endhighlight %}
+```
 
 Now we get all the properties, and nothing is overwritten:
 
@@ -139,9 +139,9 @@ Now we get all the properties, and nothing is overwritten:
 
 Maybe you are more familiar with [calculated properties](http://stackoverflow.com/a/22726528/3067642). The RightProperties parameter can take individual properties, calculated properties, or a mix:
 
-{% highlight powershell %}
+```powershell
 Join-Object -Left $L -Right $R -LeftJoinProperty Name -RightJoinProperty Manager -Type AllInBoth -RightProperties @{ N = "DeptName"; expression = {$_.Name} }
-{% endhighlight %}
+```
 
 Rather than a generic prefix or suffix, we can use calculated properties to rename these conflicts, or manipulate their values:
 
@@ -171,7 +171,7 @@ As you can see, this flexibility comes at a pretty steep cost, even when compari
 
 **The code**:
 
-{% highlight powershell %}
+```powershell
 # Import some SSNs. 
 $SSNs = Import-CSV -Path D:\SSNs.csv
 
@@ -180,7 +180,7 @@ Get-ADUser -Filter "samaccountname -like 'wframe*'" |
     Join-Object -LeftJoinProperty samaccountname -Right $SSNs `
                 -RightJoinProperty samaccountname -RightProperties ssn `
                 -LeftProperties samaccountname, enabled, objectclass
-{% endhighlight %}
+```
 
 **The result**:
 

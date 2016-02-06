@@ -61,19 +61,19 @@ Some rough notes taken during the single server POC deployment we stood up:
 
 * Specify a base path, unless you want RabbitMQ running out of AppData
 
-{% highlight powershell %}
+```powershell
 $rabbitdir = 'C:\RabbitMQ'
 mkdir $rabbitdir
 mkdir $rabbitdir\ssl
 [Environment]::SetEnvironmentVariable("RABBITMQ_BASE", $rabbitdir, "Machine")
-{% endhighlight %}
+```
 
 * [Download and install Erlang](http://www.erlang.org/download.html) - I went with x64
 * [Install RabbitMQ](http://www.rabbitmq.com/install-windows.html)
 * If you're planning to use SSL, grab the latest OpenSSL (variety of [sources](http://indy.fulgan.com/SSL/)), drop the files in C:\RabbitMQ\ssl
 * Enable the web interface and RESTful API
 
-{% highlight powershell %}
+```powershell
 # Change this out depending on your RabbitMQ install location:
 $sbin = "C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.5.3\sbin"
 
@@ -84,13 +84,13 @@ $sbin = "C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.5.3\sbin"
 & $Sbin\rabbitmq-service.bat remove
 & $Sbin\rabbitmq-service.bat install
 & $Sbin\rabbitmq-service.bat start
-{% endhighlight %}
+```
 
 At this point, you should be able to browse to http://localhost:15672, but we aren't done yet!
 
 * Set up SSL. Some of this might be redundant
 
-{% highlight powershell %}
+```powershell
 # Open PowerShell.exe - this won't work in the ISE
 # I copied my certs here temporarily...
 # I have my domain's wildcard cert in a contoso.org.pfx file and CA public certs in public.cer and publitROOT.cer
@@ -107,22 +107,22 @@ cd $rabbitdir\ssl
 .\openssl pkcs12 -in contoso.org.pfx -out server.key -nocerts -nodes #pw prompt here
 .\openssl rsa -in server.key -out rsa.server.key
 .\openssl pkcs12 -in contoso.org.pfx -out server.pem -nokeys #pw prompt here
-{% endhighlight %}
+```
 
 * Create a [rabbitmq.config](https://gist.github.com/RamblingCookieMonster/d0ca18ca59ee11082bb8) file in $env:RABBITMQ_BASE that we set earlier. Adjust SSL options as needed.
 * Re-install the service one more time...
 
-{% highlight powershell %}
+```powershell
 #commit changes be re-installing service
 & $Sbin\rabbitmq-service.bat stop
 & $Sbin\rabbitmq-service.bat remove
 & $Sbin\rabbitmq-service.bat install
 & $Sbin\rabbitmq-service.bat start
-{% endhighlight %}
+```
 
 * Configure accounts. Be sure to remove the default guest account!
 
-{% highlight powershell %}
+```powershell
 #Add users and passwords. This admin account has access to everything...
 & $Sbin\rabbitmqctl.bat add_user administrator "SUPERSECUREPASSWORD!"
 & $Sbin\rabbitmqctl.bat set_permissions administrator ".*" ".*" ".*"
@@ -139,7 +139,7 @@ cd $rabbitdir\ssl
 
 #Delete the guest account, it has full admin and is evil.
 & $Sbin\rabbitmqctl.bat delete_user guest
-{% endhighlight %}
+```
 
 Hopefully everything worked and you can now browse to https://servername.contoso.org:15671! If you skipped the SSL and rabbitmq.config, you should be able to hit http://localhost:15672.
 

@@ -24,7 +24,7 @@ Behind the scenes, we use .NET reflection. We call ```[AppDomain]::CurrentDomain
 
 Download the ps1, load it up, and we can start to discover all the available types in your session:
 
-{% highlight powershell %}
+```powershell
 #Add Get-Type to your session:
     . "\\Path\To\Get-Type.ps1"
 
@@ -33,23 +33,23 @@ Download the ps1, load it up, and we can start to discover all the available typ
 
 #List all enums in your session
     Get-Type -IsEnum
-{% endhighlight %}
+```
 
 ![IsEnum output](/images/types-enums/isenum.png)
 
 Nice! Maybe I'm working with [EPPlus and Excel through PowerShell](http://ramblingcookiemonster.github.io/PSExcel-Intro/) and want to see what enums the EPPlus library offers:
 
-{% highlight powershell %}
+```powershell
 Get-Type -IsEnum -Module EPPlus.dll
-{% endhighlight %}
+```
 
 ![IsEnum module output](/images/types-enums/isenumepplus.png)
 
 Very cool! I get a list of all enums in the EPPlus library. Maybe I want to offer a parameter that lists chart types, without manually speciying a ValidateSet that may need changing down the line:
 
-{% highlight powershell %}
+```powershell
 Get-Type -IsEnum -Module EPPlus.dll -FullName *chart*
-{% endhighlight %}
+```
 
 ![IsEnum fullname output](/images/types-enums/isenumeppluschart.png)
 
@@ -59,9 +59,9 @@ eChartType sounds interesting, but how do I know if this is what I want? What op
 
 Looking at the values behind an enum is fairly straightforward, we can use the GetValues method of System.Enum. Let's look at the enum values for DayOfWeek:
 
-{% highlight powershell %}
+```powershell
 [enum]::GetValues( 'System.DayOfWeek' )
-{% endhighlight %}
+```
 
 ![Enum GetValues](/images/types-enums/getvalues.png)
 
@@ -71,9 +71,9 @@ Looking at the values behind an enum is fairly straightforward, we can use the G
 
 Dot source or paste this function into your session, and let's see if we can pull out some enum values for chart types:
 
-{% highlight powershell %}
+```powershell
 Get-Type -IsEnum -Module EPPlus.dll -FullName *eChartType | Get-EnumValues
-{% endhighlight %}
+```
 
 ![eChartType values](/images/types-enums/excharttype.png)
 

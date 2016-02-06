@@ -48,12 +48,12 @@ I'm all for quickly fighting fires with a GUI, but I realize I don't want to dea
 
 All we do here is enable logging, and set a few parameters that Mark suggested.
 
-{% highlight powershell %}
+```powershell
 Set-RegDWord -ComputerName $Computer -Hive LocalMachine -Key 'System\CurrentControlSet\Services\NTDS\Diagnostics' -Value '15 Field Engineering' -data 5
 Set-RegDWord -ComputerName $Computer -Hive LocalMachine -Key 'SYSTEM\CurrentControlSet\Services\NTDS\Parameters' -Value 'Expensive Search Results Threshold' -data 0
 Set-RegDWord -ComputerName $Computer -Hive LocalMachine -Key 'SYSTEM\CurrentControlSet\Services\NTDS\Parameters' -Value 'Inefficient Search Results Threshold' -data 0
 Set-RegDWord -ComputerName $Computer -Hive LocalMachine -Key 'SYSTEM\CurrentControlSet\Services\NTDS\Parameters' -Value 'Search Time Threshold (msecs)' -data 100
-{% endhighlight %}
+```
 
 That's it! My domain controllers are now logging event 1644, with details on each LDAP query that meets the thresholds I just set; in this case, anything taking over 100ms. Time for coffee.
 
@@ -61,9 +61,9 @@ That's it! My domain controllers are now logging event 1644, with details on eac
 
 This could be outdated or flat out ignorant knowledge, but I recall wevtutil epl being incredibly fast, as compared to reading events using Get-WinEvent (or Get-EventLog, eek!). I'm a fan of using tools that meet your needs. In this case, quickly exporting an evtx is a simple one liner.
 
-{% highlight powershell %}
+```powershell
 Invoke-Command -ComputerName $Computer {wevtutil epl 'Directory Service' "\\$Using:Computer\c$\$ENV:ComputerName-Evil.evtx"}
-{% endhighlight %}
+```
 
 Alrighty, the events are there. Oh. Be sure your Directory Services event log is large enough to catch enough data. Maybe [use DSC](https://github.com/PowerShell/xWinEventLog).
 

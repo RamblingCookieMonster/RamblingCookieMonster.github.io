@@ -50,7 +50,7 @@ A few tweaks to Test-Server, and we have the ingredients for a convenient and fa
 
 All we need to do now is bundle these ingredients into a simple to use package, [Invoke-Ping](https://gallery.technet.microsoft.com/scriptcenter/Invoke-Ping-Test-in-b553242a). Hit the link, download and unblock the .ps1, and load it up!
 
-{% highlight powershell %}
+```powershell
 # dot source the function  
     . "\\Path\To\Invoke-Ping.ps1"  
   
@@ -59,7 +59,7 @@ All we need to do now is bundle these ingredients into a simple to use package, 
      
 # Check for WSMan, Remote Registry, Remote RPC, RDP, and SMB (via C$) connectivity against 3 machines 
     Invoke-Ping Server1, Server2, Server3 -Detail * 
-{% endhighlight %}
+```
 
 There are a few ways to run it:
 

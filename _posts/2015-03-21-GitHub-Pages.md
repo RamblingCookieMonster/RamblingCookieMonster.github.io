@@ -33,7 +33,7 @@ Cheers!
 
 #### Pygments syntax highlighting test
 
-{% highlight powershell %}
+```powershell
 # What will PowerShell syntax highlighting look like?
     
     Get-Help about_*  |
@@ -46,7 +46,7 @@ Cheers!
         WillThis = "Look Like?"
     }
 
-{% endhighlight %}
+```
 
 #### Embedded Gist test
 

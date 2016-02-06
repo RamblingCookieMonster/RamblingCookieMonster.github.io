@@ -160,7 +160,7 @@ Security note: CredSSP will make a red team happy. Do consider [the security imp
 
 Another workaround that works here would be to live dangerously and hit a domain controller directly:
 
-[![WinRM aduser](/images/ssh/winrm-aduser.png)](/images/ssh/winrm-aduser.png)
+[![WinRM aduser](/images/ssh/winrm-aduser-dc.png)](/images/ssh/winrm-aduser.png)
 
 That's about it! I have seen some odd issues with commands that use runspaces, but most every-day use cases seem to work.
 

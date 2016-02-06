@@ -83,15 +83,15 @@ Long story short, we can borrow a format.ps1xml file, modify it to meet our need
 
 You can dive into [MSDN](https://msdn.microsoft.com/en-us/library/gg580944.aspx), or you can get started quickly by borrowing someone else's work. This snippet will open up the format ps1xml for events:
 
-{% highlight powershell %}
+```powershell
 ise $PSHOME\Event.Format.ps1xml
-{% endhighlight %}
+```
 
 I cut out the bits I don't care about - everything but one view node. Let's substitute out the TypeName for our own:
 
-{% highlight xml %}
+```xml
 <TypeName>Some.Nonsense.Typename</TypeName>
-{% endhighlight %}
+```
 
 We don't want any grouping, so we can cut the GroupBy section out.
 
@@ -107,10 +107,10 @@ It worked! We didn't need to mess around with DefaultDisplayPropertySet for ever
 
 If you're writing a module, it's even simpler. Just specify the path to the format file(s) in the module manifest. Here's an example from the [PSStash psd1 file](https://github.com/RamblingCookieMonster/PSStash/blob/master/PSStash/PSStash.psd1):
 
-{% highlight powershell %}
+```powershell
 # Format files (.ps1xml) to be loaded when importing this module
 FormatsToProcess = @('PSStash.Format.ps1xml')
-{% endhighlight %}
+```
 
 ### Reusable Tools
 

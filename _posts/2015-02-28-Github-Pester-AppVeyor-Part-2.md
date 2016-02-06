@@ -61,19 +61,19 @@ Here is the resulting passing build, we’ll step through the basic flow:
 
 First, we ignore any commits that match updated readme:
 
-{% highlight yaml %}
+```yaml
 # Skip on updates to the readme.
 # We can force this by adding [skip ci] or [ci skip] anywhere in commit message 
 skip_commits:
   message: /updated readme.*/
-{% endhighlight %}
+```
 
 Next, we run the first pass of appveyor.pester.ps1, which runs tests in the native PowerShell on the AppVeyor VM:
 
-{% highlight yaml %}
+```yaml
 # Test with native PS version
   - ps: . .\Tests\appveyor.pester.ps1
-{% endhighlight %}
+```
 
 This runs the AppVeyor testing controller script, which calls the PSDiskPart.Tests.ps1 Pester tests.
 
@@ -85,19 +85,19 @@ Success! Note that we differentiated the PowerShell version in the ‘It’ name
 
 Next, we run this in PowerShell version 2 mode. Native AppVeyor support for this would be nice; as is, we don’t get colorized output without going through extra effort:
 
-{% highlight yaml %}
+```yaml
 # Test with PS version 2
   - ps: powershell.exe -version 2.0 -executionpolicy bypass -noprofile -file .\Tests\appveyor.pester.ps1
-{% endhighlight %}
+```
 
 ![Appveyor PS2 test](/images/appveyor-2/ps2test.png)
 
 Finally, we want to collect all the results, send our tests to AppVeyor, and give some summary feedback if anything failed:
 
-{% highlight yaml %}
+```yaml
 # Finalize pass - collect and upload results
   - ps: . .\Tests\appveyor.pester.ps1 -Finalize
-{% endhighlight %}
+```
 
 ![Appveyor collate tests](/images/appveyor-2/collatetests.png)
 

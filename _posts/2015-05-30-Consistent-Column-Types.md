@@ -32,10 +32,10 @@ PowerShell gives us plenty of tools for introspection. Let's take a quick peak a
 
 The most common way to explore an object is the Get-Member command. You can use this to explore below the surface of your output. Take a look at a DateTime object:
 
-{% highlight powershell %}
+```powershell
 # Look at the methods and properties on a DateTime object from Get-Date:
 Get-Date | Get-Member
-{% endhighlight %}
+```
 
 If you run this, you will find a wealth of information; there's are DayOfWeek, Millisecond, Month and many other properties, along with methods like AddDays and ToUniversalTime.
 

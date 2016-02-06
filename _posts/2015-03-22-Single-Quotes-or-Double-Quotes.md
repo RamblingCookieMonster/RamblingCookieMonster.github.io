@@ -86,7 +86,7 @@ I do see the other view points, both were certainly valid. I'm not sure if they 
 
 If ISESteroids squiggles out double quotes without expansion, Tobias should consider squiggling out the wretched code formatting practices like this:
 
-{% highlight powershell %}
+```powershell
 
 # What is this?  Why would you force this upon my eyes!
     if($Something) {
@@ -113,6 +113,6 @@ If ISESteroids squiggles out double quotes without expansion, Tobias should cons
         "more readable!"
     }
 
-{% endhighlight %}
+```
 
 Cheers!
