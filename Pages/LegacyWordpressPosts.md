@@ -42,8 +42,8 @@ I'm moving from Wordpress.com to GitHub pages.  My old content is a bit unwieldy
 * [PowerShell Splatting – build parameters dynamically](https://ramblingcookiemonster.wordpress.com/2014/12/01/powershell-splatting-build-parameters-dynamically/)
 * [Quick hit: Dynamic Where-Object calls](https://ramblingcookiemonster.wordpress.com/2014/11/30/quick-hit-dynamic-where-object-calls/)
 * [Credentials and Dynamic Parameters](https://ramblingcookiemonster.wordpress.com/2014/11/27/quick-hits-credentials-and-dynamic-parameters/)
-* [PowerShell Resources](/Pages/PowerShellResources.html)
-* [PowerShell Cheat Sheet](/Pages/PowerShellResources.html)
+* [PowerShell Resources](/Pages/PowerShellResources/index.html)
+* [PowerShell Cheat Sheet](/Pages/PowerShellResources/index.html)
 
 ### Practical Modules and Functions
 
