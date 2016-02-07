@@ -27,7 +27,7 @@ Until then, rather than miss out on the goodness PowerShell enables, we need to 
 There are a number of approaches, each with benefits and drawbacks.  At a high level, we could use...
 
 * Remoting solutions like SSH or WinRM
-* API oriented solutions like [flancy](https://github.com/toenuff/flancy) or something heavier like ASP.NET Web API
+* API oriented solutions like [flancy](https://github.com/toenuff/flancy), or something heavier like ASP.NET Web API
 * Web based solutions, from tools like rundeck, to shoe-horning [Jenkins](https://hodgkins.io/automating-with-jenkins-and-powershell-on-windows-part-1), to [WebCommander](https://github.com/vmware/webcommander), to building your own ASP.NET / C# page
 
 The other options are absolutely worth exploring, but a remoting solution would be very flexible with minimal overhead.  So, how can we use WinRM or SSH to call PowerShell from non-Windows systems?
@@ -178,6 +178,6 @@ A nice side-effect of Microsoft using GitHub is that we get a glimpse of what's 
 
 Check out the Win32-OpenSSH [issues](https://github.com/PowerShell/Win32-OpenSSH/issues/) - you'll see some notes on current limitations and bugs, along with some interesting ideas and plans.  Curious to see how they'll implement key based authentication for domain accounts ([issue 39](https://github.com/PowerShell/Win32-OpenSSH/issues/39)).
 
-Be sure to kick the wheels of Microsoft's SSHD implementation.  You can actually contribute, whether you submit a pull request for code, a thoughtful bug report, or an idea for a feature.  It's still quite early, so if you get in your ideas now, who knows, you might help improve this for everyone!
+Be sure to kick the wheels of Microsoft's SSHD implementation.  You can actually contribute, whether you submit a pull request, a thoughtful bug report, or an idea for a feature.  It's still quite early, so if you get in your ideas now, who knows, you might help improve this for everyone!
 
 Cheers!
