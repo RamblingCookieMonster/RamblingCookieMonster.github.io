@@ -109,7 +109,7 @@ That's about it - let's move on and look at using WinRM.
 
 There are a number of ways to invoke PowerShell over WinRM from other languages.  For many, the Python and Ruby modules will likely be your first stop.
 
-We're going to skip the Python pywinrm module, given that it requires either plaintext auth, Kerberos, or a PKI.  If already use Kerberos or have a PKI infrastructure in place, you could safely use this.  Otherwise, you'll find a number of guides for [pywinrm](https://github.com/diyan/pywinrm), [WinRb](https://github.com/WinRb/WinRM), and more, instructing you to configure WinRM to enable basic auth and AllowUnencrypted. *Don't*.
+We're going to skip the Python pywinrm module, given that it requires either plaintext auth, Kerberos, or fun with SSL.  If you already use Kerberos or have a PKI infrastructure in place, you could safely use this.  Otherwise, you'll find a number of guides for [pywinrm](https://github.com/diyan/pywinrm), [WinRb](https://github.com/WinRb/WinRM), and more, instructing you to configure WinRM to enable basic auth and AllowUnencrypted. *Don't*.
 
 We'll use the Ruby module for WinRM.  Install Ruby on your system, `gem install -r winrm`, and away we go!
 
