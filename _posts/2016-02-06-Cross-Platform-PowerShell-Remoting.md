@@ -14,7 +14,7 @@ image:
 
 # Rambling
 
-Wow! Four months since my last post.  New home, new job, and new tiny human in less than a month.
+Wow! Four months since my last post.  New city, new home, new job, new tiny human in less than a month, and thankfully, same Wegmans.
 
 I lucked out on the job front.  Found a fun team full of talented folks using modern tools, with a role focusing on Microsoft and related tech, in a predominantly *nix / OSS oriented environment.  Plenty of room to learn and explore!
 
