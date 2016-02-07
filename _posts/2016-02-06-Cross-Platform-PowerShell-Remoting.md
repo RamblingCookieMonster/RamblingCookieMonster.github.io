@@ -18,7 +18,7 @@ Wow! Four months since my last post.  New city, new home, new job, new tiny huma
 
 I lucked out on the job front.  Found a fun team full of talented folks using modern tools, with a role focusing on Microsoft and related tech, in a predominantly *nix / OSS oriented environment.  Plenty of room to learn and explore!
 
-Of course, with everyone being well-versed in languages like bash and Python, and with most infrastructure residing on *nix systems using tools like Puppet for configuration, learning PowerShell hasn't made it to their to-do list.  Yet.  Hopefully that changes - from my perspective, there's no competition for an approachable, task-oriented glue language - imagine if it were open sourced and ported to other systems?
+Of course, with everyone being well-versed in languages like bash and Python, and with most infrastructure residing on *nix systems using tools like Puppet for configuration, learning PowerShell hasn't made it to their to-do list.  Yet.  Hopefully that changes - from my perspective, nothing comes close to PowerShell as an approachable, task-oriented glue language - imagine if it were open sourced and ported to other systems?
 
 Until then, rather than miss out on the goodness PowerShell enables, we need to figure out an approach to invoke PowerShell from cross platform systems!
 
@@ -109,7 +109,7 @@ That's about it - let's move on and look at using WinRM.
 
 There are a number of ways to invoke PowerShell over WinRM from other languages.  For many, the Python and Ruby modules will likely be your first stop.
 
-We're going to skip the Python pywinrm module, given that it doesn't support a quick and dirty NTLM implementation.  If you've already implemented Kerberos or have a PKI infrastructure in place, you could safely use this.  Otherwise, you'll find a number of guides for [pywinrm](https://github.com/diyan/pywinrm), [WinRb](https://github.com/WinRb/WinRM), and more, instructing you to configure WinRM to enable basic auth and AllowUnencrypted. *Don't*.
+We're going to skip the Python pywinrm module, given that it requires either plaintext auth, Kerberos, or a PKI.  If already use Kerberos or have a PKI infrastructure in place, you could safely use this.  Otherwise, you'll find a number of guides for [pywinrm](https://github.com/diyan/pywinrm), [WinRb](https://github.com/WinRb/WinRM), and more, instructing you to configure WinRM to enable basic auth and AllowUnencrypted. *Don't*.
 
 We'll use the Ruby module for WinRM.  Install Ruby on your system, `gem install -r winrm`, and away we go!
 
