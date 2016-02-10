@@ -41,7 +41,7 @@ psexec -i -s Powershell.exe
 
 #### Actions
 
-![Actions tab](/images/scheduled-tasks/OverviewGeneral.png)
+![Actions tab](/images/scheduled-tasks/OverviewActions.png)
 
 ```bat
 c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe
