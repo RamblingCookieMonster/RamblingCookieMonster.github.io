@@ -33,15 +33,15 @@ Let's illustrate this difference and highlight how helpful PowerShell is, by loo
 We're going to learn how to read a file.  Exciting, right?  We'll do this using the following languages:
 
 * **PowerShell**, a task-oriented scripting and shell language. Work in a Microsoft ecosystem? [PowerShell is probably the best way to get things done](https://www.penflip.com/powershellorg/why-powershell/blob/master/chapter1.txt)
-* **Python**, a high-level general purpose programming language.
-* **C#**, a feature-full general purpose programming language.
-* **C**, a low-level language that terrifies me.
+* **Python**, a high-level general purpose programming language
+* **C#**, a feature-full general purpose programming language
+* **C**, a low-level language that terrifies me
 
 This is roughly in order of how much hand holding a language will do for you, which many IT professionals don't realize.  Let's start from the ground up.  Keep in mind there are many ways to skin a cat in each of these languages.
 
 ### Read a file in C
 
-So! First, we need to get set up with a compiler (Visual Studio is your best bet).  Then, we search around for a simple solution.  Protip: don't write in C if you can help it. You need to do everything on your own, which invariably means whatever you write will be insecure.
+So! First, we need to get a compiler (Visual Studio is your best bet).  Then, we search around for a simple solution.  Protip: don't write in C if you can help it. You need to do everything on your own, which invariably means whatever you write will be insecure.
 
 Here's a "simple" program to read C:\file.txt:
 
@@ -99,7 +99,7 @@ Get-Content C:\file.txt
 
 It all boils down to a single, easy to read command.  If your co-workers complain that they aren't developers, ask them if they find commands like the one above too difficult.  Hopefully they are open to learning, and you can help get them started.  Otherwise, what are they doing in IT?
 
-A developer could hop between any of the languages above and more, for a variety of tasks, often with significant expertise in one or two of their favorites. Learning the basics is not *too hard,* and now that nearly everything has an API, [warnings like this](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html) will be more than just wishful thinking.
+A developer could hop between any of the languages above and more, for a variety of tasks, often with significant expertise in one or two of their favorites. Learning the basics of a task-based language is not *too hard,* and now that nearly everything has an API, [warnings like this](http://everythingsysadmin.com/2014/02/do-system-administrators-need-.html) will be more than just wishful thinking.
 
 So! What's the moral of this story anyways?
 
@@ -107,9 +107,9 @@ So! What's the moral of this story anyways?
 
 Anyone in a Microsoft ecosystem should pick up the basics (or beyond) of PowerShell.  If you can give another person instructions - maybe read a recipe, or describe how to troubleshoot an iPhone - you already have the basic ingredients of coding.  The rest is just syntax, which is a quick Google search away, or even provided to you with [snippets](https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/25/using-powershell-ise-snippets-to-remember-tricky-syntax/).
 
-In fact, PowerShell is a prime candidate for scripting and automation [outside of the world of IT](http://ramblingcookiemonster.github.io/PowerShell-Beyond-Administration/).  How would we get there?  Microsoft might consider...
+In fact, PowerShell is a prime candidate for scripting and automation [outside of the world of IT](http://ramblingcookiemonster.github.io/PowerShell-Beyond-Administration/).  How would we get there?
 
-* An open source .NET framework (check) and PowerShell (still waiting)
+* An open source and cross-platform implementation of the .NET Framework (check) and PowerShell (still waiting)
 * Microsoft pushing their own product groups to provide an interface through PowerShell, for both administration and working with products (SQL is a prime example), and beyond their Server and Tools organization.
 * Microsoft pushing and assisting third parties in developing PowerShell modules to cover a wider variety of technologies
 * Microsoft and the community adopting and pushing the PowerShell Gallery - ~560 modules compared to CPAN, PyPI, or RubyGems is sad, regardless of the head start these have.
