@@ -110,9 +110,9 @@ Anyone in a Microsoft ecosystem should pick up the basics (or beyond) of PowerSh
 In fact, PowerShell is a prime candidate for scripting and automation [outside of the world of IT](http://ramblingcookiemonster.github.io/PowerShell-Beyond-Administration/).  How would we get there?
 
 * An open source and cross-platform implementation of the .NET Framework (check) and PowerShell (still waiting)
-* Microsoft pushing their own product groups to provide an interface through PowerShell, for both administration and working with products (SQL is a prime example), and beyond their Server and Tools organization.
+* Microsoft pushing their own product groups to provide an interface through PowerShell, for both administration and working with products (SQL is a prime example), and beyond their Server and Tools organization
 * Microsoft pushing and assisting third parties in developing PowerShell modules to cover a wider variety of technologies
-* Microsoft and the community adopting and pushing the PowerShell Gallery - ~560 modules compared to CPAN, PyPI, or RubyGems is sad, regardless of the head start these have.
+* Microsoft and the community adopting and pushing the PowerShell Gallery - ~560 modules compared to CPAN, PyPI, or RubyGems is sad, regardless of the head start these have
 * Luck : )
 
 ### How do I get started?
