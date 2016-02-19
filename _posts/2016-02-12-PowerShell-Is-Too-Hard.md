@@ -3,12 +3,12 @@ layout: post
 title: "PowerShell Is Too Hard"
 excerpt: "I'm not a developer!"
 tags: [PowerShell]
-modified: 2016-02-19 22:00:00
-date: 2016-02-19 22:00:00
+modified: 2016-02-18 22:00:00
+date: 2016-02-18 22:00:00
 comments: true
 image:
  feature: banner.jpg
- thumb: /hard/too-busy-tiny.png
+ thumb: /hard/toobusytiny.png
 ---
 {% include _toc.html %}
 
@@ -18,7 +18,7 @@ I lucked out and no longer need to convince co-workers or their managers that it
 
 How many times have you seen this?
 
-[![I don't have time to learn](/images/hard/too-busy.png)](/images/hard/too-busy.png)
+[![I don't have time to learn](/images/hard/toobusy.png)](/images/hard/toobusy.png)
 
 Some common excuses include *it's too hard*, *I'm too busy*, or *I'm not a developer!* Often with context around how busy they are working on manual tasks that could be automated, or simplified with a small script.
 
