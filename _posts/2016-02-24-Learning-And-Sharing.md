@@ -28,9 +28,9 @@ As much as you learn in school, we all know that nothing can make up for actual 
 
 So! I applied for a few jobs.  I was assuming a help desk job would be the only option, probably on an odd shift.
 
-I didn't hear back from most places.  Eventually I took a shot in the dark, and applied for a data interfaces job at a local hospital; something I had no business applying for.  I chatted with the hiring manager, the place seemed nice, but I was clearly not the best fit.  Thankfully, they ended up passing my resume along, and I got a random call for a site support position - client systems and so forth.
+I didn't hear back from most places.  Eventually I took a shot in the dark, and applied for a data interfaces job at a local hospital; something I had no business applying for.  I chatted with the hiring manager, the place seemed nice, but I was clearly not the best fit.  Thankfully, they ended up passing my resume along, and I got a random call for a site support position.
 
-That was it!
+That was it!  I started working with Windows in a domain environment for the first time, helping folks with their laptops, desktops, and other client systems.  Somehow, I managed to (mostly) steer clear of printers.
 
 ## Learning
 
