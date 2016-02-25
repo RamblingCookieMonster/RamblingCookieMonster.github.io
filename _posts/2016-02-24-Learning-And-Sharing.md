@@ -59,6 +59,8 @@ These helped me out.  Take this with a grain of salt, but I suspect they may hel
 
 ## Sharing
 
+### Rambling
+
 Learning and sharing go hand in hand.  Many of the resources I found most helpful were shared by other IT professionals: code snippets, functions, tools, libraries, ideas, questions and answers, you name it.
 
 So!  I tried to contribute back.
