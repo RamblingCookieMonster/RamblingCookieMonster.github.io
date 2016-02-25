@@ -14,13 +14,13 @@ image:
 
 ## Rambling
 
-Over the weekend, a fun thing happened on Twitter.  Someone encouraged folks to post their first tech job.
+Over the weekend, a fun thing happened on Twitter.  Someone encouraged folks to post about their first tech job.
 
 [![FirstTechJob](/images/learn/firsttechjob.png)](https://twitter.com/garethr/status/701099443857309696)
 
 It brought to mind two of my primary motivations: learning, and sharing.
 
-### FirstTechJob Rambling
+### FirstTechJob
 
 I lucked out.  While I've always been enthusiastic about computing, when I first applied for a job in IT, my experience consisted of an unrelated undergrad degree (brains!), a co-op in risk and compliance (not very technical), and being a student in a networking and systems administration program at a local university.
 
