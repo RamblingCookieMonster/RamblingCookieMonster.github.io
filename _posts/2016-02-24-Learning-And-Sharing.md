@@ -84,6 +84,7 @@ Again, I found these beneficial, but take them with a grain of salt:
 * Share.  **You'll help others in IT**, who in turn might share their own ideas and code
 * Share.  **It looks good to many employers**.  All else being equal, if I'm looking at two candidates, and only one of them has code and ideas open to the public, they'll probably get the nod
 * **Don't rule out sharing off-hand**.  Consider the risk and reward of sharing your sanitized code and ideas
+* **Provide digestible details**.  What's the goal of your code?  How do we install it?  How do we use it?  Readme.md files or short blog posts go a long way.  As silly as it sounds, animated gifs are a great way to quickly get across an idea.
 
 ## Closing.
 
