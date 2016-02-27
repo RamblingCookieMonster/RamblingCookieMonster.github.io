@@ -67,7 +67,7 @@ The community is a great place learn, and to get ideas for what you can do with 
 
 * Find popular repositories and publications on sites like [GitHub](https://github.com/search?l=powershell&q=stars%3A%3E1&s=stars&type=Repositories) and [Technet Gallery](https://gallery.technet.microsoft.com/). Dive into the underlying code and see how and why it works. Experiment with it. Keep in mind that popular code does not mean good code. Contribute your own code when and if you are comfortable with it
 
-* Drop in and get to know the communities. Stop by #PowerShell on IRC ([Freenode](https://webchat.freenode.net/)). Check out [Twitter](http://www.reddit.com/r/sysadmin/comments/2nx8to/what_other_sites_have_similar_content_to_rsysadmin/cmi0cu9), if you don’t use it, you might be surprised at how valuable it can be. Join the [PowerShell.org](http://powershell.org/) community. Keep an eye out for other communities that might be more specific to your interests or needs.
+* Drop in and get to know the communities. [Get an invite](http://slack.poshcode.org/) to the PowerShell Slack team, or stop by #PowerShell on IRC ([Freenode](https://webchat.freenode.net/), bridged with Slack). Check out [Twitter](http://www.reddit.com/r/sysadmin/comments/2nx8to/what_other_sites_have_similar_content_to_rsysadmin/cmi0cu9), if you don’t use it, you might be surprised at how valuable it can be. Join the [PowerShell.org](http://powershell.org/) community. Keep an eye out for other communities that might be more specific to your interests or needs.
 
 * Look for blogs – some might cover general PowerShell, other’s might cover your IT niche. I keep [a few here](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html), but there are many others.
 
