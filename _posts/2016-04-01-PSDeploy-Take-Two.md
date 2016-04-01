@@ -179,7 +179,7 @@ Now that you know how to use PSDeploy, what can you deploy?  Some of these thing
 * **FileSystemRemote**:  Same as FileSystem, but runs in a remote PSSession.  Mind the double hop.
 * **MkDocs**:  Build and deploy an [MkDocs](http://www.mkdocs.org/) site - thanks to Michael Lombardi!
 
-It's pretty bare bones for now, but contributions would be more than welcome; [extending PSDeploy](https://github.com/RamblingCookieMonster/PSDeploy/wiki/Extending-PSDeploy) takes two quick steps:  write a script to handle deployments, and a config file that tells PSDeploy what DeploymentType invokes that script.
+It's pretty bare bones for now, but contributions would be more than welcome. [Extending PSDeploy](https://github.com/RamblingCookieMonster/PSDeploy/wiki/Extending-PSDeploy) takes two quick steps:  write a script to handle deployments, and a config file that tells PSDeploy what DeploymentType invokes that script.
 
 It might be a fun way to get experience working with GitHub, and perhaps some integration testing, if you're up for it!
 
