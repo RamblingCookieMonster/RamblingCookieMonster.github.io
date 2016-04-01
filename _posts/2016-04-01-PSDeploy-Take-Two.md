@@ -34,7 +34,7 @@ Maybe you're an IT professional, and you're starting to use important tools like
 
 A simple answer to this is to borrow an idea that developers have been using for a while:  continuous deployment.
 
-When you commit to version control, a tool like [Jenkins](http://jenkins-ci.org/), [TeamCity](https://www.jetbrains.com/teamcity/), [AppVeyor](http://www.appveyor.com/), [Octopus Deploy](http://octopusdeploy.com/), or other CI/CD solutions will see this, and can automatically deploy your changes out to production.  Ideally after some tests run successfully.
+When you commit to version control, a tool like [Jenkins](http://jenkins-ci.org/), [TeamCity](https://www.jetbrains.com/teamcity/), [AppVeyor](http://www.appveyor.com/), [Octopus Deploy](http://octopusdeploy.com/), or other CI/CD solutions will see this, and can automatically deploy your changes out to production.  Ideally after some tests run successfully.  PSDeploy can help simplify that deployment.
 
 So!  What does this actually look like for an IT professional?  Here's a simple example:
 
