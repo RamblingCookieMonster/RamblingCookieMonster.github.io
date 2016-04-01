@@ -173,7 +173,7 @@ Invoke-PSDeploy -Path \\Path\To\Some.PSDeploy.ps1
 
 ## What Can I Deploy?
 
-Now that you know how to use PSDeploy, what can you use it to deploy?  Some of these things might seem simple, but having a layer of abstraction to hide some of your code can be quite helpful:
+Now that you know how to use PSDeploy, what can you deploy?  Some of these things might seem simple, but having a layer of abstraction to hide some of your code can be quite helpful:
 
 * **FileSystem**:  Copy files or folders.  Uses copy-item and robocopy behind the scenes, respectively
 * **FileSystemRemote**:  Same as FileSystem, but runs in a remote PSSession.  Mind the double hop.
