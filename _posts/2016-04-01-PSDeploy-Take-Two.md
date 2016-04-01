@@ -183,7 +183,7 @@ It's pretty bare bones for now, but contributions would be more than welcome. [E
 
 It might be a fun way to get experience working with GitHub, and perhaps some integration testing, if you're up for it!
 
-As time goes on, you can run Get-PSDeploymentType to list available deployment types, and Get-PSDeploymentType SomeDeploymentType -ShowHelp to view the help for that deployment type:
+As time goes on, you can run `Get-PSDeploymentType` to list available deployment types, and `Get-PSDeploymentType SomeDeploymentType -ShowHelp` to view the help for that deployment type:
 
 [![Get-PSDeploymentType](/images/psdeploy2/getpsdeploymenttype.png)](/images/psdeploy2/getpsdeploymenttype.png)
 
