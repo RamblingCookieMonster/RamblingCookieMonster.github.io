@@ -48,7 +48,7 @@ Here's an illustration from the [original PSDeploy post](http://ramblingcookiemo
 
 You can pull down PSDeploy a few ways.
 
-The easy way, [assuming you have PowerShell 5, or install the down-level PowerShellGet module](https://www.powershellgallery.com/):
+The easy way, assuming you have PowerShell 5, or install the down-level [PowerShellGet module](https://www.powershellgallery.com/):
 
 ```powershell
 Install-Module PSDeploy
