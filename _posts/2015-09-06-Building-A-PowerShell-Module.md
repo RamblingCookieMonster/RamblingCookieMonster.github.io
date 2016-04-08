@@ -123,7 +123,7 @@ I ran through the following code to get started. Typically I'll just copy the sc
 
 In our case, we have a few Stack Exchange advanced functions that hopefully follow [a few best practices](http://ramblingcookiemonster.github.io/Building-PowerShell-Functions-Best-Practices/), some private helper functions that we don't want the user to see, and a few other files to cover testing and usability.
 
-In [PSStackExchange.psm1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.psm1) we load our public and private functions. If a module is a work-in-progress, I'll usually export $Public.Basename to avoid hard coding functions to export in the psd1.
+In [PSStackExchange.psm1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.psm1) we load our public and private functions. If a module is a work-in-progress, I'll usually export $Public.Basename to avoid hard coding functions to export in the psd1. Once a module is released, I try to add the public functions to the psd1.
 
 If you're writing a module, you should consider writing [Pester](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/#pester) tests for it. It's quite comforting to have a suite of tests that run automatically after each change you push, rather than assuming the code you write was correct, or attempting to manually test your code after each change. Give it a shot! We include a few superficial tests in [PSStackExchange.Tests.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/Tests/PSStackExchange.Tests.ps1).
 
