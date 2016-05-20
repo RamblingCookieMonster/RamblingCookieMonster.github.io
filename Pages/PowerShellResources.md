@@ -91,8 +91,8 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [PowerShell Power Hours](http://www.idera.com/Education/PowerShell-Webcasts/)
 * [Speeding up PowerShell](http://www.youtube.com/watch?v=hJwhyVXiOLg) - Dr. Tobias Weltner
 * [Webcasts from the Scripting Guys](http://technet.microsoft.com/en-us/scriptcenter/dd901154.aspx)
-* [PowerShell Summit 2013 sessions](http://www.powershellmagazine.com/2013/05/08/powershell-summit-2013-session-recordings/), [2014 sessions](http://www.youtube.com/channel/UCX27-k3xeNSgXVklCx-dnXQ), [2015 sessions](https://www.youtube.com/playlist?list=PLfeA8kIs7CochwcgX9zOWxh4IL3GoG05P)
-
+* [PowerShell Summit 2013 sessions](http://www.powershellmagazine.com/2013/05/08/powershell-summit-2013-session-recordings/), [2014 sessions](http://www.youtube.com/channel/UCX27-k3xeNSgXVklCx-dnXQ), [2015 sessions](https://www.youtube.com/playlist?list=PLfeA8kIs7CochwcgX9zOWxh4IL3GoG05P), [2016 Sessions](https://www.youtube.com/playlist?list=PLfeA8kIs7Coc1Jn5hC4e_XgbFUaS5jY2i)
+* [PowerShell Conference EU 2016 sessions](https://www.youtube.com/c/powershellconferenceeu)
 ### Books and eBooks
 
 * [Mastering PowerShell](http://powershell.com/cs/blogs/ebookv2/default.aspx) - Dr. Tobias Weltner - Best free PowerShell book out there

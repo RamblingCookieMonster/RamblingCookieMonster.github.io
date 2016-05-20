@@ -32,4 +32,3 @@ On a side note, being known as the cookie monster does not help when you want to
 * [LinkedIn](https://www.linkedin.com/in/wframe)
 * [GitHub](https://github.com/RamblingCookieMonster)
 * [Technet Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=Cookie.Monster)
-* [About.Me](https://about.me/ramblingcookiemonster)

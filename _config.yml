@@ -53,6 +53,7 @@ owner:
           "PSExcel",
           "PSLDAPQueryLogging",
           "PSRabbitMQ",
+          "PSSlack",
           "PSSQLite",
           "PSStash",
           "SecretServer"]
