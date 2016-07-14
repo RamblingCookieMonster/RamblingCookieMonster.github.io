@@ -128,13 +128,7 @@ Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
 Resolve-Module Psake, PSDeploy, Pester, BuildHelpers
 ```
 
-Once these are in place, we use Set-BuildEnvironment to create some environment variables for our project:
-
-```powershell
-Set-BuildEnvironment
-```
-
-Here's an example of the data `Set-BuildEnvironment` gives us:
+Once these are in place, we use `Set-BuildEnvironment` to create some environment variables for our project.  Here's some example output:
 
 ```
 Name                 Value
