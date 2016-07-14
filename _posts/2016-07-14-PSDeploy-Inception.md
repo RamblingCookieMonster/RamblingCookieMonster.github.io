@@ -155,7 +155,7 @@ exit ( [int]( -not $psake.build_success ) )
 
 This is where the real work starts to happen.
 
-First things first, we set up a few variables that we use later - we use the current script folder if BuildHelpers hasn't run, set a verbose flag if we see `!verbose` in a commit message, and run an Init task that doesn't do much.
+First things first, we set up a few variables that we use later - we use `$PSScriptRoot` if BuildHelpers hasn't run, set a verbose flag if we see `!verbose` in a commit message, and run an Init task that doesn't do much.
 
 #### Test Phase
 
@@ -266,7 +266,7 @@ That's about it! Once this scaffolding is in place, you can let GitHub and AppVe
 
 ### Rambling Outro: The Gallery
 
-Today, the PowerShell Gallery has fewer than 1,000 modules, many of them focusing on Azure and DSC.  Hardly comparable to the repositories like CPAN, PyPI, or RubyGems:
+Today, the PowerShell Gallery has fewer than 1,000 modules, many of them focusing on Azure and DSC.  Hardly comparable to repositories like CPAN, PyPI, or RubyGems:
 
 [![Module Counts](/images/deploy/modulecount.png)](http://www.modulecounts.com/)
 
