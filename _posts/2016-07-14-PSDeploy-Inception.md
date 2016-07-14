@@ -157,7 +157,7 @@ This is where the real work starts to happen.
 
 First things first, we set up a few variables that we use later - we use `$PSScriptRoot` if BuildHelpers hasn't run, set a verbose flag if we see `!verbose` in a commit message, and run an Init task that doesn't do much.
 
-#### Test Phase
+**Test Phase**
 
 Next up we start running some tests:
 
@@ -187,7 +187,7 @@ Import-Module $ModulePath -Force
 
 Back in psake.ps1, we check to see if `$ENV:BHBuildSystem` is AppVeyor, and push up test results if so.  This isn't critical, but it gives us [a list of test results](https://ci.appveyor.com/project/RamblingCookieMonster/psdeploy/build/tests) on AppVeyor.
 
-#### Build Phase
+**Build Phase**
 
 After the tests run, we can start a build phase.  Not everyone will want to use this, but I like to run two shortcuts:
 
@@ -202,7 +202,7 @@ Set-ModuleFunctions
 Update-Metadata -Path $env:BHPSModuleManifest
 ```
 
-#### Deploy Phase
+**Deploy Phase**
 
 Now for the fun part! We deploy the module:
 
