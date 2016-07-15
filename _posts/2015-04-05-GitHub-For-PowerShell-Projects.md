@@ -3,7 +3,7 @@ layout: post
 title: GitHub for PowerShell Projects
 excerpt: "Yet Another GitHub Walkthrough"
 tags: [PowerShell, Tools, GitHub, AppVeyor, Pester, Open Source]
-modified: 2015-04-05 22:00:00
+modified: 2015-07-15 05:30:00
 date: 2015-04-05 22:00:00
 comments: true
 image:
@@ -144,6 +144,7 @@ Definitely check this out, it's quite handy having AppVeyor automatically run my
 * [Fun with Github, Pester, and AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/)
 * [Github, Pester, and AppVeyor: Part Two](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/)
 * [Testing DSC Configurations with Pester and AppVeyor](http://ramblingcookiemonster.github.io/Testing-DSC-with-Pester-and-AppVeyor/)
+* [A PowerShell Module Release Pipeline](http://ramblingcookiemonster.github.io/PSDeploy-Inception/)
 
 ### Etiquette
 

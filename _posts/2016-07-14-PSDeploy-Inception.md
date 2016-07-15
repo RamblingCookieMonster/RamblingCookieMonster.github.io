@@ -38,7 +38,7 @@ So!  Where do we start?
 
 ## The Ingredients
 
-Let's look at the ingredients for a recipe that gives us continuous deployment for a PowerShell module:
+Let's look at the ingredients for a recipe that gives us continuous deployment for a PowerShell module.  We'll use PSDeploy as an example:
 
 * A module built roughly following [this guide](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/)
 * A GitHub account

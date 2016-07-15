@@ -3,7 +3,7 @@ layout: post
 title: Building a PowerShell Module
 excerpt: "closed as off topic"
 tags: [PowerShell, Tools, SQL, SQLite, Practical]
-modified: 2015-09-06 22:00:00
+modified: 2015-07-15 5:30:00
 date: 2015-09-06 22:00:00
 comments: true
 image:
@@ -139,7 +139,7 @@ First, we [set up our project in AppVeyor](http://ramblingcookiemonster.github.i
 
 Next, we push the changes we've made on our computer up to GitHub. Our code is now published, and AppVeyor will start [running a build](https://ci.appveyor.com/project/RamblingCookieMonster/psstackexchange).
 
-Lastly, we want to publish our module in the [PowerShell Gallery](https://www.powershellgallery.com/), giving end users with PowerShell 5 a simple way to find and install your module. We could hook this up to automatically run in AppVeyor, but that's a topic for later.
+Lastly, we want to publish our module in the [PowerShell Gallery](https://www.powershellgallery.com/), giving end users with PowerShell 5 a simple way to find and install your module. We could hook this up to automatically run in AppVeyor, but that's [a topic for later](http://ramblingcookiemonster.github.io/PSDeploy-Inception/).
 
 * Sign on to PowerShellGallery.com with your Microsoft account
 * Get your API key (find it [here](https://www.powershellgallery.com/account))
