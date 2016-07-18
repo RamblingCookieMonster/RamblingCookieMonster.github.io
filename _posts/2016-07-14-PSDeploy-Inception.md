@@ -38,7 +38,7 @@ So!  Where do we start?
 
 ## The Ingredients
 
-Let's look at the ingredients for a recipe that gives us continuous deployment for a PowerShell module.  We'll use PSDeploy as an example:
+Let's look at the ingredients for a recipe that gives us continuous deployment for a PowerShell module.  We'll use content from PSDeploy itself as an example:
 
 * A module built roughly following [this guide](http://ramblingcookiemonster.github.io/Building-A-PowerShell-Module/)
 * A GitHub account
@@ -251,7 +251,7 @@ Deploy DeveloperBuild {
 
 That's it! We can now install our official module from the PowerShell Gallery, and install development builds from AppVeyor.
 
-### What Happens Now?
+## What Happens Now?
 
 This whole process sounds complicated, but it's driven by four generic files you can add or update in your repository:  appveyor.yml, build.ps1, psake.ps1, and something.psdeploy.ps1.
 
@@ -264,7 +264,7 @@ Here's what happens *automatically* with every commit we push to GitHub:
 
 That's about it! Once this scaffolding is in place, you can let GitHub and AppVeyor do the work for you, and start thinking about applying [release pipelines](http://aka.ms/thereleasepipelinemodel) like this to your infrastructure!
 
-### Rambling Outro: The Gallery
+## Rambling Outro: The Gallery
 
 Today, the PowerShell Gallery has fewer than 1,000 modules, many of them focusing on Azure and DSC.  Hardly comparable to repositories like CPAN, PyPI, or RubyGems:
 
