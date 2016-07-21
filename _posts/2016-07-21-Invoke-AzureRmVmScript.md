@@ -40,7 +40,7 @@ Nice!  Fifty VMs up and running.  But... how do I get to them?
 
 ## Public IPs
 
-This has to be simple.  There are so many AzureRm Cmdlets, I must be able to pull details on VMs along with their public IPs.
+This has to be simple.  There are so many AzureRm Cmdlets, We must be able to pull details on VMs along with their public IPs.
 
 ```powershell
 Get-AzureRmVm @params | Get-AzureRmPublicIP @otherparams
@@ -66,11 +66,11 @@ Get-AzureRmVmPublicIP -ResourceGroupName 'my-resource-group'
 # VM-1    VM-1-NIC   Not Assigned
 ```
 
-Perfect!  I can now get a list of VMs and public IPs.  Our customer doesn't have access to Azure, that would likely be a better solution here, but what can you do.
+Perfect!  We can now get a list of VMs and public IPs.  Our customer doesn't have access to Azure, that would likely be a better solution here, but what can you do.
 
 ## Catastrophe(ish)
 
-Our customer is quite thankful.  Their work is chugging along on day one.  We're oblivious, continuing our various other projects and tasks.  Ideally we might have something like [OMS](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) up and running to watch these VMs.  Thankfully, one of our astute customers notices when one of these VMs restart overnight.
+Our customer is quite thankful.  Their work is chugging along on day one.  We continue our various other projects and tasks.  Ideally we might have something like [OMS](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) up and running to watch these VMs.  Thankfully, one of our astute customers notices when one of these VMs restart overnight.
 
 We should probably mention here that when you run a workload in the cloud, that workload should be designed appropriately.  If you have a system sensitive to restarts running on Azure, AWS, or any other hosted service, you're going to have a bad time.  Alas, we're talking code written by and for a unique audience; it can't handle multiple cores, let alone the many scenarios that come up in a hosted environment.
 
@@ -78,7 +78,7 @@ What happened?  The sysprep process re-enabled automatic updates.  Lesson: If yo
 
 No problem!  We'll just use PowerShell remoting to fix the config, and to find systems that restarted to give the customer a nice report on systems they'll need to visit.  Oh.  Server 2008 R2.  Remoting isn't enabled out of the box.  And our group policy isn't applied.
 
-So!  A few lessons.  Planning is important.  Had we done this before, and not been under a deadline of a day or so, hopefully we would have thought of this.  Being able to manage your systems is somewhat important.
+So!  A few lessons.  Planning is important.  Had we done this before, and not been under a deadline of a day or so, hopefully we would have addressed these.  Being able to manage your systems is somewhat important.
 
 That's fine, Microsoft learned from VMware's Invoke-VMScript (presumably) and recently gave us [PowerShell Direct](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/vmsession?f=255&MSPPError=-2147217396).  Surely this, or something similar is available in Azure.
 
@@ -90,9 +90,9 @@ That's all I want.  To invoke a script on a VM.  I look around.  I read about [c
 
 I ask around.  I join an [Azure Slack team](azured.io).  Crickets.  Someone finally responds:  Azure Runbooks or Hybrid Runbook Workers might work.  I could be wrong, but I couldn't find anything that would let me run a PowerShell script on an Azure VM, without configuring remoting or registering a hybrid runbook worker on each VM.
 
-Back to custom script extensions.  I can deal with the limitations.  A few minutes later, updates are disabled.  The customer already ran through and checked for restarted systems, so they're good to go, no list needed.
+Back to custom script extensions.  We can deal with the limitations.  A few minutes later, updates are disabled.  The customer already ran through and checked for restarted systems, so they're good to go, no list needed.
 
-I have this nagging feeling.  I need to be able to run a command and get the output back.  I'm not about to log into 50 systems manually if something else comes up.  We already have the building blocks from executing the CustomScriptExtension to configure updates, all we need to do is abstract out each step of the process.
+I have this nagging feeling.  I need to be able to run a command and get the output back.  We're not about to RDP into 50 systems manually if something else comes up.  We already have the building blocks from executing the CustomScriptExtension to configure updates, all we need to do is abstract out each step of the process.
 
 I check the Azure Slack team one more time.  I'm a fan of using existing libraries, and contributing to them if they need a bit more functionality.  No luck.
 
@@ -180,7 +180,7 @@ $Output = Invoke-Parallel -RunspaceTimeout $(60*5) `
                           -ImportVariables `
                           -ScriptBlock {
 
-    # Load Invoke-AzureRmVmScript
+    # Load Invoke-AzureRmVmScript. Alternatively you could hard code it here, or we could fix Invoke-Parallel to pull in functions
     . 'C:\Invoke-AzureRmVmScript.ps1'
 
     # Parameters to splat
@@ -218,7 +218,7 @@ VM-6   '6' ExampleProcess processes on VM-6
 
 That's about it!
 
-Going forward, we'll have more time to plan these out, and connectivity should be available for important things like configuration management and authentication, but if we ever need it, we'll have a quick tool to hit poorly-setup-systems.
+Going forward, we'll have more time to plan these out, and connectivity should be available for important things like configuration management and authentication, but if we ever need it, we'll have a quick tool to hit poorly-setup-systems.  Perhaps we could bootstrap remoting or other connectivity with this function, but these VMs are already reaching their end of life.
 
 And thus ends my first experience working with resources in the cloud.  It's been fun, looking forward to more!
 
