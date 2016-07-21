@@ -121,6 +121,7 @@ PowerShell lets us send output to [various streams](https://blogs.technet.micros
         VMName = 'VM-22'
         StorageAccountName = 'storageaccountname'
     }
+
     Invoke-AzureRmVmScript @params -ScriptBlock {
         "Hello world! Running on $(hostname)"
         Write-Error "This is an error"
