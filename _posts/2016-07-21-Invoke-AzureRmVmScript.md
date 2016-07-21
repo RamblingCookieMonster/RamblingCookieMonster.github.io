@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Invoke PowerShell on Azure VMs"
-excerpt: "You're doing it wrong"
+excerpt: "Doing it wrong"
 tags: [PowerShell, Tools]
 modified: 2016-07-21 07:00:00
 date: 2016-07-21 07:00:00
