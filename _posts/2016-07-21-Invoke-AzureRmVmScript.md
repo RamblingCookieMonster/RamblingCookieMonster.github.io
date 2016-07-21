@@ -174,11 +174,15 @@ Basically, I want all VMs in my resource group that have a VMAgent that is ready
 ```powershell
 # Kick off script on VMs in parallel
 # 50 at a time, timeout at 5 minutes, pull in variables
-$Output = Invoke-Parallel -RunspaceTimeout $(60*5) `
-                          -Throttle 50 `
-                          -InputObject $VMs `
-                          -ImportVariables `
-                          -ScriptBlock {
+
+$InvokeParallelParams = @{
+    RunspaceTimeout = (60*5)
+    Throttle = 50
+    InputObject = $VMs
+    ImportVariables = $true
+}
+
+$Output = Invoke-Parallel @InvokeParallelParams -ScriptBlock {
 
     # Load Invoke-AzureRmVmScript. Alternatively you could hard code it here, or we could fix Invoke-Parallel to pull in functions
     . 'C:\Invoke-AzureRmVmScript.ps1'
@@ -202,6 +206,8 @@ $Output = Invoke-Parallel -RunspaceTimeout $(60*5) `
 It will still take some time, but this beats running things serially!  It looks like at least one VM is ready to tear down:
 
 ```
+$Output
+
 VMName StdOut_succeeded
 ------ ----------------
 VM-12  '' ExampleProcess processes on VM-12
