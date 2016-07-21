@@ -171,7 +171,7 @@ $VMs = Get-AzureRmVM -ResourceGroupName $ResourceGroupName |
 
 Basically, I want all VMs in my resource group that have a VMAgent that is ready.  I have my VMs, time to play!
 
-```
+```powershell
 # Kick off script on VMs in parallel
 # 50 at a time, timeout at 5 minutes, pull in variables
 $Output = Invoke-Parallel -RunspaceTimeout $(60*5) `
