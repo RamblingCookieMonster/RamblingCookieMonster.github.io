@@ -107,7 +107,7 @@ We boil everything down into a few high level steps:
 * [Set the CustomScriptExtension on the VM](https://github.com/RamblingCookieMonster/PowerShell/blob/aecea7781ee82141a6990e39594f43dfb46edb67/Invoke-AzureRmVmScript.ps1#L267)
 * [Read the output from the script](https://github.com/RamblingCookieMonster/PowerShell/blob/aecea7781ee82141a6990e39594f43dfb46edb67/Invoke-AzureRmVmScript.ps1#L294)
 
-This is a quick-publish, so more work to do, but if you're looking for a simple way to invoke PowerShell on an Azure VM, without using PowerShell remoting or installing a worker on the VM, Invoke-AzureRmVmScript might do the trick.
+This is a quick-publish, so more work to do, but if you're looking for a simple way to invoke PowerShell on an Azure VM, without using PowerShell remoting or installing a worker on the VM, [Invoke-AzureRmVmScript](https://github.com/RamblingCookieMonster/PowerShell/blob/master/Invoke-AzureRmVmScript.ps1) might do the trick.
 
 Let's look at a few examples!
 
