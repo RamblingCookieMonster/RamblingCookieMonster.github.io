@@ -220,4 +220,6 @@ That's about it!
 
 Going forward, we'll have more time to plan these out, and connectivity should be available for important things like configuration management and authentication, but if we ever need it, we'll have a quick tool to hit poorly-setup-systems.
 
+And thus ends my first experience working with resources in the cloud.  It's been fun, looking forward to more!
+
 Side note: the brown cloud illustrates my ability to work with the cloud, and is not a reflection on Azure. Okay, maybe it's a hyperbolic reflection on the documentation, a few bugs I ran into, and some not-as-PowerShell-y-as-expected behavior.
