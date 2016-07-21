@@ -70,7 +70,7 @@ Perfect!  I can now get a list of VMs and public IPs.  Our customer doesn't have
 
 ## Catastrophe(ish)
 
-Our customer is quite thankful.  Their work is chugging along on day one.  We're oblivious, continuing our various other projects and tasks.  Ideally we might have something like [OMS](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) up and running to watch these VMs  Thankfully, one of our astute customers notices when one of these VMs restart overnight.
+Our customer is quite thankful.  Their work is chugging along on day one.  We're oblivious, continuing our various other projects and tasks.  Ideally we might have something like [OMS](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) up and running to watch these VMs.  Thankfully, one of our astute customers notices when one of these VMs restart overnight.
 
 We should probably mention here that when you run a workload in the cloud, that workload should be designed appropriately.  If you have a system sensitive to restarts running on Azure, AWS, or any other hosted service, you're going to have a bad time.  Alas, we're talking code written by and for a unique audience; it can't handle multiple cores, let alone the many scenarios that come up in a hosted environment.
 
