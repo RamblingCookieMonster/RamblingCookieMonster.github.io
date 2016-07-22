@@ -48,7 +48,7 @@ Let's look at the ingredients for a recipe that gives us continuous deployment f
 * [appveyor.yml](https://github.com/RamblingCookieMonster/PSDeploy/blob/f813a8ba39702cf446fe0b23994e18936412ea9c/appveyor.yml).  This tells AppVeyor what to run when you make a change to your module
 * [Build.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/f813a8ba39702cf446fe0b23994e18936412ea9c/build.ps1).  This is a simple script to pull in dependencies and kick off psake, which does the real work
 * [psake.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/ab04c9c4122d520b475711f254fb65e520e212e8/psake.ps1).  This organizes your build into "tasks".  It runs your tests and deployments
-* [deploy.psdeploy.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/f813a8ba39702cf446fe0b23994e18936412ea9c/deploy.psdeploy.ps1).  This tells PSDeploy how to deploy your project - in this case, publishing a module
+* [deploy.psdeploy.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/9b14a0807e1aa52b4df8e41ac5b66de8f63a3f2e/deploy.psdeploy.ps1).  This tells PSDeploy how to deploy your project - in this case, publishing a module
 
 Let's put these together!
 
@@ -136,6 +136,7 @@ Name                 Value
 BHProjectName        psdeploy
 BHProjectPath        C:\projects\psdeploy
 BHPSModuleManifest   C:\projects\psdeploy\psdeploy\psdeploy.psd1
+BHPSModulePath       C:\projects\psdeploy\psdeploy
 BHCommitMessage      !Deploy Brandon's changes
 BHBuildSystem        AppVeyor
 BHBranchName         master
@@ -260,7 +261,7 @@ Here's what happens *automatically* with every commit we push to GitHub:
 * GitHub sends AppVeyor a notification of your commit
 * AppVeyor parses your [appveyor.yml](https://github.com/RamblingCookieMonster/PSDeploy/blob/f813a8ba39702cf446fe0b23994e18936412ea9c/appveyor.yml) and starts [a build](https://www.appveyor.com/docs/build-configuration#build-pipeline) on a fresh VM
 * [build.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/f813a8ba39702cf446fe0b23994e18936412ea9c/build.ps1) installs dependencies, sets up environment variables with BuildHelpers, and kicks off psake.ps1
-* [psake.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/ab04c9c4122d520b475711f254fb65e520e212e8/psake.ps1) does the real work.  It runs your Pester tests, and if they pass, runs PSDeploy against your [psdeploy.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/f813a8ba39702cf446fe0b23994e18936412ea9c/deploy.psdeploy.ps1)
+* [psake.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/ab04c9c4122d520b475711f254fb65e520e212e8/psake.ps1) does the real work.  It runs your Pester tests, and if they pass, runs PSDeploy against your [psdeploy.ps1](https://github.com/RamblingCookieMonster/PSDeploy/blob/9b14a0807e1aa52b4df8e41ac5b66de8f63a3f2e/deploy.psdeploy.ps1)
 
 That's about it! Once this scaffolding is in place, you can let GitHub and AppVeyor do the work for you, and start thinking about applying [release pipelines](http://aka.ms/thereleasepipelinemodel) like this to your infrastructure!
 
