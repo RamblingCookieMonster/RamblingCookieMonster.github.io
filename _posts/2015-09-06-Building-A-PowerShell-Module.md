@@ -3,7 +3,7 @@ layout: post
 title: Building a PowerShell Module
 excerpt: "closed as off topic"
 tags: [PowerShell, Tools, SQL, SQLite, Practical]
-modified: 2015-07-15 5:30:00
+modified: 2016-07-24 5:30:00
 date: 2015-09-06 22:00:00
 comments: true
 image:
@@ -20,7 +20,7 @@ I recently discussed the [August Scripting Games puzzle](http://powershell.org/w
 
 We're going to make the assumption you know what a module is, and that you have some experience writing PowerShell functions. If not, be sure to spend some time [learning PowerShell](http://ramblingcookiemonster.github.io/How-Do-I-Learn-PowerShell/) before continuing here!
 
-This post will cover my typical formula for writing a module, using the Stack Exchange API as an example. Feel free to [browse the PSStackExchange code](https://github.com/RamblingCookieMonster/PSStackExchange) on your own.
+This post will cover my typical formula for writing a module, using the Stack Exchange API as an example. Feel free to [browse the PSStackExchange code](https://github.com/RamblingCookieMonster/PSStackExchange/commit/db1277453374cb16684b35cf93a8f5c97288c41f) on your own.
 
 ### Why Modules?
 
@@ -43,13 +43,13 @@ Doing this from scratch might take you a little time. Thankfully, once you write
 
 There are many ways to create a module, from slapping a .psm1 extension onto a file, to compiling a fully fledged binary module [from C#](http://www.powershellmagazine.com/2014/03/18/writing-a-powershell-module-in-c-part-1-the-basics/). We'll take a common middle ground here, and use the following ingredients:
 
-* **[A Module Manifest](https://msdn.microsoft.com/en-us/library/dd878297)**. This is a .psd1 file that describes your module. [PSStackExchange.psd1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.psd1)
-* **A Root Module**. In our case, a script module .psm1 file. This is just PowerShell code to run when importing the module. [PSStackExchange.psm1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.psm1)
-* **Exported (Public) Functions**. These are the advanced functions an end user can run from our module. For example, [Get-SEQuestion.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/Public/Get-SEQuestion.ps1) or [Get-SEObject.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/Public/Get-SEObject.ps1)
-* **Private Functions**. These are optional "helper functions" that we want to use in our exported functions, that the end user shouldn't see. For example, [Add-ObjectDetail.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/Private/Add-ObjectDetail.ps1) or [Join-Parts.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/Private/Join-Parts.ps1)
-* **Formats**. These are optional format.ps1xml formats to help [decorate your output](http://ramblingcookiemonster.github.io/Decorating-Objects/), often specified in the module manifest 'FormatsToProcess'. [PSStackExchange.Format.ps1xml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.Format.ps1xml)
+* **[A Module Manifest](https://msdn.microsoft.com/en-us/library/dd878297)**. This is a .psd1 file that describes your module. [PSStackExchange.psd1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/PSStackExchange.psd1)
+* **A Root Module**. In our case, a script module .psm1 file. This is just PowerShell code to run when importing the module. [PSStackExchange.psm1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/PSStackExchange.psm1)
+* **Exported (Public) Functions**. These are the advanced functions an end user can run from our module. For example, [Get-SEQuestion.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/Public/Get-SEQuestion.ps1) or [Get-SEObject.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/Public/Get-SEObject.ps1)
+* **Private Functions**. These are optional "helper functions" that we want to use in our exported functions, that the end user shouldn't see. For example, [Add-ObjectDetail.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/Private/Add-ObjectDetail.ps1) or [Join-Parts.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/Private/Join-Parts.ps1)
+* **Formats**. These are optional format.ps1xml formats to help [decorate your output](http://ramblingcookiemonster.github.io/Decorating-Objects/), often specified in the module manifest 'FormatsToProcess'. [PSStackExchange.Format.ps1xml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/PSStackExchange.Format.ps1xml)
 * **Readme**. If you're [using GitHub](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/) or another common code repository, the Readme.md is a handy front page for your project, written using simple [Markdown](https://help.github.com/articles/github-flavored-markdown/) rather than HTML
-* **AppVeyor config**. If you're using a supported version control solution, [AppVeyor](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/#continuous-integration) enables simple and free continuous integration and delivery for open source projects. [AppVeyor.yml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/appveyor.yml)
+* **AppVeyor config**. If you're using a supported version control solution, [AppVeyor](http://ramblingcookiemonster.github.io/GitHub-For-PowerShell-Projects/#continuous-integration) enables simple and free continuous integration and delivery for open source projects. [AppVeyor.yml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/appveyor.yml)
 
 We have our ingredients, let's look at a recipe for a module!
 
@@ -88,7 +88,7 @@ Let's move on to the most important bit, the module itself.
 
 Here's how I typically organize my modules. We'll use PSStackExchange as an example, substitute this out for your own module!
 
-* [PSStackExchange\\](https://github.com/RamblingCookieMonster/PSStackExchange/tree/master/PSStackExchange)
+* [PSStackExchange\\](https://github.com/RamblingCookieMonster/PSStackExchange/tree/db1277453374cb16684b35cf93a8f5c97288c41f)
   * en-US\\ (or locales of choice)
     * about_PSStackExchange.help.txt
   * Private\\ 
@@ -109,7 +109,7 @@ Here's how I typically organize my modules. We'll use PSStackExchange as an exam
 
 If we're going to be adding our project to GitHub or a similar code repository, we add a little more scaffolding:
 
-* [Repository Root](https://github.com/RamblingCookieMonster/PSStackExchange)
+* [Repository Root](https://github.com/RamblingCookieMonster/PSStackExchange/tree/db1277453374cb16684b35cf93a8f5c97288c41f)
   * PSStackExchange\\ (Module folder described above)
   * Tests\\ 
       * PSStackExchange.Tests.ps1
@@ -123,11 +123,11 @@ I ran through the following code to get started. Typically I'll just copy the sc
 
 In our case, we have a few Stack Exchange advanced functions that hopefully follow [a few best practices](http://ramblingcookiemonster.github.io/Building-PowerShell-Functions-Best-Practices/), some private helper functions that we don't want the user to see, and a few other files to cover testing and usability.
 
-In [PSStackExchange.psm1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.psm1) we load our public and private functions. If a module is a work-in-progress, I'll usually export $Public.Basename to avoid hard coding functions to export in the psd1. Once a module is released, I try to add the public functions to the psd1.
+In [PSStackExchange.psm1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/PSStackExchange.psm1) we load our public and private functions. If a module is a work-in-progress, I'll usually export $Public.Basename to avoid hard coding functions to export in the psd1. Once a module is released, I try to add the public functions to the psd1.
 
-If you're writing a module, you should consider writing [Pester](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/#pester) tests for it. It's quite comforting to have a suite of tests that run automatically after each change you push, rather than assuming the code you write was correct, or attempting to manually test your code after each change. Give it a shot! We include a few superficial tests in [PSStackExchange.Tests.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/Tests/PSStackExchange.Tests.ps1).
+If you're writing a module, you should consider writing [Pester](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/#pester) tests for it. It's quite comforting to have a suite of tests that run automatically after each change you push, rather than assuming the code you write was correct, or attempting to manually test your code after each change. Give it a shot! We include a few superficial tests in [PSStackExchange.Tests.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/Tests/PSStackExchange.Tests.ps1).
 
-Lastly, we include some usability features. We add an [about_PSStackExchange](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/en-US/about_PSStackExchange.help.txt) help topic, we [decorate our output](http://ramblingcookiemonster.github.io/Decorating-Objects/) with the [PSStackExchange.Format.ps1xml file](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/PSStackExchange/PSStackExchange.Format.ps1xml), and we add some notes on how to install and use the module in the [README.md](https://github.com/RamblingCookieMonster/PSStackExchange/raw/master/README.md).
+Lastly, we include some usability features. We add an [about_PSStackExchange](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/en-US/about_PSStackExchange.help.txt) help topic, we [decorate our output](http://ramblingcookiemonster.github.io/Decorating-Objects/) with the [PSStackExchange.Format.ps1xml file](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/PSStackExchange/PSStackExchange.Format.ps1xml), and we add some notes on how to install and use the module in the [README.md](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/README.md).
 
 We're good to go! Let's look at how we can publish this module for others to use and improve.
 
@@ -135,9 +135,9 @@ We're good to go! Let's look at how we can publish this module for others to use
 
 The content of our module is ready to publish. Before we publish this, we'll enable continuous integration with some handy automated testing through AppVeyor.
 
-First, we [set up our project in AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) by adding [appveyor.yml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/appveyor.yml) to the repository, and adding the GitHub project to our AppVeyor account. We abstract out the calls to Pester in [AppVeyor.Pester.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/Tests/appveyor.pester.ps1), using some [ideas from here](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/).
+First, we [set up our project in AppVeyor](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) by adding [appveyor.yml](https://github.com/RamblingCookieMonster/PSStackExchange/blob/master/appveyor.yml) to the repository, and adding the GitHub project to our AppVeyor account. We abstract out the calls to Pester in [AppVeyor.Pester.ps1](https://github.com/RamblingCookieMonster/PSStackExchange/blob/db1277453374cb16684b35cf93a8f5c97288c41f/Tests/appveyor.pester.ps1), using some [ideas from here](http://ramblingcookiemonster.github.io/Github-Pester-AppVeyor-Part-2/).
 
-Next, we push the changes we've made on our computer up to GitHub. Our code is now published, and AppVeyor will start [running a build](https://ci.appveyor.com/project/RamblingCookieMonster/psstackexchange).
+Next, we push the changes we've made on our computer up to GitHub. Our code is now published, and AppVeyor will start [running a build](https://ci.appveyor.com/project/RamblingCookieMonster/psstackexchange/build/1.0.3).
 
 Lastly, we want to publish our module in the [PowerShell Gallery](https://www.powershellgallery.com/), giving end users with PowerShell 5 a simple way to find and install your module. We could hook this up to automatically run in AppVeyor, but that's [a topic for later](http://ramblingcookiemonster.github.io/PSDeploy-Inception/).
 
@@ -193,3 +193,7 @@ Writing PSStackExchange [reminded me](http://ramblingcookiemonster.github.io/RES
 Vendors: If your competition provides a PowerShell module and you do not, there's a good chance I'll push for your competitor's product. This is a major value-add if you do it right and follow PowerShell conventions.
 
 Cheers!
+
+
+
+*EDIT July 2016*: Updated links to PSStackExchange to [link to a specific point in time](https://twitter.com/psCookieMonster/status/757372331362779136).  The current version of this project may see updates to illustrate things like PSDeploy.
