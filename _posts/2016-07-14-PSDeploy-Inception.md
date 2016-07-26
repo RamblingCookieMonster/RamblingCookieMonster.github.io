@@ -225,7 +225,7 @@ We have two deployments in here.  If we're in a recognized build system (`$env:B
 ```powershell
 Deploy Module {
     By PSGalleryModule {
-        FromSource $ENV:BHProjectName
+        FromSource $ENV:BHPSModulePath
         To PSGallery
         WithOptions @{
             ApiKey = $ENV:NugetApiKey
@@ -239,7 +239,7 @@ This is great, but wouldn't it be nice to have development builds that folks cou
 ```
 Deploy DeveloperBuild {
     By AppVeyorModule {
-        FromSource $ENV:BHProjectName
+        FromSource $ENV:BHPSModulePath
         To AppVeyor
         WithOptions @{
             Version = $env:APPVEYOR_BUILD_VERSION
