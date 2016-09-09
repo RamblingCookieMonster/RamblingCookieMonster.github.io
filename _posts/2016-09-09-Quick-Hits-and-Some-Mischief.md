@@ -38,7 +38,7 @@ Anyhow!  That was completely tangential, but I miss having a real password manag
 
 That brings us to todays topic:  *Shoot.  What's that account's password again?  It's running as a service, surely we can find it!*
 
-## Scheduled Task Run 
+## Scheduled Task Credentials
 
 Sometimes it can come in handy to extract a password from a scheduled task.  Perhaps you forgot to record or update it, because you're not automating these things yet.  Perhaps someone changed it manually and your monitoring hasn't picked up the mismatch between your password solution's idea of the password, and the actual password.
 
@@ -62,6 +62,6 @@ Voila!  I have the password for this fake scheduled task.
 
 ### Wrapping up
 
-[Tools](https://github.com/gentilkiwi/mimikatz) and [references](https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/) [abound](https://adsecurity.org/?p=556) - Do consider consulting your $Boss before using tools and methods like this.  Just in case.
+[Tools](https://github.com/gentilkiwi/mimikatz) and [references](https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/) [abound](https://adsecurity.org/?p=556) - Do consider consulting your $Boss before taking this route.  Just in case.
 
 Cheers!
