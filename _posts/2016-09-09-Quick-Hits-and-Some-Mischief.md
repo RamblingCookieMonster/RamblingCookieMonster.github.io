@@ -8,7 +8,7 @@ date: 2016-09-09 07:00:00
 comments: true
 image:
  feature: banner.jpg
- thumb: 
+ thumb:
 ---
 {% include _toc.html %}
 
@@ -36,7 +36,7 @@ Among other motivators, I think these stuck out:
 
 Anyhow!  That was completely tangential, but I miss having a real password management solution, and the automation this enables.
 
-That brings us to todays topic:  *Shoot.  What's that account's password again?  It's running as a service, surely we can find it!*
+That brings us to todays topic:  *Shoot.  What's that account's password again?  It's running a scheduled task, surely we can find it!*
 
 ## Scheduled Task Credentials
 
