@@ -71,6 +71,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [Josh Duffney's Blog](http://duffney.io/#blog)
 * [Gael Colas' Blog](https://gaelcolas.com/)
 * [Hurry Up and Wait!](http://www.hurryupandwait.io/)
+* [Glenn Sarti's Blog](http://glennsarti.github.io/blog/)
 * [Wahl Network](http://wahlnetwork.com/)
 * [Scripting with Windows PowerShell](http://technet.microsoft.com/en-us/scriptcenter/dd742419)
 * [Windows PowerShell User's Guide](http://technet.microsoft.com/en-us/library/cc196356.aspx)
