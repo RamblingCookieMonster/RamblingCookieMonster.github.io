@@ -25,6 +25,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [PowerShell ISE v3](http://www.microsoft.com/en-us/download/details.aspx?id=30002) - PowerShell Magazine
 * [PowerShell String Comparison and List Filtering](http://www.simple-talk.com/iwritefor/articlefiles/1304-PS_Strings_chart_1.htm) - Michael Sorens
 * [PowerShell Gotchas](http://www.rlmueller.net/PSGotchas.htm): Moving from VBScript to PowerShell - Richard Mueller
+* [Complete Guide To PowerShell Punctuation](https://www.simple-talk.com/sysadmin/powershell/the-complete-guide-to-powershell-punctuation/)
 * [Regular Expressions](http://www.addedbytes.com/download/regular-expressions-cheat-sheet-v2/pdf/)
 
 ### Blogs and other resources
@@ -60,6 +61,10 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [Matthew Hodgkins Blog](https://hodgkins.io/#blog)
 * [Dev Black Ops](https://devblackops.io/)
 * [Tech, Automation, Life](https://flynnbundy.com/)
+* [Dave Wyatt's Blog](https://davewyatt.wordpress.com/)
+* [Trond's Working!](http://hindenes.com/trondsworking/)
+* [Joe Beaudry's Blog](http://beaudry.io/)
+* [Michael Willis' Blog](https://xainey.github.io/#blog)
 * [Scripting with Windows PowerShell](http://technet.microsoft.com/en-us/scriptcenter/dd742419)
 * [Windows PowerShell User's Guide](http://technet.microsoft.com/en-us/library/cc196356.aspx)
 * [Popular PowerShell Modules](http://social.technet.microsoft.com/wiki/contents/articles/4308.popular-powershell-modules-en-us.aspx?Sort=MostRecent&PageIndex=1)
@@ -93,6 +98,7 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [Webcasts from the Scripting Guys](http://technet.microsoft.com/en-us/scriptcenter/dd901154.aspx)
 * [PowerShell Summit 2013 sessions](http://www.powershellmagazine.com/2013/05/08/powershell-summit-2013-session-recordings/), [2014 sessions](http://www.youtube.com/channel/UCX27-k3xeNSgXVklCx-dnXQ), [2015 sessions](https://www.youtube.com/playlist?list=PLfeA8kIs7CochwcgX9zOWxh4IL3GoG05P), [2016 Sessions](https://www.youtube.com/playlist?list=PLfeA8kIs7Coc1Jn5hC4e_XgbFUaS5jY2i)
 * [PowerShell Conference EU 2016 sessions](https://www.youtube.com/c/powershellconferenceeu)
+
 ### Books and eBooks
 
 * [Mastering PowerShell](http://powershell.com/cs/blogs/ebookv2/default.aspx) - Dr. Tobias Weltner - Best free PowerShell book out there
@@ -116,11 +122,12 @@ I’m keeping a list of PowerShell resources that I've found helpful.  I plan to
 * [PowerShell Gallery](http://www.powershellgallery.com/) - Modules behind the *-Module commands introduced in WMF 5
 * [PowerShell Code Repository](http://poshcode.org/) - Heavily modified PasteBin focusing on PowerShell
 
-### Tools and Add-ons
+### Tools, Add-ons, and PowerShell Goodies
 
-* [PowerShell 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) - Includes support for Classes, PowerShellGet, improved auditing and logging, and more.
-* [PowerShell 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) - Includes [Desired State Configuration](http://technet.microsoft.com/en-us/library/dn249912.aspx)
-* [PowerShell 3.0](https://ramblingcookiemonster.wordpress.com/2012/09/05/powershell-3-0/) - Many updates, including an ISE helpful for learning and general use
+* [PowerShell Repo](https://github.com/powershell/powershell) - Source and installers for all editions of PowerShell, issue tracking, various docs, etc.
+* [Windows PowerShell 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) - Includes support for Classes, PowerShellGet, improved auditing and logging, and more.
+* [Windows PowerShell 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) - Includes [Desired State Configuration](http://technet.microsoft.com/en-us/library/dn249912.aspx)
+* [Windows PowerShell 3.0](https://ramblingcookiemonster.wordpress.com/2012/09/05/powershell-3-0/) - Many updates, including an ISE helpful for learning and general use
 * [PowerShellGet](https://www.powershellgallery.com/) - PowerShell module to find and install modules and scripts from the PowerShell Gallery.  Available in Windows 10, WMF 5, or as an MSI installer compatible with PowerShell 3 or 4.
 * [VSCode](https://code.visualstudio.com/) with [VSCode PowerShell language support](https://github.com/PowerShell/vscode-powershell) - This is quickly catching up to the ISE as a favorite PowerShell development environment
 * [ISESteroids](http://www.powertheshell.com/isesteroids/) - A great add-on from Tobias Weltner to improve your experience in the PowerShell ISE
