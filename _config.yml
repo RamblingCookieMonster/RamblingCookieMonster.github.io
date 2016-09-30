@@ -28,12 +28,12 @@ owner:
   name: Warren F
   avatar: bio.png
   bio: "Systems Engineer with a penchant for PowerShell, science, cooking, information security, family, cookies, and the Oxford comma."
-  email: 
+  email:
   disqus-shortname: ramblingcookiemonster
   twitter: pscookiemonster
   google:
     analytics: UA-61008962-1
-  bing-verify: 
+  bing-verify:
   github: ramblingcookiemonster
   stackoverflow: 3067642/cookie-monster
   linkedin: wframe
@@ -43,36 +43,23 @@ owner:
   #Github repos in sidebar - match them up to the repository name...
   githubrepos: [
           "AppVReporting",
+          "BuildHelpers",
           "Citrix.NetScaler",
           "Git-Presentation",
           "InfoBlox",
           "Invoke-Parallel",
           "PowerShell",
+          "PSDepend",
           "PSDeploy",
           "PSDiskPart",
           "PSExcel",
-          "PSLDAPQueryLogging",
+          "PSHTMLTable",
           "PSRabbitMQ",
           "PSSlack",
           "PSSQLite",
           "PSStash",
+          "RabbitMqTools",
           "SecretServer"]
-  githubfavorites: [
-          "Invoke-IR/PowerForensics",
-          "LeeHolmes/PowerShellCookbook",
-          "proxb/PoshRSJob",
-          "inchara/ShowDscResource",
-          "oising/poke",
-          "pester/Pester",
-          "mattifestation/PowerShellArsenal",
-          "vmware/webcommander",
-          "PoshSec/PoshSec",
-          "Veil-Framework/PowerTools",
-          "mattifestation/PowerSploit",
-          "PowerShellOrg/DSC",
-          "adamdriscoll/poshtools",
-          "darkoperator/Posh-SSH",
-          "lzybkr/PSReadLine"]
 
 #UA-61008962-1
 
