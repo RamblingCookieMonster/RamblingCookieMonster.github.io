@@ -11,7 +11,7 @@ image:
 ---
 {% include _toc.html %}
 
-*Edit*: This material has been adapted and augmented by Don Jones into the [Why PowerShell?](https://www.penflip.com/powershellorg/why-powershell) eBook.
+*Edit*: This material has been adapted and augmented by Don Jones into the [Why PowerShell?](https://www.gitbook.com/book/devopscollective/why-powershell-/details) eBook.
 
 I often find myself explaining why someone with responsibilities on the Microsoft side of the fence should learn PowerShell.  I decided to write this as a reference going forward.
 
