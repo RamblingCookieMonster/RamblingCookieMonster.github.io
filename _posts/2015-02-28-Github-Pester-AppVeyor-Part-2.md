@@ -3,8 +3,8 @@ layout: post
 title: Github, Pester, and AppVeyor&#58; Part Two
 excerpt: "Optimize the yaml"
 tags: [PowerShell, GitHub, Pester, AppVeyor, Tools, Rambling]
-modified: 2015-03-25
-date: 2015-02-28
+modified: 2015-03-25 00:00:00
+date: 2015-02-28 00:00:00
 comments: true
 image:
   feature: banner.jpg
@@ -63,7 +63,7 @@ First, we ignore any commits that match updated readme:
 
 ```yaml
 # Skip on updates to the readme.
-# We can force this by adding [skip ci] or [ci skip] anywhere in commit message 
+# We can force this by adding [skip ci] or [ci skip] anywhere in commit message
 skip_commits:
   message: /updated readme.*/
 ```

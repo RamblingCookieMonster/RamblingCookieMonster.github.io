@@ -3,7 +3,8 @@ layout: post
 title: Moving to GitHub Pages!
 excerpt: "Nothing to see here. What will happen if the excerpt is pretty lengthy? Will it wrap around nicely, or do something evil? Let's find out."
 tags: [Rambling]
-modified: 2015-03-21
+modified: 2015-03-21 00:00:00
+date: 2015-03-21 00:00:00
 comments: true
 image:
   feature: banner.jpg
@@ -35,12 +36,12 @@ Cheers!
 
 ```powershell
 # What will PowerShell syntax highlighting look like?
-    
+
     Get-Help about_*  |
         Get-Random
 
     "This is $("ASubExpressionOperator" + ${With odd quoting}) $WithAVariable that might need to wrap"
-    
+
     $Var = [pscustomobject]@{
         What = 1
         WillThis = "Look Like?"

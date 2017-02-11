@@ -3,8 +3,8 @@ layout: post
 title: Building PowerShell Functions&#58; Best Practices
 excerpt: "That we sometimes break"
 tags: [PowerShell, Best Practices, Tools]
-modified: 2015-03-25
-date: 2013-12-08
+modified: 2015-03-25 00:00:00
+date: 2013-12-08 00:00:00
 comments: true
 image:
   feature: banner.jpg
