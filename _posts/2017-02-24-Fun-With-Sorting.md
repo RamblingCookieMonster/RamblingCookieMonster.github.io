@@ -133,7 +133,7 @@ We're on the way!  We sort by the second to last item, and then third to last it
 
 #### Refactoring
 
-So, I'm nit picky.  That sort is kind of ugly and repeats code.  We could use the following, among many other options:
+Normally, I would use the code above.  It's more readable, even if it repeats code.  That said, let's illustrate a re-usable means to handle some sorting scenarios:
 
 ```powershell
 # Go a few layers deep
@@ -165,7 +165,7 @@ What happened here?
 * We sort on the pieces of the array
 * We extract the item we wanted to sort
 
-Our first example might have been a bit easier to read, and is a bit shorter, but do keep the gist of this in mind, it can come in handy:
+So!  Even if this isn't the best code to use for this particular situation, do keep the gist of this in mind, it can come in handy:
 
 * Create an object with the item to sort, and properties to sort on.  Those properties might involve further logic and query results.
 * Sort on the properties in question
