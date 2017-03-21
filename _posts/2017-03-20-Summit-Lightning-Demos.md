@@ -59,7 +59,7 @@ We don't have a form yet, and I may get vetoed on what we collect, but I think t
   * GitHub handle (optional)
   * Blog (optional)
 * Your lightning talk
-  * Abstract (a sentence of a paragraph )
+  * Abstract (a sentence or a paragraph )
   * Link to tool / demo (optional up front, but please provide after the demo!)
   * Demo content (optional up front, but please provide after the demo!)
 
