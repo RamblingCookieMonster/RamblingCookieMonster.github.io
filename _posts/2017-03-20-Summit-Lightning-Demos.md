@@ -45,7 +45,9 @@ This is all up to you, but here's a basic recipe that should be easy to follow, 
 
 That's it!
 
-[Here's a quick example lightning demo](https://www.youtube.com/watch?v=U07XKk3nUAU) walking through PSDepend basics.  Sorry about the volume, there's a sleeping toddler in the other room...
+Here's a quick example lightning demo walking through PSDepend basics.  Sorry about the volume, there's a sleeping toddler in the other room...
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/U07XKk3nUAU?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ### Sign me up!
 
