@@ -45,23 +45,13 @@ This is all up to you, but here's a basic recipe that should be easy to follow, 
 
 That's it!
 
-Here's a quick example lightning demo walking through PSDepend basics.  Sorry about the volume, there's a sleeping toddler in the other room...
+Here's a quick example lightning demo walking through PSDepend basics.  Sorry about the volume, there was a sleeping toddler in the other room...
 
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/U07XKk3nUAU?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/50Z6vEHVgDg?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ### Sign me up!
 
-We don't have a form yet, and I may get vetoed on what we collect, but I think the following would be valuable to include with your proposal:
-
-* You
-  * Name
-  * Twitter handle (optional)
-  * GitHub handle (optional)
-  * Blog (optional)
-* Your lightning talk
-  * Abstract (a sentence or a paragraph )
-  * Link to tool / demo (optional up front, but please provide after the demo!)
-  * Demo content (optional up front, but please provide after the demo!)
+[You can sign up here](https://goo.gl/forms/8sCiEeehOiyT2ynh2)
 
 No need to spend too much time prepping for a few minutes, but do consider:
 
