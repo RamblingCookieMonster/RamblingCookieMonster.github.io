@@ -51,7 +51,7 @@ Here's a quick example lightning demo walking through PSDepend basics.  Sorry ab
 
 ### Sign me up!
 
-[You can sign up here](https://goo.gl/forms/8sCiEeehOiyT2ynh2)
+[You can sign up here](https://goo.gl/forms/8sCiEeehOiyT2ynh2) - more details at the link.
 
 No need to spend too much time prepping for a few minutes, but do consider:
 
@@ -60,6 +60,6 @@ No need to spend too much time prepping for a few minutes, but do consider:
 * Testing your demo again, if you update PowerShell, modules you use, etc.
 * Thinking of the audience.  Can they read your editor?  Is there syntax highlighting?  Can you split lines up on pipes and other natural spots to avoid scrolling horizontally when your editor is zoomed in a bit?
 
-That's pretty much it, I'll be Looking forward to some awesome demos!  Stay tuned for sign up info you should see that on powershell.org or twitter.com/PSHOrg
+That's pretty much it, I'll be looking forward to some awesome demos!
 
 *[Thumbnail image source](http://muppet.wikia.com/wiki/Vaudeville?file=Tms406-kermit.jpg)*
