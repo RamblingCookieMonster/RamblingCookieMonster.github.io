@@ -186,7 +186,7 @@ The following resources will provide further help and suggestions for best pract
 * [My 12 PowerShell Best Practices](http://windowsitpro.com/blog/my-12-powershell-best-practices) – Don Jones
 * [PowerShell Script Module Best Practices](http://www.digitaltapestry.net/blog/powershell-script-module-best-practices) - William Kempf
 * My 10 best practices leading to the Scripting Games 2012 – [Part 1](http://www.powershellmagazine.com/2012/03/20/my-10-best-practices-leading-to-the-scripting-games-2012-%E2%80%93-part-i/), [Part 2](http://www.powershellmagazine.com/2012/03/22/my-10-best-practices-leading-to-the-scripting-games-2012-%E2%80%93-part-ii/) – Ifiok Moses
-* [The Community Book of PowerShell Practices](https://www.penflip.com/powershellorg/the-community-book-of-powershell-practices) (updated regularly, link is to parent directory) - Don Jones, Matt Penny, Community
+* [The Unofficial PowerShell Best Practices and Style Guide](https://github.com/PoshCode/PowerShellPracticeAndStyle)
 * [Other PowerShell resources I’ve found helpful](http://ramblingcookiemonster.github.io/Pages/PowerShellResources/index.html) – Cheat sheets, books, blogs, videos, etc.
 
 Good luck!  If you do end up writing advanced functions, please consider posting them to websites like [PoshCode](http://poshcode.org/), [TechNet Script Gallery](http://gallery.technet.microsoft.com/scriptcenter/), or [GitHub](https://github.com/search?q=powershell&ref=cmdform)!
