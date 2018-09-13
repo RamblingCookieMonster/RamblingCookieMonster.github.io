@@ -85,7 +85,7 @@ Be opinionated!  For example...
 * Is there something abnormal in the output that should be highlighted?  Consider doing so!  Are there disabled users in your output?  Consider listing them out (alphabetically of course) in a warning, ahead of the command output
 * Is there output that generally isn't needed?  Consider excluding it by default, and adding a switch to override - (e.g. AD group membership data might exclude disabled users by default)
 
-## Output needs more consideration
+## Output Needs More Consideration
 
 ### Pick sane defaults
 
@@ -103,7 +103,7 @@ There are many ways to do this.  I tend to globally say _if the string output is
 
 Also, be careful with errors.  PoshBot will pick up errors and send them to chat.  Any intentional manipulation of output you do is completely ignored at that point.  Let me get this big list of group members!  Oops.  Formatting error on each of the 100 members that came back.  Slightly embarrassing : )
 
-## That's a whole bunch of work!
+## That's a Whole Bunch of Work!
 
 Perhaps.  Most of this is just thinking about how folks will use the tools you write, and accommodating a platform that doesn't come with the niceties of a CLI.
 
