@@ -111,7 +111,7 @@ Just consider:  If you don't spend a little time thinking about this, you might 
 
 Also... I don't know about you, but I love convenience.  Much of this is bad practice in PowerShell, given that we can use everything in the pipeline, but here you can get as opinionated as you'd like, while still doing the right thing and making life easier for you
 
-### Is there an Easy button?
+### Is there an easy button?
 
 Not really.  Most of this will become apparent as you use PoshBot.  Just start using PoshBot.  See what works.  Ask around to see what you can improve.  Don't turn your nose up at ideas that fly in the face of PowerShell best practices - ChatOps is a different context.
 
@@ -121,7 +121,7 @@ I tend to write all of my functions with a set of their own _common parameters_ 
 
 I'll publish the code and write a short bit on this soon!
 
-### You're Wrong!
+### You're wrong!
 
 What do you think?  Do these practices make sense for bot commands?  Do you have other good practices to follow?  Are any of my suggestions misguided?  I'll try to include a summation in my next post!
 
