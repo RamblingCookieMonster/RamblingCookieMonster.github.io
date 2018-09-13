@@ -14,7 +14,7 @@ image:
 
 ## Rambling
 
-So!  First post in a year.  Guess setting up the _Quick Hits_ section was totally worth it : )
+So!  First post in a year.  Guess setting up the _Quick Hits_ section was totally worth it :)
 
 It's been a great year!  On top of various fun with PowerShell, keeping up with a two-year-old destroyer-of-all-the-things, and having a new destroyer-of-all-the-things in training, I've spent a good bit of time exposing handy tools in Slack via [PoshBot](https://github.com/poshbotio/PoshBot), an awesome bot framework by [Brandon Olin](https://twitter.com/devblackops)
 
