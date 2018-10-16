@@ -82,9 +82,9 @@ So!  These are some other factors that could help or hurt a proposal:
 
 Let's summarize these
 
-### So you want to propose at the summit
+### So you want to speak at the summit
 
-That was too many words.  Let's boil it down to some takeaways:
+That was too many words.  Let's boil it down to some takeaways that might help you with a successful proposal:
 
 * **Do submit a proposal**.  Seriously.
 * **Do give it a small bit of effort**.  Write it.  Review it.  Give it to someone else to review.  Adjust as needed
