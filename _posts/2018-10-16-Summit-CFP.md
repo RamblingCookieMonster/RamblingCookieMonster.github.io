@@ -127,14 +127,14 @@ So!  This was my first time being responsible (well, co-responsible!) for a CFP.
 
 ### Things that worked
 
-* Google Sheets.  PaperCall and other services might not have the best reviewing tools.  Some easy-to-collaborate spreadsheet service works for this
-* Having help.  Don't go alone.  Seriously.  IMHO no CFP should be handled by a single person.  The stress, items you might miss without a second pair of eyes, and other issues will pile up.  Thanks Missy : D
-* Knowing spreadsheet language basics.  Using spreadsheets?  Learn the language (functions, formulas, etc.).  There's only so much manual work you can do.  Sheets and Excel both have useful query languages, and you should know enough to pick these up without too much trouble
-* Keeping identifier data to tie review data to CFP data.  Make sure each review entry has enough data to uniquely tie it back to a talk - for example, the submitter's name or e-mail and the title of a talk.  Watch out for whitespace.  This helps reconcile the data if you need to join it up later on
-* Using PowerShell!  Once we had review data in sheets, and proposal data in PaperCall, it was easy to [join](http://ramblingcookiemonster.github.io/Join-Object/), filter, etc., generate speaker agreement word documents, and send acceptance, back-up, and not-selected [e-mails via smtp](https://stackoverflow.com/a/51158377/3067642).  I also had a quick way to generate [all the speaker's twitter handles](https://twitter.com/psCookieMonster/lists/pshsummit-2019-speakers), stats for this article, etc.
-* Encourage people.  I can't tell you how many folks I pinged, who either hadn't considered proposing, figured they didn't have anything worth proposing, just didn't see that we were running a CFP, etc.  A number of these folks were selected.  I'll remind folks again next year, but seriously, _if something helps you or your teammates, chances are it might help folks at this conference_.  Propose it!
+* **Google Sheets**.  PaperCall and other services might not have the best reviewing tools.  Some easy-to-collaborate spreadsheet service works for this
+* **Having help**.  Don't go alone.  Seriously.  IMHO no CFP should be handled by a single person.  The stress, items you might miss without a second pair of eyes, and other issues will pile up.  Thanks Missy : D
+* **Knowing spreadsheet language basics**.  Using spreadsheets?  Learn the language (functions, formulas, etc.).  There's only so much manual work you can do.  Sheets and Excel both have useful query languages, and you should know enough to pick these up without too much trouble
+* **Keeping identifier data** to tie review data to CFP data.  Make sure each review entry has enough data to uniquely tie it back to a talk - for example, the submitter's name or e-mail and the title of a talk.  Watch out for whitespace.  This helps reconcile the data if you need to join it up later on
+* **Using PowerShell**!  Once we had review data in sheets, and proposal data in PaperCall, it was easy to [join](http://ramblingcookiemonster.github.io/Join-Object/), filter, etc., generate speaker agreement word documents, and send acceptance, back-up, and not-selected [e-mails via smtp](https://stackoverflow.com/a/51158377/3067642).  I also had a quick way to generate [all the speaker's twitter handles](https://twitter.com/psCookieMonster/lists/pshsummit-2019-speakers), stats for this article, etc.
+* **Encouraging people**.  I can't tell you how many folks I pinged, who either hadn't considered proposing, figured they didn't have anything worth proposing, just didn't see that we were running a CFP, etc.  A number of these folks were selected.  I'll remind folks again next year, but seriously, _if something helps you or your teammates, chances are it might help folks at this conference_.  Propose it!
   * Side note:  if I missed pinging you, I'm sorry!  tried to get a bunch of folks, but I missed plenty
-* Remote collaboration tools.  Already mentioned Google Sheets.  Slack and screen-sharing-tools (e.g. Skype) also came in quite handy when working with other reviewers
+* **Remote collaboration tools**.  Already mentioned Google Sheets.  Slack and screen-sharing-tools (e.g. Skype) also came in quite handy when working with other reviewers
 
 ### Things that didn't work
 
