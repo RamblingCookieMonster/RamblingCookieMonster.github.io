@@ -42,7 +42,7 @@ Now... Why does this matter?  How can this be used to justify going to the summi
 * If they're involved organizing conferences or user groups, you might get a chance to speak
 * They might have some ideas or conversations that give you an idea on how to solve something at work
 * They might be working on or know about a project / tool that would be perfect for your org
-* Much more.  Just do it : )
+* Folks can share more in person than in a blog / public.  You'll find folks from Microsoft, Amazon, and many other companies doing awesome and interesting things, who might not otherwise blog or publicize certain things
 
 Meeting new folks doesn't come natural to everyone.  Certainly not me.  What can help?  How can you get the most out of this?
 
