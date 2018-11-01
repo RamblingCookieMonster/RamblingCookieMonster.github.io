@@ -74,8 +74,8 @@ The schedule won't be completely filled out before you ask for approval, but the
 
 There are a few ways you can use this to encourage your boss to send you:
 
-* Line up session topics with projects or goals at your own work
-* Line up speaker expertise with projects or goals at your own work - you can talk to these folks after all
+* Line up session topics with projects or goals at work
+* Line up speaker expertise with projects or goals at work - you can talk to these folks after all
 * If this is like the previous years, you'll get a preview of what the PowerShell team is working on
 * You'll have the chance to talk with various folks on the PowerShell team
 * Even if a good bit of the content is posted online, being there means you can follow up with the speakers
