@@ -16,7 +16,7 @@ image:
 
 I guess I've been doing this a while!  I first harassed my manager about the PowerShell Summit back in 2013.
 
-Back then, I would look at the sessions, look my team's goals and my own goals, and point out initiatives the sessions would help with.  Nothing more.
+Back then, I would look at the sessions, look at my team's gaps, projects, and goals, and point out the sessions that could help.  Nothing more.
 
 Nowadays?  The breakout sessions themselves are awesome, but aren't even in the top three reasons I give my boss.
 
