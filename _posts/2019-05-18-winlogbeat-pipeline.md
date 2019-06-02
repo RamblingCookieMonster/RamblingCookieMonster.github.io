@@ -158,7 +158,7 @@ That's about it!  Now, lets look at that `windows` ingest pipeline we're routing
 First, we need to define the pipeline.  You can use a number of [processors](https://www.elastic.co/guide/en/elasticsearch/reference/master/ingest-processors.html), including [grok](https://www.elastic.co/guide/en/elasticsearch/reference/master/grok-processor.html) and [geopip](https://www.elastic.co/guide/en/elasticsearch/reference/master/geoip-processor.html), but for these events, I just want to run a [script](https://www.elastic.co/guide/en/elasticsearch/reference/master/script-processor.html), and I want to know if any errors come up (tip: they will, particularly on your first iterations of writing a script)
 
 ```
-# {% raw %}
+{% raw %}
 {
     "description": "Process Windows event log",
     "processors": [
