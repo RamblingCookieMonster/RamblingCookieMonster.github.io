@@ -21,8 +21,10 @@
   {% if author.rss %}<a href="{{ site.url }}/{{ author.rss }}" class="author-social" target="_blank"><i class="fa fa-fw fa-rss"></i>RSS Feed</a>{% endif %}
   {% if author.wordpress %}<a href="{{ author.wordpress }}" class="author-social" target="_blank"><i class="fa fa-fw fa-wordpress"></i>My old blog</a>{% endif %}
   <br />
-  <h3 itemprop="GitHub">My GitHub Repos</h3>
-  {% for repo in author.githubrepos %}
-    <a href="https://github.com/RamblingCookieMonster/{{ repo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i>{{ repo }}</a>
-  {% endfor %}
+  {% if author.github %}
+    <h3 itemprop="GitHub">My GitHub Repos</h3>
+    {% for repo in author.githubrepos %}
+      <a href="https://github.com/{{ author.github }}/{{ repo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i>{{ repo }}</a>
+    {% endfor %}
+  {% endif %}
 </div>
